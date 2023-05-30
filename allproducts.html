@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | Dr.jart</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <aside id="gnbPanel">
+        <input type="button" value="closePanel" class="btnClose">
+        <ul>
+            <li><a href="allproducts.html">All Products</a></li>
+            <li><a href="type_new.html">By Type</a></li>
+            <li><a href="line_ceramidin.html">Line By Line</a></li>
+            <li><a href="solution_recovery.html">Sensitive Skin Solution</a></li>
+        </ul>
+    </aside>
+
+    <aside id="cartPanel">
+        <div>
+            <input type="button" value="closePanel" class="cartClose">
+            <h2>My cart</h2>
+        </div>
+        <div class="emptyCart">
+            <h3>Your cart</h3>
+            <p>Your cart is empty, give it some love!</p>
+            <ul>
+                <li>
+                    <img src="images/pore_primer_1.png" alt="Pore Remedy™ Smoothing Primer">
+                    <div>
+                        <em>Pore Remedy™ Smoothing Primer</em>
+                        <small>39,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>                    
+                </li>
+                <li>
+                    <img src="images/cica_cleansingfoam_1.png" alt="Cicapair™ Enzyme Cleansing Foam">
+                    <div>
+                        <em>Cicapair™ Enzyme Cleansing Foam</em>
+                        <small>26,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cera_serumtoner_1.png" alt="Ceramidin™ Skin Barrier Serum Toner">
+                    <div>
+                        <em>Ceramidin™ Skin Barrier Serum Toner</em>
+                        <small>39,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cera_handcream_1_50ml.png" alt="Ceramidin™ Hand Cream">
+                    <div>
+                        <em>Ceramidin™ Hand Cream</em>
+                        <small>14,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/sun_moist_1.png" alt="Every Sun Day™  Moisturizing Sun">
+                    <div>
+                        <em>Every Sun Day™  Moisturizing Sun</em>
+                        <small>21,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="haveCart">
+            <ul>
+                <li>
+                    <img src="images/cera_moistcream_1.png" alt="Ceramidin™ Skin Barrier Moisturizing Cream">
+                    <div>
+                        <input type="button" value="delete">
+                        <em>Ceramidin™ Skin Barrier Moisturizing Cream</em>
+                        <small>50 mL</small>
+                        <div>
+                            <span class="quantComponent">
+                                <input type="button" value="-" class="minusBtn">
+                                <input type="text" name="amount" value="1">
+                                <input type="button" value="+" class="plusBtn">
+                            </span>
+                            <span>
+                                48,000
+                                <small>won</small>
+                            </span>
+                        </div>
+                    </div>  
+                </li>
+                <li>
+                    <img src="images/cica_cream_1.png" alt="Cicapair™ Cream">
+                    <div>
+                        <input type="button" value="delete">
+                        <em>Cicapair™ Cream</em>
+                        <small>50 mL</small>
+                        <div>
+                            <span class="quantComponent">
+                                <input type="button" value="-" class="minusBtn">
+                                <input type="text" name="amount" value="1">
+                                <input type="button" value="+" class="plusBtn">
+                            </span>
+                            <span>
+                                49,000
+                                <small>won</small>
+                            </span>
+                        </div>
+                    </div>  
+                </li>
+            </ul>
+            <div>
+                <h3>Anything else?</h3>
+                <ul class="recSlider">
+                    <li>
+                        <img src="images/vita_watercream_1.png" alt="Vital Hydra Solutions™ Biome Water Cream">
+                        <div>
+                            <em>Vital Hydra Solutions™ Biome Water Cream</em>
+                            <small>40,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li> 
+                    <li>
+                        <img src="images/cera_creammask_1.png" alt="Ceramidin™ Cream-Infused Mask">
+                        <div>
+                            <em>Ceramidin™ Cream-Infused Mask</em>
+                            <small>42,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li>
+                    <li>
+                        <img src="images/cica_serum_1.png" alt="Cicapair™ Serum">
+                        <div>
+                            <em>Cicapair™ Serum</em>
+                            <small>47,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span>
+                    <label for="totalPrice">SUBTOTAL</label>
+                    <input type="text" id="totalPrice" readonly value="97,000">won
+                </span>
+                <input type="button" value="Continue To Checkout" class="checkoutBtn">
+            </div>
+        </div>
+    </aside>
+
+    <header id="home">
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="shopBtn">
+                            <input type="button" value="Shop >" data-panel="gnbPanel">
+                        </div>
+                    </li>
+                    <li><a href="official.html">Official mall exclusive benefits</a></li>
+                    <li><a href="brand.html">Brand</a></li>
+                </ul>
+            </nav>
+            <h1>
+                <a href="index.html">
+                    <img src="images/drjart_logo.png" alt="welcome to Dr.Jart">
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <input type="button" value="Cart" data-panel="cartPanel">
+                </li>
+                <li><a href="login.html">LOG IN</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="listContainer all">
+        <h2>All Products</h2>
+        <div>
+            <aside>
+                <h3>All Products</h3>
+                <ul>
+                    <li><a href="allproducts.html" class="active">All Products</a></li>
+                </ul>
+            </aside>
+    
+            <!-- product list -->
+            <div>
+                <h3>All products</h3>
+                <ul>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Gentle cleansing foam that gently removes skin impurities with Dr.</p>
+                                <a href="ceramidin_skin_barrier_moisturizing_cream.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cera_moistcream_1.png" alt="Ceramidin™ Skin Barrier Moisturizing Cream">
+                            <mark class="bestNew">BEST &amp; NEW</mark>
+                        </div>
+                        <dl>
+                            <dt>Ceramidin™ Skin Barrier Moisturizing Cream</dt>
+                            <dd>48,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(1)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Jart+'s proprietary mechanism*, a highly concentrated cream that cares for sensitive and weakened skin</p>
+                                <a href="cicapair_cream.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_cream_1.png" alt="Cicapair™ Cream">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ Cream</dt>
+                            <dd>49,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(8,252)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Syrup-type serum that cares for sensitive and weakened skin with Dr. Jart+'s proprietary mechanism</p>
+                                <a href="cicapair_serum.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_serum_1.png" alt="Cicapair™ Serum">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ Serum</dt>
+                            <dd>47,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(3,991)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A highly concentrated skin barrier strengthening mask with Airy-tex™ sheet tightly adhered to sensitive and dry skin without worrying about irritation and delivering the deep moisturizing feeling of ceramide NP more deeply.</p>
+                                <a href="ceramidin_cream-Infused_mask.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cera_creammask_1.png" alt="Ceramidin™ Cream-Infused Mask">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Ceramidin™ Cream-Infused Mask</dt>
+                            <dd>42,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(7)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Tangle Moisturizing Cream that wakes up the skin vividly by meeting the "moisture biome" low-molecular collagen to improve the skin's moisture constitution</p>
+                                <a href="vital_hydra_solutions_biome_water_cream.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/vita_watercream_1.png" alt="Vital Hydra Solutions™ Biome Water Cream">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Vital Hydra Solutions™ Biome Water Cream</dt>
+                            <dd>40,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(275)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>#Moisturizing soothing toner Dr. Jart+’s unique mechanism* to soothe sensitive and weakened skin.</p>
+                                <a href="cicapair_toner.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_toner_1.png" alt="Cicapair™ Toner">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ Toner</dt>
+                            <dd>29,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(1,287)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Highly concentrated skin moisturizing barrier strengthening cream with ectoin and 5-layer ceramide that provides deep moisturizing and fast absorption to manage sensitive and dry skin in a healthy and powerful way.</p>
+                                <a href="ceramidin_ectoin_infused_cream.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cera_ectoincream_1.png" alt="Ceramidin™ Ectoin Infused Cream">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Ceramidin™ Ectoin Infused Cream</dt>
+                            <dd>69,000won</dd>
+                            <dd>
+                                <span class="starRating4h">4.5star</span>
+                                <span>(216)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <!-- color -->
+                    <li>
+                        <div>
+                            <div>
+                                <p>Care cover that protects the barrier with 3 types of B vitamins</p>
+                                <a href="the_make_up_barrier_beauty_balm.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/make_barrier_1_light.png" alt="The Make Up™ Barrier Beauty Balm Light">
+                            <mark class="new">NEW</mark>
+                        </div>
+                        <dl>
+                            <dt>The Make Up™ Barrier Beauty Balm</dt>
+                            <dd>35,000won</dd>
+                            <dd></dd>
+                        </dl>
+                        <div class="colorChoose barrier">
+                            <input type="button" value="Light" class="light">
+                            <input type="button" value="Medium" class="medium">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Moisturizing kit that intensively improves dry skin by helping hyaluronic acid ampoule absorb with a cooling moisture-locking rubber mask</p>
+                                <a href="cryo_rubber_with_moisturizing_hyaluronic_acid.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cryo_moist_1.png" alt="Cryo Rubber™ with Moisturizing Hyaluronic Acid">
+                        </div>
+                        <dl>
+                            <dt>Cryo Rubber™ with Moisturizing Hyaluronic Acid</dt>
+                            <dd>15,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(28)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Soothes irritated skin #emergency soothing cream</p>
+                                <a href="cicapair_so_soothing_treatment.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_soothing_1.png" alt="Cicapair™ So Soothing Treatment">
+                            <mark class="new">NEW</mark>
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ So Soothing Treatment</dt>
+                            <dd>38,000won</dd>
+                            <dd></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Moisture essence that contains vital aids including probiotics to help strengthen the moisture barrier and make skin healthy</p>
+                                <a href="vital_hydra_solution_biome_treatment_essence.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/vita_essence_1.png" alt="Vital Hydra Solution™ Biome Treatment Essence">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Vital Hydra Solution™ Biome Treatment Essence</dt>
+                            <dd>40,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(1,207)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Moist and glowing skin as if soaked in water 3.3.3. moisture pad</p>
+                                <a href="vital_hydra_solution_hydro_glow_pads.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/vita_pads_1.png" alt="Vital Hydra Solution™ Hydro Glow Pads">
+                            <mark class="bestNew">NEW &amp; BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Vital Hydra Solution™ Hydro Glow Pads</dt>
+                            <dd>32,000won</dd>
+                            <dd></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A daily toner pad with 7% PHA of 100% cotton pads that gently melts dead skin cells that accumulate daily to smoothen skin texture.</p>
+                                <a href="pore_remedy_paha_renewing_dual_pads.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/pore_pads_1.png" alt="Pore Remedy™ PAHA Renewing Dual Pads">
+                            <mark class="new">NEW</mark>
+                        </div>
+                        <dl>
+                            <dt>Pore Remedy™ PAHA Renewing Dual Pads</dt>
+                            <dd>35,000won</dd>
+                            <dd></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A sheet mask with Aquaxyl and Super Vital Complex that moisturizes and revitalizes the skin.</p>
+                                <a href="the_mask_waterjet_vital_hydra_solution.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/mask_vital_1.png" alt="The Mask™ Waterjet Vital Hydra Solution">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>The Mask™ Waterjet Vital Hydra Solution</dt>
+                            <dd>24,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(96)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A firming kit that intensively improves disorganized skin by helping the absorption of collagen ampoule with a rubber mask that promotes firmness with a cooling effect.</p>
+                                <a href="cryo_rubber_with_firming_collagen.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cryo_collagen_1.png" alt="Cryo Rubber™ with Firming Collagen">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Cryo Rubber™ with Firming Collagen</dt>
+                            <dd>15,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(19)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A brightening kit that intensively improves dull skin by helping the absorption of vitamin C ampoule with a rubber mask that promotes tone-up with a cooling effect.</p>
+                                <a href="cryo_rubber_with_brightening_vitamin_c.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cryo_brightening_1.png" alt="Cryo Rubber™ with Brightening Vitamin C">
+                        </div>
+                        <dl>
+                            <dt>Cryo Rubber™ with Brightening Vitamin C</dt>
+                            <dd>15,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(16)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A derma mud mask that contains green mud and absorbs sebum and dead skin cells without drying, leaving the skin smooth.</p>
+                                <a href="pore_remedy_purifying_mud_mask.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/pore_mudmask_1.png" alt="Pore Remedy™ Purifying Mud Mask">
+                        </div>
+                        <dl>
+                            <dt>Pore Remedy™ Purifying Mud Mask</dt>
+                            <dd>28,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(568)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Daily tone-up sun care that brightens dull skin with a natural pink tone-up to express lively skin</p>
+                                <a href="every_sun_day_tone_up_sun_fluid.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/sun_toneup_1.png" alt="Every Sun Day™ Tone Up Sun Fluid">
+                        </div>
+                        <dl>
+                            <dt>Every Sun Day™ Tone Up Sun Fluid</dt>
+                            <dd>23,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(67)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Comfortable and reliable deep cleansing with bio-hydrogen water. Cleansing gel-to-foam with a moist texture that changes from gel to foam to balance the pH of the skin for healthy care</p>
+                                <a href="derma_clear_micro_weak_acid_foam.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/derm_acidfoam_1.png" alt="Derma Clear™ Micro Weak Acid Foam">
+                        </div>
+                        <dl>
+                            <dt>Derma Clear™ Micro Weak Acid Foam</dt>
+                            <dd>20,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(71)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Highly moisturizing oil balm that contains proprietary ceramide complex and gently melts away dead skin cells</p>
+                                <a href="ceramidin_oil_balm.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cera_oilbalm_1.png" alt="Ceramidin™ Oil Balm">
+                            <mark class="gift">GIFT</mark>
+                        </div>
+                        <dl>
+                            <dt>Ceramidin™ Oil Balm</dt>
+                            <dd>29,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(319)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Sheet mask with glutathione and brightening solution complex to brighten and brighten the skin</p>
+                                <a href="the_mask_microjet_brightening_solution.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/mask_brightening_1.png" alt="The Mask™ Microjet Brightening Solution">
+                        </div>
+                        <dl>
+                            <dt>The Mask™ Microjet Brightening Solution</dt>
+                            <dd>24,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(57)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Powerful waterproof sun care that lasts for a long time even during outdoor activities and swimming by covering a dense and strong barrier on the skin.</p>
+                                <a href="every_sun_day_waterproof_sun_milk.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/sun_waterproof_1.png" alt="Every Sun Day™ Waterproof Sun Milk">
+                        </div>
+                        <dl>
+                            <dt>Every Sun Day™ Waterproof Sun Milk</dt>
+                            <dd>23,000won</dd>
+                            <dd></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A mask that makes the skin firm and moist with ceramide NP and panthenol</p>
+                                <a href="ceramidin_skin_barrier_moisturizing_mask.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cera_moistmask_1.png" alt="Ceramidin™ Skin Barrier Moisturizing Mask">
+                            <mark class="new">NEW</mark>
+                        </div>
+                        <dl>
+                            <dt>Ceramidin™ Skin Barrier Moisturizing Mask</dt>
+                            <dd>28,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(1)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Moisturizing mist that contains ceramidin complex and natural moisturizing ingredients (NMF) to more intensively care for rough and dry skin from harsh winds and hot air</p>
+                                <a href="ceramidin_cream_mist.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cera_creammist_1.png" alt="Ceramidin™ Cream Mist">
+                        </div>
+                        <dl>
+                            <dt>Ceramidin™ Cream Mist</dt>
+                            <dd>17,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(438)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Comfortable and reliable deep cleansing with bio-hydrogen water. A gentle cleansing foam that gently removes skin impurities with dense and rich bubbles.</p>
+                                <a href="derma_clear_micro_foam.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/derm_foam_1.png" alt="Derma Clear™ Micro Foam">
+                        </div>
+                        <dl>
+                            <dt>Derma Clear™ Micro Foam</dt>
+                            <dd>20,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(264)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>24-hour long-lasting moisture sun care that wraps dry and rough skin with a moisture barrier to keep it moist and healthy</p>
+                                <a href="every_sun_day_moisturizing_sun.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/sun_moist_1.png" alt="Every Sun Day™ Moisturizing Sun">
+                        </div>
+                        <dl>
+                            <dt>Every Sun Day™ Moisturizing Sun</dt>
+                            <dd>21,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(78)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <!-- ml -->
+                    <li>
+                        <div>
+                            <div>
+                                <p>Mild hypoallergenic moisturizing care. A highly moisturizing hand cream that makes dry and rough hands moist and soft.</p>
+                                <a href="ceramidin_hand_cream.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cera_handcream_1_100ml.png" alt="Ceramidin™ Hand Cream 100ml">
+                        </div>
+                        <dl>
+                            <dt>Ceramidin™ Hand Cream</dt>
+                            <dd class="priceValue">20,000won</dd>
+                            <!-- <dd>14,000won</dd> -->
+                            <dd></dd>
+                        </dl>
+                        <div class="mlChoose">
+                            <input type="button" value="100ml" data-price="20,000won" class="mlSelectBtn">
+                            <input type="button" value="50ml" data-price="14,000won" class="mlBtn">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>#Solid moisturizing serum toner</p>
+                                <a href="ceramidin_skin_barrier_serum_toner.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cera_serumtoner_1.png" alt="Ceramidin™ Skin Barrier Serum Toner">
+                            <mark class="new">NEW</mark>
+                        </div>
+                        <dl>
+                            <dt>Ceramidin™ Skin Barrier Serum Toner</dt>
+                            <dd>39,000won</dd>
+                            <dd></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Pore smoothing primer with micro airy capsules that smoothes pores and irregularities</p>
+                                <a href="pore_remedy_smoothing_primer.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/pore_primer_1.png" alt="Pore Remedy™ Smoothing Primer">
+                        </div>
+                        <dl>
+                            <dt>Pore Remedy™ Smoothing Primer</dt>
+                            <dd>39,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(570)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Gentle cleansing foam that gently removes skin impurities with Dr.</p>
+                                <a href="cicapair_enzyme_cleansing_foam.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_cleansingfoam_1.png" alt="Cicapair™ Enzyme Cleansing Foam">
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ Enzyme Cleansing Foam</dt>
+                            <dd>26,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(349)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A sheet mask with glutathione and clearing solution complex that evens out skin tone and soothes skin troubles.</p>
+                                <a href="the_mask_microjet_clearing_solution.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/mask_clearing_1.png" alt="The Mask™ Microjet Clearing Solution">
+                        </div>
+                        <dl>
+                            <dt>The Mask™ Microjet Clearing Solution</dt>
+                            <dd>24,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(66)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <!-- color -->
+                    <li>
+                        <div>
+                            <div>
+                                <p>Hypoallergenic blemish cover BB that brightly covers skin imperfections</p>
+                                <a href="the_make_up_rejuvenating_beauty_balm.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/make_rejuvenating_1.png" alt="The Make Up™ Rejuvenating Beauty Balm">
+                        </div>
+                        <dl>
+                            <dt>The Make Up™ Rejuvenating Beauty Balm</dt>
+                            <dd>31,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(16,886)</span>
+                            </dd>
+                        </dl>
+                        <div class="colorChoose reju">
+                            <input type="button" value="Light" class="light">
+                            <input type="button" value="Medium" class="medium">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Moisturizing and elastic eye cream that firm and brightens dull and dull eye areas with moisture biome care</p>
+                                <a href="vital_hydra_solution_biome_eye_cream.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/vita_eyecream_1.png" alt="Vital Hydra Solution™ Biome Eye Cream">
+                            <mark class="gift">GIFT</mark>
+                        </div>
+                        <dl>
+                            <dt>Vital Hydra Solution™ Biome Eye Cream</dt>
+                            <dd>40,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(36)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>#Cica Sleeping Pack A sleeping mask that revitalizes tired skin while sleeping</p>
+                                <a href="cicapair_sleepy_ampoule_in_mask_pink_ribbon_edition.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_sleepymaskedition_1.png" alt="Cicapair™ Sleepy Ampoule in Mask Pink Ribbon Edition">
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ Sleepy Ampoule in Mask Pink Ribbon Edition</dt>
+                            <dd>24,000won</dd>
+                            <dd></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A vitamin base cream that creates a bright and clean skin base with 7 types of vitamin complex and brightening ingredients</p>
+                                <a href="v7_toning_light.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/v7_toning_1.png" alt="V7™ Toning Light">
+                            <mark class="gift">GIFT</mark>
+                        </div>
+                        <dl>
+                            <dt>V7™ Toning Light</dt>
+                            <dd>52,000won</dd>
+                            <dd></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>7 vitamin solutions that brighten the skin! Vitamin cleansing foam that brightens and clears the skin with dense and mild foam</p>
+                                <a href="v7_cleansing_foam.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/v7_foam_1.png" alt="V7™ Cleansing Foam">
+                        </div>
+                        <dl>
+                            <dt>V7™ Cleansing Foam</dt>
+                            <dd>23,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(323)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A green cover protective film that protects the skin from harmful external environments and UV rays</p>
+                                <a href="cicapair_tiger_grass_color_correcting_treatment.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_correcting_1.png" alt="Cicapair™ Tiger Grass Color Correcting Treatment">
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ Tiger Grass Color Correcting Treatment</dt>
+                            <dd>48,000won</dd>
+                            <dd></dd>
+                        </dl>
+                    </li>
+                    <!-- ml -->
+                    <li>
+                        <div>
+                            <div>
+                                <p>A spot-targeting non-comedogenic moisturizer with Tea Treatment™ that helps pH balance to care for troubled skin and leaves a fresh finish without stickiness</p>
+                                <a href="control_a_tea_treatment_moisturizer.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cont_moist_1_100ml.png" alt="Control A™ Tea Treatment Moisturizer 100ml">
+                            <mark class="gift">GIFT</mark>
+                        </div>
+                        <dl>
+                            <dt>Control A™ Tea Treatment Moisturizer</dt>
+                            <dd class="priceValue">47,000won</dd>
+                            <!-- <dd>31,000won</dd> -->
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(224)</span> 
+                            </dd>
+                        </dl>
+                        <div class="mlChoose">
+                            <input type="button" value="100ml" data-price="47,000won" class="mlSelectBtn">
+                            <input type="button" value="50ml" data-price="31,000won" class="mlBtn">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>#Cica Sleeping Pack A sleeping mask that revitalizes tired skin while sleeping</p>
+                                <a href="cicapair_sleepy_ampoule_in_mask.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_sleepymask_1.png" alt="Cicapair™ Sleepy Ampoule in Mask">
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ Sleepy Ampoule in Mask</dt>
+                            <dd>43,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(570)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Centella asiatica extract and resinseal™, a plant essence-derived ingredient, help soothe the skin, and skin probiotics help to make the skin barrier healthy. Serum sheet mask</p>
+                                <a href="cicapair_calming_serum_mask.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_serummask_1.png" alt="Cicapair™ Calming Serum Mask">
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ Calming Serum Mask</dt>
+                            <dd>26,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(199)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A gel mask with bio-peptide and elastic complex that makes skin that has lost its health firm and smooth</p>
+                                <a href="the_mask_intrajet_wrinkleless_solution.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/mask_wrinkleless_1.png" alt="The Mask™ Intrajet Wrinkleless Solution">
+                        </div>
+                        <dl>
+                            <dt>The Mask™ Intrajet Wrinkleless Solution</dt>
+                            <dd>24,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(16)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A stick-type sunscreen that can be applied easily without smearing on the hands in addition to covering the smooth skin irregularities</p>
+                                <a href="every_sun_day_sun_stick.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/sun_stick_1.png" alt="Every Sun Day™ Sun Stick">
+                        </div>
+                        <dl>
+                            <dt>Every Sun Day™ Sun Stick</dt>
+                            <dd>30,000won</dd>
+                            <dd></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>7 vitamin solutions that brighten the skin! Vitamin whitening serum that intensively cares for dull tones, blemishes, and freckles</p>
+                                <a href="v7_serum.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/v7_serum_1.png" alt="V7™ Serum">
+                        </div>
+                        <dl>
+                            <dt>V7™ Serum</dt>
+                            <dd>49,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(261)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <!-- ml -->
+                    <li>
+                        <div>
+                            <div>
+                                <p>A skin-purifying toner with Tea Treatment™ to help balance pH and take care of troubled skin, while aloe vera leaf extract provides fresh moisture</p>
+                                <a href="control_a_tea_treatment_toner.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cont_toner_1_200ml.png" alt="Control A™ Tea Treatment Toner 200ml">
+                        </div>
+                        <dl>
+                            <dt>Control A™ Tea Treatment Toner</dt>
+                            <dd class="priceValue">30,000won</dd>
+                            <!-- <dd>21,000won</dd> -->
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(120)</span> 
+                            </dd>
+                        </dl>
+                        <div class="mlChoose">
+                            <input type="button" value="200ml" data-price="30,000won" class="mlSelectBtn">
+                            <input type="button" value="120ml" data-price="21,000won" class="mlBtn">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A highly concentrated body cream with a creamy texture that replenishes deep moisture for a long time on a dry body.</p>
+                                <a href="ceramidin_body_butter.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cera_bodybutter_1.png" alt="Ceramidin™ Body Butter">
+                            <mark class="gift">GIFT</mark>
+                        </div>
+                        <dl>
+                            <dt>Ceramidin™ Body Butter</dt>
+                            <dd>25,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(47)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A simple, tube-type highly moisturizing lip treatment that gently cares for dry lips.</p>
+                                <a href="ceramidin_lip_fair.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cera_lip_1.png" alt="Ceramidin™ Lip Fair">
+                        </div>
+                        <dl>
+                            <dt>Ceramidin™ Lip Fair</dt>
+                            <dd>11,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(152)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>The perfect all-in-one essence for men</p>
+                                <a href="for_men_skin_essence.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/men_skin_1.png" alt="For Men™ Skin Essence">
+                        </div>
+                        <dl>
+                            <dt>For Men™ Skin Essence</dt>
+                            <dd>22,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(341)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Mint capsule foaming gel cleanser with hypoallergenic amino acids that purifies deep into pores</p>
+                                <a href="pore_remedy_renewing_foam_cleanser.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/pore_cleanser_1.png" alt="Pore Remedy™ Renewing Foam Cleanser">
+                        </div>
+                        <dl>
+                            <dt>Pore Remedy™ Renewing Foam Cleanser</dt>
+                            <dd>28,000won</dd>
+                            <dd></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Comfortable and thorough deep cleansing with bio-hydrogen waterCleansing water that gently removes makeup with a watery texture rich in moisture</p>
+                                <a href="derma_clear_micro_water.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/derm_water_1.png" alt="Derma Clear™ Micro Water">
+                        </div>
+                        <dl>
+                            <dt>Derma Clear™ Micro Water</dt>
+                            <dd>29,500won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(602)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Sheet mask that moisturizes and soothes sensitive skin with Aquaxyl and Quick Soothing Complex</p>
+                                <a href="the_mask_water_jet_soothing_hydra_solution.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/mask_soothing_1.png" alt="The Mask™ Water Jet Soothing Hydra Solution">
+                        </div>
+                        <dl>
+                            <dt>The Mask™ Water Jet Soothing Hydra Solution</dt>
+                            <dd>24,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(58)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A premium BB that contains premium skin care ingredients to restore the skin's natural strength and help create a bright and lively skin.</p>
+                                <a href="the_make_up_premium_beauty_balm.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/make_premium_1.png" alt="The Make Up™ Premium Beauty Balm">
+                        </div>
+                        <dl>
+                            <dt>The Make Up™ Premium Beauty Balm</dt>
+                            <dd>51,000won</dd>
+                            <dd>
+                                <span class="starRating4h">4.5star</span>
+                                <span>(9)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A hypoallergenic cleansing foam that contains tea treatment ™ to help balance pH and care for troubled skin, and is gentle on the skin with coconut-derived surfactant.</p>
+                                <a href="control_a_tea_treatment_cleansing_foam.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cont_cleansingfoam_1.png" alt="Control A™ Tea Treatment Cleansing Foam">
+                        </div>
+                        <dl>
+                            <dt>Control A™ Tea Treatment Cleansing Foam</dt>
+                            <dd>20,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(1)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Soothing kit that provides intensive care for sensitive skin by helping the absorption of allantoin ampoule with a rubber mask that promotes calming with a cooling effect</p>
+                                <a href="cryo_rubber_with_soothing_allantoin.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cryo_soothing_1.png" alt="Cryo Rubber™ with Soothing Allantoin">
+                            <mark class="new">NEW</mark>
+                        </div>
+                        <dl>
+                            <dt>Cryo Rubber™ with Soothing Allantoin</dt>
+                            <dd>15,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(45)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A pore tightening serum that refreshes pore concerns from pore volume-area-number</p>
+                                <a href="pore_remedy_paha_exfoliating_serum.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/pore_serum_1.png" alt="Pore Remedy™ PAHA Exfoliating Serum">
+                        </div>
+                        <dl>
+                            <dt>Pore Remedy™ PAHA Exfoliating Serum</dt>
+                            <dd>46,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(98)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A brightening mask that brightens sensitive and dull skin with pink vitality</p>
+                                <a href="v7_brightening_mask.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/v7_mask_1.png" alt="V7™ Brightening Mask">
+                        </div>
+                        <dl>
+                            <dt>V7™ Brightening Mask</dt>
+                            <dd>28,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(23)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A spot treatment solution that quickly soothes troubled areas with Tea Treatment™, Calamine, and Sulfur</p>
+                                <a href="control_a_tea_treatment_soothing_spot.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cont_spot_1.png" alt="Control A™ Tea Treatment Soothing Spot">
+                        </div>
+                        <dl>
+                            <dt>Control A™ Tea Treatment Soothing Spot</dt>
+                            <dd>22,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(81)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Moisture soothing mist with Centella asiatica complex that helps soothe sensitive skin and finishes with moisture</p>
+                                <a href="cicapair_facial_calming_mist.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_mist_1.png" alt="Cicapair™ Facial Calming Mist">
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ Facial Calming Mist</dt>
+                            <dd>20,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(2,100)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A gel mask with bio-peptide and power firming complex that makes skin that has lost its elasticity firm.</p>
+                                <a href="the_mask_intrajet_firming_solution.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/mask_firming_1.png" alt="The Mask™ Intrajet Firming Solution">
+                        </div>
+                        <dl>
+                            <dt>The Mask™ Intrajet Firming Solution</dt>
+                            <dd>24,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(23)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Soft, inorganic sun care that comfortably soothes tired and sensitive skin with a non-sticky hypoallergenic formula</p>
+                                <a href="every_sun_day_mild_sun.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/sun_mild_1.png" alt="Every Sun Day™ Mild Sun">
+                        </div>
+                        <dl>
+                            <dt>Every Sun Day™ Mild Sun</dt>
+                            <dd>21,000won</dd>
+                            <dd>
+                                <span class="starRating4h">4.5star</span>
+                                <span>(77)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>
+                <img src="images/drjart_logo.png" alt="Dr.Jart">
+            </h2>
+            <ul>
+                <li><a href="https://ko-kr.facebook.com/DrJartPage" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/drjart_kr/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/c/DrJart" target="_blank">YouTube</a></li>
+                <li><a href="https://www.tiktok.com/@drjart" target="_blank">Tiktok</a></li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <nav>
+                    <h3>Dr. Jart's official account</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/drjart_kr/" target="_blank">Instagram</a></li>
+                        <li><a href="https://pf.kakao.com/_UTxfuE" target="_blank">Kakao</a></li>
+                        <li><a href="https://www.youtube.com/c/DrJart" target="_blank">YouTube</a></li>
+                        <li><a href="https://www.tiktok.com/@drjart" target="_blank">Tiktok</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="official.html">Official mall exclusive benefits</a></li>
+                        <li><a href="customerinquiry.html">Store information</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Brand</h3>
+                    <ul>
+                        <li><a href="privacypolicy.html">Privacy policy</a></li>
+                        <li><a href="termsofuse.html">Terms of Use</a></li>
+                        <li><a href="https://haveandbe.recruiter.co.kr/appsite/company/index">Employment</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Need help?</h3>
+                    <ul>
+                        <li><a href="customerinquiry.html">Customer inquiry</a></li>
+                        <li><a href="mypage.html">My Info</a></li>
+                        <li><a href="deliveryinfo.html">Delivery information</a></li>
+                        <li><a href="returnandexchange.html">Return/Exchange Information</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <img src="images/mark1.png" alt="environmental management certification">
+                <img src="images/mark2.png" alt="Recognized as an affiliated design laboratory">
+            </div>
+        </div>
+        <div>
+            <address>769-8 M-Space Building, Yeoksam-dong, Gangnam-gu, Seoul Address (13 M-SPACE Building Have&amp;B, Nonhyeon-ro 72-gil, Gangnam-gu, Seoul) Mail-order business registration number: 2008 Gangnam-2284, Seoul</address>    
+            <span> Confirmation of business information Head of Division  Customer Satisfaction Center: <a href="+8215445453">1544-5453</a> (Operation Hours: 09:00~18:00, Lunch Time: 12:50~14:00) / FAX: 02-3462-9051 / E-mail address: <a href="mailto:webmaster@drjart.com">webmaster@drjart.com</a> Business name: HavenB Co., Ltd.  Business registration number: 214-87-63681. <br>
+                Person in charge of personal information management: Kim In-hye / CEO  : Christopher Kindersley Wood <br>
+                Copyright© Have &amp; Be co., Ltd. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>

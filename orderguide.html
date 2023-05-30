@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Guide | Dr.jart</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <aside id="gnbPanel">
+        <input type="button" value="closePanel" class="btnClose">
+        <ul>
+            <li><a href="allproducts.html">All Products</a></li>
+            <li><a href="type_new.html">By Type</a></li>
+            <li><a href="line_ceramidin.html">Line By Line</a></li>
+            <li><a href="solution_recovery.html">Sensitive Skin Solution</a></li>
+        </ul>
+    </aside>
+
+    <aside id="cartPanel">
+        <div>
+            <input type="button" value="closePanel" class="cartClose">
+            <h2>My cart</h2>
+        </div>
+        <div class="emptyCart">
+            <h3>Your cart</h3>
+            <p>Your cart is empty, give it some love!</p>
+            <ul>
+                <li>
+                    <img src="images/pore_primer_1.png" alt="Pore Remedy™ Smoothing Primer">
+                    <div>
+                        <em>Pore Remedy™ Smoothing Primer</em>
+                        <small>39,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>                    
+                </li>
+                <li>
+                    <img src="images/cica_cleansingfoam_1.png" alt="Cicapair™ Enzyme Cleansing Foam">
+                    <div>
+                        <em>Cicapair™ Enzyme Cleansing Foam</em>
+                        <small>26,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cera_serumtoner_1.png" alt="Ceramidin™ Skin Barrier Serum Toner">
+                    <div>
+                        <em>Ceramidin™ Skin Barrier Serum Toner</em>
+                        <small>39,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cera_handcream_1_50ml.png" alt="Ceramidin™ Hand Cream">
+                    <div>
+                        <em>Ceramidin™ Hand Cream</em>
+                        <small>14,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/sun_moist_1.png" alt="Every Sun Day™  Moisturizing Sun">
+                    <div>
+                        <em>Every Sun Day™  Moisturizing Sun</em>
+                        <small>21,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="haveCart">
+            <ul>
+                <li>
+                    <img src="images/cera_moistcream_1.png" alt="Ceramidin™ Skin Barrier Moisturizing Cream">
+                    <div>
+                        <input type="button" value="delete">
+                        <em>Ceramidin™ Skin Barrier Moisturizing Cream</em>
+                        <small>50 mL</small>
+                        <div>
+                            <span class="quantComponent">
+                                <input type="button" value="-" class="minusBtn">
+                                <input type="text" name="amount" value="1">
+                                <input type="button" value="+" class="plusBtn">
+                            </span>
+                            <span>
+                                48,000
+                                <small>won</small>
+                            </span>
+                        </div>
+                    </div>  
+                </li>
+                <li>
+                    <img src="images/cica_cream_1.png" alt="Cicapair™ Cream">
+                    <div>
+                        <input type="button" value="delete">
+                        <em>Cicapair™ Cream</em>
+                        <small>50 mL</small>
+                        <div>
+                            <span class="quantComponent">
+                                <input type="button" value="-" class="minusBtn">
+                                <input type="text" name="amount" value="1">
+                                <input type="button" value="+" class="plusBtn">
+                            </span>
+                            <span>
+                                49,000
+                                <small>won</small>
+                            </span>
+                        </div>
+                    </div>  
+                </li>
+            </ul>
+            <div>
+                <h3>Anything else?</h3>
+                <ul class="recSlider">
+                    <li>
+                        <img src="images/vita_watercream_1.png" alt="Vital Hydra Solutions™ Biome Water Cream">
+                        <div>
+                            <em>Vital Hydra Solutions™ Biome Water Cream</em>
+                            <small>40,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li> 
+                    <li>
+                        <img src="images/cera_creammask_1.png" alt="Ceramidin™ Cream-Infused Mask">
+                        <div>
+                            <em>Ceramidin™ Cream-Infused Mask</em>
+                            <small>42,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li>
+                    <li>
+                        <img src="images/cica_serum_1.png" alt="Cicapair™ Serum">
+                        <div>
+                            <em>Cicapair™ Serum</em>
+                            <small>47,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span>
+                    <label for="totalPrice">SUBTOTAL</label>
+                    <input type="text" id="totalPrice" readonly value="97,000">won
+                </span>
+                <input type="button" value="Continue To Checkout" class="checkoutBtn">
+            </div>
+        </div>
+    </aside>
+
+    <header id="home">
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="shopBtn">
+                            <input type="button" value="Shop >" data-panel="gnbPanel">
+                        </div>
+                    </li>
+                    <li><a href="official.html">Official mall exclusive benefits</a></li>
+                    <li><a href="brand.html">Brand</a></li>
+                </ul>
+            </nav>
+            <h1>
+                <a href="index.html">
+                    <img src="images/drjart_logo.png" alt="welcome to Dr.Jart">
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <input type="button" value="Cart" data-panel="cartPanel">
+                </li>
+                <li><a href="login.html">LOG IN</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <article class="orderguideContainer">
+        <h2>Order Guide</h2>
+
+        <aside>
+            <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="orderguide.html" class="active">Order Guide</a></li>
+                <li><a href="deliveryinfo.html">Delivery Information</a></li>
+                <li><a href="returnandexchange.html">Refunds and Exchanges</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="termsofuse.html">Terms of Use</a></li>
+                <li><a href="customerinquiry.html">Customer Inquiry</a></li>
+            </ul>
+        </aside>
+
+        <div>
+            <div>
+                <h3>Check order details Click</h3>
+                <p><a href="shipping_order.html">Here</a> to check the details of your order purchased on the Dr. Jart+ official mall.</p>
+                <p class="textIndent">- After logging in, you can use My Page - [Order History].<br>
+                    - If you click "View Details" next to the order number, you can check the order details and order status by 
+                    clicking the order list in the order history after logging in.<br>
+                    - When placing an order, a confirmation email is sent, so please refer to the order confirmation email.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quantity available for purchase</h3>
+                <p>Dr. Jart+'s official online mall has limits on the number of purchases per day and the number of orders.
+                    (Purchase available: 3 times per day per ID, maximum purchase quantity per day is 14, single item is 8)
+                    If the order cancellation is completed, the number of purchases is restored.</p>
+            </div>
+
+            <div>
+                <h3>Changing order information</h3>
+                <p>If you wish to change your order information, please submit [Cancel Order] to the "Dr. Jart Customer 
+                    Satisfaction Center" and place your order again.<br>
+                    * Among the payment methods, the payment service without a bankbook through a virtual account is not 
+                    in progress.</p>
+            </div>
+
+            <div>
+                <h3>Withdraw order</h3>
+                <p>Only products purchased from the Dr. Jart+ official online mall can be canceled. Please check the order 
+                    status 'Payment complete (order completed)' standard and submit a separate request to the "Dr. Jart 
+                    Customer Satisfaction Center".<br>
+                    (However, if received after the cancellation time, it will be accepted as a return, and a return shipping fee 
+                    (KRW 5,000) may be incurred.)</p>
+                <p>※ Cancellation time based on order status (payment completed)</p>
+                <p class="textIndent">1) Orders made before 10:00 am → (Same day) can be canceled before 10:00 am<br>
+                    2) Orders made after 10:00 am → (Same day) after 10:00 am - 6:00 pm, <br>
+                    (next business day) 9:00 am - 10:00 pm Cancellation possible</p>
+                <p>※ Dr. Jart Customer Satisfaction Center consultation channels and hours</p>
+                <p class="textIndent">- Telephone consultation: <a href="+8215445453">1544-5453</a><br>
+                    - Chat consultation: Click <a href="https://pf.kakao.com/_UTxfuE">here</a> to access.<br>
+                    - Consultation Hours: Weekdays 9:00 - 6:00 (12:50 - 14:00, excluding weekends and holidays)</p>
+            </div>
+        </div>
+
+    </article>
+
+    <footer>
+        <div>
+            <h2>
+                <img src="images/drjart_logo.png" alt="Dr.Jart">
+            </h2>
+            <ul>
+                <li><a href="https://ko-kr.facebook.com/DrJartPage" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/drjart_kr/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/c/DrJart" target="_blank">YouTube</a></li>
+                <li><a href="https://www.tiktok.com/@drjart" target="_blank">Tiktok</a></li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <nav>
+                    <h3>Dr. Jart's official account</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/drjart_kr/" target="_blank">Instagram</a></li>
+                        <li><a href="https://pf.kakao.com/_UTxfuE" target="_blank">Kakao</a></li>
+                        <li><a href="https://www.youtube.com/c/DrJart" target="_blank">YouTube</a></li>
+                        <li><a href="https://www.tiktok.com/@drjart" target="_blank">Tiktok</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="official.html">Official mall exclusive benefits</a></li>
+                        <li><a href="customerinquiry.html">Store information</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Brand</h3>
+                    <ul>
+                        <li><a href="privacypolicy.html">Privacy policy</a></li>
+                        <li><a href="termsofuse.html">Terms of Use</a></li>
+                        <li><a href="https://haveandbe.recruiter.co.kr/appsite/company/index">Employment</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Need help?</h3>
+                    <ul>
+                        <li><a href="customerinquiry.html">Customer inquiry</a></li>
+                        <li><a href="mypage.html">My Info</a></li>
+                        <li><a href="deliveryinfo.html">Delivery information</a></li>
+                        <li><a href="returnandexchange.html">Return/Exchange Information</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <img src="images/mark1.png" alt="environmental management certification">
+                <img src="images/mark2.png" alt="Recognized as an affiliated design laboratory">
+            </div>
+        </div>
+        <div>
+            <address>769-8 M-Space Building, Yeoksam-dong, Gangnam-gu, Seoul Address (13 M-SPACE Building Have&amp;B, Nonhyeon-ro 72-gil, Gangnam-gu, Seoul) Mail-order business registration number: 2008 Gangnam-2284, Seoul</address>    
+            <span> Confirmation of business information Head of Division  Customer Satisfaction Center: <a href="+8215445453">1544-5453</a> (Operation Hours: 09:00~18:00, Lunch Time: 12:50~14:00) / FAX: 02-3462-9051 / E-mail address: <a href="mailto:webmaster@drjart.com">webmaster@drjart.com</a> Business name: HavenB Co., Ltd.  Business registration number: 214-87-63681. <br>
+                Person in charge of personal information management: Kim In-hye / CEO  : Christopher Kindersley Wood <br>
+                Copyright© Have &amp; Be co., Ltd. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>

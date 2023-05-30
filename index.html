@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.jart</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <aside id="gnbPanel">
+        <input type="button" value="closePanel" class="btnClose">
+        <ul>
+            <li><a href="allproducts.html">All Products</a></li>
+            <li><a href="type_new.html">By Type</a></li>
+            <li><a href="line_ceramidin.html">Line By Line</a></li>
+            <li><a href="solution_recovery.html">Sensitive Skin Solution</a></li>
+        </ul>
+    </aside>
+
+    <aside id="cartPanel">
+        <div>
+            <input type="button" value="closePanel" class="cartClose">
+            <h2>My cart</h2>
+        </div>
+        <div class="emptyCart">
+            <h3>Your cart</h3>
+            <p>Your cart is empty, give it some love!</p>
+            <ul>
+                <li>
+                    <img src="images/pore_primer_1.png" alt="Pore Remedy™ Smoothing Primer">
+                    <div>
+                        <em>Pore Remedy™ Smoothing Primer</em>
+                        <small>39,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>                    
+                </li>
+                <li>
+                    <img src="images/cica_cleansingfoam_1.png" alt="Cicapair™ Enzyme Cleansing Foam">
+                    <div>
+                        <em>Cicapair™ Enzyme Cleansing Foam</em>
+                        <small>26,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cera_serumtoner_1.png" alt="Ceramidin™ Skin Barrier Serum Toner">
+                    <div>
+                        <em>Ceramidin™ Skin Barrier Serum Toner</em>
+                        <small>39,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cera_handcream_1_50ml.png" alt="Ceramidin™ Hand Cream">
+                    <div>
+                        <em>Ceramidin™ Hand Cream</em>
+                        <small>14,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/sun_moist_1.png" alt="Every Sun Day™  Moisturizing Sun">
+                    <div>
+                        <em>Every Sun Day™  Moisturizing Sun</em>
+                        <small>21,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="haveCart">
+            <ul>
+                <li>
+                    <img src="images/cera_moistcream_1.png" alt="Ceramidin™ Skin Barrier Moisturizing Cream">
+                    <div>
+                        <input type="button" value="delete">
+                        <em>Ceramidin™ Skin Barrier Moisturizing Cream</em>
+                        <small>50 mL</small>
+                        <div>
+                            <span class="quantComponent">
+                                <input type="button" value="-" class="minusBtn">
+                                <input type="text" name="amount" value="1">
+                                <input type="button" value="+" class="plusBtn">
+                            </span>
+                            <span>
+                                48,000
+                                <small>won</small>
+                            </span>
+                        </div>
+                    </div>  
+                </li>
+                <li>
+                    <img src="images/cica_cream_1.png" alt="Cicapair™ Cream">
+                    <div>
+                        <input type="button" value="delete">
+                        <em>Cicapair™ Cream</em>
+                        <small>50 mL</small>
+                        <div>
+                            <span class="quantComponent">
+                                <input type="button" value="-" class="minusBtn">
+                                <input type="text" name="amount" value="1">
+                                <input type="button" value="+" class="plusBtn">
+                            </span>
+                            <span>
+                                49,000
+                                <small>won</small>
+                            </span>
+                        </div>
+                    </div>  
+                </li>
+            </ul>
+            <div>
+                <h3>Anything else?</h3>
+                <ul class="recSlider">
+                    <li>
+                        <img src="images/vita_watercream_1.png" alt="Vital Hydra Solutions™ Biome Water Cream">
+                        <div>
+                            <em>Vital Hydra Solutions™ Biome Water Cream</em>
+                            <small>40,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li> 
+                    <li>
+                        <img src="images/cera_creammask_1.png" alt="Ceramidin™ Cream-Infused Mask">
+                        <div>
+                            <em>Ceramidin™ Cream-Infused Mask</em>
+                            <small>42,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li>
+                    <li>
+                        <img src="images/cica_serum_1.png" alt="Cicapair™ Serum">
+                        <div>
+                            <em>Cicapair™ Serum</em>
+                            <small>47,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span>
+                    <label for="totalPrice">SUBTOTAL</label>
+                    <input type="text" id="totalPrice" readonly value="97,000">won
+                </span>
+                <input type="button" value="Continue To Checkout" class="checkoutBtn">
+            </div>
+        </div>
+    </aside>
+
+    <header id="home">
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="shopBtn">
+                            <input type="button" value="Shop >" data-panel="gnbPanel">
+                        </div>
+                    </li>
+                    <li><a href="official.html">Official mall exclusive benefits</a></li>
+                    <li><a href="brand.html">Brand</a></li>
+                </ul>
+            </nav>
+            <h1>
+                <a href="index.html">
+                    <img src="images/drjart_logo.png" alt="welcome to Dr.Jart">
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <input type="button" value="Cart" data-panel="cartPanel">
+                </li>
+                <li><a href="login.html">LOG IN</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="mainContainer">
+        <!-- banner Area -->
+        <div>
+            <div>
+                <h2>
+                    Every Sun Day™
+                </h2>
+                <p>Prepare for White Day in advance!
+                    Hypoallergenic sunscreen that can be used safely
+                    Use it with your loved ones!</p>
+                <a href="line_everysunday.html" class="bnwBtn">Shop Now</a>
+            </div>
+        </div>
+        
+        <!-- bestSeller Area --> 
+        <!-- bestSeller hover img 있음 -->
+        <div>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/bestItem_01.png" alt="Ceramidin™ Skin Barrier Moisturizing Cream">
+                        <figcaption>
+                            <span>Ceramidin™ Skin Barrier Moisturizing Cream</span>
+                            <a href="ceramidin_skin_barrier_moisturizing_cream.html">Shop Now</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/bestItem_02.png" alt="Cicapair™ Cream">
+                        <figcaption>
+                            <span>Cicapair™ Cream</span>
+                            <a href="cicapair_cream.html">Shop Now</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/bestItem_03.png" alt="Pore Remedy™ PAHA Exfoliating Serum">
+                        <figcaption>
+                            <span>Pore Remedy™ PAHA Exfoliating Serum</span>
+                            <a href="pore_remedy_paha_exfoliating_serum.html">Shop Now</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/bestItem_04.png" alt="Vital Hydra Solutions™ Biome Water Cream">
+                        <figcaption>
+                            <span>Vital Hydra Solutions™ Biome Water Cream</span>
+                            <a href="vital_hydra_solutions_biome_water_cream.html">Shop Now</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/bestItem_05.png" alt="Ceramidin™ Cream-Infused Mask">
+                        <figcaption>
+                            <span>Ceramidin™ Cream-Infused Mask</span>
+                            <a href="ceramidin_cream_infused_mask.html">Shop Now</a>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <div>
+                <a href="allproduct.html" class="bnwBtn">Shop All Products</a>
+            </div>
+        </div>
+
+        <!-- collection Area -->
+        <div>
+            <img src="images/main_collection_01.png" alt="Daily moisture care">
+            <dl>
+                <dt>Daily moisture care</dt>
+                <dd>Meet daily creams and lotions that are faithful to 
+                moisturizing, hydrating, and soothing functions for 
+                a solid skin barrier design . (Grip Talk gift)</dd>
+            </dl>
+            <a href="type_cream.html" class="bnwBtn">Shop Now</a>
+        </div>
+        <ul>
+            <li>
+                <figure>
+                    <img src="images/main_collection_02.png" alt="Pore Remedy™">
+                    <figcaption>
+                        <b>
+                            <span>Pore? Refresh!</span>
+                            Pore Remedy™</span>
+                        </b>
+                        <a href="line_poreRemedy.html" class="wnbBtn">Shop Now</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/main_collection_03.png" alt="The Mask™">
+                    <figcaption>
+                        <b>
+                            <span>Collection</span>
+                            The Mask™
+                        </b>
+                        <a href="line_theMask.html" class="wnbBtn">Shop Now</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/main_collection_04.png" alt="Derma Clear™">
+                    <figcaption>
+                        <b>
+                            <span>Micro-cleansing</span>
+                            Derma Clear™
+                        </b>
+                        <a href="line_dermaClear.html" class="wnbBtn">Shop Now</a>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+
+        <!-- collectionSlider -->
+        <ul class="collectionSlider">
+            <li>
+                <blockquote>
+                    When you want to fill up your inner moisture?
+                    Build a layer-by-layer moisturizing barrier with Ceramidin™!
+                </blockquote>
+                <strong>Ceramidin™</strong>
+            </li>
+            <li>
+                <blockquote>These days, when your skin is sensitive due to everyday skin stress caused 
+                    by external environments such as masks and fine dust...
+                    Build a soothing barrier with Cicapair™!</blockquote>
+                <strong>Cicapair™</strong>
+            </li>
+            <li>
+                <blockquote>pore? Refresh!
+                    Worried about numerous pores, from sagging pores to blackheads and bumpy skin texture?
+                    Refresh your skin with Dr. Jart+ Pore Remedy ™ and complete your skin with a smooth glow!</blockquote>
+                <strong>Pore Remedy™</strong>
+            </li>
+            <li>
+                <blockquote>Moisture energy that replenishes the skin from the inside 
+                    by improving the skin's moisture constitution!</blockquote>
+                <strong>Vital Hydra Solution™</strong>
+            </li>
+            <li>
+                <blockquote>Protect your skin with a hypoallergenic sunscreen 
+                    that can be used safely every day.</blockquote>
+                <strong>Every Sunday™</strong>
+            </li>
+            <li>
+                <blockquote>Cryo rubber with a cooling effect added to the magical skin improvement 
+                    effect of the rubber mask!
+                    Now, easily make a rubber mask at home.</blockquote>
+                <strong>Cryo Rubber™</strong>
+            </li>
+            <li>
+                <blockquote>Load tea tree! Spot sniping!
+                    From spot soothing to oil and moisture balancing, 
+                    it solves troubles big and small.</blockquote>
+                <strong>Control A Tea Treatment™</strong>
+            </li>
+            <li>
+                <blockquote>A multivitamin that adds radiance to your skin!
+                    The 7 vitamin complex brightens the skin.</blockquote>
+                <strong>V7™</strong>
+            </li>
+            <li>
+                <blockquote>The Mask™ Collection tailored to numerous skin concerns!
+                    Experience the changed skin in 20 minutes.</blockquote>
+                <strong>The Mask™</strong>
+            </li>
+            <li>
+                <blockquote>Bio water considering the moisture structure of the skin
+                    Meet small but powerful active hydrogen
+                    Thoroughly micro-cleansing impurities in pores.</blockquote>
+                <strong>Derma Clear™</strong>
+            </li>
+            <li>
+                <blockquote>The Make-up™ that even sensitive skin can use safely
+                    The natural skin tone and texture correction effect are lightly 
+                    adhered to the skin and maintained.</blockquote>
+                <strong>The Make Up™</strong>
+            </li>
+            <li>
+                <blockquote>The perfect men's right cosmetics
+                    Meet the foremen line.</blockquote>
+                <strong>For Men™</strong>
+            </li>
+        </ul>
+        
+        <!-- cicapair Area -->
+        <div>
+            <h2>Cicapair™</h2>
+            <div>
+                <video autoplay muted loop>
+                    <source src="mp4/main_cica_serum.mp4" type="video/mp4">
+                </video>
+                <ul>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Syrup-type serum that cares for sensitive and weakened skin with Dr. Jart+'s proprietary mechanism</p>
+                                <a href="cicapair_serum.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_serum_1.png" alt="Cicapair™ Serum">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ Serum</dt>
+                            <dd>47,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(3,991)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Jart+'s proprietary mechanism*, a highly concentrated cream that cares for sensitive and weakened skin</p>
+                                <a href="cicapair_cream.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_cream_1.png" alt="Cicapair™ Cream">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ Cream</dt>
+                            <dd>49,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(8,252)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Soothes irritated skin #emergency soothing cream</p>
+                                <a href="cicapair_so_soothing_treatment.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_soothing_1.png" alt="Cicapair™ So Soothing Treatment">
+                            <mark class="new">NEW</mark>
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ So Soothing Treatment</dt>
+                            <dd>38,000won</dd>
+                            <dd></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Gentle cleansing foam that gently removes skin impurities with Dr.</p>
+                                <a href="cicapair_enzyme_cleansing_foam.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_cleansingfoam_1.png" alt="Cicapair™ Enzyme Cleansing Foam">
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ Enzyme Cleansing Foam</dt>
+                            <dd>26,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(349)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ceramidin Area -->
+        <div>
+            <h2>Ceramidin™</h2>
+            <div>
+                <ul>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Gentle cleansing foam that gently removes skin impurities with Dr.</p>
+                                <a href="ceramidin_skin_barrier_moisturizing_cream.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cera_moistcream_1.png" alt="Ceramidin™ Skin Barrier Moisturizing Cream">
+                            <mark class="bestNew">BEST &amp; NEW</mark>
+                        </div>
+                        <dl>
+                            <dt>Ceramidin™ Skin Barrier Moisturizing Cream</dt>
+                            <dd>48,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(1)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A highly concentrated skin barrier strengthening mask with Airy-tex™ sheet tightly adhered to sensitive and dry skin without worrying about irritation and delivering the deep moisturizing feeling of ceramide NP more deeply.</p>
+                                <a href="ceramidin_cream-Infused_mask.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cera_creammask_1.png" alt="Ceramidin™ Cream-Infused Mask">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Ceramidin™ Cream-Infused Mask</dt>
+                            <dd>42,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(7)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Highly concentrated skin moisturizing barrier strengthening cream with ectoin and 5-layer ceramide that provides deep moisturizing and fast absorption to manage sensitive and dry skin in a healthy and powerful way.</p>
+                                <a href="ceramidin_ectoin_infused_cream.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cera_ectoincream_1.png" alt="Ceramidin™ Ectoin Infused Cream">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Ceramidin™ Ectoin Infused Cream</dt>
+                            <dd>69,000won</dd>
+                            <dd>
+                                <span class="starRating4h">4.5star</span>
+                                <span>(216)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Highly moisturizing oil balm that contains proprietary ceramide complex and gently melts away dead skin cells</p>
+                                <a href="ceramidin_oil_balm.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cera_oilbalm_1.png" alt="Ceramidin™ Oil Balm">
+                            <mark class="gift">GIFT</mark>
+                        </div>
+                        <dl>
+                            <dt>Ceramidin™ Oil Balm</dt>
+                            <dd>29,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(319)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+            
+                </ul>
+                <video autoplay muted loop>
+                    <source src="mp4/main_cera_moistcream.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- brand Area -->
+        <div>
+            <h2>We are <strong>skin experts</strong> who study skin.</h2>
+            <!-- <img src="images/main_redStroke.png" alt="underline"> -->
+            <p>Based on the trustworthy expertise of the doctor, we develop safe 
+                products that can be used safely even for sensitive skin, 
+                and at the same time, we are creating Dr. Jart+'s unique design 
+                and culture with the artist's creative sensibility.</p>
+            <a href="brand.html">Learn More</a>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>
+                <img src="images/drjart_logo.png" alt="Dr.Jart">
+            </h2>
+            <ul>
+                <li><a href="https://ko-kr.facebook.com/DrJartPage" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/drjart_kr/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/c/DrJart" target="_blank">YouTube</a></li>
+                <li><a href="https://www.tiktok.com/@drjart" target="_blank">Tiktok</a></li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <nav>
+                    <h3>Dr. Jart's official account</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/drjart_kr/" target="_blank">Instagram</a></li>
+                        <li><a href="https://pf.kakao.com/_UTxfuE" target="_blank">Kakao</a></li>
+                        <li><a href="https://www.youtube.com/c/DrJart" target="_blank">YouTube</a></li>
+                        <li><a href="https://www.tiktok.com/@drjart" target="_blank">Tiktok</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="official.html">Official mall exclusive benefits</a></li>
+                        <li><a href="customerinquiry.html">Store information</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Brand</h3>
+                    <ul>
+                        <li><a href="privacypolicy.html">Privacy policy</a></li>
+                        <li><a href="termsofuse.html">Terms of Use</a></li>
+                        <li><a href="https://haveandbe.recruiter.co.kr/appsite/company/index">Employment</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Need help?</h3>
+                    <ul>
+                        <li><a href="customerinquiry.html">Customer inquiry</a></li>
+                        <li><a href="mypage.html">My Info</a></li>
+                        <li><a href="deliveryinfo.html">Delivery information</a></li>
+                        <li><a href="returnandexchange.html">Return/Exchange Information</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <img src="images/mark1.png" alt="environmental management certification">
+                <img src="images/mark2.png" alt="Recognized as an affiliated design laboratory">
+            </div>
+        </div>
+        <div>
+            <address>769-8 M-Space Building, Yeoksam-dong, Gangnam-gu, Seoul Address (13 M-SPACE Building Have&amp;B, Nonhyeon-ro 72-gil, Gangnam-gu, Seoul) Mail-order business registration number: 2008 Gangnam-2284, Seoul</address>    
+            <span> Confirmation of business information Head of Division  Customer Satisfaction Center: <a href="+8215445453">1544-5453</a> (Operation Hours: 09:00~18:00, Lunch Time: 12:50~14:00) / FAX: 02-3462-9051 / E-mail address: <a href="mailto:webmaster@drjart.com">webmaster@drjart.com</a> Business name: HavenB Co., Ltd.  Business registration number: 214-87-63681. <br>
+                Person in charge of personal information management: Kim In-hye / CEO  : Christopher Kindersley Wood <br>
+                Copyright© Have &amp; Be co., Ltd. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serum / Essence | Dr.jart</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <aside id="gnbPanel">
+        <input type="button" value="closePanel" class="btnClose">
+        <ul>
+            <li><a href="allproducts.html">All Products</a></li>
+            <li><a href="type_new.html">By Type</a></li>
+            <li><a href="line_ceramidin.html">Line By Line</a></li>
+            <li><a href="solution_recovery.html">Sensitive Skin Solution</a></li>
+        </ul>
+    </aside>
+
+    <aside id="cartPanel">
+        <div>
+            <input type="button" value="closePanel" class="cartClose">
+            <h2>My cart</h2>
+        </div>
+        <div class="emptyCart">
+            <h3>Your cart</h3>
+            <p>Your cart is empty, give it some love!</p>
+            <ul>
+                <li>
+                    <img src="images/pore_primer_1.png" alt="Pore Remedy™ Smoothing Primer">
+                    <div>
+                        <em>Pore Remedy™ Smoothing Primer</em>
+                        <small>39,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>                    
+                </li>
+                <li>
+                    <img src="images/cica_cleansingfoam_1.png" alt="Cicapair™ Enzyme Cleansing Foam">
+                    <div>
+                        <em>Cicapair™ Enzyme Cleansing Foam</em>
+                        <small>26,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cera_serumtoner_1.png" alt="Ceramidin™ Skin Barrier Serum Toner">
+                    <div>
+                        <em>Ceramidin™ Skin Barrier Serum Toner</em>
+                        <small>39,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cera_handcream_1_50ml.png" alt="Ceramidin™ Hand Cream">
+                    <div>
+                        <em>Ceramidin™ Hand Cream</em>
+                        <small>14,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/sun_moist_1.png" alt="Every Sun Day™  Moisturizing Sun">
+                    <div>
+                        <em>Every Sun Day™  Moisturizing Sun</em>
+                        <small>21,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="haveCart">
+            <ul>
+                <li>
+                    <img src="images/cera_moistcream_1.png" alt="Ceramidin™ Skin Barrier Moisturizing Cream">
+                    <div>
+                        <input type="button" value="delete">
+                        <em>Ceramidin™ Skin Barrier Moisturizing Cream</em>
+                        <small>50 mL</small>
+                        <div>
+                            <span class="quantComponent">
+                                <input type="button" value="-" class="minusBtn">
+                                <input type="text" name="amount" value="1">
+                                <input type="button" value="+" class="plusBtn">
+                            </span>
+                            <span>
+                                48,000
+                                <small>won</small>
+                            </span>
+                        </div>
+                    </div>  
+                </li>
+                <li>
+                    <img src="images/cica_cream_1.png" alt="Cicapair™ Cream">
+                    <div>
+                        <input type="button" value="delete">
+                        <em>Cicapair™ Cream</em>
+                        <small>50 mL</small>
+                        <div>
+                            <span class="quantComponent">
+                                <input type="button" value="-" class="minusBtn">
+                                <input type="text" name="amount" value="1">
+                                <input type="button" value="+" class="plusBtn">
+                            </span>
+                            <span>
+                                49,000
+                                <small>won</small>
+                            </span>
+                        </div>
+                    </div>  
+                </li>
+            </ul>
+            <div>
+                <h3>Anything else?</h3>
+                <ul class="recSlider">
+                    <li>
+                        <img src="images/vita_watercream_1.png" alt="Vital Hydra Solutions™ Biome Water Cream">
+                        <div>
+                            <em>Vital Hydra Solutions™ Biome Water Cream</em>
+                            <small>40,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li> 
+                    <li>
+                        <img src="images/cera_creammask_1.png" alt="Ceramidin™ Cream-Infused Mask">
+                        <div>
+                            <em>Ceramidin™ Cream-Infused Mask</em>
+                            <small>42,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li>
+                    <li>
+                        <img src="images/cica_serum_1.png" alt="Cicapair™ Serum">
+                        <div>
+                            <em>Cicapair™ Serum</em>
+                            <small>47,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span>
+                    <label for="totalPrice">SUBTOTAL</label>
+                    <input type="text" id="totalPrice" readonly value="97,000">won
+                </span>
+                <input type="button" value="Continue To Checkout" class="checkoutBtn">
+            </div>
+        </div>
+    </aside>
+
+    <header id="home">
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="shopBtn">
+                            <input type="button" value="Shop >" data-panel="gnbPanel">
+                        </div>
+                    </li>
+                    <li><a href="official.html">Official mall exclusive benefits</a></li>
+                    <li><a href="brand.html">Brand</a></li>
+                </ul>
+            </nav>
+            <h1>
+                <a href="index.html">
+                    <img src="images/drjart_logo.png" alt="welcome to Dr.Jart">
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <input type="button" value="Cart" data-panel="cartPanel">
+                </li>
+                <li><a href="login.html">LOG IN</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="listContainer serum">
+        <h2>Serum / Essence</h2>
+        <div>
+            <aside>
+                <h3>By Type</h3>
+                <ul>
+                    <li><a href="type_new.html">New Product</a></li>
+                    <li><a href="type_toner.html">Toner / Mist</a></li>
+                    <li><a href="type_serum.html" class="active">Serum / Essence</a></li>
+                    <li><a href="type_cream.html">Cream / Lotion</a></li>
+                    <li><a href="type_mask.html">Mask Pack</a></li>
+                    <li><a href="type_sun.html">Sun Care</a></li>
+                    <li><a href="type_cleanser.html">Cleanser / Dead Skin Care</a></li>
+                    <li><a href="type_makeup.html">Makeup / BB Cream</a></li>
+                    <li><a href="type_hand.html">Hand Care</a></li>
+                </ul>
+            </aside>
+    
+            <!-- product list -->
+            <div>
+                <h3>Serum / Essence</h3>
+                <ul>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Syrup-type serum that cares for sensitive and weakened skin with Dr. Jart+'s proprietary mechanism</p>
+                                <a href="cicapair_serum.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_serum_1.png" alt="Cicapair™ Serum">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ Serum</dt>
+                            <dd>47,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(3,991)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Moisture essence that contains vital aids including probiotics to help strengthen the moisture barrier and make skin healthy</p>
+                                <a href="vital_hydra_solution_biome_treatment_essence.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/vita_essence_1.png" alt="Vital Hydra Solution™ Biome Treatment Essence">
+                            <mark class="best">BEST</mark>
+                        </div>
+                        <dl>
+                            <dt>Vital Hydra Solution™ Biome Treatment Essence</dt>
+                            <dd>40,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(1,207)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Soothes irritated skin #emergency soothing cream</p>
+                                <a href="cicapair_so_soothing_treatment.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cica_soothing_1.png" alt="Cicapair™ So Soothing Treatment">
+                            <mark class="new">NEW</mark>
+                        </div>
+                        <dl>
+                            <dt>Cicapair™ So Soothing Treatment</dt>
+                            <dd>38,000won</dd>
+                            <dd></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>The perfect all-in-one essence for men</p>
+                                <a href="for_men_skin_essence.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/men_skin_1.png" alt="For Men™ Skin Essence">
+                        </div>
+                        <dl>
+                            <dt>For Men™ Skin Essence</dt>
+                            <dd>22,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(341)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A spot treatment solution that quickly soothes troubled areas with Tea Treatment™, Calamine, and Sulfur</p>
+                                <a href="control_a_tea_treatment_soothing_spot.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/cont_spot_1.png" alt="Control A™ Tea Treatment Soothing Spot">
+                        </div>
+                        <dl>
+                            <dt>Control A™ Tea Treatment Soothing Spot</dt>
+                            <dd>22,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(81)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>7 vitamin solutions that brighten the skin! Vitamin whitening serum that intensively cares for dull tones, blemishes, and freckles</p>
+                                <a href="v7_serum.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/v7_serum_1.png" alt="V7™ Serum">
+                        </div>
+                        <dl>
+                            <dt>V7™ Serum</dt>
+                            <dd>49,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(261)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>A pore tightening serum that refreshes pore concerns from pore volume-area-number</p>
+                                <a href="pore_remedy_paha_exfoliating_serum.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/pore_serum_1.png" alt="Pore Remedy™ PAHA Exfoliating Serum">
+                        </div>
+                        <dl>
+                            <dt>Pore Remedy™ PAHA Exfoliating Serum</dt>
+                            <dd>46,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(98)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p>Pore smoothing primer with micro airy capsules that smoothes pores and irregularities</p>
+                                <a href="pore_remedy_smoothing_primer.html" class="whiteBtn">Learn More</a>
+                                <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                            </div>
+                            <img src="images/pore_primer_1.png" alt="Pore Remedy™ Smoothing Primer">
+                        </div>
+                        <dl>
+                            <dt>Pore Remedy™ Smoothing Primer</dt>
+                            <dd>39,000won</dd>
+                            <dd>
+                                <span class="starRating5">5star</span>
+                                <span>(570)</span> 
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>
+                <img src="images/drjart_logo.png" alt="Dr.Jart">
+            </h2>
+            <ul>
+                <li><a href="https://ko-kr.facebook.com/DrJartPage" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/drjart_kr/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/c/DrJart" target="_blank">YouTube</a></li>
+                <li><a href="https://www.tiktok.com/@drjart" target="_blank">Tiktok</a></li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <nav>
+                    <h3>Dr. Jart's official account</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/drjart_kr/" target="_blank">Instagram</a></li>
+                        <li><a href="https://pf.kakao.com/_UTxfuE" target="_blank">Kakao</a></li>
+                        <li><a href="https://www.youtube.com/c/DrJart" target="_blank">YouTube</a></li>
+                        <li><a href="https://www.tiktok.com/@drjart" target="_blank">Tiktok</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="official.html">Official mall exclusive benefits</a></li>
+                        <li><a href="customerinquiry.html">Store information</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Brand</h3>
+                    <ul>
+                        <li><a href="privacypolicy.html">Privacy policy</a></li>
+                        <li><a href="termsofuse.html">Terms of Use</a></li>
+                        <li><a href="https://haveandbe.recruiter.co.kr/appsite/company/index">Employment</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Need help?</h3>
+                    <ul>
+                        <li><a href="customerinquiry.html">Customer inquiry</a></li>
+                        <li><a href="mypage.html">My Info</a></li>
+                        <li><a href="deliveryinfo.html">Delivery information</a></li>
+                        <li><a href="returnandexchange.html">Return/Exchange Information</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <img src="images/mark1.png" alt="environmental management certification">
+                <img src="images/mark2.png" alt="Recognized as an affiliated design laboratory">
+            </div>
+        </div>
+        <div>
+            <address>769-8 M-Space Building, Yeoksam-dong, Gangnam-gu, Seoul Address (13 M-SPACE Building Have&amp;B, Nonhyeon-ro 72-gil, Gangnam-gu, Seoul) Mail-order business registration number: 2008 Gangnam-2284, Seoul</address>    
+            <span> Confirmation of business information Head of Division  Customer Satisfaction Center: <a href="+8215445453">1544-5453</a> (Operation Hours: 09:00~18:00, Lunch Time: 12:50~14:00) / FAX: 02-3462-9051 / E-mail address: <a href="mailto:webmaster@drjart.com">webmaster@drjart.com</a> Business name: HavenB Co., Ltd.  Business registration number: 214-87-63681. <br>
+                Person in charge of personal information management: Kim In-hye / CEO  : Christopher Kindersley Wood <br>
+                Copyright© Have &amp; Be co., Ltd. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>

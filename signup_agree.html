@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Agree to terms and conditions | Dr.jart</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <aside id="gnbPanel">
+        <input type="button" value="closePanel" class="btnClose">
+        <ul>
+            <li><a href="allproducts.html">All Products</a></li>
+            <li><a href="type_new.html">By Type</a></li>
+            <li><a href="line_ceramidin.html">Line By Line</a></li>
+            <li><a href="solution_recovery.html">Sensitive Skin Solution</a></li>
+        </ul>
+    </aside>
+
+    <aside id="cartPanel">
+        <div>
+            <input type="button" value="closePanel" class="cartClose">
+            <h2>My cart</h2>
+        </div>
+        <div class="emptyCart">
+            <h3>Your cart</h3>
+            <p>Your cart is empty, give it some love!</p>
+            <ul>
+                <li>
+                    <img src="images/pore_primer_1.png" alt="Pore Remedy™ Smoothing Primer">
+                    <div>
+                        <em>Pore Remedy™ Smoothing Primer</em>
+                        <small>39,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>                    
+                </li>
+                <li>
+                    <img src="images/cica_cleansingfoam_1.png" alt="Cicapair™ Enzyme Cleansing Foam">
+                    <div>
+                        <em>Cicapair™ Enzyme Cleansing Foam</em>
+                        <small>26,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cera_serumtoner_1.png" alt="Ceramidin™ Skin Barrier Serum Toner">
+                    <div>
+                        <em>Ceramidin™ Skin Barrier Serum Toner</em>
+                        <small>39,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cera_handcream_1_50ml.png" alt="Ceramidin™ Hand Cream">
+                    <div>
+                        <em>Ceramidin™ Hand Cream</em>
+                        <small>14,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/sun_moist_1.png" alt="Every Sun Day™  Moisturizing Sun">
+                    <div>
+                        <em>Every Sun Day™  Moisturizing Sun</em>
+                        <small>21,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="haveCart">
+            <ul>
+                <li>
+                    <img src="images/cera_moistcream_1.png" alt="Ceramidin™ Skin Barrier Moisturizing Cream">
+                    <div>
+                        <input type="button" value="delete">
+                        <em>Ceramidin™ Skin Barrier Moisturizing Cream</em>
+                        <small>50 mL</small>
+                        <div>
+                            <span class="quantComponent">
+                                <input type="button" value="-" class="minusBtn">
+                                <input type="text" name="amount" value="1">
+                                <input type="button" value="+" class="plusBtn">
+                            </span>
+                            <span>
+                                48,000
+                                <small>won</small>
+                            </span>
+                        </div>
+                    </div>  
+                </li>
+                <li>
+                    <img src="images/cica_cream_1.png" alt="Cicapair™ Cream">
+                    <div>
+                        <input type="button" value="delete">
+                        <em>Cicapair™ Cream</em>
+                        <small>50 mL</small>
+                        <div>
+                            <span class="quantComponent">
+                                <input type="button" value="-" class="minusBtn">
+                                <input type="text" name="amount" value="1">
+                                <input type="button" value="+" class="plusBtn">
+                            </span>
+                            <span>
+                                49,000
+                                <small>won</small>
+                            </span>
+                        </div>
+                    </div>  
+                </li>
+            </ul>
+            <div>
+                <h3>Anything else?</h3>
+                <ul class="recSlider">
+                    <li>
+                        <img src="images/vita_watercream_1.png" alt="Vital Hydra Solutions™ Biome Water Cream">
+                        <div>
+                            <em>Vital Hydra Solutions™ Biome Water Cream</em>
+                            <small>40,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li> 
+                    <li>
+                        <img src="images/cera_creammask_1.png" alt="Ceramidin™ Cream-Infused Mask">
+                        <div>
+                            <em>Ceramidin™ Cream-Infused Mask</em>
+                            <small>42,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li>
+                    <li>
+                        <img src="images/cica_serum_1.png" alt="Cicapair™ Serum">
+                        <div>
+                            <em>Cicapair™ Serum</em>
+                            <small>47,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>  
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span>
+                    <label for="totalPrice">SUBTOTAL</label>
+                    <input type="text" id="totalPrice" readonly value="97,000">won
+                </span>
+                <input type="button" value="Continue To Checkout" class="checkoutBtn">
+            </div>
+        </div>
+    </aside>
+
+    <header id="home">
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="shopBtn">
+                            <input type="button" value="Shop >" data-panel="gnbPanel">
+                        </div>
+                    </li>
+                    <li><a href="official.html">Official mall exclusive benefits</a></li>
+                    <li><a href="brand.html">Brand</a></li>
+                </ul>
+            </nav>
+            <h1>
+                <a href="index.html">
+                    <img src="images/drjart_logo.png" alt="welcome to Dr.Jart">
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <input type="button" value="Cart" data-panel="cartPanel">
+                </li>
+                <li><a href="login.html">LOG IN</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="signupAgreeContainer">
+        <a href="index.html">Home page</a>
+
+        <img src="images/drjart_logo.png" alt="Dr.Jart">
+
+        <div>
+            <h2>Sign Up</h2>
+            <p>Agree to terms and conditions</p>
+            <form action="signup.html">
+                <fieldset>
+                    <input type="checkbox" id="agree_chk">
+                    <label for="agree_chk">I agree to all of the below</label>
+                    <ul>
+                        <li>
+                            <h3>* TERMS OF USE</h3>
+                            <div class="textBox">
+                                <p>Welcome to the DR JART KOREA website (hereinafter referred to as “this website”).</p>
+                                <p>DR JART KOREA (hereinafter referred to as the “Company”) is responsible for the following terms and conditions, privacy policy and customer service, as well as certain features, postings or promotions of this site. Subject to the other conditions and policies set out in their entirety (which are deemed part of and incorporated herein), we provide you with the content and services on this site. By accessing or using this site, you acknowledge that you have read, understand, and agree to be bound by these Terms, regardless of any limitations or qualifications.</p>
+                                <strong>1. Privacy Policy Please refer to</strong>
+                                <p>the company's personal information processing policy to help you understand the company's personal information processing policy .</p>
+                                <strong>2. Products and services for personal use</strong>
+                                <p>All samples of products and services provided on this site and products that the company may provide to users are limited to personal use. Users may not sell or resell any products, services, or samples of such products purchased or otherwise received from the Company. The Company may cancel all orders or products or services provided to users, or reduce the quantity of products, with or without notice, if there are reasonable grounds to believe that the user purchased the product for sale or resale purposes. reserves the right to
+                                </p>
+                                <strong>3. Purchasing Policies and Procedures</strong>
+                                <p>To view the policies and procedures (order processing, shipping and post-processing, returns and exchanges, etc.) related to ordering through this site, please click here .</p>
+                                <strong>*Shipping Information</strong>
+                                <p>Ordered products will take about 3 business days from the time payment is completed. However, island and island areas may be delayed, and holidays and year-end or congestion of orders may also be delayed.
+                                    Delivery is not carried out on public holidays and other holidays and is excluded from the delivery period.
+                                    We offer free shipping on all purchases. (Including Jeju Island and mountainous areas)</p>
+                                <strong>*Returns and Exchanges</strong>
+                                <p>Products purchased from online shopping malls can be returned only for unused products that can be resold. . In the case of return due to change of mind, you can apply for return within 7 days of receiving the product, and if the product provided is different from the product you ordered or fulfilled differently from the terms of the contract, 3 months from the date of supply and 30 days from the date you know the fact You can request a return within one day.
+                                    However, the following cases are recognized as exceptions and cannot be returned.
+                                    If the return/exchange request due to simple change of mind has passed 7 days from the date the product was actually received
+                                    In case goods are lost or damaged due to reasons attributable to the customer
+                                    If the packaging is opened or the packaging is damaged and the product value is significantly lost
+                                    If the value of the product is reduced due to customer use or consumption
+                                    If the value of the product is lost to such an extent that resale is difficult due to the passage of time
+                                    In case the free gifts and samples that were included at the time of receiving the product are missing
+                                </p>
+                                <strong>4. Accuracy of Information</strong>
+                                <p>The Company aims to provide as accurate information as possible when posting products on this site; However, within the permissible scope of applicable law, we do not guarantee the accuracy, completeness, reliability, validity, defect-free or error-free of product descriptions, colors, information or other content provided on this site.
+                                </p>
+                                <strong>5. Intellectual Property</strong>
+                                <p>All information and content available on this site and elements of the “look and feel” (trademarks, logos, service marks, text, graphics, logos, button icons, images, audio clips, data compilations, software and Compilations and combinations of the above elements, including but not limited to, collectively the “Content”) are the property of the Company and its affiliates, partners or licensors, and are protected by applicable laws governing copyright and trademark rights. .</p>
+                                <p>Except as provided in Section 6 Limited Permissions below or as required by applicable law, this Content or any part of this Site may not be used for any purpose, in whole or in part, without the express prior written consent of the Company. You may not use, reproduce, reproduce, copy, sell, resell, access, modify or otherwise exploit in any way whatsoever.</p>
+                                <strong>6. Limited License</strong>
+                                <p>The Company grants the User a limited, revocable, non-exclusive license to access and use the Site for personal use. This limited use right includes (a) the right to frame or utilize framing techniques, including on or any part of this site; The right to sell, license any and/or all of this site or its content, download the site, etc. (except as necessary for caching or viewing this site); (c) for personal use. (d) the right to adapt, reverse analyze, or create derivative works based on all or any part of this site or content; (e) the right to collect account information for the benefit of you or others; (f) the right to use meta tags or “hidden text” utilizing some and/or all of this content; or (g) ) does not include the right to use software robots, spiders, crawlers or similar data collection and extraction tools, or to take any other action that could impose an unreasonable burden or burden on the Company's infrastructure. You must retain, without change, notices regarding all rights on or attached to or contained in this site.</p>
+                                <p>The Company also grants the User a limited, revocable, non-exclusive license to establish hyperlinks on the home page of this Site, for personal, non-commercial use only. Websites linked to this Site (i) may link to, but may not reproduce, part and/or all of the Content, and (ii) the Company recommends the linked site or products or services from the Site. (iii) misrepresent the Linked Site's relationship with the Company; or (iv) be construed as hateful, obscene, offensive, controversial, illegal, or unsuitable for all ages. (v) disparage, misrepresent, or portray the Company or its products or services in an offensive or abhorrent manner; and (vi) link to web pages of this site other than the home page. The Company may, at its discretion, request the deletion of all links linked by users to this site, and upon receipt of such a request, the user shall immediately delete the relevant links and obtain separate, express written approval from the Company to resume link establishment. You must stop all link setting activities unless you win.</p>
+                                <p>If a user uses this site or this content in part and/or in whole without authorization, the company will not affect the user's limited right to use as stipulated in Article 6 of these terms and conditions without affecting the relevant laws or other remedies stipulated in these terms and conditions. can be canceled.</p>
+                                <strong>7. Duties and Responsibilities of Users</strong>
+                                <p>In accessing or using this site, users must comply with these Terms and any special warnings or instructions relating to access and use posted on this site. Users must act in accordance with law, custom and good faith at all times. Users may not change this site or any content or service that may appear on this site, and may not damage or interfere with the integrity of this site or the operation of this site in any way. Within the scope of not limiting the generality of other provisions of these Terms and Conditions, if the obligations stipulated in these Terms and Conditions are not fulfilled intentionally or negligently, the user shall be responsible for all damages that may occur to the Company, its affiliates, partners, and licensors as a result. You must bear the responsibility for loss and damage.
+                                </p>
+                                <strong>8. User account</strong>
+                                <p>If you are 14 years of age or older, you may register on this site. You cannot register if you are under the age of 14. If you are 14 years of age or older and you actually register on this site, we will have your email address/userid and password for your account. Users are responsible for maintaining the security of their account, user ID, and password, and for restricting access to the user's computer by others. Users are responsible for maintaining the validity, completeness, accuracy and truthfulness of the foregoing information. The user agrees to be responsible for all actions that occur under the user's account, user ID and/or password. You agree to provide only current, complete, accurate and truthful information. If a user accesses and uses this site on behalf of another person, the user represents that he/she has the right in his/her capacity to be bound by all the terms and conditions set forth in these terms and conditions, unless such authority is granted, the user agrees to be subject to these Terms and be liable for any damages resulting from misuse of this site or this content that may arise from such access to or use of this site. </p>
+                                <strong>9. Links to Third Parties</strong>
+                                <p>The Company is not responsible for the content of any off-website pages or other websites from or linked to this site. Links appearing on this site are for convenience only and do not constitute an endorsement of any content, product, service or vendor by the Company or its affiliates or partners. By establishing a link from this site to any off-website page or other website linked to or from this site, you do so at your own risk. The Company does not undertake any obligation to screen or evaluate any linked site, does not endorse the content of any off-website or other website from or linked to this site, and does not follow the privacy policy of any such page or website. and assumes no responsibility or liability for the actions, content, products or services of these pages and websites, including the Terms and Conditions. Users should carefully review the terms and conditions and privacy policies of all off-website pages and other websites that they visit.</p>
+                                <strong>10. Special Posts, Features and Events</strong>
+                                <p>This Site may offer special posts, features or events (including contests, sweepstakes and other events) which (a) are in addition to or in lieu of these Terms. (b) may be provided by the Company or third parties. In this case, the company notifies the user of such fact, and agrees that additional or separate terms of use, rules and/or policies may apply if the user wishes to use the above events.</p>
+                                <strong>11. Offer</strong>
+                                <p>It is the company's policy to reject unsolicited suggestions and ideas. Notwithstanding the Company's policy on unsolicited suggestions and ideas, any inquiries, feedback, suggestions, ideas or information provided to the Company by users (collectively, 'Suggestions') will be treated as non-exclusive or non-confidential. . Subject to the terms of the Company's Privacy Policy, by transmitting or posting any information provided by the User, the User may reproduce all or part of such offer, create a derivative work therefrom, or in any form or medium now known or heretofore developed. make the Offer in any way the Company deems appropriate, including, but not limited to, distributing and displaying the Offer in the form of technology, alone or as part of any other work, or using the Offer in connection with or in conjunction with any of the Company's products or services; Grants the right to reproduce, use, reproduce, alter, adapt, translate, publish, license, distribute, sell or transfer. In addition, the user's suggestions are not returned, and the company develops, manufactures, distributes and distributes products without paying money or other forms of compensation for the information provided by the user and all ideas, concepts, and know-how included in the information. You acknowledge that it may be used for any purpose, including but not limited to marketing. If you make an offer, you represent and warrant that you own or otherwise control the rights to your offer. You also represent and warrant that such offers do not constitute or contain software viruses, solicitations, chain mail, bulk mail, or any other form of 'spam'. Users may use false e-mail addresses; You may not falsely pretend to be someone else or otherwise deceive the Company as to the source of the offer. The user agrees to indemnify the company against any claim arising out of or in connection with claims of ownership of the rights to the offer or damages arising out of such information.</p>
+                                <strong>12. User Content</strong>
+                                <p>Allow users to transmit, upload, post, e-mail or otherwise make available any material, text, software, music, audio, photos, graphics, images, videos, messages, or other materials ("User Content") on the Site; If you do, you are solely responsible for such User Content. User content corresponds to information provided by users as defined in Article 10 above. This means that all Users, not the Company, are solely responsible for all User Content they post on the Site. You may not: (a) be unlawful, harmful, threatening, abusive, or offensive, defamatory, vulgar, obscene, libelous, invasive of another's privacy, hateful, or You may not transmit, upload, post, email or otherwise disclose User Content on the Site that is otherwise racially or ethically objectionable, and that others may transmit, upload, post, email or otherwise display such Content on the Site. You may not assist or encourage disclosure otherwise. (b) You also have no right to make available any User Content of the foregoing nature, whether by law, contract or trust, and (c) any patent, trademark, trade secret, copyright or other proprietary rights of either the Company or the User. You agree that you may not transmit, upload, post, email or otherwise make available from this Site any User Content that infringes. In addition, the user transmits, uploads, or transmits software viruses, unwanted or unauthorized advertisements, purchase requests or promotional materials, including chain mail, mass mail, or other forms of "spam". You agree not to post, email or otherwise make available. In addition, you may not (i) falsely represent another person or falsely or inaccurately state your affiliation with any person or entity; and (ii) “stalk” or otherwise harass or frame any third party. (iii) does not falsify headers or otherwise manipulate identification marks to disguise the origin of User Content; does not violate international law; and (v) does not collect or store personally identifiable data about other users.</p>
+                                <p>The Company does not endorse or control the content created by users and transmitted or posted to the Site. Accordingly, the Company does not guarantee the accuracy, veracity or quality of User Content. Users acknowledge that by using this site, users may be exposed to user content that is objectionable, obscene, or objectionable to users. Under no circumstances shall the Company be liable for any User Content, including any errors or omissions in the User Content, or any loss of character incurred by the User as a result of transmission, uploading, posting, e-mailing or otherwise using User Content made public through the Site. We do not take any responsibility for any damages.</p>
+                                <p>Users acknowledge that the Company has the right (but not the obligation) to refuse to post or remove User Content at its sole discretion. Without limiting the generality of the foregoing or any other provision of these Terms, the Company reserves the right to remove User Content that violates these Terms or is otherwise objectionable, and which violates these Terms or infringes the rights of others. For users who do so, we reserve the right to refuse to provide services without prior notice, or to refuse to provide services and terminate the user's account. When the company terminates the user's account, the company notifies the user and gives the user an opportunity to explain by setting a period of at least 30 days or more before canceling the user's account.</p>
+                                <strong>13. Copyright Complaints</strong>
+                                <p>The company respects the intellectual property of others. In accordance with the copyright laws of Korea, if the user determines that copyrighted content has been reproduced in a manner that constitutes a violation of the copyright laws, the user must submit a completely completed "Request to Stop Playback or Transmission" and all requested information and backup materials to the company's designated agent. Please notify us by e-mail or in writing. The Company's designated agents for notification of alleged violations of the Copyright Act are C. Leon Kim and Jeong Won Lee at Jeil Patent & Law Firm.</p>
+                                <p>Name: FirstLaw PC
+                                    Address: Trust Tower, 60 Mabang-ro, Seocho-gu, Seoul (Yangjae-dong); Trust Tower, 60 Mabang-Ro, Seocho-Ku, Seoul 06775, Korea
+                                    Telephone: +82-2-589-0001, Facsimile: +82-2-589-1688
+                                    Contact Person: C. Leon Kim, Jeongwon Lee Won Lee)</p>
+                                <strong>14. Representations and Warranties; LIMITATION OF LIABILITY</strong>
+                                <p>THIS SITE IS PROVIDED 'AS IS'. EXCEPT TO THE EXTENT THAT CANNOT BE EXCLUDED BY LAW, THE COMPANY WILL NOT EXPRESS ANY EXPRESS WARRANTY OF ANY KIND IN CONNECTION WITH THESE TERMS OR THIS SITE, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT OR FITNESS FOR A PARTICULAR PURPOSE. No express or implied representations or warranties are made.</p>
+                                <p>Users shall, to the maximum extent permitted by applicable law, under any circumstances, unless the Company is intentionally or grossly negligent (in contract, tort (including negligence) and other conditions), (a) business failure, (b) ) delay in access or failure to access this site; (c) inability to transmit data, transmission error, data corruption, destruction or other alteration; (e) computer viruses, system errors, or malfunctions that may arise in connection with your use of the Site, including in the course of hyperlinking to or from third party websites; (f) inaccuracies in the content; You agree not to be liable for any omissions or (g) events beyond the scope of reasonable management of the Company.</p>
+                                <p>In addition, to the maximum extent permitted by applicable law, the company may not be liable in any form, whether in contract (including lost profits), tort (including negligence), or any other act, even if it has been informed in advance of the possibility of compensation for damages. , We are not responsible for any kind of indirect, special, punitive, incidental or consequential damages related to this site or the user's use of this site, and in any case, the company's total compensation for damages is ninety won (KRW 90,000) does not exceed</p>
+                                <strong>15. Disclaimer</strong>
+                                <p>The user protects and indemnifies the company against any loss, damage, or expense (including reasonable attorney's fees) resulting from claims, lawsuits, or claims by third parties resulting from the user's use of this site or violation of these terms and conditions. I agree to The user shall also be liable for any loss or damage arising from the use of the user's software robot, spider, crawler, or similar data collection and extraction tool, or any act that imposes an unreasonable burden or load on the infrastructure of other companies. , agree to indemnify the Company for its costs (including reasonable attorneys' fees).
+                                </p>
+                                <strong>16. Disputes</strong>
+                                <p>In relation to any disputes related to this site, the rights and obligations of users expected under these Terms and all actions will be governed by the laws of the Republic of Korea. To the maximum extent permitted by law, any disputes related to your visit to this site may be brought to the court where you are domiciled or, if you agree, may optionally be submitted for arbitration. Users are subject to the above jurisdiction and procedures, however, as an exception, the company will not be liable if the user has violated or is likely to violate the company's intellectual property rights or the intellectual property rights of its affiliates, partners, or licensors, or if there is a reason for action in equity.</p>
+                                <strong>17. Consent to posting on the site and receiving electronic notices via e-mail</strong>
+                                <p>Users agree to receive agreements, notices, disclosures, and other communications (collectively, “Notices”) referred to in these Terms and Conditions from the Company via e-mail or through notices on this site. You agree that any notices we provide to you electronically will satisfy any legal requirement that such notices be in writing.</p>
+                                <p>Please note that consent to receive electronic notifications as above is entirely separate from the user's choice regarding the receipt of marketing notification messages. Users' choices regarding the receipt of marketing notification messages are described in the Company's Privacy Policy.</p>
+                                <strong>18. General Terms</strong>
+                                <p>The user acknowledges and agrees that these terms and conditions constitute the complete and exclusive agreement between the company and the user in relation to the user's use of this site, and supersedes and governs all prior proposals, contracts or other opinions. do. When the company revises the terms and conditions, it specifies the application date and the reason for the amendment, posts the amendment on this site from 30 days before the application date to the day before the application date, and notifies the user. Even though the company has clearly notified and notified the member that if they do not express their intention within a 30-day period, they will be regarded as agreeing to the revised terms and conditions while notifying and notifying the member of the revised terms and conditions, the member explicitly expresses his or her intention to refuse before the effective date of the revised terms and conditions. If not, the member is deemed to have agreed to the revised terms and conditions. By discontinuing all use of this site, you must immediately comply with any termination or related notice.
+                                    Nothing contained in these terms and conditions can be interpreted as forming an agency relationship, partnership, or other form of joint venture between the company and the user. Even if the Company does not require the user to fulfill the terms of this Agreement, this does not affect the Company's full right to demand the user to fulfill the terms of this Agreement at any time in the future, and the Company may exercise its rights in case of violation of the terms of this Agreement. Failure to do so shall not be deemed or construed as a waiver of that provision. If any provision of these Terms is unenforceable or invalid under applicable law, or is determined by an arbitral award or court decision to be unenforceable or invalid, such unenforceability or invalidity shall affect the performance of these Terms as a whole. Although neither possibility nor validity can be taken away, these Terms may be amended by any judicial authority, to the extent possible, to best reflect the original intent of the parties as reflected in the original provisions. If you have any questions regarding these terms and conditions, please contact the Customer Care Support Team .</p>
+                            </div>
+                            <div>
+                                <input type="radio" name="agreeDisagree1" id="Agreement1" required>
+                                <label for="Agreement1">Agreement</label>
+                                <input type="radio" name="agreeDisagree1" id="Disagree1">
+                                <label for="Disagree1">Disagree</label>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>* CONSENT TO THE COLLECTION AND USE OF PERSONAL INFORMATION (REQUIRED)</h3>
+                            <div class="textBox">
+                                <p>HavenB Co., Ltd. (hereinafter referred to as the 'Company') collects and uses personal information as follows. </p>
+                                <strong>1. Items of personal information collected and method of collection </strong>
+                                <p>The company collects the following personal information for membership registration, consultation, service application, etc. through this website. </p>
+                                <p>* Collection items </p>
+                                <p>Required items</p>
+                                <ul>
+                                    <li>- (When registering as a member) Name, password, mobile phone number, e-mail address</li>
+                                    <li>- (When purchasing a product on the website) Credit card information, bank account information, payment record, order record, address</li>
+                                    <li>- (Items automatically generated and collected when visiting the website) Access logs, cookies, access IP information</li>
+                                    <li>- (For e-mail inquiries) Name, e-mail address, and contact information </li>
+                                    <li>- Address, date of birth, gender</li>
+                                    <li>- Contents provided by customers (e.g., photos, videos, reviews, articles, comments) In principle, personal information of children under the age of 14 is not collected.</li>
+                                </ul>
+                                <p>The company collects the following personal information only when the customer visiting the offline store agrees to the use of personal information according to membership sign-up.</p>
+                                <p>* Collection items</p>
+                                <p>Required items</p>
+                                <p>- Name, date of birth, mobile phone number, purchase details, point details, registered store, Retail Pro ID</p>
+                                <p>choice</p>
+                                <p>- Address, email address, mobile phone number, gender, occupation, product in use, service use details, skin interests, skin type, and other information confirmed during the consultation process</p>
+                                <p>The company's personal information collection method is as follows. </p>
+                                <p>* Collection method: homepage (member registration, e-mail inquiry and service use process, product purchase process, etc.), collection through generated information collection tools, event application, collection through customer registration card form 2. Purpose of collection and use of personal information</p>
+                                <p>Company uses personal information collected through this website for the following purposes.</p>
+                                <p>* Performance of contracts for service provision and settlement of fees according to service provision, purchase and payment, delivery of goods or billing address, authentication of financial transactions and financial services,  charge collection</p>
+                                <p>Identification, prevention of fraudulent use of bad members and unauthorized use, confirmation of intention to sign up, age confirmation, complaint handling, delivery of notices</p>
+                                <p>* Provision of reservation service through the website </p>
+                                <p>(required) Confirmation of user’s purchase, reservation, return, and refund request and response, sending reservation information text messages (reservation confirmation, schedule information, reservation change, cancellation, etc. status information), contacting about products and services provided to you regardless of other marketing</p>
+                                <p>* Marketing, advertising, and transaction-related information</p>
+                                <p>delivery Development and specialization of new services (products), sending newsletters, sending transaction-related information SMS, checking access frequency, or statistics on service use by members </p>
+                                <p>* Marketing notification messages </p>
+                                <p>If the user chooses, the company may use the information provided by the user to create and deliver notification messages such as newsletters, surveys, or other product and event information, cosmetics information, or promotions (“notification messages”) to users. there is. If you do not wish to receive notification messages, you may opt out of receiving the e-mail newsletter. </p>
+                                <p>* If the text message </p>
+                                <p>user chooses, the user may provide the user's mobile phone number in order to receive text messages about product and event information, cosmetics information or promotion, and 'trade-related information ("text message"). The text message service provided by the company is free, but the user's mobile communication company may charge a fee for sending/receiving text messages and advertisement time, and standard rates imposed by other mobile communication companies may be imposed. After selecting to receive text messages, if you no longer want to receive text messages in the future, you can opt out of receiving SMS text messages. </p>
+                                <p>* Notification message provided to users</p>
+                                <p>If the user decides to provide contact information, the company will notify the user by various means including e-mail (text message, etc.) to (i) notify the user about the service related to this site, or (ii) the user's customer service request, inquiry, or order. can provide a response. For example, all registered users will receive a welcome message via email confirming their user registration. This kind of notification message is necessary for the user's convenience, to respond to the user's concerns, and to provide quality service to the company's customers. </p>
+                                <p>* Customized Service </p>
+                                <p>In order to provide personalized service and site use to users, the company may use the user's personal information. For example, the company can propose products that the user may be particularly interested in, analyze the frequency and visit time of members and non-members, identify the user's tastes and interests, track traces, and participate in various events. We can provide targeted marketing and personalized services by identifying the degree and number of visits.</p>
+                                <p>* Special events, surveys and polls</p>
+                                <p>From time to time, the Company may sponsor special events (including contests, sweepstakes and other events), surveys and polls. Certain rules may apply to promotional events describing how the personal information provided by users will be processed. We reiterate that you review the applicable rules before participating. To the extent that special events, surveys or polls are not subject to specific rules, the processing of personal data is governed by these Directives and the purposes set forth in these Directives. </p>
+                                <p>The company uses personal information collected from customers who visit offline stores and sign up as members for the following purposes. </p>
+                                <p>* Identification of members, prevention of fraudulent use of services, operation of individual mileage point system, provision of counseling services, management of members and delivery of notices, various statistical analysis and service development necessary for marketing activities, provision of customized counseling services</p>
+                                <p>* E- Promotion and guidance related to the company's products and events (including products and events of other brands handled by the company) through sending text messages such as DM, DM and SMS/MMS 3. Retention and use period of personal information In principle, personal 
+                                </p>
+                                <p>information After the purpose of information collection and use is achieved, the information is destroyed without delay, and the information is destroyed without delay if a request is made to withdraw from membership or delete information. However, if it is necessary to preserve it in accordance with the provisions of the relevant laws and regulations, the company will keep the member information for a certain period set forth in the relevant laws and regulations as follows. </p>
+                                <p>Records on contract or withdrawal of subscription: 5 years (Act on Consumer Protection in Electronic Commerce, etc.) 
+                                    Records on payment and supply of goods: 5 years (Act on Consumer Protection in Electronic Commerce, etc.) 
+                                    Consumer complaints or disputes Records on processing: 3 years (Act on Consumer Protection in Electronic Commerce, etc.) 
+                                    Records on collection/processing and use of credit information: 3 years (Act on Use and Protection of Credit Information) Website visit 
+                                    record: 3 months (Protection of Communications Secrets Act)</p>
+                                <p>The company protects the personal information of users who are not using it for the period specified in Article 29 Paragraph 2 of the Act on Promotion of Information and Communications Network Utilization and Information Protection and Article 16 Paragraph 1 of the Enforcement Decree of the same Act Necessary measures are taken, such as destruction of personal information or separate storage, as stipulated in For offline members, personal information of users who have not used it for 3 years is destroyed.</p>
+                                <p>* Criteria for determining non-use </p>
+                                <p>Online users: Online site member information modification records and service use records or offline service use (purchase, service, sample receipt, etc.) are also judged as usage details. 
+                                    Offline users: judged by purchase, service, sample receipt, etc.</p>
+
+                            </div>
+                            <div>
+                                <input type="radio" name="agreeDisagree2" id="Agreement2" required>
+                                <label for="Agreement2">Agreement</label>
+                                <input type="radio" name="agreeDisagree2" id="Disagree2">
+                                <label for="Disagree2">Disagree</label>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>* CONSENT TO THE COLLECTION AND USE OF PERSONAL 
+                                INFORMATION FOR MARKETING AND PROMOTIONAL 
+                                PURPOSES (OPTIONAL)</h3>
+                            <div class="textBox">
+                                <p>Consent to the collection and use of personal information for marketing and promotional purposes (optional)</p>
+                                <p>Items of personal information to be collected • Purpose of collection and use
+                                    of name, mobile phone number, e-mail address</p>
+                                <p>Sending personalized advertisements through electronic transmission media such as SMS, DM, and e-mail, information about events and promotions, development and specialization of new services (products), identification of access frequency, or statistics on service use by members </p>
+                                <p>Personal information retention period</p>
+                                <p>(i) In case of withdrawal of consent or (ii) in case of membership withdrawal, destruction without delay </p>
+                                <p>Withdrawal of consent to receive marketing information You can change (agree/withdraw) your consent to receive marketing information at any time through 'Login > My Page' or Customer Center.</p>
+                                <p>※ You have the right to refuse consent to the collection and use of personal information as above. However, if you refuse to consent, you will no longer be provided with information related to new product news and event contents.</p>
+                            </div>
+                            <div>
+                                <input type="radio" name="agreeDisagree3" id="Agreement3" checked>
+                                <label for="Agreement3">Agreement</label>
+                                <input type="radio" name="agreeDisagree3" id="Disagree3">
+                                <label for="Disagree3">Disagree</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div>
+                        <h3>WHETHER TO RECEIVE</h3>
+                        <p>If you want to receive the latest information for marketing purposes, such as new products and events from Dr. Jart+, please select the receiving channel. You must subscribe to the newsletter and text message to receive news on new product selection on the official mall, newsletter exclusive benefits, and birthday benefits.</p>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="newsletter" checked><label for="newsletter">Newsletter</label>
+                        <input type="checkbox" id="message" checked><label for="message">Text Messages</label>
+                        <input type="checkbox" id="dm" checked><label for="dm">DM</label>
+                        <p>* If you agree to the reception, you are considered to have consented to the handling 
+                            consignment, and if you do not receive it, you will not be able to receive marketing 
+                            information.</p>
+                    </div>
+                    <input type="submit" class="bnwBtn2" value="Sign up">
+                </fieldset>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div>
+            <h2>
+                <img src="images/drjart_logo.png" alt="Dr.Jart">
+            </h2>
+            <ul>
+                <li><a href="https://ko-kr.facebook.com/DrJartPage" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/drjart_kr/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/c/DrJart" target="_blank">YouTube</a></li>
+                <li><a href="https://www.tiktok.com/@drjart" target="_blank">Tiktok</a></li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <nav>
+                    <h3>Dr. Jart's official account</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/drjart_kr/" target="_blank">Instagram</a></li>
+                        <li><a href="https://pf.kakao.com/_UTxfuE" target="_blank">Kakao</a></li>
+                        <li><a href="https://www.youtube.com/c/DrJart" target="_blank">YouTube</a></li>
+                        <li><a href="https://www.tiktok.com/@drjart" target="_blank">Tiktok</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="official.html">Official mall exclusive benefits</a></li>
+                        <li><a href="customerinquiry.html">Store information</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Brand</h3>
+                    <ul>
+                        <li><a href="privacypolicy.html">Privacy policy</a></li>
+                        <li><a href="termsofuse.html">Terms of Use</a></li>
+                        <li><a href="https://haveandbe.recruiter.co.kr/appsite/company/index">Employment</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Need help?</h3>
+                    <ul>
+                        <li><a href="customerinquiry.html">Customer inquiry</a></li>
+                        <li><a href="mypage.html">My Info</a></li>
+                        <li><a href="deliveryinfo.html">Delivery information</a></li>
+                        <li><a href="returnandexchange.html">Return/Exchange Information</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <img src="images/mark1.png" alt="environmental management certification">
+                <img src="images/mark2.png" alt="Recognized as an affiliated design laboratory">
+            </div>
+        </div>
+        <div>
+            <address>769-8 M-Space Building, Yeoksam-dong, Gangnam-gu, Seoul Address (13 M-SPACE Building Have&B, Nonhyeon-ro 72-gil, Gangnam-gu, Seoul) Mail-order business registration number: 2008 Gangnam-2284, Seoul</address>    
+            <span> Confirmation of business information Head of Division  Customer Satisfaction Center: <a href="+8215445453">1544-5453</a> (Operation Hours: 09:00~18:00, Lunch Time: 12:50~14:00) / FAX: 02-3462-9051 / E-mail address: <a href="mailto:webmaster@drjart.com">webmaster@drjart.com</a> Business name: HavenB Co., Ltd.  Business registration number: 214-87-63681. <br>
+                Person in charge of personal information management: Kim In-hye / CEO  : Christopher Kindersley Wood <br>
+                Copyright© Have & Be co., Ltd. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cicapair™ Sleepy Ampoule in Mask Pink Ribbon Edition | Dr.jart</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <aside id="gnbPanel">
+        <input type="button" value="closePanel" class="btnClose">
+        <ul>
+            <li><a href="allproducts.html">All Products</a></li>
+            <li><a href="type_new.html">By Type</a></li>
+            <li><a href="line_ceramidin.html">Line By Line</a></li>
+            <li><a href="solution_recovery.html">Sensitive Skin Solution</a></li>
+        </ul>
+    </aside>
+
+    <aside id="cartPanel">
+        <div>
+            <input type="button" value="closePanel" class="cartClose">
+            <h2>My cart</h2>
+        </div>
+        <div class="emptyCart">
+            <h3>Your cart</h3>
+            <p>Your cart is empty, give it some love!</p>
+            <ul>
+                <li>
+                    <img src="images/pore_primer_1.png" alt="Pore Remedy™ Smoothing Primer">
+                    <div>
+                        <em>Pore Remedy™ Smoothing Primer</em>
+                        <small>39,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cica_cleansingfoam_1.png" alt="Cicapair™ Enzyme Cleansing Foam">
+                    <div>
+                        <em>Cicapair™ Enzyme Cleansing Foam</em>
+                        <small>26,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cera_serumtoner_1.png" alt="Ceramidin™ Skin Barrier Serum Toner">
+                    <div>
+                        <em>Ceramidin™ Skin Barrier Serum Toner</em>
+                        <small>39,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cera_handcream_1_50ml.png" alt="Ceramidin™ Hand Cream">
+                    <div>
+                        <em>Ceramidin™ Hand Cream</em>
+                        <small>14,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+                <li>
+                    <img src="images/sun_moist_1.png" alt="Every Sun Day™  Moisturizing Sun">
+                    <div>
+                        <em>Every Sun Day™ Moisturizing Sun</em>
+                        <small>21,000 won</small>
+                        <input type="button" value="Add" class="bnwBtn">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="haveCart">
+            <ul>
+                <li>
+                    <img src="images/cera_moistcream_1.png" alt="Ceramidin™ Skin Barrier Moisturizing Cream">
+                    <div>
+                        <input type="button" value="delete">
+                        <em>Ceramidin™ Skin Barrier Moisturizing Cream</em>
+                        <small>50 mL</small>
+                        <div>
+                            <span class="quantComponent">
+                                <input type="button" value="-" class="minusBtn">
+                                <input type="text" name="amount" value="1">
+                                <input type="button" value="+" class="plusBtn">
+                            </span>
+                            <span>
+                                48,000
+                                <small>won</small>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/cica_cream_1.png" alt="Cicapair™ Cream">
+                    <div>
+                        <input type="button" value="delete">
+                        <em>Cicapair™ Cream</em>
+                        <small>50 mL</small>
+                        <div>
+                            <span class="quantComponent">
+                                <input type="button" value="-" class="minusBtn">
+                                <input type="text" name="amount" value="1">
+                                <input type="button" value="+" class="plusBtn">
+                            </span>
+                            <span>
+                                49,000
+                                <small>won</small>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <h3>Anything else?</h3>
+                <ul class="recSlider">
+                    <li>
+                        <img src="images/vita_watercream_1.png" alt="Vital Hydra Solutions™ Biome Water Cream">
+                        <div>
+                            <em>Vital Hydra Solutions™ Biome Water Cream</em>
+                            <small>40,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/cera_creammask_1.png" alt="Ceramidin™ Cream-Infused Mask">
+                        <div>
+                            <em>Ceramidin™ Cream-Infused Mask</em>
+                            <small>42,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/cica_serum_1.png" alt="Cicapair™ Serum">
+                        <div>
+                            <em>Cicapair™ Serum</em>
+                            <small>47,000won</small>
+                            <input type="button" value="Add" class="bnwBtn">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span>
+                    <label for="totalPrice">SUBTOTAL</label>
+                    <input type="text" id="totalPrice" readonly value="97,000">won
+                </span>
+                <input type="button" value="Continue To Checkout" class="checkoutBtn">
+            </div>
+        </div>
+    </aside>
+
+    <header id="home">
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="shopBtn">
+                            <input type="button" value="Shop >" data-panel="gnbPanel">
+                        </div>
+                    </li>
+                    <li><a href="official.html">Official mall exclusive benefits</a></li>
+                    <li><a href="brand.html">Brand</a></li>
+                </ul>
+            </nav>
+            <h1>
+                <a href="index.html">
+                    <img src="images/drjart_logo.png" alt="welcome to Dr.Jart">
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <input type="button" value="Cart" data-panel="cartPanel">
+                </li>
+                <li><a href="login.html">LOG IN</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="detailContainer">
+        <!-- left -->
+        <div>
+            <div>
+                <ul class="vertitailSlider">
+                    <li><img src="images/cica_sleepymaskedition_1.png"
+                            alt="Cicapair™ Sleepy Ampoule in Mask Pink Ribbon Edition_image_1"></li>
+                    <li><img src="images/cica_sleepymaskedition_2.png"
+                            alt="Cicapair™ Sleepy Ampoule in Mask Pink Ribbon Edition_image_2"></li>
+                    <li><img src="images/cica_sleepymaskedition_3.png"
+                            alt="Cicapair™ Sleepy Ampoule in Mask Pink Ribbon Edition_image_3"></li>
+                    <li><img src="images/cica_sleepymaskedition_4.png"
+                            alt="Cicapair™ Sleepy Ampoule in Mask Pink Ribbon Edition_image_4"></li>
+                    <li><img src="images/cica_sleepymaskedition_5.png"
+                            alt="Cicapair™ Sleepy Ampoule in Mask Pink Ribbon Edition_image_5"></li>
+                </ul>
+                <ol class="thumbPager">
+                    <li><a href="#" data-slide-index="0"><img src="images/cica_sleepymaskedition_1.png"
+                                alt="thumb1"></a></li>
+                    <li><a href="#" data-slide-index="1"><img src="images/cica_sleepymaskedition_2.png"
+                                alt="thumb2"></a></li>
+                    <li><a href="#" data-slide-index="2"><img src="images/cica_sleepymaskedition_3.png"
+                                alt="thumb3"></a></li>
+                    <li><a href="#" data-slide-index="3"><img src="images/cica_sleepymaskedition_4.png"
+                                alt="thumb4"></a></li>
+                    <li><a href="#" data-slide-index="4"><img src="images/cica_sleepymaskedition_5.png"
+                                alt="thumb5"></a></li>
+                </ol>
+            </div>
+            <!-- right -->
+            <div>
+                <h2>Cicapair™ Sleepy Ampoule in Mask Pink Ribbon Edition</h2>
+
+                <div id="morePanel">
+                    <p>
+                        #Cica Sleeping Pack Sleeping mask that revitalizes tired skin while sleeping I Completed sleep
+                        deprivation test I Helps improve 6 skin problems (moisturization, elasticity, radiance, skin
+                        tone, texture, lifting) that appear from lack of sleep I Stimulates
+                    </p>
+                    <p id="lessPanel">
+                        sensitive skin Test completed I I Whitening + Wrinkle improvement I Double functional cosmetics
+                    </p>
+                    <input type="button" value="Read More" data-panel="lessPanel">
+                </div>
+
+                <div class="starReview">
+                    <span class="starRating0">0star</span>
+                    <span>Write your first review</span>
+                </div>
+                <p class="size">50ml</p>
+                <ul class="accComponent">
+                    <li>
+                        <strong>How to use</strong>
+                        <p>At the last step of skin care in the evening, take an appropriate amount and spread it on,
+                            then wash your face the next morning.</p>
+                    </li>
+                    <li>
+                        <strong>Ingredient</strong>
+                        <p>Purified water, dipropylene glycol, propanediol, seaside Erringo callus culture filtrate,
+                            glycerin, caprylylmethicone, 1,2-hexanediol, yarrow oil, medicinal wheat extract, Guju holly
+                            leaf extract, niacin Amide, trehalose, vinyl dimethicone, butylene glycol, Irish moss
+                            extract, sugar cane extract, Indian mulberry leaf extract, Indian mulberry tree flower
+                            extract, western pine extract, turmeric root extract, holy basil leaf extract, fusidium
+                            cosineum fermented filtrate, ivy gourd fruit extract, streptococcus thermophilus fermented
+                            product, pumpkin powder, eggplant fruit extract, cacao seed extract, true coral extract,
+                            drum stick seed oil, centella asiatica leaf extract, Bamboo vinegar, centella asiatica
+                            extract, dimethiconol, cetyl dimethicone, acrylate/C10-30 alkyl acrylate crosspolymer,
+                            ammonium acryloyl dimethyl taurate/Vpicopolymer, tromethamine, caprylyl glycol ,
+                            dehydroxanthan gum, sodium acrylate/sodium acryloyldimethyltaurate copolymer, polyisobutene,
+                            adenosine, panthenol, caprylyl/caprylglucoside, sorbitan oleate, madecassoside,
+                            ethylhexylglycerin, Dextrin, asiaticoside, DNA, methylpropanediol, asiatic acid, madecassic
+                            acid, calcium chloride, magnesium sulfate, polyvinyl alcohol, disodium EDTA</p>
+                    </li>
+                </ul>
+                <p class="ingredient">Ingredients list may change or change from time to time. Please check the latest ingredient
+                    list by referring to the ingredients list on the product package you receive.
+                </p>
+                <input type="button" value="Add To Cart - 24,000won" data-panel="cartPanel" class="bnwBtn">
+            </div>
+        </div>
+
+        <!-- product detail img -->
+        <div class="colorBox white">
+            <video autoplay muted loop>
+                <source src="mp4/cica_sleepymaskedition.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Notice on provision of product information -->
+        <div class="accComponent">
+            <h3>Notice on provision of product information</h3>
+            <ul>
+                <li>
+                    <strong>Capacity (weight) or weight</strong>
+                    <p>50 mL</p>
+                </li>
+                <li>
+                    <strong>Customer consultation related phone number</strong>
+                    <p>Customer Satisfaction Center 1544-5453</p>
+                </li>
+                <li>
+                    <strong>Quality Assurance Standard</strong>
+                    <p>If there is something wrong with this product, compensation will be made according to the
+                        'Consumer
+                        Dispute Resolution Standards' announced by the Fair Trade Commission.</p>
+                </li>
+                <li>
+                    <strong>Expiration date or expiration date after opening</strong>
+                    <p>12 months from opening date</p>
+                </li>
+                <li>
+                    <strong>Manufacturer and Responsible Distributor</strong>
+                    <p>Cosmax Co., Ltd. / Have&amp;B Co., Ltd.</p>
+                </li>
+                <li>
+                    <strong>Country of manufacture</strong>
+                    <p>Korea</p>
+                </li>
+                <li>
+                    <strong>Whether or not functional cosmetics have been reviewed</strong>
+                    <p>Double functionality (whitening + wrinkles)</p>
+                </li>
+                <li>
+                    <strong>Precautions when using</strong>
+                    <p>1. If you have any of the following abnormalities after using cosmetics, you should stop using
+                        them. If you
+                        continue to use them, the symptoms will get worse, so please consult a dermatologist.
+                        go. If there are any abnormalities such as red spots, swelling, itching, or irritation during
+                        use
+                        . If the applied area has the above abnormalities due to direct sunlight
+                        2. Do not use on areas with scars, eczema or dermatitis.
+                        3. Precautions for storage and handling
+                        a. Be sure to close the cap after use.
+                        me. child. Please keep out of reach of children.
+                        all. Do not store in places with high or low temperatures and direct sunlight.</p>
+                </li>
+                <li>
+                    <strong>Year of manufacture</strong>
+                    <p>Net delivery from manufacturing in March 2022</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Recommended product -->
+        <div class="recommend">
+            <h3>Recommended product</h3>
+            <ul>
+                <li>
+                    <div>
+                        <div>
+                            <p>#Moisturizing soothing toner Dr. Jart+’s unique mechanism* to soothe sensitive and
+                                weakened skin.</p>
+                            <a href="cicapair_toner.html" class="whiteBtn">Learn More</a>
+                            <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                        </div>
+                        <img src="images/cica_toner_1.png" alt="Cicapair™ Toner">
+                        <mark class="best">BEST</mark>
+                    </div>
+                    <dl>
+                        <dt>Cicapair™ Toner</dt>
+                        <dd>29,000won</dd>
+                        <dd>
+                            <span class="starRating5">5star</span>
+                            <span>(1,287)</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <p>Syrup-type serum that cares for sensitive and weakened skin with Dr. Jart+'s proprietary
+                                mechanism</p>
+                            <a href="cicapair_serum.html" class="whiteBtn">Learn More</a>
+                            <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                        </div>
+                        <img src="images/cica_serum_1.png" alt="Cicapair™ Serum">
+                        <mark class="best">BEST</mark>
+                    </div>
+                    <dl>
+                        <dt>Cicapair™ Serum</dt>
+                        <dd>47,000won</dd>
+                        <dd>
+                            <span class="starRating5">5star</span>
+                            <span>(3,991)</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <p>Jart+'s proprietary mechanism*, a highly concentrated cream that cares for sensitive and
+                                weakened skin</p>
+                            <a href="cicapair_cream.html" class="whiteBtn">Learn More</a>
+                            <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                        </div>
+                        <img src="images/cica_cream_1.png" alt="Cicapair™ Cream">
+                        <mark class="best">BEST</mark>
+                    </div>
+                    <dl>
+                        <dt>Cicapair™ Cream</dt>
+                        <dd>49,000won</dd>
+                        <dd>
+                            <span class="starRating5">5star</span>
+                            <span>(8,252)</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <p>Centella asiatica extract and resinseal™, a plant essence-derived ingredient, help soothe
+                                the skin, and skin probiotics help to make the skin barrier healthy. Serum sheet mask
+                            </p>
+                            <a href="cicapair_calming_serum_mask.html" class="whiteBtn">Learn More</a>
+                            <input type="button" value="Add To Cart" data-panel="cartPanel" class="blackBtn">
+                        </div>
+                        <img src="images/cica_serummask_1.png" alt="Cicapair™ Calming Serum Mask">
+                    </div>
+                    <dl>
+                        <dt>Cicapair™ Calming Serum Mask</dt>
+                        <dd>26,000won</dd>
+                        <dd>
+                            <span class="starRating5">5star</span>
+                            <span>(199)</span>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+        <!-- collection page -->
+        <div class="linebyline cicapair">
+            <dl>
+                <dt>Cicapair™</dt>
+                <dd>These days, when your skin is sensitive due to everyday skin
+                    stress caused by external environments such as masks and fine dust...
+                    Build a soothing barrier with Cicapair™!
+                </dd>
+            </dl>
+            <a href="line_cicapair.html" class="bnwBtn">Shop Now</a>
+        </div>
+
+        <!-- scroll productBottomBar -->
+        <div class="productBottomBar">
+            <div>
+                <img src="images/cica_sleepymaskedition_1.png"
+                    alt="Cicapair™ Sleepy Ampoule in Mask Pink Ribbon Edition">
+                <em>Cicapair™ Sleepy Ampoule in Mask Pink Ribbon Edition</em>
+                <div>
+                    <strong>24,000won</strong>
+                    <input type="button" value="Add To Cart" data-panel="cartPanel" class="bnwBtn">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>
+                <img src="images/drjart_logo.png" alt="Dr.Jart">
+            </h2>
+            <ul>
+                <li><a href="https://ko-kr.facebook.com/DrJartPage" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/drjart_kr/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/c/DrJart" target="_blank">YouTube</a></li>
+                <li><a href="https://www.tiktok.com/@drjart" target="_blank">Tiktok</a></li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <nav>
+                    <h3>Dr. Jart's official account</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/drjart_kr/" target="_blank">Instagram</a></li>
+                        <li><a href="https://pf.kakao.com/_UTxfuE" target="_blank">Kakao</a></li>
+                        <li><a href="https://www.youtube.com/c/DrJart" target="_blank">YouTube</a></li>
+                        <li><a href="https://www.tiktok.com/@drjart" target="_blank">Tiktok</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="official.html">Official mall exclusive benefits</a></li>
+                        <li><a href="customerinquiry.html">Store information</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Brand</h3>
+                    <ul>
+                        <li><a href="privacypolicy.html">Privacy policy</a></li>
+                        <li><a href="termsofuse.html">Terms of Use</a></li>
+                        <li><a href="https://haveandbe.recruiter.co.kr/appsite/company/index">Employment</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Need help?</h3>
+                    <ul>
+                        <li><a href="customerinquiry.html">Customer inquiry</a></li>
+                        <li><a href="mypage.html">My Info</a></li>
+                        <li><a href="deliveryinfo.html">Delivery information</a></li>
+                        <li><a href="returnandexchange.html">Return/Exchange Information</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <img src="images/mark1.png" alt="environmental management certification">
+                <img src="images/mark2.png" alt="Recognized as an affiliated design laboratory">
+            </div>
+        </div>
+        <div>
+            <address>769-8 M-Space Building, Yeoksam-dong, Gangnam-gu, Seoul Address (13 M-SPACE Building Have&amp;B,
+                Nonhyeon-ro 72-gil, Gangnam-gu, Seoul) Mail-order business registration number: 2008 Gangnam-2284, Seoul
+            </address>
+            <span> Confirmation of business information Head of Division Customer Satisfaction Center: <a
+                    href="+8215445453">1544-5453</a> (Operation Hours: 09:00~18:00, Lunch Time: 12:50~14:00) / FAX:
+                02-3462-9051 / E-mail address: <a href="mailto:webmaster@drjart.com">webmaster@drjart.com</a> Business
+                name: HavenB Co., Ltd. Business registration number: 214-87-63681. <br>
+                Person in charge of personal information management: Kim In-hye / CEO : Christopher Kindersley Wood <br>
+                Copyright© Have &amp; Be co., Ltd. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html>
