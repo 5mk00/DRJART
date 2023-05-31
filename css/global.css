@@ -45,7 +45,12 @@
 .mypage > div > div > div:last-of-type ul li > div div p,
 .mypage > div > div > div:last-of-type ul li dl dt,
 .mypage > div > div > div:last-of-type ul li dl dd:last-of-type,
-.myprofile > div > div > form,
+.myprofile > div > div > form, 
+.shippingOrder,
+.shippingOrder select,
+.shippingOrder input,
+.orderDetail,
+.orderDetail table:last-of-type tbody tr:last-of-type td strong small,
 .detailContainer > div:nth-of-type(1) > div:last-of-type h2,
 .detailContainer .accComponent, .detailContainer .size, .ingredient,
 .detailContainer .linebyline > dl dd,
@@ -87,7 +92,8 @@ footer{
 .mypage > div > div > div:last-of-type ul li dl dd:first-of-type,
 .haveCart div:nth-of-type(2) span [type='text'],
 .detailContainer .productBottomBar > div > div > strong,
-.detailContainer .recommend ul li dl dd:first-of-type{
+.detailContainer .recommend ul li dl dd:first-of-type,
+.newscycle{
     font-family: 'News Cycle', sans-serif;
 }
 

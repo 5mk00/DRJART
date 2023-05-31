@@ -605,8 +605,11 @@
 
 
     .listContainer > div > div ul,
-    .mypageContainer > div > div > div,
-    .myprofile > div > div > form{
+    .mypage > div > div > div,
+    .myprofile > div > div > form,
+    .shippingOrder > div > div > ul,
+    .shippingOrder > div > div > div,
+    .orderDetail table{
         width: 98.11%; 
         margin-left: 1.89%;
     }
@@ -1455,29 +1458,38 @@
         margin-left: 13.15%;
     }
     .mypage > div > div > div h4,
-    .myprofile h4{
+    .myprofile h4,
+    .shippingOrder h4,
+    .orderDetail table caption{
         font-size: 28px; font-weight: 600; color: #5f5f5f; margin-bottom: 30px;
     }
-    .mypage > div > div > div:nth-of-type(2){
+    .mypage > div > div > div:nth-of-type(2),
+    .shippingOrder > div > div > ul{
         margin-bottom: 85px;
     }
-    .mypage > div > div > div:nth-of-type(2) ul{
-        width: 100%; display: flex; height: 150px;
+    .mypage > div > div > div:nth-of-type(2) ul,
+    .shippingOrder > div > div > ul{
+        /* width: 100%;  */
+        display: flex; height: 150px;
     }
-    .mypage > div > div > div:nth-of-type(2) ul li{
+    .mypage > div > div > div:nth-of-type(2) ul li,
+    .shippingOrder > div > div > ul li{
         display: inline-block; width: 20.72%; padding: 20px 3.87%;
         text-align: center; color: #131313; height: 100%;
         border: 3px solid #e5e5e5; box-sizing: border-box;
         font-size: 25px; font-weight: 500; line-height: 30px;
         position: relative;
     }
-    .mypage > div > div > div:nth-of-type(2) ul li:nth-of-type(2n){
+    .mypage > div > div > div:nth-of-type(2) ul li:nth-of-type(2n),
+    .shippingOrder > div > div > ul li:nth-of-type(2){
         padding-top: 35px;
     }
-    .mypage > div > div > div:nth-of-type(2) ul li:not(:first-of-type){
+    .mypage > div > div > div:nth-of-type(2) ul li:not(:first-of-type),
+    .shippingOrder > div > div > ul li:not(:first-of-type){
         margin-left: 5.38%;
     }
-    .mypage > div > div > div:nth-of-type(2) ul li span{
+    .mypage > div > div > div:nth-of-type(2) ul li span,
+    .shippingOrder > div > div > ul li span{
         display: block; font-size: 28px; font-weight: 600;
         /* margin-top: 20px;  */
         
@@ -1571,12 +1583,211 @@
         margin-left: 20px;
     }
 
-    .myprofile .bnwBtn2{
+    .myprofile .bnwBtn2,
+    .orderDetail .bnwBtn2{
         display: block; clear: both; float: right; 
         /* width: 47.53%; */
         padding: 0 15.09%; line-height: 75px;
 
     }
+
+
+    .shippingOrder > div > div > div > div:first-of-type{
+        width: 100%;
+    }
+    .shippingOrder > div > div > div > div:first-of-type > label{
+        margin: 0 0 10px 1.58%; font-size: 16px; font-weight: 600; color: #131313;
+        display: block;
+    }
+    .shippingOrder > div > div > div > div:first-of-type div{
+        width: 47.57%; display: inline-block; margin-bottom: 15px;
+    }
+    .shippingOrder > div > div > div > div:first-of-type div select{width: 31.64%;
+        font-size: 18px; font-weight: 400; color: #131313;
+        padding: 20px 1.58%; border-radius: 15px; border: 1px solid #e5e5e5; box-sizing: border-box;
+    }
+    .shippingOrder > div > div > div > div:first-of-type div select:first-of-type{
+        display: inline-block;
+    }
+    .shippingOrder > div > div > div > div:first-of-type div select:not(:first-of-type){
+        margin-left: 1.58%;
+    }
+    .shippingOrder > div > div > div > div:first-of-type span{
+        width: 3.94%; display: inline-block; text-align: center;
+    }
+    .shippingOrder > div > div > div [value*='Month']{
+        padding: 15px 0; width: 8.53%; min-width: 105px;
+        box-sizing: border-box;
+        font-size: 18px; font-weight: 400; color: #131313;
+        background-color: #ffffff; border: 1px solid #e5e5e5;
+        border-radius: 15px; text-align: center;
+    }
+    .shippingOrder > div > div > div [value*='Month'].active{
+        background-color: #131313; color: #ffffff;
+        border: none;
+    }
+
+
+    .shippingOrder > div > div > div table{
+        margin: 30px 0 85px 0; width: 100%;
+    }
+    .orderDetail table{
+        margin-bottom: 85px;
+    }
+    .shippingOrder > div > div > div table caption{
+        display: none;
+    }
+    .shippingOrder > div > div > div table thead,
+    .orderDetail table:first-of-type thead,
+    .orderDetail table:nth-of-type(2) tbody,
+    .orderDetail table:last-of-type tbody{
+        border-top: 3px solid #e5e5e5; box-sizing: border-box;
+    }
+    .shippingOrder > div > div > div table thead,
+    .shippingOrder > div > div > div table thead tr,
+    .orderDetail table:first-of-type thead,
+    .orderDetail table:first-of-type thead tr,
+    .orderDetail table:nth-of-type(2) tbody tr,
+    .orderDetail table:last-of-type tbody tr{
+        width: 100%;
+        /* padding: 15px 0; box-sizing: border-box; */
+    }
+    .shippingOrder th,
+    .orderDetail table:first-of-type th{
+        padding: 20px 0; box-sizing: border-box; vertical-align: middle;
+        font-size: 16px; font-weight: 600; color: #131313;
+    }
+    .shippingOrder td,
+    .orderDetail table:first-of-type td{
+        padding: 15px 0; box-sizing: border-box; vertical-align: middle;
+        font-size: 18px; font-weight: 400; color: #131313; line-height: 22px;
+    }
+    .shippingOrder tr td:not(:nth-of-type(2)),
+    .orderDetail table:first-of-type tr td:not(:first-of-type){
+        text-align: center;
+    }
+
+    .shippingOrder > div > div > div table thead tr th:not(:nth-of-type(2),:nth-of-type(3)),
+    .shippingOrder > div > div > div table tbody tr td:not(:nth-of-type(2),:nth-of-type(3)),
+    .orderDetail table:first-of-type thead tr th:not(:nth-of-type(1),:nth-of-type(3)),
+    .orderDetail table:first-of-type tbody tr td:not(:nth-of-type(1),:nth-of-type(3)){
+        width: 16.66%;
+    }
+    .shippingOrder > div > div > div table thead tr th:nth-of-type(2),
+    .shippingOrder > div > div > div table tbody tr td:nth-of-type(2),
+    .orderDetail table:first-of-type thead tr th:nth-of-type(1),
+    .orderDetail table:first-of-type tbody tr td:nth-of-type(1){
+        width: 40.77%;
+    }
+    .shippingOrder > div > div > div table thead tr th:nth-of-type(3),
+    .shippingOrder > div > div > div table thead tr th:nth-of-type(3),
+    .orderDetail table:first-of-type tbody tr td:nth-of-type(3),
+    .orderDetail table:first-of-type tbody tr td:nth-of-type(3){
+        width: 8.11%;   
+    }
+    .shippingOrder > div > div > div table thead{
+        font-size: 16px; font-weight: 600; color: #131313; text-align: center;
+    }
+    .shippingOrder > div > div > div table thead,
+    .shippingOrder > div > div > div table tbody tr,
+    .orderDetail table:first-of-type thead,
+    .orderDetail table:first-of-type tbody tr{
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .shippingOrder > div > div > div table tbody tr td:not(:nth-of-type(1)),
+    .orderDetail table:first-of-type tbody tr td:not(:nth-of-type(1)){
+        border-left: 1px solid #e5e5e5;
+    }
+    .shippingOrder > div > div > div table tbody tr td:nth-of-type(1) time,
+    .shippingOrder > div > div > div table tbody tr td:nth-of-type(1) a{
+        display: block;
+    }
+    .shippingOrder > div > div > div table tbody tr td:nth-of-type(1) time{
+        margin-bottom: 5px;
+    }
+    .shippingOrder > div > div > div table tbody tr td:nth-of-type(1) a{
+        text-decoration: underline; color: #131313; font-size: 14px; font-weight: 300;
+    }
+    .shippingOrder > div > div > div table tbody tr td:nth-of-type(2), 
+    .orderDetail table:first-of-type tbody tr td:nth-of-type(1){ 
+        padding: 0 3.83% 0 140px; box-sizing: border-box;
+        position: relative; height: 130px; vertical-align: middle;
+    }
+    .shippingOrder > div > div > div table tbody tr td:nth-of-type(2) img,
+    .orderDetail table:first-of-type tbody tr td:nth-of-type(1) img{
+        /* margin: 0 3.83%;  */
+        width: 100px;
+        position: absolute; left: 3.83%; top: 50%; transform: translate(0, -50%); 
+    }
+    .shippingOrder > div > div > div table tbody tr td:last-of-type,
+    .orderDetail table:first-of-type tbody tr td:last-of-type{
+        padding: 3.83%; box-sizing: border-box;
+    }
+    .shippingOrder .paging{
+        width: 100%; margin: 0 auto; text-align: center;
+    }
+    .shippingOrder .paging ol li{
+        display: inline-block; width: 40px; line-height: 40px;
+        border: 1px solid #e5e5e5; text-align: center;
+    }
+    .shippingOrder .paging ol li:not(:first-of-type){
+        margin-left: 10px;
+    }
+
+
+
+    .orderDetail table caption{
+        text-align: left; margin-bottom: 30px;
+    }
+    .orderDetail table:nth-of-type(2) tbody tr,
+    .orderDetail table:last-of-type tbody tr{
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .orderDetail table:nth-of-type(2) tbody tr th,
+    .orderDetail table:last-of-type tbody tr th{
+        width: 25%; text-align: left; line-height: 55px;
+        padding-left: 2.5%; box-sizing: border-box;
+        font-size: 16px; font-weight: 600; color: #131313;
+    }
+    .orderDetail table:nth-of-type(2) tbody tr td,
+    .orderDetail table:last-of-type tbody tr:not(:last-of-type) td{
+        border-left: 1px solid #e5e5e5; width: 75%;
+        padding: 20px 2.5%; box-sizing: border-box;
+        font-size: 18px; font-weight: 400;
+        line-height: 22px;
+    }
+    .orderDetail table:last-of-type tbody tr:last-of-type td{
+        width: 100%; padding: 20px 2.5%; box-sizing: border-box;
+        font-size: 18px; font-weight: 600; color: #131313;
+        height: 100px;
+    }
+    .orderDetail table:last-of-type tbody tr:last-of-type td strong{
+        margin-left: 5%; font-size: 20px; font-weight: 700; position: relative;
+        width: 70%; display: inline-block;
+    }
+    .orderDetail table:last-of-type tbody tr:last-of-type td strong small{
+        display: block; position: absolute; left: 0; bottom: -25px;
+        font-size: 14px; font-weight: 400; color: #999999;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 
 
 }
