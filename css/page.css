@@ -1171,7 +1171,11 @@
     .signupContainer > form > fieldset [type='text'],
     .signupContainer > form > fieldset [type='email'],
     .signupContainer > form > fieldset [type='password'],
-    .signupContainer > form > fieldset [type='tel']{
+    .signupContainer > form > fieldset [type='tel'],
+    .myprofile fieldset > ul li [type='text'],
+    .myprofile fieldset > ul li [type='password'],
+    .myprofile fieldset > ul li [type='email'],
+    .myprofile fieldset > ul li [type='tel']{
         width: 100%; color: #131313;
         font-size: 18px; font-weight: 400; padding: 20px; border-radius: 15px;
         border: 1px solid #e5e5e5; line-height: 22px;
@@ -1186,28 +1190,28 @@
     .signupContainer > form > fieldset [type='tel']{
         margin-bottom: 25px;
     }
-    form > fieldset [type='email']::placeholder,
-    form > fieldset [type='text']::placeholder,
-    form > fieldset [type='password']::placeholder,
-    form > fieldset [type='tel']::placeholder{
+    [type='email']::placeholder,
+    [type='text']::placeholder,
+    [type='password']::placeholder,
+    [type='tel']::placeholder{
         color: #e5e5e5;
     }
-    .loginContainer > form > fieldset .PW_wrap,
-    .signupContainer > form > fieldset .PW_wrap{
+    .PW_wrap{
         position: relative; width: 100%;
     }
-    .signupContainer > form > fieldset .PW_wrap{
+    .signupContainer > form > fieldset .PW_wrap,
+    .myprofile .PW_wrap{
         margin-bottom: 5px;
     }
-    .loginContainer > form > fieldset [value=showPW],
-    .signupContainer > form > fieldset [value=showPW]{
+    [value=showPW]{
         position: absolute;
         top: 50%; right: 20px; transform: translateY(-50%);
         cursor: pointer; text-indent: -9999px; border: none;
         width: 30px; background: url('../images/visibility_off.png') center / contain no-repeat;
     }
-    .signupContainer > form > fieldset > p{
-        font-size: 10px; color: #131313; line-height: 12px; margin-left: 20px;
+    .PW_wrap + p{
+        font-size: 10px; color: #131313; line-height: 12px; margin: 10px 0 0 20px;
+        font-weight: 300;
     }
     .loginContainer > form > fieldset > div:last-of-type{
         margin-bottom: 65px; padding: 0 20px; box-sizing: border-box;
@@ -1352,31 +1356,49 @@
     }
 
     .signupAgreeContainer > div > form > fieldset > div h3{
-        width: 162px; background: url('../images/hover_textbox.png') right top / 10px no-repeat;
+        width: 162px; 
     }
-    .signupAgreeContainer > div > form > fieldset > div:first-of-type{
+    .signupAgreeContainer > div > form > fieldset > div h3,
+    .myprofile fieldset > ul li:last-of-type > div:first-of-type label{
+        background: url('../images/hover_textbox.png') right top / 10px no-repeat;
+    }
+    .signupAgreeContainer > div > form > fieldset > div:first-of-type,
+    .myprofile fieldset > ul li:last-of-type > div:first-of-type{
         position: relative; width: 100%;
     }
-    .signupAgreeContainer > div > form > fieldset > div:first-of-type p{
+    .signupAgreeContainer > div > form > fieldset > div:first-of-type p,
+    .myprofile fieldset > ul li:last-of-type > div:first-of-type > p{
         display: none;
     }
     .signupAgreeContainer > div > form > fieldset > div:first-of-type h3:hover + p{
+        left: 172px; top: 20px;
+    }
+    .myprofile fieldset > ul li:last-of-type > div:first-of-type > label:hover + p{
+        right: 0; top: 20px;
+    }
+    .signupAgreeContainer > div > form > fieldset > div:first-of-type h3:hover + p,
+    .myprofile fieldset > ul li:last-of-type > div:first-of-type > label:hover + p{
         display: block; width: 255px; padding: 10px; box-sizing: border-box;
         border: 1px solid #e5e5e5; border-radius: 5px;
         font-size: 10px; font-weight: 300; color: #131313; line-height: 12px;
-        position: absolute; background-color: #ffffff; left: 172px; top: 20px;
+        position: absolute; background-color: #ffffff;
     }
     .signupAgreeContainer > div > form > fieldset > div:last-of-type{
         margin: 0 0 65px 20px;
     }
-    .signupAgreeContainer > div > form > fieldset > div:last-of-type label{
-        font-size: 12px; margin-right: 20px;
+    .signupAgreeContainer > div > form > fieldset > div:last-of-type label,
+    .myprofile fieldset > ul li:last-of-type > div:last-of-type label{
+        font-size: 12px; margin-right: 20px; color: #131313;
     }
     .signupAgreeContainer > div > form > fieldset > div:last-of-type input[type='checkbox'] + label:before,
-    .signupAgreeContainer > div > form > fieldset > div:last-of-type input[type='checkbox']:checked + label:before{
+    .signupAgreeContainer > div > form > fieldset > div:last-of-type input[type='checkbox']:checked + label:before,
+    .myprofile fieldset > ul li:last-of-type > div:last-of-type input[type='checkbox'] + label:before,
+    .myprofile fieldset > ul li:last-of-type > div:last-of-type input[type='checkbox']:checked + label:before{
         width: 10px; height: 10px; margin-right: 5px;
     }
-    .signupAgreeContainer > div > form > fieldset > div:last-of-type p{
+    .signupAgreeContainer > div > form > fieldset > div:last-of-type p,
+    .myprofile fieldset > ul li:nth-of-type(6) > p,
+    .myprofile fieldset > ul li:last-of-type > p{
         font-size: 10px; color: #131313; font-weight: 300; line-height: 12px;
         margin-top: 10px;
     }
@@ -1468,5 +1490,93 @@
     .mypage > div > div > div:last-of-type ul{
         width: 100%;
     }
+
+
+
+    
+    .myprofile > div > div > form > div{
+        width: 14.32%; float: left;
+    }
+    .myprofile > div > div > form > div [type='image']{
+        width: 100%; margin-bottom: 15px;
+    }
+    .myprofile .fileComponent{
+        width: 100%; position: relative;
+    }
+    .myprofile .fileComponent label{
+        font-size: 15px; font-weight: 300; color: #131313; text-decoration: underline;
+        text-align: right; width: 100%; display: block;
+    }
+    .myprofile .fileComponent #addPhoto{
+        position: absolute; bottom: 0; right: 0; width: 100px; opacity: 0;
+    }
+    .myprofile fieldset{
+        /* margin-left: 3.87%;  */
+        width: 79.92%; float: right; margin-bottom: 85px;
+    }
+    .myprofile fieldset > ul{
+        width: 100%; 
+    }
+    .myprofile fieldset > ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .myprofile fieldset > ul li{
+        float: left; display: block; width: 47.53%; margin-bottom: 50px;
+    }
+    .myprofile fieldset > ul li:nth-of-type(2n){
+        margin-left: 4.94%;
+    }
+    .myprofile fieldset > ul li:not(:last-of-type) label:first-of-type,
+    .myprofile fieldset > ul li:last-of-type div:first-of-type label{
+        font-size: 16px; font-weight: 600; color: #131313;
+    }
+    .myprofile fieldset > ul li:nth-of-type(6) > div{
+        width: 100%;
+    }
+    .myprofile fieldset > ul li:nth-of-type(6) > div select{
+        width: 30.23%; font-size: 18px; font-weight: 400; color: #131313;
+        padding: 18.44px 5%; border-radius: 15px; border: 1px solid #e5e5e5; box-sizing: border-box;
+    }
+    .myprofile fieldset > ul li:nth-of-type(6) > div select option{
+        font-size: 18px; font-weight: 400; line-height: 22px;
+    }
+    .myprofile fieldset > ul li:nth-of-type(6) > div select:not(:first-of-type){
+        margin-left: 3.45%;
+    }
+
+
+
+
+    .myprofile fieldset > ul li:not(:last-of-type) label:first-of-type,
+    .myprofile fieldset > ul li:last-of-type div:first-of-type label,
+    .myprofile fieldset > ul li:last-of-type > div:last-of-type{
+        margin-left: 4.54%;
+    }
+    .myprofile fieldset > ul li:not(:last-of-type,:nth-last-of-type(2)) label:first-of-type{
+        margin-bottom: 10px; display: block;
+    }
+    .myprofile fieldset > ul li:last-of-type > div:first-of-type label{
+        margin-bottom: 10px; display: block; 
+        min-width: 190px; width: 20.42%;
+    }
+    .myprofile fieldset > ul li:nth-last-of-type(2) label:nth-of-type(2){
+        margin-left: 25px;
+    }
+    .myprofile fieldset > ul li:nth-last-of-type(2) label:nth-of-type(3){
+        margin-left: 20px;
+    }
+
+    .myprofile fieldset > ul li:nth-of-type(6) > p,
+    .myprofile fieldset > ul li:last-of-type > p{
+        margin-left: 20px;
+    }
+
+    .myprofile .bnwBtn2{
+        display: block; clear: both; float: right; 
+        /* width: 47.53%; */
+        padding: 0 15.09%; line-height: 75px;
+
+    }
+
 
 }
