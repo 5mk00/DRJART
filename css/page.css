@@ -605,7 +605,8 @@
 
 
     .listContainer > div > div ul,
-    .mypageContainer > div > div > div{
+    .mypageContainer > div > div > div,
+    .myprofile > div > div > form{
         width: 98.11%; 
         margin-left: 1.89%;
     }
