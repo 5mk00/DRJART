@@ -233,6 +233,12 @@ address{
 .starRating0h{background-image: url('../images/star0h.png');}
 .starRating0{background-image: url('../images/star0.png');}
 
+.selectBox{
+    background: url('../images/arrow.png') 90% center / 20px no-repeat;
+    appearance: none;
+}
+
+
 
 @media screen and (min-width:1280px){
     
