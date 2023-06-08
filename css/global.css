@@ -47,8 +47,7 @@
 .mypage > div > div > div:last-of-type ul li dl dd:last-of-type,
 .myprofile > div > div > form, 
 .shippingOrder,
-.shippingOrder select,
-.shippingOrder input,
+select, input,
 .orderDetail,
 .orderDetail table:last-of-type tbody tr:last-of-type td strong small,
 .detailContainer > div:nth-of-type(1) > div:last-of-type h2,
@@ -60,6 +59,9 @@
 .detailContainer .recommend ul li dl dt,
 .detailContainer .recommend ul li dl dd:last-of-type,
 .loginContainer, input + label, .forgotContainer, .signupAgreeContainer, .signupContainer,
+.paymentContainer > div, .ordercompleteContainer > div,
+.paymentContainer > div > div:last-of-type > div:nth-of-type(3) strong small,
+.ordercompleteContainer > div > div:last-of-type > div:nth-of-type(3) strong small,
 .accComponent,
 .starReview,
 .best,.new,.bestNew,.gift,
@@ -78,7 +80,9 @@ footer{
 .description, #morePanel p,
 .detailContainer .linebyline > dl dt,
 .detailContainer .productBottomBar > div em,
-.mypageContainer > h2{
+.mypageContainer > h2,
+.paymentContainer > h2,
+.ordercompleteContainer > h2{
     font-family: 'Cormorant Garamond', serif;
 }
 .emptyCart ul li div small,
@@ -93,12 +97,20 @@ footer{
 .haveCart div:nth-of-type(2) span [type='text'],
 .detailContainer .productBottomBar > div > div > strong,
 .detailContainer .recommend ul li dl dd:first-of-type,
-.newscycle{
+.newscycle,
+.paymentContainer > div > div:last-of-type > div:first-of-type span:last-of-type{
     font-family: 'News Cycle', sans-serif;
 }
 
 address{
     font-style: normal;
+}
+
+[type='email']::placeholder,
+[type='text']::placeholder,
+[type='password']::placeholder,
+[type='tel']::placeholder{
+    color: #e5e5e5;
 }
 /* a[class$='Btn']{
     display: block;
@@ -256,6 +268,51 @@ address{
     .detailContainer .colorBox{
         max-width: 1780px; width: 100%; margin: 0 auto;
     } 
+
+    .listContainer,
+    .mypageContainer,
+    .myprofileContainer,
+    .paymentContainer,
+    .ordercompleteContainer{
+        margin: 77px auto 150px; width: 100%; 
+    }
+
+    input[type='checkbox'] + label{
+        color: #131313; font-weight: 400; cursor: pointer; box-sizing: border-box;
+        display: inline-block; background: url('../images/checkbox_unchecked.png') left center no-repeat;
+    }
+    input[type='checkbox']:checked + label{
+        background-image: url('../images/checkbox_checked.png');
+    }
+    input[type="radio"] + label{
+        font-size: 12px; color: #131313; font-weight: 400; cursor: pointer; box-sizing: border-box;
+        display: inline-block; background: url('../images/radio_button_unchecked.png') left center / 12px no-repeat;
+        padding-left: 18px; 
+    }
+    input[type='radio']:checked + label{
+        background-image: url('../images/radio_button_checked.png');
+    }
+    input[type="radio"] + label:last-of-type{
+        margin-left: 20px;
+    }
+
+    .loginContainer > form > fieldset [type='email'],
+    .loginContainer > form > fieldset [type='password'],
+    .forgotContainer > form > fieldset [type='email'],
+    .signupContainer > form > fieldset [type='text'],
+    .signupContainer > form > fieldset [type='email'],
+    .signupContainer > form > fieldset [type='password'],
+    .signupContainer > form > fieldset [type='tel'],
+    .myprofile fieldset > ul li [type='text'],
+    .myprofile fieldset > ul li [type='password'],
+    .myprofile fieldset > ul li [type='email'],
+    .myprofile fieldset > ul li [type='tel'],
+    .paymentContainer > div > div:first-of-type form > div:first-of-type input{
+        width: 100%; color: #131313;
+        font-size: 18px; font-weight: 400; padding: 20px; border-radius: 15px;
+        border: 1px solid #e5e5e5; line-height: 22px;
+        box-sizing: border-box;
+    }
 
     #gnbPanel{
         display: none;

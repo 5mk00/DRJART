@@ -408,11 +408,7 @@
 
 
 
-    .listContainer,
-    .mypageContainer,
-    .myprofileContainer{
-        margin: 77px auto 150px; width: 100%; 
-    }
+    
     .listContainer > h2{
         width: 100%; text-align: center; margin-bottom: 100px;
         font-size: 90px; font-weight: 600; color: #131313;
@@ -1168,22 +1164,7 @@
         display: block; margin: 0 0 10px 20px;
         font-size: 16px; font-weight: 600; color: #131313;
     }
-    .loginContainer > form > fieldset [type='email'],
-    .loginContainer > form > fieldset [type='password'],
-    .forgotContainer > form > fieldset [type='email'],
-    .signupContainer > form > fieldset [type='text'],
-    .signupContainer > form > fieldset [type='email'],
-    .signupContainer > form > fieldset [type='password'],
-    .signupContainer > form > fieldset [type='tel'],
-    .myprofile fieldset > ul li [type='text'],
-    .myprofile fieldset > ul li [type='password'],
-    .myprofile fieldset > ul li [type='email'],
-    .myprofile fieldset > ul li [type='tel']{
-        width: 100%; color: #131313;
-        font-size: 18px; font-weight: 400; padding: 20px; border-radius: 15px;
-        border: 1px solid #e5e5e5; line-height: 22px;
-        box-sizing: border-box;
-    }
+    
     .loginContainer > form > fieldset [type='email'],
     .loginContainer > form > fieldset .PW_wrap,
     .signupContainer > form > fieldset [type='text'],
@@ -1192,12 +1173,6 @@
     .signupContainer > form > fieldset > [type='password'],
     .signupContainer > form > fieldset [type='tel']{
         margin-bottom: 25px;
-    }
-    [type='email']::placeholder,
-    [type='text']::placeholder,
-    [type='password']::placeholder,
-    [type='tel']::placeholder{
-        color: #e5e5e5;
     }
     .PW_wrap{
         position: relative; width: 100%;
@@ -1253,13 +1228,7 @@
     }
 
 
-    input[type='checkbox'] + label{
-        color: #131313; font-weight: 400; cursor: pointer; box-sizing: border-box;
-        display: inline-block; background: url('../images/checkbox_unchecked.png') left center no-repeat;
-    }
-    input[type='checkbox']:checked + label{
-        background-image: url('../images/checkbox_checked.png');
-    }
+    
     .signupAgreeContainer #agree_chk + label,
     .signupContainer input[type='checkbox'] + label{
         font-size: 16px; line-height: 25px; padding-left: 40px;
@@ -1273,17 +1242,7 @@
         font-size: 18px; color: #999999; padding-left: 40px; line-height: 25px;
     }
     
-    input[type="radio"] + label{
-        font-size: 12px; color: #131313; font-weight: 400; cursor: pointer; box-sizing: border-box;
-        display: inline-block; background: url('../images/radio_button_unchecked.png') left center / 12px no-repeat;
-        padding-left: 18px; 
-    }
-    input[type='radio']:checked + label{
-        background-image: url('../images/radio_button_checked.png');
-    }
-    input[type="radio"] + label:last-of-type{
-        margin-left: 20px;
-    }
+    
     .signupAgreeContainer > div > form > fieldset > ul li > div:last-of-type{
         margin-left: 20px;
     }
@@ -1423,13 +1382,14 @@
 
 
     
-    .mypageContainer > h2{
+    .mypageContainer > h2,
+    .paymentContainer > h2,
+    .ordercompleteContainer > h2{
         padding: 80px 0; box-sizing: border-box; text-align: center;
         font-size: 90px; font-weight: 600; color: #131313;
     }
-    .mypageContainer > div{
-        width: 100%;
-    }
+
+
     .mypageContainer > div aside p{
         font-size: 20px; font-weight: 500; color: #131313; margin-bottom: 30px;
     }
@@ -1666,7 +1626,8 @@
     .shippingOrder > div > div > div table{
         margin: 30px 0 85px 0; width: 100%;
     }
-    .orderDetail table{
+    .orderDetail table,
+    .ordercompleteContainer > div > div:first-of-type table{
         margin-bottom: 85px;
     }
     .shippingOrder > div > div > div table caption{
@@ -1675,7 +1636,8 @@
     .shippingOrder > div > div > div table thead,
     .orderDetail table:first-of-type thead,
     .orderDetail table:nth-of-type(2) tbody,
-    .orderDetail table:last-of-type tbody{
+    .orderDetail table:last-of-type tbody,
+    .ordercompleteContainer > div > div:first-of-type table tbody{
         border-top: 3px solid #e5e5e5; box-sizing: border-box;
     }
     .shippingOrder > div > div > div table thead,
@@ -1683,7 +1645,8 @@
     .orderDetail table:first-of-type thead,
     .orderDetail table:first-of-type thead tr,
     .orderDetail table:nth-of-type(2) tbody tr,
-    .orderDetail table:last-of-type tbody tr{
+    .orderDetail table:last-of-type tbody tr,
+    .ordercompleteContainer > div > div:first-of-type table tbody tr{
         width: 100%;
         /* padding: 15px 0; box-sizing: border-box; */
     }
@@ -1774,21 +1737,25 @@
 
 
 
-    .orderDetail table caption{
+    .orderDetail table caption,
+    .ordercompleteContainer > div > div:first-of-type table caption{
         text-align: left; margin-bottom: 30px;
     }
     .orderDetail table:nth-of-type(2) tbody tr,
-    .orderDetail table:last-of-type tbody tr{
+    .orderDetail table:last-of-type tbody tr,
+    .ordercompleteContainer > div > div:first-of-type table tbody tr{
         border-bottom: 1px solid #e5e5e5;
     }
     .orderDetail table:nth-of-type(2) tbody tr th,
-    .orderDetail table:last-of-type tbody tr th{
+    .orderDetail table:last-of-type tbody tr th,
+    .ordercompleteContainer > div > div:first-of-type table tbody tr th{
         width: 25%; text-align: left; line-height: 55px;
         padding-left: 2.5%; box-sizing: border-box;
         font-size: 16px; font-weight: 600; color: #131313;
     }
     .orderDetail table:nth-of-type(2) tbody tr td,
-    .orderDetail table:last-of-type tbody tr:not(:last-of-type) td{
+    .orderDetail table:last-of-type tbody tr:not(:last-of-type) td,
+    .ordercompleteContainer > div > div:first-of-type table tbody tr td{
         border-left: 1px solid #e5e5e5; width: 75%;
         padding: 20px 2.5%; box-sizing: border-box;
         font-size: 18px; font-weight: 400;
@@ -1810,6 +1777,85 @@
 
 
 
+    .paymentContainer,
+    .ordercompleteContainer{
+        padding: 0 2.25%; box-sizing: border-box;
+    }
+    .paymentContainer > div,
+    .ordercompleteContainer > div{
+        max-width: 1550px; width: 100%; margin: 0 auto;
+    }
+
+
+    .paymentContainer > div > div:first-of-type,
+    .ordercompleteContainer > div > div:first-of-type{
+        width: 50.97%; float: left;
+    }
+    .paymentContainer > div > div:first-of-type form{
+        width: 100%;
+    }
+    .paymentContainer > div > div:first-of-type form > h3,
+    .ordercompleteContainer > div > div:first-of-type caption{
+        color: #5f5f5f; font-size: 28px; font-weight: 600; margin-bottom: 30px;
+    }
+    .paymentContainer > div > div:first-of-type form > div{
+        margin: 0 0 85px 3.16%;
+    }
+    .paymentContainer > div > div:first-of-type form > div:not(:last-of-type) label,
+    .paymentContainer > div > div:first-of-type form > div:last-of-type label:first-of-type{
+        color: #131313; font-size: 16px; font-weight: 600;
+    }
+    .paymentContainer > div > div:first-of-type form > div:not(:last-of-type) label{
+        width: 25.32%; display: block; float: left;
+    }
+    .paymentContainer > div > div:first-of-type form > div:first-of-type input{
+        width: 71.52%; display: block; 
+    }
+    .paymentContainer > div > div:first-of-type form > div:first-of-type input:not(:last-of-type){
+        margin-bottom: 20px; 
+    }
+    .paymentContainer > div > div:first-of-type form > div:first-of-type input:nth-of-type(1),
+    .paymentContainer > div > div:first-of-type form > div:first-of-type input:nth-of-type(2){
+        height: 65px;
+    }
+    .paymentContainer > div > div:first-of-type form > div:first-of-type input:nth-of-type(3),
+    .paymentContainer > div > div:first-of-type form > div:first-of-type input:nth-of-type(4){
+        height: 90px;
+    }
+    .paymentContainer [for='recipientName'],
+    .paymentContainer [for='weContact']{
+        line-height: 65px;
+    }
+    .paymentContainer [for='userAddress'],
+    .paymentContainer [for='message']{
+        line-height: 90px;
+    }
+    .paymentContainer > div > div:first-of-type form > div:nth-of-type(2) label{
+        line-height: 40px;
+    }
+    .paymentContainer > div > div:first-of-type form > div:nth-of-type(2) #couponNum{
+        /* width: 31%;  */ max-width: 185px; width: 100%;
+        color: #131313; font-size: 14px; font-weight: 400;
+        padding: 0 20px; height: 40px; box-sizing: border-box;
+        border: 1px solid #e5e5e5; border-radius: 10px;
+    }
+    .paymentContainer > div > div:first-of-type form > div:nth-of-type(2) .bnwBtn2{
+        margin-left: 1.27%; padding: 0 2.53%; height: 40px;
+        font-size: 16px; border-radius: 10px;
+    }
+
+    .paymentContainer > div > div:first-of-type form > div:last-of-type label:first-of-type{
+        display: block; margin-bottom: 30px;
+    }
+    .paymentContainer > div > div:first-of-type form > div:last-of-type label:not(:first-of-type){
+        font-size: 14px; font-weight: 400; color: #131313; width: 19.37%;
+        margin: 0 0 30px 0; min-width: 140px;
+    }
+
+    .paymentContainer input[type='submit'],
+    .ordercompleteContainer > div > div:first-of-type .bnwBtn2{
+        width: 54.43%; line-height: 75px;
+    }
 
 
 
@@ -1821,7 +1867,137 @@
 
 
 
+    .paymentContainer > div > div:last-of-type,
+    .ordercompleteContainer > div > div:last-of-type{
+        width: 42.58%; float: right; border: 3px solid #e5e5e5; border-radius: 10px;
+        padding: 30px 0 50px; box-sizing: border-box;
+    }
+    .paymentContainer:after,
+    .ordercompleteContainer:after{
+        content: ''; display: block; clear: both;
+    }
 
+    .paymentContainer > div > div:last-of-type h3,
+    .paymentContainer > div > div:last-of-type > div:first-of-type,
+    .paymentContainer > div > div:last-of-type > div:nth-of-type(2),
+    .paymentContainer > div > div:last-of-type > div:nth-of-type(3),
+    .ordercompleteContainer > div > div:last-of-type a,
+    .ordercompleteContainer > div > div:last-of-type > div:first-of-type,
+    .ordercompleteContainer > div > div:last-of-type > div:nth-of-type(2),
+    .ordercompleteContainer > div > div:last-of-type > div:nth-of-type(3){
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .paymentContainer > div > div:last-of-type h3,
+    .ordercompleteContainer > div > div:last-of-type a{
+        color: #5f5f5f; font-size: 28px; font-weight: 600;
+        padding: 0 3.79% 30px; box-sizing: border-box;
+    }
+    .ordercompleteContainer > div > div:last-of-type a{
+        display: block;
+    }
+    .paymentContainer > div > div:last-of-type > div:first-of-type,
+    .ordercompleteContainer > div > div:last-of-type > div:first-of-type{
+        padding: 20px 3.79%; box-sizing: border-box; 
+        display: flex; align-items: center;
+    }  
+    .paymentContainer > div > div:last-of-type > div:first-of-type img,
+    .ordercompleteContainer > div > div:last-of-type > div:first-of-type img{
+        min-width: 100px; 
+        width: 15.15%; display: inline-block;
+        /* float: left; */
+    }
+    .paymentContainer > div > div:last-of-type > div:first-of-type p,
+    .ordercompleteContainer > div > div:last-of-type > div:first-of-type p{
+        margin-left: 3.03%; width: 48.48%;
+        font-size: 18px; font-weight: 600; color: #131313;
+        display: inline-block;
+    }
+    .paymentContainer > div > div:last-of-type > div:first-of-type p > span,
+    .ordercompleteContainer > div > div:last-of-type > div:first-of-type p > span{
+        display: block;
+        margin-top: 15px; font-size: 14px; font-weight: 400;
+    }
+    .paymentContainer > div > div:last-of-type > div:first-of-type > span,
+    .ordercompleteContainer > div > div:last-of-type > div:first-of-type > span{
+        font-size: 18px; font-weight: 400; color: #131313;
+    }
+    .paymentContainer > div > div:last-of-type > div:first-of-type > span:first-of-type,
+    .ordercompleteContainer > div > div:last-of-type > div:first-of-type > span:first-of-type{
+        width: 10.61%; display: inline-block; text-align: center;
+    }
+    .paymentContainer > div > div:last-of-type > div:first-of-type > span:last-of-type,
+    .ordercompleteContainer > div > div:last-of-type > div:first-of-type > span:last-of-type{
+        width: 20.11%; display: inline-block; text-align: right;
+    }
+
+
+    .paymentContainer > div > div:last-of-type > div:nth-of-type(2),
+    .ordercompleteContainer > div > div:last-of-type > div:nth-of-type(2){
+        padding: 20px 3.79%; box-sizing: border-box;
+    }
+    .paymentContainer > div > div:last-of-type > div:nth-of-type(2) b,
+    .ordercompleteContainer > div > div:last-of-type > div:nth-of-type(2) b{
+        display: block; float: left; width: 42.04%;
+        font-size: 16px; font-weight: 600; color: #131313;
+    }
+    .paymentContainer > div > div:last-of-type > div:nth-of-type(2) span,
+    .ordercompleteContainer > div > div:last-of-type > div:nth-of-type(2) span{
+        display: block; width: 57.96%; margin-left: 42.04%;
+        font-size: 18px; font-weight: 400; color: #131313;
+    }
+    .paymentContainer > div > div:last-of-type > div:nth-of-type(2) span:first-of-type,
+    .ordercompleteContainer > div > div:last-of-type > div:nth-of-type(2) span:first-of-type{
+        margin-bottom: 40px;
+    }
+
+    .paymentContainer > div > div:last-of-type > div:nth-of-type(3),
+    .ordercompleteContainer > div > div:last-of-type > div:nth-of-type(3){
+        padding: 30px 3.79%; box-sizing: border-box; margin-bottom: 30px;
+    }
+    .paymentContainer > div > div:last-of-type > div:nth-of-type(3) b,
+    .ordercompleteContainer > div > div:last-of-type > div:nth-of-type(3) b{
+        display: block; width: 52.55%; float: left;
+        font-size: 18px; font-weight: 600; color: #131313;
+    }
+    .paymentContainer > div > div:last-of-type > div:nth-of-type(3) strong,
+    .ordercompleteContainer > div > div:last-of-type > div:nth-of-type(3) strong{
+        display: block; width: 47.45%; margin-left: 52.55%;
+        font-size: 20px; font-weight: 700; color: #131313;
+    }
+    .paymentContainer > div > div:last-of-type > div:nth-of-type(3) strong small,
+    .ordercompleteContainer > div > div:last-of-type > div:nth-of-type(3) strong small{
+        display: block; margin-top: 10px;
+        font-size: 14px; font-weight: 400; color: #999999;
+    }
+
+
+    .paymentContainer > div > div:last-of-type > p,
+    .ordercompleteContainer > div > div:last-of-type > p{
+        font-size: 14px; font-weight: 400; color: #999999; line-height: 16px;
+        padding: 0 3.79%;
+    }
+    .paymentContainer > div > div:last-of-type > p:first-of-type,
+    .ordercompleteContainer > div > div:last-of-type > p:first-of-type{
+        margin-bottom: 30px;
+    }
+    .paymentContainer > div > div:last-of-type > span,
+    .ordercompleteContainer > div > div:last-of-type > span{
+        display: block; font-size: 14px; font-weight: 600; color: #999999; margin-bottom: 20px;
+        padding: 0 3.79%;
+    }
+    .paymentContainer > div > div:last-of-type > p:nth-of-type(2),
+    .ordercompleteContainer > div > div:last-of-type > p:nth-of-type(2){
+        margin-bottom: 20px;
+    }
+
+    .ordercompleteContainer > div > div:first-of-type table tbody tr th{
+        min-width: 175px;
+    }
+
+    .ordercompleteContainer > div > div:first-of-type .bnwBtn2{
+        display: block;
+    }
 
 
     
