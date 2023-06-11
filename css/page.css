@@ -2000,8 +2000,242 @@
     }
 
 
+    .officialContainer > div:first-of-type{
+        background: url('../images/official_bg.png') left top / cover no-repeat;
+        padding: 235px 2.25% 285px; margin-bottom: 100px;
+    }
+    .officialContainer > div:first-of-type h2{
+        font-size: 90px; font-weight: 600; color: #131313;
+        text-align: right; margin-bottom: 40px;
+    }
+    .officialContainer > div:first-of-type p{
+        font-size: 30px; font-weight: 300; color: #131313;
+        text-align: right; line-height: 38px; margin-bottom: 50px;
+    }
+    .officialContainer > div:first-of-type .bnwBtn{
+        font-size: 18px; padding: 20px 2.25%; float: right;
+    }
     
 
 
+
+
+
+
+    .officialContainer .bx-wrapper,
+    .brandContainer .bx-wrapper{
+        width: 100%; max-width: 1310px; margin: 0 auto; padding: 0 2.25%; box-sizing: border-box;
+        /* height: 100vh; overflow: hidden; */ box-shadow: none;
+    }
+    .officialContainer .bx-viewport,
+    .brandContainer .bx-viewport{
+        width: 100%; max-width: 1310px; margin: 0 auto;
+    }
+    .officialContainer .bx-pager{
+        /* display: none; */
+    }
+
+
+
+
+
+
+    .officialContainer .verticalSlider{
+        /* width: 100%; max-width: 1310px; margin: 0 auto; */
+        /*padding: 0 2.25%; box-sizing: border-box; */
+        /* height: 100vh; overflow: hidden; */
+    }
+
+    /* .officialContainer .verticalSlider,
+    .officialContainer .verticalSlider ul{
+        width: 100%;
+    } */
+    .officialContainer .verticalSlider li,
+    .brandContainer .verticalSlider li{
+        width: 100%; display: block;
+        display: flex; align-items: center; 
+    }
+    .officialContainer .verticalSlider li:not(:last-of-type){
+        /* margin-bottom: 100px; */
+        /* padding-bottom: 100px; box-sizing: border-box; */
+    }
+    .officialContainer .verticalSlider li > div,
+    .brandContainer .verticalSlider li > div{
+        float: left; 
+    }
+    .officialContainer .verticalSlider li > div:first-of-type,
+    .brandContainer .verticalSlider li > div:first-of-type{
+        width: 49.24%;
+    }
+    .officialContainer .verticalSlider li > div:first-of-type h2{
+        font-size: 90px; font-weight: 600; color: #131313; margin-bottom: 50px;
+    }
+    .officialContainer .verticalSlider li > div:first-of-type .bnwBtn,
+    .brandContainer .verticalSlider li div .bnwBtn{
+        font-size: 18px; line-height: 60px; width: 33.33%; display: block;
+        /* padding: 20px 6.67%; */ 
+    }
+
+    .officialContainer .verticalSlider li > div:last-of-type,
+    .brandContainer .verticalSlider li > img{
+        width: 48.85%; margin-left: 1.91%;  position: relative;
+    }
+    
+    .officialContainer .verticalSlider li > div:last-of-type p{
+        width: 100%; height: 100%; position: absolute; top: 0; left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0; transition: opacity 0.35s ease-out;
+        font-size: 30px; font-weight: 300; color: #ffffff; line-height: 40px;
+        padding: 85px 7.81%; box-sizing: border-box;
+    }
+    .officialContainer .verticalSlider li > div:last-of-type p:hover{
+        opacity: 1;
+    }
+    .officialContainer .verticalSlider li > div:last-of-type p > span{
+        margin-bottom: 25px; display: block;
+    }
+    .officialContainer .verticalSlider li > div:last-of-type img{
+        width: 100%;
+    }
+
+
+
+
+    
+    .brandContainer > h2{
+        width: 100%; background-color: #222222; 
+        padding: 260px 0;
+        margin: 0 auto; text-align: center; box-sizing: border-box;
+    }
+    .brandContainer > h2 span{
+        text-align: center; display: inline-block; vertical-align: top;
+        position: relative; width: 120px; color: #ffffff;
+    }
+    .brandContainer > h2 span:not(:first-of-type){
+        margin-left: 60px;
+    }
+    .brandContainer > h2 span:nth-of-type(2),
+    .brandContainer > h2 span:nth-of-type(4){
+        font-size: 60px; font-weight: 700; line-height: 96px;
+    }
+    .brandContainer > h2 span > strong{
+        font-size: 80px; font-weight: 700; line-height: 96px; display: block; margin-bottom: 120px;
+    }
+    .brandContainer > h2 span small{
+        display: block; position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0);
+        font-size: 28px; font-weight: 600; line-height: 34px;
+    }
+    .brandContainer > h2 span:first-of-type small,
+    .brandContainer > h2 span:last-of-type small{
+        line-height: 68px;
+    }
+    
+    
+    
+    .brandContainer > div:first-of-type{
+        width: 100%; padding: 65px 0 195px; margin: 0 auto; text-align: center;
+        box-sizing: border-box; background: url('../images/brand_bg2.png') center / cover no-repeat;
+    }
+    .brandContainer > div:first-of-type > h3{
+        font-size: 32px; font-weight: 600; color: #131313; margin-bottom: 160px;
+    }
+    .brandContainer > div:first-of-type ul li{
+        display: inline-block; vertical-align: top;
+    }
+    .brandContainer > div:first-of-type ul li > h4{
+        font-size: 80px; font-weight: 700; color: #131313; margin-bottom: 65px;
+    }
+    .brandContainer > div:first-of-type ul li > p:first-of-type{
+        font-size: 16px; font-weight: 400; color: #131313; margin-bottom: 25px; line-height: 24px;
+    }
+    .brandContainer > div:first-of-type ul li > p:first-of-type > b{
+        font-size: 20px; font-weight: 600; margin-right: 5px; line-height: 24px;
+    }
+    .brandContainer > div:first-of-type ul li > p:last-of-type{
+        font-size: 16px; font-weight: 400; color: #131313; line-height: 20px; 
+        width: 325px; margin-bottom: 10px;
+    }
+    .brandContainer > div:first-of-type ul li del{
+        font-size: 16px; font-weight: 400; color: #323232;
+    }
+    .brandContainer > div:first-of-type ul li:nth-of-type(2) span{
+        font-size: 60px; font-weight: 700; color: #131313; line-height: 80px;
+    }
+
+
+
+
+
+    .brandContainer > div:nth-of-type(2){
+        width: 100%; padding: 255px 0; box-sizing: border-box;
+        margin: 0 auto 100px; text-align: center;
+        background: url('../images/brand_bg3.png') center / cover no-repeat;
+    }
+    .brandContainer > div:nth-of-type(2) h3{
+        font-size: 80px; font-weight: 700; color: #131313; margin-bottom: 25px;
+    }
+    .brandContainer > div:nth-of-type(2) p{
+        font-size: 16px; font-weight: 400; color: #131313; line-height: 20px; width: 355px;
+        margin: 0 auto 25px;
+    }
+    .brandContainer > div:nth-of-type(2) strong{
+        font-size: 32px; font-weight: 600; color: #131313;
+    }
+
+
+    .brandContainer > div:nth-of-type(3){
+        margin-bottom: 100px;
+    }
+    .brandContainer .verticalSlider li div h2{
+        font-size: 90px; font-weight: 600; color: #131313; margin-bottom: 40px;
+    }
+    .brandContainer .verticalSlider li div p{
+        font-size: 30px; font-weight: 300; color: #131313; margin-bottom: 50px; line-height: 36px;
+    }
+
+
+
+
+    .brandContainer > div:nth-of-type(4),
+    .brandContainer > div:nth-of-type(5),
+    .brandContainer > div:nth-of-type(6){
+        width: 100%; padding: 210px 0; box-sizing: border-box; position: relative; height: 700px;
+    }
+    .brandContainer > div:nth-of-type(4){background: url('../images/brand_bg4.png') center / cover no-repeat;}
+    .brandContainer > div:nth-of-type(5){background: url('../images/brand_bg5.png') center / cover no-repeat;}
+    .brandContainer > div:nth-of-type(6){background: url('../images/brand_bg6.png') center / cover no-repeat;}
+
+    .brandContainer > div:nth-of-type(4) div,
+    .brandContainer > div:nth-of-type(5) div,
+    .brandContainer > div:nth-of-type(6) div{
+        padding: 50px 35px; width: 600px; box-sizing: border-box; position: absolute;
+    }
+    .brandContainer > div:nth-of-type(4) div,
+    .brandContainer > div:nth-of-type(5) div{
+        color: #131313; background-color: rgba(255, 255, 255, 0.5); text-align: center;
+    }
+    
+    .brandContainer > div:nth-of-type(4) div{top: 50%; left: 50%; transform: translate(-50%, -50%);}
+    .brandContainer > div:nth-of-type(5) div{top: 50%; left: 13.2%; transform: translate(0, -50%);}
+    .brandContainer > div:nth-of-type(6) div{top: 50%; right: 13.2%; transform: translate(0, -50%); text-align: left; color: #ffffff;}
+
+    .brandContainer > div:nth-of-type(4) div h3,
+    .brandContainer > div:nth-of-type(5) div h3,
+    .brandContainer > div:nth-of-type(6) div h3{
+        font-size: 34px; font-weight: 600; margin-bottom: 25px;
+    }
+    .brandContainer > div:nth-of-type(4) div strong,
+    .brandContainer > div:nth-of-type(5) div strong,
+    .brandContainer > div:nth-of-type(6) div strong{
+        font-size: 20px; font-weight: 600; margin-bottom: 20px; display: block;
+    }
+    .brandContainer > div:nth-of-type(4) div p,
+    .brandContainer > div:nth-of-type(5) div p,
+    .brandContainer > div:nth-of-type(6) div p{
+        font-size: 18px; font-weight: 400; line-height: 22px;
+    }
+    .brandContainer > div:nth-of-type(6) div p:last-of-type{
+        color: #131313; padding: 25px 30px; box-sizing: border-box; background-color: #ffffff; margin-top: 45px;
+    }
 
 }

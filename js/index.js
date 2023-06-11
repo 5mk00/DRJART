@@ -8,6 +8,7 @@
 $(document).ready(function(){
     textSlider();
     imgSlider();
+    itemSlider();
     shopGnb();
 });
 
@@ -18,6 +19,18 @@ function imgSlider(){
     $(".vertitailSlider").bxSlider({
         mode: 'vertical',
         pagerCustom: '.thumbPager'
+    });
+}
+function itemSlider(){
+    $(".verticalSlider").bxSlider({
+        mode: 'vertical',
+        auto: true,
+		speed: 500,
+		pause: 4000,
+        pager: false,
+        // autoHover: true,
+        controls: false,
+        touchEnabled : false
     });
 }
 function shopGnb(){
