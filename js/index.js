@@ -5,6 +5,9 @@
 // * accordion 만들기
 // 색상, ml 선택
 // showPW, forgotPW error, submit
+//.accComponent
+// toggle on/off
+//inputTabPage
 $(document).ready(function(){
     textSlider();
     imgSlider();

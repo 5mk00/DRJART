@@ -63,6 +63,7 @@ select, input,
 .paymentContainer > div > div:last-of-type > div:nth-of-type(3) strong small,
 .ordercompleteContainer > div > div:last-of-type > div:nth-of-type(3) strong small,
 .officialContainer, .brandContainer,
+.infoContainer,
 .accComponent,
 .starReview,
 .best,.new,.bestNew,.gift,
@@ -85,7 +86,8 @@ footer{
 .paymentContainer > h2,
 .ordercompleteContainer > h2,
 .officialContainer h2,
-.brandContainer .verticalSlider li div h2{
+.brandContainer .verticalSlider li div h2,
+.infoContainer > h2{
     font-family: 'Cormorant Garamond', serif;
 }
 .emptyCart ul li div small,
@@ -268,7 +270,8 @@ address{
     .mainContainer > div:nth-of-type(7),
     .listContainer > div,
     .mypageContainer > div,
-    .detailContainer .colorBox{
+    .detailContainer .colorBox,
+    .infoContainer > div{
         max-width: 1780px; width: 100%; margin: 0 auto;
     } 
 
@@ -278,7 +281,8 @@ address{
     .paymentContainer,
     .ordercompleteContainer,
     .officialContainer,
-    .brandContainer{
+    .brandContainer,
+    .infoContainer{
         margin: 77px auto 150px; width: 100%; 
     }
 
