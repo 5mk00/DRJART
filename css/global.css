@@ -63,7 +63,7 @@ select, input,
 .paymentContainer > div > div:last-of-type > div:nth-of-type(3) strong small,
 .ordercompleteContainer > div > div:last-of-type > div:nth-of-type(3) strong small,
 .officialContainer, .brandContainer,
-.infoContainer,
+.infoContainer, textarea,
 .accComponent,
 .starReview,
 .best,.new,.bestNew,.gift,
@@ -499,8 +499,8 @@ address{
     
     .quantComponent{
         float: left; border: 1px solid #e5e5e5; border-radius: 16px;
-        width: 45.4%;
-        text-align: center; max-width: 110px; vertical-align: middle;
+        /* width: 45.4%; */ width: 110px; /* min-width: 110px;*/
+        text-align: center; vertical-align: middle;
     }
     .minusBtn,
     .plusBtn{
@@ -575,16 +575,18 @@ address{
         line-height: 24px;
     }
     .haveCart div:nth-of-type(2) span #totalPrice{
-        font-size: 20px; font-weight: 700; color: #131313;
-        border: none; width: 20%; text-align: right; line-height: 24px;
-        vertical-align: baseline;
+        font-size: 20px; font-weight: 700; color: #131313; border: none; 
+        width: 20%; 
+        text-align: right; line-height: 24px; vertical-align: baseline;
     }
     .checkoutBtn{
-        margin-left: 4.36%; padding: 20px 4.36% 20px 10.9%; font-size: 16px; font-weight: 700;
+        margin-left: 4.36%; 
+        /* padding: 20px 4.36% 20px 10.9%;  */padding: 20px 3.75% 20px 8%; 
+        font-size: /*16px*/1vw; font-weight: 700;
         /* background-color: #131313; */
         color: white; border-radius: 50px; box-sizing: border-box;
-        background: url('../images/cartIcon.png') 10.9% center / 15px no-repeat #131313; 
-        text-align: right;
+        background: url('../images/cartIcon.png') 5% center / 15px no-repeat #131313; 
+        text-align: right; border: none;
     }
 
 

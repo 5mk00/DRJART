@@ -13,6 +13,7 @@ $(document).ready(function(){
     imgSlider();
     itemSlider();
     shopGnb();
+    show();
 });
 
 function textSlider(){
@@ -46,7 +47,12 @@ function shopGnb(){
 }
 
 
-
+function show(){
+    $('#showModal').click(function(){
+        $('#modalWrap').addClass('active');
+        $('body').css('overflow','hidden');
+    });
+}
 
 
 

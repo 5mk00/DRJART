@@ -2451,10 +2451,6 @@
     .customerInquiry > div > div > div:last-of-type{
         width: 100%;
     }
-    .customerInquiry .inputTab,
-    .customerInquiry .inputTabPage{
-        width: 100%;
-    }
     .customerInquiry .inputTab input{
         display: inline-block; width: 19.02%; padding: 0 1.54%; box-sizing: border-box;
         text-align: center; height: 100px;
@@ -2494,6 +2490,7 @@
     .customerInquiry > div > div > div:last-of-type textarea{
         width: 100%; height: 280px; margin-bottom: 50px; resize: none;
         border: 2px solid #e5e5e5; border-radius: 15px; box-sizing: border-box;
+        font-size: 25px; font-weight: 500; color: #131313; padding: 20px 2.79%;
     }
     .customerInquiry > div > div > div:last-of-type [type="text"],
     .customerInquiry > div > div > div:last-of-type [type="email"],
@@ -2526,7 +2523,42 @@
         display: block; width: 32.45%; padding: 25px 0; box-sizing: border-box;
     }
 
-
+    #modalWrap{
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        /* padding-top: 100px; */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        display: none;
+    }
+    #modalWrap.active{
+        display: flex;
+    }
+    #modalContent {
+        width: 380px;
+        padding: 30px; box-sizing: border-box;
+        margin: 0 auto;
+        border: 1px solid #777;
+        background-color: #fff;
+        position: absolute; top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #modalContent p{
+        font-size: 28px; font-weight: 600; color: #131313; line-height: 36px;
+        margin-bottom: 30px;
+    }
+    #modalContent small{
+        font-size: 16px; font-weight: 400; color: #999999; line-height: 24px;
+        display: block; margin-bottom: 85px;
+    }
+    #modalContent .bnwBtn2{
+        display: block; width: 100px; line-height: 40px; float: right;
+        border-radius: 10px;
+    }
 
 
 

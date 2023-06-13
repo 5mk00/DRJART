@@ -271,7 +271,7 @@
     
                     <div class="inputTab">
                         <input type="button" value="Product 
-Inquiry">
+Inquiry" class="active">
                         <input type="button" value="Order/Delivery 
 Inquiry">
                         <input type="button" value="Login/information 
@@ -281,7 +281,7 @@ related inquiries">
                         <input type="button" value="etc">
                     </div>
                     <ul class="inputTabPage">
-                        <li>    
+                        <li class="active">    
                             <input type="radio" name="productInquiry" id="sale"><label for="sale">Sale product</label>
                             <input type="radio" name="productInquiry" id="discontinued"><label for="discontinued">Discontinued product 	/ product recommendation</label>
                             <input type="radio" name="productInquiry" id="skin"><label for="skin">Skin consultation</label>
@@ -334,7 +334,7 @@ related inquiries">
                     <input type="checkbox" id="agree_chk2">
                     <label for="agree_chk2">* I agree to the collection and use of personal information.</label>
     
-                    <input type="button" value="Submit email inquiry" class="bnwBtn2">
+                    <input type="button" value="Submit email inquiry" id="showModal" class="bnwBtn2">
                 </div>
             </div>
         </div>
@@ -402,5 +402,15 @@ related inquiries">
                 Copyright© Have &amp; Be co., Ltd. All rights reserved.</span>
         </div>
     </footer>
+
+    <div id="modalWrap">
+        <div id="modalContent">
+          <p>Your inquiry has been received.<br>
+              We will respond as soon as possible.</p>
+          <small>- Frequently asked questions can also be found on the FAQ page.<br>
+              - If you want real-time consultation, please use chat or phone consultation. (Consultation hours: 9:00 am to 12:50 am, 2:00 pm to 6:00 pm on weekdays)</small>
+          <a href="index.html" class="bnwBtn2">OK</a>
+        </div>        
+    <div>
 </body>
 </html>
