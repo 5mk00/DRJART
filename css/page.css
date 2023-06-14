@@ -867,12 +867,15 @@
         font-size: 16px; font-weight: 600; color: #131313; display: block;
         background: url('../images/expand_close.png') right center / 25px no-repeat;
     }
+    .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong.active{
+        background: url('../images/expand_open.png') right center / 25px no-repeat;
+    }
+    .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong.active ~ p{
+        display: block;
+    }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li p{
         margin-top: 25px; font-size: 14px; font-weight: 400; color: #131313; line-height: 17px;
         display: none;
-    }
-    .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li p.active{
-        display: block;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li:last-of-type p{
         height: 70px; overflow-y: scroll;
@@ -912,12 +915,15 @@
         background: url('../images/expand_close.png') right center / 25px no-repeat;
         line-height: 42px;
     }
+    .detailContainer > .accComponent h3.active{
+        background: url('../images/expand_open.png') right center / 25px no-repeat;
+    }
+    .detailContainer > .accComponent h3.active + ul{
+        display: block;
+    }
     .detailContainer > .accComponent ul{
         margin: 50px 0 0 1.56%; width: 100%; box-sizing: border-box;
         display: none;
-    }
-    .detailContainer > .accComponent ul.active{
-        display: block;
     }
     .detailContainer > .accComponent ul li{
         display: block; width: 100%;
@@ -2296,6 +2302,16 @@
         display: block;
         background: url('../images/expand_close.png') right center / 30px no-repeat;
     }
+    .faq > div > div > .accComponent > ul li strong.active{
+        background: url('../images/expand_open.png') right center / 30px no-repeat;
+    }
+    .faq > div > div > .accComponent > ul li strong ~ p{
+        display: none;
+    }
+    .faq > div > div > .accComponent > ul li strong.active ~ p{
+        display: block;
+    }
+
     .faq > div > div > .accComponent > ul li p,
     .infoContainer > div > div > div > p,
     .infoContainer > div > div > div p > a,
@@ -2322,13 +2338,13 @@
     .infoContainer .textIndent{
         margin-left: 2.79%;
     }
-    .faq > div > div > .accComponent > ul li p{
+    /* .faq > div > div > .accComponent > ul li p{
         display: none;
     }
     .faq > div > div > .accComponent > ul li p.active,
     .customerInquiry > div > div > div:first-of-type div div strong{
         display: block;
-    }
+    } */
 
     .infoContainer > div > div > div:not(:last-of-type),
     .customerInquiry > div > div > div:first-of-type > p{

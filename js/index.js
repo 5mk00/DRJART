@@ -13,7 +13,7 @@ $(document).ready(function(){
     imgSlider();
     itemSlider();
     shopGnb();
-    show();
+    modalShow();
 });
 
 function textSlider(){
@@ -47,7 +47,7 @@ function shopGnb(){
 }
 
 
-function show(){
+function modalShow(){
     $('#showModal').click(function(){
         $('#modalWrap').addClass('active');
         $('body').css('overflow','hidden');
