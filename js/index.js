@@ -10,14 +10,21 @@
 //inputTabPage
 $(document).ready(function(){
     textSlider();
+    cartSlider()
     imgSlider();
     itemSlider();
     shopGnb();
     modalShow();
+    cartPanel();
 });
 
 function textSlider(){
     $(".collectionSlider").bxSlider();
+}
+function cartSlider(){
+    $(".recSlider").bxSlider({
+        pager: false
+    });
 }
 function imgSlider(){
     $(".vertitailSlider").bxSlider({
@@ -45,6 +52,15 @@ function shopGnb(){
         $('#gnbPanel').removeClass('active');
     });
 }
+function cartPanel(){
+    $('#home > div > ul:last-of-type li input').click(function(){
+        $('#cartPanel').addClass('active');
+    });
+    $('.cartClose').click(function(){
+        $('#cartPanel').removeClass('active');
+    });
+}
+
 
 
 function modalShow(){
