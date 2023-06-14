@@ -554,7 +554,7 @@ address{
         box-sizing: border-box;
     }
     .haveCart .bx-viewport{
-        width: 100%;
+        width: 100%; border-radius: 4px;
     }
     .recSlider li{
         width: 100%; 
