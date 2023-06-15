@@ -107,6 +107,10 @@ footer{
     font-family: 'News Cycle', sans-serif;
 }
 
+body{
+    -webkit-tap-highlight-color : transparent !important;
+}
+
 address{
     font-style: normal;
 }
@@ -259,7 +263,14 @@ address{
 
 
 
-@media screen and (min-width: 768px) and (max-width: 1279px){
+@media screen and (min-width: 753px) and (max-width: 1279px){
+
+    .best,
+    .new,
+    .bestNew,
+    .gift{
+        font-size: 13px;
+    }
     
     header > div,
     footer,
@@ -666,7 +677,7 @@ address{
     }
     header > div nav ul li:nth-of-type(2)::before{
         display: block; content: "Benefits";
-        font-size: 20px; color: #131313; font-weight: 600;
+        font-size: /*20px*/18px; color: #131313; font-weight: 600;
     }
     header > div nav ul li:nth-of-type(2):hover{
         text-decoration: underline;
@@ -677,11 +688,11 @@ address{
     }
     header > div nav ul li a,
     header > div > ul li a{
-        display: block; font-size: 20px; color: #131313; font-weight: 600;
+        display: block; font-size: /*20px*/18px; color: #131313; font-weight: 600;
     }
     header > div nav ul li div input[type='button'],
     header > div > ul li [type='button']{
-        all: unset; font-size: 20px; color: #131313; font-weight: 600;
+        all: unset; font-size: /*20px*/18px; color: #131313; font-weight: 600;
         cursor: pointer;
     }
     header > div nav ul li a:hover,
@@ -760,6 +771,10 @@ address{
     footer > div:nth-of-type(2) div:nth-of-type(1) nav{
         float: left; height: 252px; min-width: 190px;
     }
+    footer > div:nth-of-type(2) div:nth-of-type(1) nav:nth-of-type(1),
+    footer > div:nth-of-type(2) div:nth-of-type(1) nav:nth-of-type(2){
+        margin-bottom: 30px;
+    }
     footer > div:nth-of-type(2) div:nth-of-type(1) nav:nth-of-type(2n){
         margin-left: 19.6%;
     }
@@ -792,7 +807,7 @@ address{
     }
     footer > div:nth-of-type(3),
     footer > div:nth-of-type(3) a{
-        font-size: 15px; font-weight: 300; color: #131313; line-height: 22px;
+        font-size: /*15px*/14px; font-weight: 300; color: #131313; line-height: 22px;
     }
     footer > div:nth-of-type(3) a:hover,
     footer > div:nth-of-type(3) a.acitve{
