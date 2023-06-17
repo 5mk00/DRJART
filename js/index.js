@@ -8,6 +8,8 @@
 //.accComponent
 // toggle on/off
 //inputTabPage
+var reloadTarget = null;
+
 $(document).ready(function(){
     textSlider();
     cartSlider()
@@ -22,8 +24,9 @@ function textSlider(){
     $(".collectionSlider").bxSlider();
 }
 function cartSlider(){
-    $(".recSlider").bxSlider({
-        pager: false
+    reloadTarget = $(".recSlider").bxSlider({
+        pager: false,
+        wrapperClass: 'rec-wrapper'
     });
 }
 function imgSlider(){
@@ -55,6 +58,7 @@ function shopGnb(){
 function cartPanel(){
     $('#home > div > ul:last-of-type li input').click(function(){
         $('#cartPanel').addClass('active');
+        reloadTarget.reloadSlider();
     });
     $('.cartClose').click(function(){
         $('#cartPanel').removeClass('active');

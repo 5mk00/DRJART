@@ -263,7 +263,7 @@ address{
 
 
 
-@media screen and (min-width: 753px) and (max-width: 1279px){
+@media screen and (min-width: 768px) and (max-width: 1279px){
 
     .best,
     .new,
@@ -465,7 +465,7 @@ address{
 
     .haveCart{
         display: none; z-index: 100; background-color: #f6f6f6; height: 100%;
-        overflow-y: scroll; padding-bottom: 165px; box-sizing: border-box;
+        overflow-y: auto; padding-bottom: 165px; box-sizing: border-box;
     }
     .haveCart::-webkit-scrollbar{
         width: 5px;
@@ -551,51 +551,61 @@ address{
         font-size: 14px; font-weight: 600; color: #131313;
         margin-bottom: 10px; text-align: center;
     }
+
+
+    
+    .haveCart .rec-wrapper{
+        width: 86%; margin: 0 auto;
+        position: relative;
+    }
+    .haveCart .bx-viewport{
+        border: 1px solid #e5e5e5; border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .haveCart .recSlider li:after{
+        content: ''; display: block; clear: both;
+    }
+    .haveCart .recSlider li{
+        background-color: #ffffff;
+        position: relative; display: flex; align-items: center;
+    }
+    .haveCart .recSlider li img{
+        width: 20.93%; float: left;
+    }
+    .haveCart .recSlider li div{
+        width: 74.42%; float: right;
+        margin-left: auto;
+        
+    }
+
+    .haveCart .recSlider li div em,
+    .haveCart .recSlider li div small{
+        display: block; text-align: left;
+    }
+    .haveCart .recSlider li div em{
+        font-size: 18px; font-style: italic; color: #131313; font-weight: 400;
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        line-height: 22px; margin-bottom: 10px;
+        width: 71.88%;
+    }
+    .haveCart .recSlider li div small{
+        font-size: 12px; font-weight: 400; color: #131313;
+    }
+    .haveCart .recSlider li div .bnwBtn{
+        font-size: 12px; padding: 10px 2.25%; min-width: 48px;
+        position: absolute; right: 4.65%; top: 50%; transform: translate(0, -50%);
+    }
     .haveCart .bx-prev{
-        position: absolute; left: -30px; opacity: 0.5;
+        position: absolute; left: -6.98%; top: 50%; transform: translate(0, -50%); 
+        opacity: 0.5; color: transparent;
         background: url('../images/slide_prev.png') center / 30px no-repeat;
     }
     .haveCart .bx-next,
     .haveCart .bx-next:hover,
     .haveCart .bx-next:focus{
-        position: absolute; right: -30px; opacity: 0.5;
+        position: absolute; right: -6.98%; top: 50%; transform: translate(0, -50%); 
+        opacity: 0.5; color: transparent;
         background: url('../images/slide_next.png') center / 30px no-repeat;
-    }
-    .haveCart .bx-wrapper{
-        width: 86%; margin: 0 auto; box-shadow: none; 
-        border: 1px solid #e5e5e5; border-radius: 4px;
-        box-sizing: border-box;
-    }
-    .haveCart .bx-viewport{
-        width: 100%; border-radius: 4px;
-    }
-    .recSlider li{
-        width: 100%; 
-        position: relative;
-        background-color: white; height: 90px;
-    }
-    .recSlider li img{
-        width: 90px; float: left;
-    }
-    .recSlider li > div{
-        width: 100%; padding: 23px 21% 23px 115px; box-sizing: border-box;
-        
-    }
-    .recSlider li div em,
-    .recSlider li div small{
-        display: block; text-align: left; 
-    }
-    .recSlider li div em{
-        font-size: 18px; font-style: italic; color: #131313; font-weight: 400;
-        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-        line-height: 22px; margin-bottom: 10px;
-    }
-    .recSlider li div small{
-        font-size: 12px; font-weight: 400; color: #131313;
-    }
-    .recSlider li div .bnwBtn{
-        font-size: 12px; padding: 10px 2.25%; min-width: 48px;
-        position: absolute; right: 4%; top: 50%; transform: translate(0, -50%);
     }
     
 
@@ -1019,7 +1029,7 @@ address{
 
     .haveCart{
         display: none; z-index: 100; background-color: #f6f6f6; height: 100%;
-        overflow-y: scroll; padding-bottom: 165px; box-sizing: border-box;
+        overflow-y: auto; padding-bottom: 165px; box-sizing: border-box;
     }
     .haveCart::-webkit-scrollbar{
         width: 5px;
@@ -1097,6 +1107,12 @@ address{
     }
 
 
+
+
+
+
+
+
     .haveCart > div{
         width: 100%; background-color: #f6f6f6; box-sizing: border-box; padding: 30px 0;
         position: relative;
@@ -1105,53 +1121,68 @@ address{
         font-size: 14px; font-weight: 600; color: #131313;
         margin-bottom: 10px; text-align: center;
     }
+
+
+    
+    .haveCart .rec-wrapper{
+        width: 86%; margin: 0 auto;
+        position: relative;
+    }
+    .haveCart .bx-viewport{
+        border: 1px solid #e5e5e5; border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .haveCart .recSlider li:after{
+        content: ''; display: block; clear: both;
+    }
+    .haveCart .recSlider li{
+        background-color: #ffffff;
+        position: relative; display: flex; align-items: center;
+    }
+    .haveCart .recSlider li img{
+        width: 20.93%; float: left;
+    }
+    .haveCart .recSlider li div{
+        width: 74.42%; float: right;
+        margin-left: auto;
+        
+    }
+
+    .haveCart .recSlider li div em,
+    .haveCart .recSlider li div small{
+        display: block; text-align: left;
+    }
+    .haveCart .recSlider li div em{
+        font-size: 18px; font-style: italic; color: #131313; font-weight: 400;
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        line-height: 22px; margin-bottom: 10px;
+        width: 71.88%;
+    }
+    .haveCart .recSlider li div small{
+        font-size: 12px; font-weight: 400; color: #131313;
+    }
+    .haveCart .recSlider li div .bnwBtn{
+        font-size: 12px; padding: 10px 2.25%; min-width: 48px;
+        position: absolute; right: 4.65%; top: 50%; transform: translate(0, -50%);
+    }
     .haveCart .bx-prev{
-        position: absolute; left: -30px; opacity: 0.5;
+        position: absolute; left: -6.98%; top: 50%; transform: translate(0, -50%); 
+        opacity: 0.5; color: transparent;
         background: url('../images/slide_prev.png') center / 30px no-repeat;
     }
     .haveCart .bx-next,
     .haveCart .bx-next:hover,
     .haveCart .bx-next:focus{
-        position: absolute; right: -30px; opacity: 0.5;
+        position: absolute; right: -6.98%; top: 50%; transform: translate(0, -50%); 
+        opacity: 0.5; color: transparent;
         background: url('../images/slide_next.png') center / 30px no-repeat;
     }
-    .haveCart .bx-wrapper{
-        width: 86%; margin: 0 auto; box-shadow: none; 
-        border: 1px solid #e5e5e5; border-radius: 4px;
-        box-sizing: border-box;
-    }
-    .haveCart .bx-viewport{
-        width: 100%; border-radius: 4px;
-    }
-    .recSlider li{
-        width: 100%; 
-        position: relative;
-        background-color: white; height: 90px;
-    }
-    .recSlider li img{
-        width: 90px; float: left;
-    }
-    .recSlider li > div{
-        width: 100%; padding: 23px 21% 23px 115px; box-sizing: border-box;
-        
-    }
-    .recSlider li div em,
-    .recSlider li div small{
-        display: block; text-align: left; 
-    }
-    .recSlider li div em{
-        font-size: 18px; font-style: italic; color: #131313; font-weight: 400;
-        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-        line-height: 22px; margin-bottom: 10px;
-    }
-    .recSlider li div small{
-        font-size: 12px; font-weight: 400; color: #131313;
-    }
-    .recSlider li div .bnwBtn{
-        font-size: 12px; padding: 10px 2.25%; min-width: 48px;
-        position: absolute; right: 4%; top: 50%; transform: translate(0, -50%);
-    }
-    
+
+
+
+
+
+
 
     .haveCart > div:last-of-type{
         position: absolute; bottom: 0; background-color: white;
