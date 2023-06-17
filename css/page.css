@@ -582,7 +582,7 @@
     }
     .listContainer > div > div h3:after,
     .mypageContainer > div > div > h3:after,
-    .faq > div > div > .accComponent > h3:after,
+    .faq > div > div > div > h3:after,
     .orderguide > div > div > h3:after,
     .deliveryinfo > div > div > h3:after{
         content: '';
@@ -816,6 +816,7 @@
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong{
         font-size: /*16px*/14px; font-weight: 600; color: #131313; display: block;
         background: url('../images/expand_close.png') right center / /*25px*/22px no-repeat;
+        cursor: pointer;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong.active{
         background: url('../images/expand_open.png') right center / /*25px*/22px no-repeat;
@@ -863,7 +864,7 @@
     .detailContainer > .accComponent h3{
         font-size: /*28px*/26px; font-weight: 600; color: #131313;
         background: url('../images/expand_close.png') right center / 30px no-repeat;
-        line-height: /*34px*/32px;
+        line-height: /*34px*/32px; cursor: pointer;
     }
     .detailContainer > .accComponent h3.active{
         background: url('../images/expand_open.png') right center / 30px no-repeat;
@@ -2199,13 +2200,13 @@
     .termsofuse > div > div > div:last-of-type > p > a{
         text-decoration: underline;
     }
-    .faq > div > div > .accComponent{
+    .faq > div > div > div{
         width: 100%; 
     }
-    .faq > div > div > .accComponent:not(:last-of-type){
+    .faq > div > div > div:not(:last-of-type){
         margin-bottom: 50px;
     }
-    .faq > div > div > .accComponent > h3{
+    .faq > div > div > div > h3{
         width: 100%;
         display: flex;
         flex-basis: 100%;
@@ -2213,7 +2214,7 @@
         margin: 0 auto 15px;
         font-size: 34px; color: #131313; font-weight: 600;
     }
-    .faq > div > div > .accComponent > ul,
+    .faq > div > div > div > ul,
     .orderguide > div > div > div,
     .deliveryinfo > div > div > div,
     .exchange > div > div > div,
@@ -2221,30 +2222,31 @@
     .termsofuse > div > div > div{
         width: 100%; padding: 0 1.88%; box-sizing: border-box;
     }
-    .faq > div > div > .accComponent > ul li{
+    .faq > div > div > div > ul li{
         width: 100%; display: block;
     }
-    .faq > div > div > .accComponent > ul li:not(:first-of-type){
+    .faq > div > div > div > ul li:not(:first-of-type){
         border-top: 1px solid #e5e5e5;
     }
-    .faq > div > div > .accComponent > ul li strong{
+    .faq > div > div > div > ul li strong{
         font-size: 28px; font-weight: 600; line-height: 34px; color: #5f5f5f;
         /* margin-bottom: 35px; */
         padding: 35px 0; box-sizing: border-box;
         display: block;
         background: url('../images/expand_close.png') right center / 30px no-repeat;
+        cursor: pointer;
     }
-    .faq > div > div > .accComponent > ul li strong.active{
+    .faq > div > div > div > ul li strong.active{
         background: url('../images/expand_open.png') right center / 30px no-repeat;
     }
-    .faq > div > div > .accComponent > ul li strong ~ p{
+    .faq > div > div > div > ul li strong ~ p{
         display: none;
     }
-    .faq > div > div > .accComponent > ul li strong.active ~ p{
+    .faq > div > div > div > ul li strong.active ~ p{
         display: block;
     }
 
-    .faq > div > div > .accComponent > ul li p,
+    .faq > div > div > div > ul li p,
     .infoContainer > div > div > div > p,
     .infoContainer > div > div > div p > a,
     .privacy > div > div > div > ul li > p,
@@ -2252,13 +2254,13 @@
     .customerInquiry > div > div > div:last-of-type [for="inquiryContent"]{
         font-size: 25px; font-weight: 500; color: #999999; line-height: 32px;
     }
-    .faq > div > div > .accComponent > ul li p:not(:last-of-type),
+    .faq > div > div > div > ul li p:not(:last-of-type),
     .infoContainer > div > div > div > p:not(:last-of-type),
     .privacy > div > div > div > ul li > p:not(:last-of-type),
     .customerInquiry > div > div > div:first-of-type div div strong{
         margin-bottom: 30px;
     }
-    .faq > div > div > .accComponent > ul li p:last-of-type,
+    .faq > div > div > div > ul li p:last-of-type,
     .privacy > div > div > div > ul li > p:last-of-type,
     .privacy > div > div > div:nth-of-type(2) > p:nth-of-type(2),
     .privacy > div > div > div:nth-of-type(6) > p:nth-of-type(2),
@@ -2270,10 +2272,10 @@
     .infoContainer .textIndent{
         margin-left: 2.79%;
     }
-    /* .faq > div > div > .accComponent > ul li p{
+    /* .faq > div > div > div > ul li p{
         display: none;
     }
-    .faq > div > div > .accComponent > ul li p.active,
+    .faq > div > div > div > ul li p.active,
     .customerInquiry > div > div > div:first-of-type div div strong{
         display: block;
     } */
@@ -2511,8 +2513,6 @@
 
 
 }
-
-
 
 
 
@@ -3121,7 +3121,7 @@
     }
     .listContainer > div > div h3:after,
     .mypageContainer > div > div > h3:after,
-    .faq > div > div > .accComponent > h3:after,
+    .faq > div > div > div > h3:after,
     .orderguide > div > div > h3:after,
     .deliveryinfo > div > div > h3:after{
         content: '';
@@ -3386,6 +3386,7 @@
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong{
         font-size: 16px; font-weight: 600; color: #131313; display: block;
         background: url('../images/expand_close.png') right center / 25px no-repeat;
+        cursor: pointer;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong.active{
         background: url('../images/expand_open.png') right center / 25px no-repeat;
@@ -3433,7 +3434,7 @@
     .detailContainer > .accComponent h3{
         font-size: 28px; font-weight: 600; color: #131313;
         background: url('../images/expand_close.png') right center / 30px no-repeat;
-        line-height: 34px;
+        line-height: 34px; cursor: pointer;
     }
     .detailContainer > .accComponent h3.active{
         background: url('../images/expand_open.png') right center / 30px no-repeat;
@@ -4792,13 +4793,13 @@
     .termsofuse > div > div > div:last-of-type > p > a{
         text-decoration: underline;
     }
-    .faq > div > div > .accComponent{
+    .faq > div > div > div{
         width: 100%; 
     }
-    .faq > div > div > .accComponent:not(:last-of-type){
+    .faq > div > div > div:not(:last-of-type){
         margin-bottom: 50px;
     }
-    .faq > div > div > .accComponent > h3{
+    .faq > div > div > div > h3{
         width: 100%;
         display: flex;
         flex-basis: 100%;
@@ -4806,7 +4807,7 @@
         margin: 0 auto 15px;
         font-size: 34px; color: #131313; font-weight: 600;
     }
-    .faq > div > div > .accComponent > ul,
+    .faq > div > div > div > ul,
     .orderguide > div > div > div,
     .deliveryinfo > div > div > div,
     .exchange > div > div > div,
@@ -4814,30 +4815,31 @@
     .termsofuse > div > div > div{
         width: 100%; padding: 0 1.88%; box-sizing: border-box;
     }
-    .faq > div > div > .accComponent > ul li{
+    .faq > div > div > div > ul li{
         width: 100%; display: block;
     }
-    .faq > div > div > .accComponent > ul li:not(:first-of-type){
+    .faq > div > div > div > ul li:not(:first-of-type){
         border-top: 1px solid #e5e5e5;
     }
-    .faq > div > div > .accComponent > ul li strong{
+    .faq > div > div > div > ul li strong{
         font-size: 28px; font-weight: 600; line-height: 34px; color: #5f5f5f;
         /* margin-bottom: 35px; */
         padding: 35px 0; box-sizing: border-box;
         display: block;
         background: url('../images/expand_close.png') right center / 30px no-repeat;
+        cursor: pointer;
     }
-    .faq > div > div > .accComponent > ul li strong.active{
+    .faq > div > div > div > ul li strong.active{
         background: url('../images/expand_open.png') right center / 30px no-repeat;
     }
-    .faq > div > div > .accComponent > ul li strong ~ p{
+    .faq > div > div > div > ul li strong ~ p{
         display: none;
     }
-    .faq > div > div > .accComponent > ul li strong.active ~ p{
+    .faq > div > div > div > ul li strong.active ~ p{
         display: block;
     }
 
-    .faq > div > div > .accComponent > ul li p,
+    .faq > div > div > div > ul li p,
     .infoContainer > div > div > div > p,
     .infoContainer > div > div > div p > a,
     .privacy > div > div > div > ul li > p,
@@ -4845,13 +4847,13 @@
     .customerInquiry > div > div > div:last-of-type [for="inquiryContent"]{
         font-size: 25px; font-weight: 500; color: #999999; line-height: 32px;
     }
-    .faq > div > div > .accComponent > ul li p:not(:last-of-type),
+    .faq > div > div > div > ul li p:not(:last-of-type),
     .infoContainer > div > div > div > p:not(:last-of-type),
     .privacy > div > div > div > ul li > p:not(:last-of-type),
     .customerInquiry > div > div > div:first-of-type div div strong{
         margin-bottom: 30px;
     }
-    .faq > div > div > .accComponent > ul li p:last-of-type,
+    .faq > div > div > div > ul li p:last-of-type,
     .privacy > div > div > div > ul li > p:last-of-type,
     .privacy > div > div > div:nth-of-type(2) > p:nth-of-type(2),
     .privacy > div > div > div:nth-of-type(6) > p:nth-of-type(2),
@@ -4863,10 +4865,10 @@
     .infoContainer .textIndent{
         margin-left: 2.79%;
     }
-    /* .faq > div > div > .accComponent > ul li p{
+    /* .faq > div > div > div > ul li p{
         display: none;
     }
-    .faq > div > div > .accComponent > ul li p.active,
+    .faq > div > div > div > ul li p.active,
     .customerInquiry > div > div > div:first-of-type div div strong{
         display: block;
     } */

@@ -16,8 +16,9 @@ $(document).ready(function(){
     imgSlider();
     itemSlider();
     shopGnb();
-    modalShow();
     cartPanel();
+    accActive();
+    modalShow();
 });
 
 function textSlider(){
@@ -44,7 +45,8 @@ function itemSlider(){
         pager: false,
         // autoHover: true,
         controls: false,
-        touchEnabled : false
+        touchEnabled : false,
+        startSlide: 0
     });
 }
 function shopGnb(){
@@ -64,6 +66,17 @@ function cartPanel(){
         $('#cartPanel').removeClass('active');
     });
 }
+
+
+
+
+function accActive(){
+    $('.accComponent > li > strong, .accComponent > h3').click(function(){
+        $(this).toggleClass('active');
+    });
+}
+
+
 
 
 
