@@ -317,6 +317,10 @@ address{
     input[type="radio"] + label:last-of-type{
         margin-left: 20px;
     }
+    .selectBox{
+        background: url('../images/arrow.png') 90% center / 18px no-repeat;
+        appearance: none;
+    }
 
     .loginContainer > form > fieldset [type='email'],
     .loginContainer > form > fieldset [type='password'],
@@ -880,6 +884,10 @@ address{
     }
     input[type="radio"] + label:last-of-type{
         margin-left: 20px;
+    }
+    .selectBox{
+        background: url('../images/arrow.png') 90% center / 20px no-repeat;
+        appearance: none;
     }
 
     .loginContainer > form > fieldset [type='email'],

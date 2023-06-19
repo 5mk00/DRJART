@@ -1348,23 +1348,24 @@
     .paymentContainer > h2,
     .ordercompleteContainer > h2,
     .infoContainer > h2{
-        padding: 80px 0; box-sizing: border-box; text-align: center;
-        font-size: 90px; font-weight: 600; color: #131313;
+        padding: /*80px*/65px 0; box-sizing: border-box; text-align: center;
+        font-size: /*90px*/78px; font-weight: 600; color: #131313;
     }
 
 
     .mypageContainer > div aside p{
-        font-size: 20px; font-weight: 500; color: #131313; margin-bottom: 30px;
+        font-size: /*20px*/18px; font-weight: 500; color: #131313; margin-bottom: 30px;
     }
     .mypageContainer > div aside img{
         width: 51.33%; display: block; margin-bottom: 10px;
+        min-width: 90px;
     }
     .mypageContainer > div aside > a{
-        font-size: 15px; font-weight: 300; color: #131313; margin-bottom: 30px;
+        font-size: /*15px*/13px; font-weight: 300; color: #131313; margin-bottom: 30px;
         display: block; text-decoration: underline;
     }
     .mypageContainer > div aside > div h3{
-        font-size: 20px; font-weight: 600; color: #131313; margin-bottom: 30px;
+        font-size: /*20px*/18px; font-weight: 600; color: #131313; margin-bottom: 30px;
     }
     
 
@@ -1376,29 +1377,25 @@
         content: ''; display: block; clear: both;
     }
     .mypage > div > div > div:first-of-type img{
-        width: 150px; height: 150px; border-radius: 50%;
+        width: /*150px*/100px; height: /*150px*/100px; border-radius: 50%;
         background-position: center; background-size: contain;
-        vertical-align: middle; margin-right: 50px; float: left;
+        vertical-align: middle; margin-right: /*50px*/40px; float: left;
     }
     .mypage > div > div > div:first-of-type strong{
-        font-size: 34px; font-weight: 600; margin: 40px 0 15px; display: block;
+        font-size: /*34px*/32px; font-weight: 600; display: block;
+        margin: /*40px*/20px 0 15px;
     }
     .mypage > div > div > div:first-of-type small{
-        font-size: 15px; font-weight: 300; display: block;
+        font-size: /*15px*/13px; font-weight: 300; display: block;
     }
     .mypage > div > div > div:first-of-type div{
-        position: absolute; right: 3.94%; top: 50%; transform: translate(0, -50%);
-        display: block; font-size: 25px; font-weight: 500; text-align: right;
-        width: 30%;
-    }
-    .mypage > div > div > div:first-of-type div span{
-        margin-left: 13.15%;
+        display: none;
     }
     .mypage > div > div > div h4,
     .myprofile h4,
     .shippingOrder h4,
     .orderDetail table caption{
-        font-size: 28px; font-weight: 600; color: #5f5f5f; margin-bottom: 30px;
+        font-size: /*28px*/26px; font-weight: 600; color: #5f5f5f; margin-bottom: 30px;
     }
     .mypage > div > div > div:nth-of-type(2),
     .shippingOrder > div > div > ul{
@@ -1417,20 +1414,24 @@
     .mypage > div > div > div:nth-of-type(2) ul li,
     .shippingOrder > div > div > ul li{
         float: left; display: block;
-        width: 22.045%; 
-        padding: 20px 3.5%;
+        width: /*22.045%*/23.87%;
+        padding: 20px /*3.5%*/0;
         text-align: center; color: #131313; height: 100%;
         border: 3px solid #e5e5e5; box-sizing: border-box;
         position: relative;
     }
     .mypage > div > div > div:nth-of-type(2) ul li:not(:first-of-type),
     .shippingOrder > div > div > ul li:not(:first-of-type){
-        margin-left: 3.94%;
+        margin-left: /*3.94%*/1.5%;
     }
     .mypage > div > div > div:nth-of-type(2) ul li span,
     .shippingOrder > div > div > ul li span{
-        display: block; font-size: 25px; font-weight: 500; 
+        display: block; font-size: /*25px*/20px; font-weight: 500; 
         line-height: 30px; padding-bottom: 40px;
+        width: 80%; margin: 0 auto;
+    }
+    .mypage > div > div > div:nth-of-type(2) ul li:first-of-type span{
+        width: 70%;
     }
     .mypage > div > div > div:nth-of-type(2) ul li:nth-of-type(2) span,
     .shippingOrder > div > div > ul li:nth-of-type(2) span{
@@ -1438,13 +1439,13 @@
     }
     .mypage > div > div > div:nth-of-type(2) ul li strong,
     .shippingOrder > div > div > ul li strong{
-        display: block; font-size: 28px; font-weight: 600;
+        display: block; font-size: /*28px*/24px; font-weight: 600;
         position: absolute; bottom: 20px; left: 50%; transform: translate(-50%, 0);
     }
     .mypage > div > div > div:nth-of-type(2) ul li a{
         display: block; width: 100%; color: #131313; height: 100%;
-        font-size: 25px; font-weight: 500; line-height: 60px; padding-bottom: 40px;
-        background: url('../images/expand_close.png') center bottom / 40px no-repeat;
+        font-size: /*25px*/23px; font-weight: 500; line-height: 60px; padding-bottom: 40px;
+        background: url('../images/expand_close.png') center bottom / /*40px*/35px no-repeat;
     }
 
     
@@ -1456,7 +1457,8 @@
 
     
     .myprofile > div > div > form > div{
-        width: 14.32%; float: left;
+        width: /*14.32%*/25%; margin: 0 auto 50px;
+        /* float: left; */
     }
     .myprofile > div > div > form > div [type='image']{
         width: 100%; margin-bottom: 15px;
@@ -1465,7 +1467,7 @@
         width: 100%; position: relative;
     }
     .myprofile .fileComponent label{
-        font-size: 15px; font-weight: 300; color: #131313; text-decoration: underline;
+        font-size: /*15px*/13px; font-weight: 300; color: #131313; text-decoration: underline;
         text-align: right; width: 100%; display: block;
     }
     .myprofile .fileComponent #addPhoto{
@@ -1473,19 +1475,22 @@
     }
     .myprofile fieldset{
         /* margin-left: 3.87%;  */
-        width: 79.92%; float: right; margin-bottom: 85px;
+        width: /*79.92%*/100%; 
+        /* float: right;  */
+        margin-bottom: 85px;
+        
     }
     .myprofile fieldset > ul{
-        width: 100%; 
+        width: 100%;
     }
     .myprofile fieldset > ul:after{
         content: ''; display: block; clear: both;
     }
     .myprofile fieldset > ul li{
-        float: left; display: block; width: 47.53%; margin-bottom: 50px;
+        float: left; display: block; width: /*47.53%*/48.88%; margin-bottom: 50px;
     }
     .myprofile fieldset > ul li:nth-of-type(2n){
-        margin-left: 4.94%;
+        margin-left: /*4.94%*/2.24%;
     }
     .myprofile fieldset > ul li:not(:last-of-type) label:first-of-type,
     .myprofile fieldset > ul li:last-of-type div:first-of-type label{
@@ -1498,7 +1503,7 @@
         content: ''; display: block; clear: both;
     }
     .myprofile fieldset > ul li:nth-of-type(6) > div select{
-        width: 31.03%; font-size: 18px; font-weight: 400; color: #131313;
+        width: 31.03%; font-size: /*18px*/14px; font-weight: 400; color: #131313;
         padding: 18.44px 5%; border-radius: 15px; border: 1px solid #e5e5e5; box-sizing: border-box;
         display: block; float: left;
     }
@@ -1525,9 +1530,14 @@
         margin-bottom: 10px; display: block; 
         min-width: 190px; width: 20.42%;
     }
-
+    .myprofile fieldset > ul li:nth-last-of-type(2) label:nth-of-type(1){
+        display: block; margin-bottom: 10px;
+    }
     .myprofile fieldset > ul li:nth-last-of-type(2) label:nth-of-type(2){
-        margin-left: 25px;
+        margin-left: /*25px*/4.54%; 
+    }
+    .myprofile fieldset > ul li:last-of-type > div:last-of-type label:not(:last-of-type){
+        margin-right: 8px;
     }
     
     .myprofile fieldset > ul li:nth-of-type(6) > p,
@@ -1538,8 +1548,9 @@
     .myprofile .bnwBtn2,
     .orderDetail .bnwBtn2{
         display: block; clear: both; float: right; 
-        /* width: 47.53%; */
-        padding: 0 15.09%; line-height: 75px;
+        width: 41.91%; min-width: 300px;
+        /* padding: 0 15.09%;  */
+        line-height: 75px;
 
     }
 
@@ -1560,7 +1571,7 @@
     
     .shippingOrder > div > div > div > div:first-of-type div select{
         width: 31%;
-        font-size: 18px; font-weight: 400; color: #131313;
+        font-size: /*18px*/14px; font-weight: 400; color: #131313;
         padding: 20px 3.5%; border-radius: 15px; border: 1px solid #e5e5e5; box-sizing: border-box;
         display: block; float: left;
     }
@@ -1574,9 +1585,9 @@
         font-size: 16px; color: #131313; font-weight: 600;
     }
     .shippingOrder > div > div > div [value*='Month']{
-        padding: 15px 0; width: 8.53%; min-width: 105px;
+        padding: 15px 0; width: 8.53%; min-width: /*105px*/90px;
         box-sizing: border-box;
-        font-size: 18px; font-weight: 400; color: #131313;
+        font-size: /*18px*/14px; font-weight: 400; color: #131313;
         background-color: #ffffff; border: 1px solid #e5e5e5;
         border-radius: 15px; text-align: center;
     }
@@ -1593,7 +1604,16 @@
     .ordercompleteContainer > div > div:first-of-type table{
         margin-bottom: 85px;
     }
-    .shippingOrder > div > div > div table caption{
+    .shippingOrder > div > div > div table caption,
+    .shippingOrder > div > div > div table th:nth-of-type(3),
+    .shippingOrder > div > div > div table th:nth-of-type(4),
+    .shippingOrder > div > div > div table td:nth-of-type(3),
+    .shippingOrder > div > div > div table td:nth-of-type(4),
+    .orderDetail table:first-of-type thead th:nth-of-type(4),
+    .orderDetail table:first-of-type thead th:nth-of-type(5),
+    .orderDetail table:first-of-type tbody td:nth-of-type(4),
+    .orderDetail table:first-of-type tbody td:nth-of-type(5)
+    {
         display: none;
     }
     .shippingOrder > div > div > div table thead,
@@ -1616,12 +1636,12 @@
     .shippingOrder th,
     .orderDetail table:first-of-type th{
         padding: 20px 0; box-sizing: border-box; vertical-align: middle;
-        font-size: 16px; font-weight: 600; color: #131313;
+        font-size: /*16px*/14px; font-weight: 600; color: #131313;
     }
     .shippingOrder td,
     .orderDetail table:first-of-type td{
         padding: 15px 0; box-sizing: border-box; vertical-align: middle;
-        font-size: 18px; font-weight: 400; color: #131313; line-height: 22px;
+        font-size: /*18px*/16px; font-weight: 400; color: #131313; line-height: 22px;
     }
     .shippingOrder tr td:not(:nth-of-type(2)),
     .orderDetail table:first-of-type tr td:not(:first-of-type){
@@ -1647,7 +1667,7 @@
         width: 8.11%;   
     }
     .shippingOrder > div > div > div table thead{
-        font-size: 16px; font-weight: 600; color: #131313; text-align: center;
+        font-size: /*16px*/14px; font-weight: 600; color: #131313; text-align: center;
     }
     .shippingOrder > div > div > div table thead,
     .shippingOrder > div > div > div table tbody tr,
@@ -1672,12 +1692,12 @@
     .shippingOrder > div > div > div table tbody tr td:nth-of-type(2), 
     .orderDetail table:first-of-type tbody tr td:nth-of-type(1){ 
         padding: 0 3.83% 0 140px; box-sizing: border-box;
-        position: relative; height: 130px; vertical-align: middle;
+        position: relative; height: /*130px*/110px; vertical-align: middle;
     }
     .shippingOrder > div > div > div table tbody tr td:nth-of-type(2) img,
     .orderDetail table:first-of-type tbody tr td:nth-of-type(1) img{
         /* margin: 0 3.83%;  */
-        width: 100px;
+        width: /*100px*/90px;
         position: absolute; left: 3.83%; top: 50%; transform: translate(0, -50%); 
     }
     .shippingOrder > div > div > div table tbody tr td:last-of-type,
@@ -1688,14 +1708,14 @@
         width: 100%; margin: 0 auto; text-align: center;
     }
     .shippingOrder .paging ol li{
-        display: inline-block; width: 40px; line-height: 40px;
+        display: inline-block; width: /*40px*/35px; line-height: /*40px*/35px;
         border: 1px solid #e5e5e5; text-align: center;
     }
     .shippingOrder .paging ol li:not(:first-of-type){
         margin-left: 10px;
     }
     .shippingOrder .paging ol li a{
-        display: block; font-size: 18px; font-weight: 400; color: #131313;
+        display: block; font-size: /*18px*/16px; font-weight: 400; color: #131313;
     }
 
 
@@ -1712,30 +1732,30 @@
     .orderDetail table:nth-of-type(2) tbody tr th,
     .orderDetail table:last-of-type tbody tr th,
     .ordercompleteContainer > div > div:first-of-type table tbody tr th{
-        width: 25%; text-align: left; line-height: 55px;
+        width: 25%; text-align: left; line-height: /*55px*/53px;
         padding-left: 2.5%; box-sizing: border-box;
-        font-size: 16px; font-weight: 600; color: #131313;
+        font-size: /*16px*/14px; font-weight: 600; color: #131313;
     }
     .orderDetail table:nth-of-type(2) tbody tr td,
     .orderDetail table:last-of-type tbody tr:not(:last-of-type) td,
     .ordercompleteContainer > div > div:first-of-type table tbody tr td{
         border-left: 1px solid #e5e5e5; width: 75%;
         padding: 20px 2.5%; box-sizing: border-box;
-        font-size: 18px; font-weight: 400;
-        line-height: 22px;
+        font-size: /*18px*/16px; font-weight: 400;
+        line-height: /*22px*/20px;
     }
     .orderDetail table:last-of-type tbody tr:last-of-type td{
         width: 100%; padding: 20px 2.5%; box-sizing: border-box;
-        font-size: 18px; font-weight: 600; color: #131313;
-        height: 100px;
+        font-size: /*18px*/16px; font-weight: 600; color: #131313;
+        height: /*100px*/90px;
     }
     .orderDetail table:last-of-type tbody tr:last-of-type td strong{
-        margin-left: 5%; font-size: 20px; font-weight: 700; position: relative;
-        width: 70%; display: inline-block;
+        margin-left: 5%; font-size: /*20px*/18px; font-weight: 700; position: relative;
+        width: /*70%*/55%; display: inline-block;
     }
     .orderDetail table:last-of-type tbody tr:last-of-type td strong small{
         display: block; position: absolute; left: 0; bottom: -25px;
-        font-size: 14px; font-weight: 400; color: #999999;
+        font-size: /*14px*/12px; font-weight: 400; color: #999999;
     }
 
 
