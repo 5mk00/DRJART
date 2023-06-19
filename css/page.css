@@ -711,15 +711,20 @@
 
 
     .detailContainer > div:nth-of-type(1){
-        width: 100%; position: relative;
-        /* position: fixed; */
-        display: block;
+        width: 100%; margin: 0 auto;
+        /* padding-right: 2.25%; box-sizing: border-box; */
     }
+    /* .detailContainer > div:nth-of-type(1)::after{
+        content: ''; display: block; clear: both;
+    } */
     .detailContainer > div:nth-of-type(1) > div:first-of-type{
-        width: 60%;
+        /* width: 60%; */ width: 100%;
+        position: relative; margin-bottom: 50px;
+        /* background-color: transparent; */
+        /* float: left; */
     }
     .detailContainer .bx-wrapper{
-        box-shadow: none; border: none; margin: 0;
+        box-shadow: none; border: none; margin: 0 auto;
     }
     .detailContainer .bx-wrapper,
     .detailContainer .bx-viewport,
@@ -747,9 +752,9 @@
 
     
     .detailContainer > div:nth-of-type(1) > div:last-of-type{
-        position: absolute; right: 2.25%; 
-        top: 50%; transform: translate(0, -45%);
-        width: 35.5%;
+        /* width: 35.5%; float: right;
+        padding: 150px 0; box-sizing: border-box; */
+        margin: 0 auto; padding: 2.25%; width: 100%; box-sizing: border-box;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type h2,
     .detailContainer .description, .detailContainer #morePanel,
@@ -762,12 +767,12 @@
 
 
     .detailContainer > div:nth-of-type(1) > div:last-of-type h2{
-        font-size: /*34px*/32px; font-weight: 600; color: #131313;
+        font-size: 34px; font-weight: 600; color: #131313;
         line-height: 41px;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .description,
     .detailContainer > div:nth-of-type(1) > div:last-of-type #morePanel p{
-       font-size: /*25px*/22px; font-weight: 500; font-style: italic; line-height: 30px; color: #131313;
+       font-size: 25px; font-weight: 500; font-style: italic; line-height: 30px; color: #131313;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type > #morePanel{
         position: relative;
@@ -776,9 +781,10 @@
         display: none;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type > #morePanel [type='button']{
-        font-size: /*15px*/12px; font-weight: 300; color: #131313;
+        font-size: 15px; font-weight: 300; color: #131313;
         background: none; border: none; text-decoration: underline;
-        position: absolute; right: 0; bottom: 0;
+        /* position: absolute; right: 0; bottom: 0; */
+        display: block; padding: 0; margin-top: 5px;
     }
 
 
@@ -786,7 +792,7 @@
 
 
     .detailContainer > div:nth-of-type(1) > div:last-of-type .starReview{
-        font-size: /*14px*/12px; font-weight: 300; color: #131313;
+        font-size: 14px; font-weight: 300; color: #131313;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .starReview [class^='starRating'],
     .detailContainer > div:nth-of-type(1) .colorChoose,
@@ -794,12 +800,12 @@
         width: 100%;
     }
     .detailContainer > div:nth-of-type(1) .colorChoose [type='button']{
-        width: /*25px*/22px; height: /*25px*/22px; text-indent: -9999px;
+        width: 25px; height: 25px; text-indent: -9999px;
         border-radius: 50%; border: none;
     }
     .detailContainer > div:nth-of-type(1) .mlChoose [type='button']{
-        width: /*80px*/68px; margin: 0 auto; text-align: center;
-        font-size: /*18*/15px; font-weight: 500; line-height: /*30px*/28px;
+        width: 80px; margin: 0 auto; text-align: center;
+        font-size: 18px; font-weight: 500; line-height: 30px;
     }
 
     .detailContainer > div:nth-of-type(1) .mlChoose,
@@ -807,37 +813,40 @@
         margin-bottom: 30px;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .size{
-        font-size: /*18px*/16px; font-weight: 500; color: #131313;
+        font-size: 18px; font-weight: 500; color: #131313;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li{
         border-top: 1px solid #e5e5e5; padding: 30px 0; box-sizing: border-box;
         display: block;
     }
+    .detailContainer .howToUse{
+        border-bottom: 1px solid #e5e5e5; margin-bottom: 50px;
+    }
+    .detailContainer .emptyHow{
+        border-bottom: none;
+    }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong{
-        font-size: /*16px*/14px; font-weight: 600; color: #131313; display: block;
-        background: url('../images/expand_close.png') right center / /*25px*/22px no-repeat;
+        font-size: 16px; font-weight: 600; color: #131313; display: block;
+        background: url('../images/expand_close.png') right center / 25px no-repeat;
         cursor: pointer;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong.active{
-        background: url('../images/expand_open.png') right center / /*25px*/22px no-repeat;
+        background: url('../images/expand_open.png') right center / 25px no-repeat;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong.active ~ p{
         display: block;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li p{
-        margin-top: 25px; font-size: /*14px*/12px; font-weight: 400; color: #131313; line-height: /*17px*/15px;
+        margin-top: 25px; font-size: 14px; font-weight: 400; color: #131313; line-height: 17px;
         display: none;
     }
-    .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li:last-of-type p{
-        height: 70px; overflow-y: scroll;
-    }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .ingredient{
-        border-bottom: 1px solid #e5e5e5; padding-bottom: 30px; margin-bottom: 50px;
-        font-size: /*14px*/12px; font-weight: 400; color: #131313; line-height: /*17px*/15px;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: 30px; margin-bottom: /*50px*/85px;
+        font-size: 14px; font-weight: 400; color: #131313; line-height: 17px;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .bnwBtn{
-        padding: /*25px*/20px /*26.88%*/0; box-sizing: border-box; width: 100%;
-        font-size: /*20px*/18px;
+        padding: 25px 0; box-sizing: border-box; width: 100%;
+        font-size: 20px;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .bnwBtn:nth-of-type(2){
         display: none;
@@ -3281,15 +3290,21 @@
 
 
     .detailContainer > div:nth-of-type(1){
-        width: 100%; position: relative;
-        /* position: fixed; */
-        display: block;
+        width: 100%;
+        padding-right: 2.25%; box-sizing: border-box;
+        
+    }
+
+    .detailContainer > div:nth-of-type(1)::after{
+        content: ''; display: block; clear: both;
     }
     .detailContainer > div:nth-of-type(1) > div:first-of-type{
         width: 60%;
+        position: relative;
+        float: left;
     }
     .detailContainer .bx-wrapper{
-        box-shadow: none; border: none; margin: 0;
+        box-shadow: none; border: none; margin: 0 auto;
     }
     .detailContainer .bx-wrapper,
     .detailContainer .bx-viewport,
@@ -3317,9 +3332,8 @@
 
     
     .detailContainer > div:nth-of-type(1) > div:last-of-type{
-        position: absolute; right: 2.25%; 
-        top: 50%; transform: translate(0, -45%);
-        width: 35.5%;
+        width: 35.5%; float: right;
+        padding-top: 150px; box-sizing: border-box;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type h2,
     .detailContainer .description, .detailContainer #morePanel,
@@ -3348,7 +3362,8 @@
     .detailContainer > div:nth-of-type(1) > div:last-of-type > #morePanel [type='button']{
         font-size: 15px; font-weight: 300; color: #131313;
         background: none; border: none; text-decoration: underline;
-        position: absolute; right: 0; bottom: 0;
+        /* position: absolute; right: 0; bottom: 0; */
+        display: block; padding: 0; margin-top: 5px;
     }
 
 
@@ -3383,6 +3398,12 @@
         border-top: 1px solid #e5e5e5; padding: 30px 0; box-sizing: border-box;
         display: block;
     }
+    .detailContainer .howToUse{
+        border-bottom: 1px solid #e5e5e5; margin-bottom: 50px;
+    }
+    .detailContainer .emptyHow{
+        border-bottom: none;
+    }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong{
         font-size: 16px; font-weight: 600; color: #131313; display: block;
         background: url('../images/expand_close.png') right center / 25px no-repeat;
@@ -3397,9 +3418,6 @@
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li p{
         margin-top: 25px; font-size: 14px; font-weight: 400; color: #131313; line-height: 17px;
         display: none;
-    }
-    .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li:last-of-type p{
-        height: 70px; overflow-y: scroll;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .ingredient{
         border-bottom: 1px solid #e5e5e5; padding-bottom: 30px; margin-bottom: 50px;

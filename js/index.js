@@ -78,19 +78,12 @@ function accActive(){
 
 
 
-
-
 function modalShow(){
     $('#showModal').click(function(){
         $('#modalWrap').addClass('active');
         $('body').css('overflow','hidden');
     });
 }
-
-
-
-
-
 
 
 
