@@ -18,9 +18,19 @@ $(document).ready(function(){
     shopGnb();
     cartPanel();
     accActive();
-    modalShow();
+    panelControl(".shopBtn input[type='button']");
+    panelControl(".btnSubmit");
 });
-
+function panelControl(openBtn){
+    var currentPanelName = null;
+    $(openBtn).click(function(){
+        currentPanelName = "#" + $(this).attr("data-panel");
+        $(currentPanelName).addClass("active");
+    })
+    $(".btnClose").click(function(){
+        $(currentPanelName).removeClass("active");
+    });
+}
 function textSlider(){
     $(".collectionSlider").bxSlider();
 }
@@ -58,7 +68,7 @@ function shopGnb(){
     });
 }
 function cartPanel(){
-    $('#home > div > ul:last-of-type li input').click(function(){
+    $("input[data-panel='cartPanel']").click(function(){
         $('#cartPanel').addClass('active');
         reloadTarget.reloadSlider();
     });
@@ -78,12 +88,12 @@ function accActive(){
 
 
 
-function modalShow(){
-    $('#showModal').click(function(){
-        $('#modalWrap').addClass('active');
-        $('body').css('overflow','hidden');
-    });
-}
+// function modalShow(){
+//     $('#showPopup').click(function(){
+//         $('#modalWrap').addClass('active');
+//         $('body').css('overflow','hidden');
+//     });
+// }
 
 
 

@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
+    <div id="showPopup">
+        <p>Your inquiry has been received.<br>
+            We will respond as soon as possible.</p>
+        <small>- Frequently asked questions can also be found on the FAQ page.<br>
+            - If you want real-time consultation, please use chat or phone consultation. (Consultation hours: 9:00 am to 12:50 am, 2:00 pm to 6:00 pm on weekdays)</small>
+        <a href="index.html" class="bnwBtn2">OK</a>
+    </div>
+    
     <aside id="gnbPanel">
         <input type="button" value="closePanel" class="btnClose">
         <ul>
@@ -334,7 +342,7 @@ related inquiries">
                     <input type="checkbox" id="agree_chk2">
                     <label for="agree_chk2">* I agree to the collection and use of personal information.</label>
     
-                    <input type="button" value="Submit email inquiry" id="showModal" class="bnwBtn2">
+                    <input type="button" value="Submit email inquiry" data-panel="showPopup" class="bnwBtn2 btnSubmit">
                 </div>
             </div>
         </div>
@@ -402,15 +410,5 @@ related inquiries">
                 Copyright© Have &amp; Be co., Ltd. All rights reserved.</span>
         </div>
     </footer>
-
-    <div id="modalWrap">
-        <div id="modalContent">
-            <p>Your inquiry has been received.<br>
-                We will respond as soon as possible.</p>
-            <small>- Frequently asked questions can also be found on the FAQ page.<br>
-                - If you want real-time consultation, please use chat or phone consultation. (Consultation hours: 9:00 am to 12:50 am, 2:00 pm to 6:00 pm on weekdays)</small>
-            <a href="index.html" class="bnwBtn2">OK</a>
-        </div>        
-    </div>
 </body>
 </html>
