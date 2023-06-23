@@ -81,7 +81,7 @@ function cartPanel(){
 
 
 function accActive(){
-    $('.accComponent > li > strong, .accComponent > h3').click(function(){
+    $('.accComponent > li > strong, .accComponent > h3, footer > div:nth-of-type(2) div:nth-of-type(1) nav h3').click(function(){
         $(this).toggleClass('active');
     });
 }
