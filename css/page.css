@@ -5553,7 +5553,7 @@
         font-size: 20px; font-weight: 500; line-height: 30px; text-decoration: underline;
         color: #131313; text-align: center; display: block;
         background: url('../images/learnMore.png') right / contain no-repeat;
-        width: 15%; margin: 0 auto; box-sizing: border-box;
+        width: 15%; margin: 0 auto; box-sizing: border-box; min-width: 180px;
     }
 
 

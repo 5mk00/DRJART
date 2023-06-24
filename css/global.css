@@ -374,13 +374,22 @@ address{
         margin-bottom: 30px;
     }
     #gnbPanel ul li a{
-        display: block; font-size: /*32px*/28px; font-weight: 600; color: #131313; line-height: 34px;
+        display: block; font-size: /*32px*/26px; font-weight: 600; color: #131313; line-height: /*34px*/32px;
     }
     #gnbPanel ul li a:hover,
     #gnbPanel ul li a.active{
         color: #999999;
     }
-
+    #gnbPanel ul li:nth-of-type(4){
+        border-bottom: 1px solid #131313; padding-bottom: 30px;
+    }
+    #gnbPanel ul li:nth-of-type(5),
+    #gnbPanel ul li:nth-of-type(6){
+        margin-bottom: 20px;
+    }
+    #gnbPanel ul li.mui a{
+        font-size: 16px; line-height: 22px;
+    }
 
 
 
@@ -762,51 +771,7 @@ address{
 
 
 
-    /* header > div nav ul li,
-    header > div > ul li{
-        display: inline-block;
-    } */
-    /* header > div nav ul li:nth-of-type(2){
-        position: relative;
-    }
     
-    header > div nav ul li:nth-of-type(2)::before{
-        display: block; content: "Benefits";
-        font-size: 18px; color: #131313; font-weight: 600;
-    }
-    header > div nav ul li:nth-of-type(2):hover{
-        text-decoration: underline;
-    }
-    header > div nav ul li:nth-of-type(2) a{
-        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-        width: 72px; height: 75px; overflow: hidden; color: transparent;
-    }
-
-    header > div nav ul li:not(:first-child),
-    header > div > ul li:not(:first-child){
-        margin-left: 5.2%;
-    }
-    
-    header > div > ul li a{
-        display: block; font-size: 18px; color: #131313; font-weight: 600;
-    }
-    
-    header > div > ul li [type='button']{
-        all: unset; font-size: 18px; color: #131313; font-weight: 600;
-        cursor: pointer;
-    }
-    header > div nav ul li a:hover,
-    header > div nav ul li a.active,
-    header > div nav ul li div [type='button']:hover,
-    header > div nav ul li div [type='button'].active,
-    header > div > ul li a:hover,
-    header > div > ul li a.active,
-    header > div > ul li [type='button']:hover,
-    header > div > ul li [type='button'].active{
-        text-decoration: underline;
-    }
-    
-    } */
 
     
 
@@ -999,6 +964,10 @@ address{
         box-sizing: border-box;
     }
 
+    .mui{
+        display: none;
+    }
+
     #gnbPanel, #cartPanel, #emptyCart, #haveCart{
         min-width: 500px;
     }
@@ -1025,7 +994,7 @@ address{
         text-indent: -9999px; position: absolute; top: 25px; right: 25px;
     }
     #gnbPanel ul{
-        padding-left: 7%;
+        /* padding-left: 7%; */ padding: 0 7%;
         height: 100%;
         list-style: none;
         display: flex;
@@ -1041,6 +1010,15 @@ address{
     #gnbPanel ul li a:hover,
     #gnbPanel ul li a.active{
         color: #999999;
+    }
+    #gnbPanel ul li:nth-of-type(4){
+        border-bottom: 1px solid #131313; padding-bottom: 30px;
+    }
+    #gnbPanel ul li:nth-of-type(7){
+        display: block;
+    }
+    #gnbPanel ul li.mui a{
+        font-size: 22px; line-height: 28px; 
     }
 
     #cartPanel{
@@ -1574,6 +1552,10 @@ address{
         box-sizing: border-box;
     }
 
+    .mui{
+        display: none;
+    }
+
     #gnbPanel, #cartPanel, #emptyCart, #haveCart{
         min-width: 500px;
     }
@@ -1600,7 +1582,7 @@ address{
         text-indent: -9999px; position: absolute; top: 25px; right: 25px;
     }
     #gnbPanel ul{
-        padding-left: 7%;
+        /* padding-left: 7%; */ padding: 0 7%;
         height: 100%;
         list-style: none;
         display: flex;
@@ -1616,6 +1598,15 @@ address{
     #gnbPanel ul li a:hover,
     #gnbPanel ul li a.active{
         color: #999999;
+    }
+    #gnbPanel ul li:nth-of-type(4){
+        border-bottom: 1px solid #131313; padding-bottom: 30px;
+    }
+    #gnbPanel ul li:nth-of-type(7){
+        display: block;
+    }
+    #gnbPanel ul li.mui a{
+        font-size: 22px; line-height: 28px;
     }
 
     #cartPanel{
