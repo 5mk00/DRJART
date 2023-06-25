@@ -2,13 +2,13 @@
     
     .mainContainer > div:first-of-type{
         background: url('../images/main_banner.png') center top / cover no-repeat;
-        padding: 227px 3.57% 170px; margin-bottom: 100px;
+        padding: 225px 3.57% 150px; margin-bottom: 100px;
     }
     .mainContainer > div:first-of-type div{
         padding: 0 /*12.08%*/10%; box-sizing: border-box;
     }
     .mainContainer > div:first-of-type div h2{
-        font-size: /*90px*//*78*/50px; font-weight: 600; margin-bottom: 30px;
+        font-size: /*90px*//*78*//*50px*/10.18vw; font-weight: 600; margin-bottom: 30px;
     }
     .mainContainer > div:first-of-type div p{
         font-size: /*30px*//*26*/20px; font-weight: 300; line-height: /*38px*/26px; 
@@ -411,9 +411,9 @@
 
     
     .listContainer > h2{
-        width: 100%; text-align: center; margin-bottom: /*100px*/85px;
-        font-size: /*90px*/78px; font-weight: 600; color: #131313;
-        padding: /*110px*/95px 0; box-sizing: border-box;
+        width: 100%; text-align: center; margin-bottom: /*100px*//*85px*/50px;
+        font-size: /*90px*//*78px*//*50px*/10.18vw; font-weight: 600; color: #131313;
+        padding: /*110px*//*95px*/65px 3.57%; box-sizing: border-box;
     }
 
 
@@ -530,9 +530,9 @@
     .mypageContainer > div,
     .infoContainer > div{
         /* padding: 0 2.52%; box-sizing: border-box; */
-        padding: 0 1.26%; box-sizing: border-box;
+        padding: 0 /*1.26%*/3.57%; box-sizing: border-box;
     }
-    .listContainer > div:after,
+    /* .listContainer > div:after,
     .mypageContainer > div:after,
     .infoContainer > div:after{
         content: ''; display: block; clear: both;
@@ -541,43 +541,70 @@
     .mypageContainer > div aside,
     .infoContainer > div aside{
         width: 20.77%; float: left;
-        /* display: inline-block; */
+    } */
+    .listContainer > div aside,
+    .mypageContainer > div aside,
+    .infoContainer > div aside{
+        width: 100%; margin-bottom: 50px;
+    }
+    .listContainer > div aside::-webkit-scrollbar,
+    .mypageContainer > div aside::-webkit-scrollbar,
+    .infoContainer > div aside::-webkit-scrollbar{
+        display: none;
     }
     .listContainer > div aside h3{
-        font-size: /*30px*/24px; font-weight: 600; color: #131313;
-        margin-bottom: 30px; width: 100%; text-align: left; line-height: /*34px*/28px;
+        font-size: /*30px*//*24px*/22px; font-weight: 600; color: #131313;
+        margin-bottom: /*30px*/; text-align: left; line-height: /*34px*/28px;
+        /* border-bottom: 1px solid #e5e5e5; box-sizing: border-box;
+        padding-bottom: 10px; */
+        padding-bottom: 5px; box-sizing: border-box;
+        border-bottom: 3px solid #131313; width: fit-content;
     }
     .listContainer > div aside ul,
-    .mypageContainer > div > aside > div > ul,
-    .infoContainer > div > aside > ul{
-        margin-left: 3.07%; width: 96.93%;
+    .mypageContainer > div aside ul,
+    .infoContainer > div aside ul{
+        overflow-x: auto; white-space: nowrap;
+        border-top: 1px solid #e5e5e5; 
+        padding-top: 10px; box-sizing: border-box;
     }
+    
+    .listContainer > div aside ul::-webkit-scrollbar,
+    .mypageContainer > div aside ul::-webkit-scrollbar,
+    .infoContainer > div aside ul::-webkit-scrollbar{
+        display: none;
+    }
+
+
+    
     .listContainer > div aside ul li,
     .mypageContainer > div > aside > div > ul li,
     .infoContainer > div > aside > ul li{
-        display: block; margin-bottom: 30px; width: 100%; 
+        display: inline-block;
     }
+    .listContainer > div aside ul li:not(:first-of-type),
+    .mypageContainer > div > aside > div > ul li:not(:first-of-type),
+    .infoContainer > div > aside > ul li:not(:first-of-type){
+        margin-left: 10px;
+    }
+
     .listContainer > div aside ul li a,
     .mypageContainer > div > aside > div > ul li a,
     .infoContainer > div > aside > ul li a{
-        display: block; width: 100%; font-size: /*20px*/18px; font-weight: 500;
-        color: #131313; text-align: left; line-height: 22px;
-    }
-    .listContainer > div aside ul li a:not([class='active']),
-    .mypageContainer > div > aside > div > ul li a:not([class='active']),
-    .infoContainer > div > aside > ul li a:not([class='active']){
-        margin-left: 6.15%;
+        display: block;
+        font-size: /*20px*//*18px*/14px; font-weight: 500;
+        color: #131313; text-align: left; 
+        line-height: /*22px*/20px;
+        padding: /*20px*//*15px*/10px /*6.15%*/10px; box-sizing: border-box;
+        border: 1px solid #e5e5e5; border-radius: 50px; 
     }
     .listContainer > div aside ul li a.active,
     .mypageContainer > div > aside > div > ul li a.active,
     .infoContainer > div > aside > ul li a.active{
-        border: 1px solid #e5e5e5; width: 100%;
-        border-radius: 50px; padding: /*20px*/15px 6.15%; box-sizing: border-box;
-        /* margin-bottom: 20px; */
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        /* border: 1px solid #e5e5e5; 
+        border-radius: 50px; 
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+        box-sizing: border-box;
+        background-color: #131313; color: #ffffff;
     }
 
 
@@ -585,21 +612,25 @@
     .listContainer > div > div,
     .mypageContainer > div > div,
     .infoContainer > div > div{
-        width: 74.46%; float: right;
+        /* width: 74.46%; float: right; */ width: 100%;
         /* margin-left: 4.77%;  */
     }
     .listContainer > div > div h3,
     .mypageContainer > div > div > h3{
-        width: 100%;
+        /* width: 100%;
         display: flex;
         flex-basis: 100%;
         align-items: center;
-        margin: 0 auto 50px;
+        margin: 0 auto 50px;*/
+        padding-bottom: 5px; box-sizing: border-box;
+        border-bottom: 3px solid #131313; width: fit-content;
+        
+        /* display: block; */
 
-        font-size: /*34px*/28px; color: #131313; font-weight: 600;
-        line-height: 34px;
+        font-size: /*34px*//*28px*/24px; color: #131313; font-weight: 600;
+        line-height: /*34px*/30px;
     }
-    .listContainer > div > div h3:after,
+    /* .listContainer > div > div h3:after,
     .mypageContainer > div > div > h3:after,
     .faq > div > div > div > h3:after{
         content: '';
@@ -609,7 +640,7 @@
         height: 5px;
         font-size: 0px;
         line-height: 0px;
-    }
+    } */
 
 
     .listContainer > div > div ul,
@@ -618,18 +649,23 @@
     .shippingOrder > div > div > ul,
     .shippingOrder > div > div > div,
     .orderDetail table{
-        width: 98.11%; 
-        margin-left: 1.89%;
+        /* width: 98.11%; 
+        margin-left: 1.89%; */
+        width: 100%;
+        padding: 30px 1.61% 0;
+        border-top: 1px solid #e5e5e5; box-sizing: border-box;
     }
     .listContainer > div > div ul li,
     .mypage > div > div > div:last-of-type > ul li{
-        display: inline-block; width: /*23.395*/31.62%; margin-bottom: 70px;
-        vertical-align: top; position: relative;
+        /* display: inline-block;  */ display: block;
+        width: /*23.395*//*31.62%*/100%; margin-bottom: 70px;
+        /* vertical-align: top;  */
+        position: relative;
     }
-    .listContainer > div > div ul li:not(:nth-of-type(3n+1)),
+    /* .listContainer > div > div ul li:not(:nth-of-type(3n+1)),
     .mypage > div > div > div:last-of-type > ul li:not(:nth-of-type(3n+1)){
         margin-left: 1.51%;
-    }
+    } */
     .listContainer > div > div ul li > div:first-of-type,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type{
         position: relative; width: 100%; margin-bottom: 20px;
@@ -677,28 +713,46 @@
     }
     .listContainer > div > div ul li dl dt,
     .mypage > div > div > div:last-of-type > ul li dl dt{
-        font-size: /*18px*/16px; font-weight: 600; color: #131313; 
-        width: 100%; /*padding-right: 90px;*/ box-sizing: border-box;
+        font-size: 18px; font-weight: 600; color: #131313; 
+        width: 100%; padding-right: 90px; box-sizing: border-box;
         margin-bottom: 15px;
-        line-height: 20px;
+        line-height: 22px;
         overflow: hidden;  
         -webkit-box-orient: vertical;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 1;
+        -webkit-line-clamp: 2;
         word-break: keep-all;
     }
     .listContainer > div > div ul li dl dd:first-of-type,
     .mypage > div > div > div:last-of-type > ul li dl dd:first-of-type{
-        text-align: right; line-height: 20px;
-        font-size: /*16px*/14px; font-weight: 400; color: #131313;
+        position: absolute; top: 0; right: 0;
+        font-size: 16px; font-weight: 400; color: #131313;
+    }
+    .listContainer > div > div ul li dl::after,
+    .mypage > div > div > div:last-of-type > ul li dl::after{
+        content: ''; display: block; clear: both;
     }
     .listContainer > div > div ul li dl dd:last-of-type,
     .mypage > div > div > div:last-of-type > ul li dl dd:last-of-type{
-        display: none;
+        font-size: 14px; font-weight: 300; color: #131313;
+        float: right; text-align: right; width: 100%;
+        height: 20px;
+        
+        /* padding-left: 27.96%; box-sizing: border-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; */
     }
 
-
+    .listContainer > div > div ul li dl dd:last-of-type [class^='starRating'],
+    .mypage > div > div > div:last-of-type > ul li dl dd:last-of-type [class^='starRating']{
+        width: 30%;
+    }
+    .listContainer > div > div ul li dl dd:last-of-type span,
+    .mypage > div > div > div:last-of-type > ul li dl dd:last-of-type span{
+        vertical-align: bottom; line-height: 20px;
+    }
 
 
 
@@ -714,14 +768,14 @@
     }
     .listContainer > div > div ul li .colorChoose [type='button'],
     .mypage > div > div > div:last-of-type > ul li .colorChoose [type='button']{
-        width: /*20px*/18px; height: /*20px*/18px; text-indent: -9999px;
+        width: 20px; height: 20px; text-indent: -9999px;
         border-radius: 50%; border: none;
     }
     
     .listContainer > div > div ul li .mlChoose [type='button'],
     .mypage > div > div > div:last-of-type > ul li .mlChoose [type='button']{
-        width: /*50px*/40px; margin: 0 auto; text-align: center;
-        font-size: /*10px*/9px; font-weight: 300; line-height: /*20px*/18px;
+        width: 50px; margin: 0 auto; text-align: center;
+        font-size: 10px; font-weight: 300; line-height: 20px;
     }
 
     
@@ -2589,7 +2643,7 @@
     
     .mainContainer > div:first-of-type{
         background: url('../images/main_banner.png') center top / cover no-repeat;
-        padding: 247px 0 190px; margin-bottom: 100px;
+        padding: 267px 0 190px; margin-bottom: 100px;
     }
     .mainContainer > div:first-of-type div{
         padding-left: 12.08%; box-sizing: border-box;
@@ -5156,7 +5210,7 @@
     
     .mainContainer > div:first-of-type{
         background: url('../images/main_banner.png') left top / cover no-repeat;
-        padding: 247px 0 190px; margin-bottom: 100px;
+        padding: 267px 0 190px; margin-bottom: 100px;
     }
     .mainContainer > div:first-of-type div{
         padding-left: 12.08%; box-sizing: border-box;

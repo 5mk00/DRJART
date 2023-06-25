@@ -20,6 +20,7 @@ $(document).ready(function(){
     accActive();
     panelControl(".shopBtn input[type='button']");
     panelControl(".btnSubmit");
+    asideScroll();
 });
 function panelControl(openBtn){
     var currentPanelName = null;
@@ -99,7 +100,11 @@ function accActive(){
 
 
 
-
+function asideScroll(){
+	var left = $('div > aside ul li a.active').offset().left - $('div > aside ul li').offset().left;
+    var curLeft = $('div > aside ul').scrollLeft();          
+    $('div > aside ul').scrollLeft(curLeft + left);
+}
 
 
 
