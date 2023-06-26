@@ -43,7 +43,7 @@ function cartSlider(){
 }
 function imgSlider(){
     $(".vertitailSlider").bxSlider({
-        mode: 'vertical',
+        // mode: 'vertical',
         pagerCustom: '.thumbPager'
     });
 }

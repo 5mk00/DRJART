@@ -549,7 +549,7 @@
         display: none;
     }
     .listContainer > div aside h3{
-        font-size: /*30px*//*24px*/22px; font-weight: 600; color: #131313;
+        font-size: /*30px*//*24px*/20px; font-weight: 600; color: #131313;
         margin-bottom: /*30px*/; text-align: left; line-height: /*34px*/28px;
         /* border-bottom: 1px solid #e5e5e5; box-sizing: border-box;
         padding-bottom: 10px; */
@@ -802,18 +802,40 @@
         display: none;
     }
     .detailContainer .thumbPager{
-        position: absolute; bottom: /*65px*/30px; left: 1.56%;
-        width: /*50px*/45px;
+        /* position: absolute; bottom: 30px; 
+        left: 50%; transform: translate(-50%, 0);
+        width: fit-content; */
+        position: absolute; bottom: 10px;
+        left: 50%; transform: translate(-50%, 0);
+        width: fit-content; margin: 0 auto;
+    }
+    .detailContainer .thumbPager li{
+        width: 10px; height: 10px; display: inline-block;
     }
     .detailContainer .thumbPager li:not(:last-of-type){
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
     }
-    .detailContainer .thumbPager li,
+    .detailContainer .thumbPager li:not(:first-of-type){
+        margin-left: 5px;
+    }
+    /* .detailContainer .thumbPager li,
     .detailContainer .thumbPager li a{
         display: block; width: 100%; 
+    } */
+    .detailContainer .thumbPager li a{
+        display: block; 
+        /* background-color: rgba(255, 255, 255, 0.5); */
+        background-color: #e5e5e5;
+        width: 10px; height: 10px; border-radius: 5px;
+    }
+    .detailContainer .thumbPager li a.active{
+        /* background-color: #ffffff; */
+        background-color: #999999;
     }
     .detailContainer .thumbPager li a img{
-        width: 100%; border-radius: 50px; border: 3px solid #ffffff;
+        width: 100%; opacity: 0;
+        /* border-radius: 50px;  */
+        /* border: 3px solid #ffffff; */
         box-sizing: border-box;
     }
 
@@ -821,7 +843,7 @@
     .detailContainer > div:nth-of-type(1) > div:last-of-type{
         /* width: 35.5%; float: right;
         padding: 150px 0; box-sizing: border-box; */
-        margin: 0 auto; padding: 2.25%; width: 100%; box-sizing: border-box;
+        margin: 0 auto; padding: 0 3.57%; width: 100%; box-sizing: border-box;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type h2,
     .detailContainer .description, .detailContainer #morePanel,
@@ -834,12 +856,12 @@
 
 
     .detailContainer > div:nth-of-type(1) > div:last-of-type h2{
-        font-size: 34px; font-weight: 600; color: #131313;
-        line-height: 41px;
+        font-size: /*34px*/30px; font-weight: 600; color: #131313;
+        line-height: /*41px*/36px;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .description,
     .detailContainer > div:nth-of-type(1) > div:last-of-type #morePanel p{
-       font-size: 25px; font-weight: 500; font-style: italic; line-height: 30px; color: #131313;
+       font-size: /*25px*/21px; font-weight: 500; font-style: italic; line-height: /*30px*/26px; color: #131313;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type > #morePanel{
         position: relative;
@@ -848,7 +870,7 @@
         display: none;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type > #morePanel [type='button']{
-        font-size: 15px; font-weight: 300; color: #131313;
+        font-size: /*15px*/14px; font-weight: 300; color: #131313;
         background: none; border: none; text-decoration: underline;
         /* position: absolute; right: 0; bottom: 0; */
         display: block; padding: 0; margin-top: 5px;
@@ -908,12 +930,13 @@
         display: none;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .ingredient{
-        border-bottom: 1px solid #e5e5e5; padding-bottom: 30px; margin-bottom: /*50px*/85px;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: 30px; 
         font-size: 14px; font-weight: 400; color: #131313; line-height: 17px;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .bnwBtn{
-        padding: 25px 0; box-sizing: border-box; width: 100%;
-        font-size: 20px;
+        padding: 20px 0; box-sizing: border-box; width: 92.86%;
+        font-size: /*20px*/18px; z-index: 500; line-height: 24px;
+        position: fixed; bottom: 10px; left: 50%; transform: translate(-50%, 0);
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .bnwBtn:nth-of-type(2){
         display: none;
@@ -934,34 +957,34 @@
 
 
     .detailContainer > .accComponent{
-        max-width: 1280px; width: 100%; margin: 0 auto; padding: 150px 2.25%;
+        max-width: 1280px; width: 100%; margin: 0 auto; padding: /*150px*/80px 3.57%;
         box-sizing: border-box;
     }
     .detailContainer > .accComponent h3{
-        font-size: /*28px*/22px; font-weight: 600; color: #131313;
-        background: url('../images/expand_close.png') right center / 30px no-repeat;
-        line-height: /*34px*/30px; cursor: pointer;
+        font-size: /*28px*//*22px*/20px; font-weight: 600; color: #131313;
+        background: url('../images/expand_close.png') right center / /*30px*/28px no-repeat;
+        line-height: /*34px*//*30px*/28px; cursor: pointer;
     }
     .detailContainer > .accComponent h3.active{
-        background: url('../images/expand_open.png') right center / 30px no-repeat;
+        background: url('../images/expand_open.png') right center / /*30px*/28px no-repeat;
     }
     .detailContainer > .accComponent h3.active + ul{
         display: block;
     }
     .detailContainer > .accComponent ul{
-        margin: /*50px*/35px 0 0 1.56%; width: 100%; box-sizing: border-box;
+        padding: /*50px*//*35px*/30px 1.56% 0; width: 100%; box-sizing: border-box;
         display: none;
     }
     .detailContainer > .accComponent ul li{
         display: block; width: 100%;
     }
     .detailContainer > .accComponent ul li strong{
-        margin-bottom: /*30px*/15px; font-size: /*25px*/18px; font-weight: 600;
-        color: #5f5f5f; line-height: /*32px*/25px; display: block;
+        margin-bottom: /*30px*/15px; font-size: /*25px*//*18px*/16px; font-weight: 600;
+        color: #5f5f5f; line-height: /*32px*//*25px*/23px; display: block;
     }
     .detailContainer > .accComponent ul li p{
-        margin-bottom: /*35px*/25px; font-size: /*22px*/16px; font-weight: 500;
-        color: #999999; padding: 0 1.56%; line-height: /*30px*/22px; box-sizing: border-box;
+        margin-bottom: /*35px*/25px; font-size: /*22px*//*16px*/14px; font-weight: 500;
+        color: #999999; padding: 0 1.56%; line-height: /*30px*//*22px*/20px; box-sizing: border-box;
     }
 
 
@@ -1054,7 +1077,8 @@
 
 
     .detailContainer .linebyline{
-        width: 100%; padding: 150px 0; box-sizing: border-box;
+        width: 100%; padding: /*150px*/120px 3.57%; box-sizing: border-box; 
+        margin-bottom: 150px;
     }
 
 
@@ -1074,15 +1098,18 @@
 
     .detailContainer .linebyline > dl{
         margin: 0 auto; text-align: center; width: 100%;
-        max-width: 1280px; padding: 0 2.25%; box-sizing: border-box;
+        max-width: 1280px; 
+        /* padding: 0 2.25%; box-sizing: border-box; */
         color: #131313;
     }
     .detailContainer .linebyline > dl dt{
-        font-size: /*90px*/78px; font-weight: 600; margin-bottom: 55px;
+        font-size: /*90px*//*78px*/10.18vw; font-weight: 600; margin-bottom: /*55px*/30px;
     }
     .detailContainer .linebyline > dl dd{
-        font-size: /*30px*/26px; font-weight: 300; margin: 0 auto 55px;
-        line-height: 38px; padding: 0 13.28%;
+        font-size: /*30px*//*26px*/18px; font-weight: 300; margin: 0 auto /*55px*/30px;
+        line-height: /*38px*/24px; 
+        /* padding: 0 13.28%; box-sizing: border-box; */
+        width: 80%; max-width: 450px;
     }
     .detailContainer .linebyline .bnwBtn{
         font-size: /*18px*/16px; padding: /*20px*/18px 1.56%; box-sizing: border-box;
@@ -1095,41 +1122,14 @@
 
     .detailContainer .productBottomBar{
         width: 100%;
-        padding: 5px; box-sizing: border-box;
-        /* position: fixed; bottom: -150px;  */
+        /* padding: 10px; box-sizing: border-box; */
+        box-sizing: border-box;
         background-color: #ffffff; z-index: 80; color: #131313;
         border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;
-        margin-bottom: 150px;
-    }
-    .detailContainer .productBottomBar::after{
-        content: ''; display: block; clear: both;
+        position: fixed; bottom: 0; height: 84px;
     }
     .detailContainer .productBottomBar > div{
-        max-width: 1280px; width: 100%; margin: 0 auto;
-    }
-    .detailContainer .productBottomBar > div img{
-        width: 80px; float: left;
-    }
-    .detailContainer .productBottomBar > div em{
-        margin-left: 1.95%; width: /*46.88%*/ 45%; display: block; float: left;
-        font-size: /*25px*/22px; font-weight: 500; font-style: italic;
-        text-align: left;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        line-height: 80px;
-    }
-    .detailContainer .productBottomBar > div > div{
-        text-align: right; width: 38%; float: right;
-        display: flex; align-items: center;
-    }
-    .detailContainer .productBottomBar > div > div > strong{
-        font-size: /*20px*/18px; font-weight: 700; line-height: 80px;
-        margin-left: auto;
-    }
-    .detailContainer .productBottomBar > div > div > .bnwBtn{
-        font-size: /*20px*/18px;
-        margin-left: 3.13%; padding: /*20px*/15px /*15.93%*/10%; box-sizing: border-box;
+        display: none;
     }
 
 
@@ -3516,7 +3516,7 @@
         display: block;
     }
     .detailContainer > .accComponent ul{
-        margin: /*50px*/35px 0 0 1.56%; width: 100%; box-sizing: border-box;
+        padding: /*50px*/35px 1.56%; width: 100%; box-sizing: border-box;
         display: none;
     }
     .detailContainer > .accComponent ul li{
@@ -3667,6 +3667,7 @@
         background-color: #ffffff; z-index: 80; color: #131313;
         border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;
         margin-bottom: 150px;
+        position: sticky; bottom: 0;
     }
     .detailContainer .productBottomBar::after{
         content: ''; display: block; clear: both;
@@ -6140,7 +6141,7 @@
         display: block;
     }
     .detailContainer > .accComponent ul{
-        margin: /*50px*/35px 0 0 1.56%; width: 100%; box-sizing: border-box;
+        padding: /*50px*/35px 1.56%; width: 100%; box-sizing: border-box;
         display: none;
     }
     .detailContainer > .accComponent ul li{
@@ -6318,6 +6319,7 @@
         background-color: #ffffff; z-index: 80; color: #131313;
         border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;
         margin-bottom: 150px;
+        position: sticky; bottom: 0;
     }
     .detailContainer .productBottomBar > div{
         max-width: 1280px; width: 100%; margin: 0 auto;
