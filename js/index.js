@@ -21,6 +21,7 @@ $(document).ready(function(){
     panelControl(".shopBtn input[type='button']");
     panelControl(".btnSubmit");
     asideScroll();
+    periodSearch();
 });
 function panelControl(openBtn){
     var currentPanelName = null;
@@ -109,3 +110,12 @@ function asideScroll(){
 
 
 
+function periodSearch(){
+    $('.shippingOrder > div > div > div > div:first-of-type > label').click(function(){
+        $('.shippingOrder > div > div > div > div:first-of-type > *:not(:first-child), .shippingOrder > div > div > div > input').toggleClass('open');
+    });
+    $('.shippingOrder > div > div > div > input').click(function(){
+        $('.shippingOrder > div > div > div > input').removeClass('active');
+        $(this).toggleClass('active');
+    });
+}
