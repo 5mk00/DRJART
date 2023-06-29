@@ -3452,7 +3452,8 @@
     }
     .detailContainer .bx-wrapper,
     .detailContainer .bx-viewport,
-    .detailContainer .vertitailSlider li img{
+    .detailContainer .vertitailSlider li img,
+    .detailContainer > div:nth-of-type(1) > div:first-of-type > ul li img{
         width: 100%;
     }
     .detailContainer .bx-controls{
@@ -6089,7 +6090,8 @@
     }
     .detailContainer .bx-wrapper,
     .detailContainer .bx-viewport,
-    .detailContainer .vertitailSlider li img{
+    .detailContainer .vertitailSlider li img,
+    .detailContainer > div:nth-of-type(1) > div:first-of-type > ul li img{
         width: 100%;
     }
     .detailContainer .bx-controls{
