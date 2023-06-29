@@ -384,9 +384,15 @@
         margin-bottom: 45px; width: 100%;
     }
     .mainContainer > div:nth-of-type(7) h2 strong{
-        font-style: italic;
-        text-decoration: underline red;
-        /* text-decoration-color: red; */
+        font-style: italic; position: relative;
+    }
+    .mainContainer > div:nth-of-type(7) h2 strong:after{
+        content: ''; width: 0%; left: 50%; height: 5px; background-color: red;
+        transition: all 0.35s ease-out; transition-delay: 0.5s;
+        position: absolute; bottom: 0;
+    }
+    .mainContainer > div:nth-of-type(7).active h2 strong:after{
+        width: 100%; left: 0;
     }
     .mainContainer > div:nth-of-type(7) p{
         font-size: /*30px*//*20px*/18px; font-weight: 300; line-height: 26px; color: #131313;
@@ -3095,9 +3101,15 @@
         margin-bottom: 45px; width: 100%;
     }
     .mainContainer > div:nth-of-type(7) h2 strong{
-        font-style: italic;
-        text-decoration: underline red;
-        /* text-decoration-color: red; */
+        font-style: italic; position: relative;
+    }
+    .mainContainer > div:nth-of-type(7) h2 strong:after{
+        content: ''; width: 0%; left: 50%; height: 5px; background-color: red;
+        transition: all 0.35s ease-out; transition-delay: 0.5s;
+        position: absolute; bottom: 0;
+    }
+    .mainContainer > div:nth-of-type(7).active h2 strong:after{
+        width: 100%; left: 0;
     }
     .mainContainer > div:nth-of-type(7) p{
         font-size: /*30px*/26px; font-weight: 300; line-height: 38px; color: #131313;
@@ -5423,11 +5435,11 @@
     }
     .mainContainer > div:nth-of-type(3) > img{
         position: absolute; left: 50%;
-        transform: translate(-50%, 40%); opacity: 0.5;
-        transition: 0.8s ease-in;
+        transform: translate(-50%, 0%); opacity: 0.5;
+        transition: 0.6s ease-in;
     }
     .mainContainer > div:nth-of-type(3).active img{
-        transform: translate(-50%, -15%); opacity: 1;
+        transform: translate(-50%, -12%); opacity: 1;
     }
     .mainContainer > div:nth-of-type(3) dl{
         width: 100%; margin: 0 auto; position: absolute;
@@ -5538,6 +5550,9 @@
     .mainContainer > div:nth-of-type(6){
         margin-bottom: 150px;
     }
+
+
+
     .mainContainer > div:nth-of-type(5) h2,
     .mainContainer > div:nth-of-type(6) h2{
         font-size: 34px; font-weight: 600; color: #131313; margin-bottom: 45px;
@@ -5545,6 +5560,7 @@
         display: flex;
         flex-basis: 100%;
         align-items: center;
+        /* transition: all 0.8s ease-out; */
     }
     .mainContainer > div:nth-of-type(5) h2:after,
     .mainContainer > div:nth-of-type(6) h2:after{
@@ -5560,6 +5576,7 @@
     .mainContainer > div:nth-of-type(5) > div,
     .mainContainer > div:nth-of-type(6) > div{
         padding: 0 1.12%; width: 100%; box-sizing: border-box;
+        /* transition: all 1.2s ease-out; */
     }
     .mainContainer > div:nth-of-type(5) > div video,
     .mainContainer > div:nth-of-type(6) > div video{
@@ -5683,6 +5700,7 @@
 
     .mainContainer > div:nth-of-type(7){
         margin-bottom: 150px; text-align: center;
+        transition: all 1s ease-out;
     }
     .mainContainer > div:nth-of-type(7) h2{
         font-size: 90px; font-weight: 600; color: #131313; text-align: center;
@@ -5690,12 +5708,11 @@
     }
     .mainContainer > div:nth-of-type(7) h2 strong{
         font-style: italic; position: relative;
-        /* text-decoration: underline red; */
-        /* text-decoration-color: red; */
     }
     .mainContainer > div:nth-of-type(7) h2 strong:after{
         content: ''; width: 0%; left: 50%; height: 5px; background-color: red;
-        transition: all 0.35s ease-out; position: absolute; bottom: 0;
+        transition: all 0.35s ease-out; transition-delay: 0.5s;
+        position: absolute; bottom: 0;
     }
     .mainContainer > div:nth-of-type(7).active h2 strong:after{
         width: 100%; left: 0;
