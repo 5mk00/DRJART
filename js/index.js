@@ -25,15 +25,31 @@ $(document).ready(function(){
     scrollEffect();
 });
 function scrollEffect(){
-    var effLine = 0;
     var currentPos = 0;
-    effLine = $(".scrollTarget").offset().top + 50;
+    var target = $(".scrollTarget");
+    var currentTarget = null;
+    var posData = [];
+    var arrCount = 0;
+    
+    for(var i = 0; i < target.length; i++){
+        currentTarget = target.eq(i).offset().top-150;
+        posData.push({
+            index:(i), topPos: currentTarget
+        });
+    }
+    
     $(window).scroll(function(){
         currentPos = $(this).scrollTop();
-        if(currentPos >= effLine){
-            $(".scrollTarget").addClass("active");
-        }else{
+        if(currentPos >= posData[arrCount].topPos){
+            $(".scrollTarget").eq(arrCount).addClass("active");
+            arrCount++;
+        }else if(currentPos <= 100){
             $(".scrollTarget").removeClass("active");
+            arrCount = 0;
+        }
+
+        if(arrCount >= posData.length){
+            arrCount = posData.length -1;
         }
     });
 }
