@@ -22,7 +22,7 @@ $(document).ready(function(){
     accActive();
     panelControl(".shopBtn input[type='button']");
     panelControl(".btnSubmit");
-    scrollEffect();
+    // scrollEffect();
     accActive(".accComponent > li > strong");
     accActive(".accComponent > h3");
     accActive("footer > div:nth-of-type(2) div:nth-of-type(1) nav h3");
@@ -60,6 +60,7 @@ function scrollEffect(){
         }
     });
 }
+// mainPage에만 따로 file링크걸기.
 function panelControl(openBtn){
     var currentPanelName = null;
     $(openBtn).click(function(){
