@@ -23,6 +23,10 @@ $(document).ready(function(){
     panelControl(".shopBtn input[type='button']");
     panelControl(".btnSubmit");
     scrollEffect();
+    accActive(".accComponent > li > strong");
+    accActive(".accComponent > h3");
+    accActive("footer > div:nth-of-type(2) div:nth-of-type(1) nav h3");
+    descriptionControl();
 });
 function scrollEffect(){
     var currentPos = 0;
@@ -58,7 +62,7 @@ function panelControl(openBtn){
     $(openBtn).click(function(){
         currentPanelName = "#" + $(this).attr("data-panel");
         $(currentPanelName).addClass("active");
-    })
+    });
     $(".btnClose").click(function(){
         $(currentPanelName).removeClass("active");
     });
@@ -112,19 +116,31 @@ function cartPanel(){
 
 
 
-function accActive(){
-    $('.accComponent > li > strong, .accComponent > h3, footer > div:nth-of-type(2) div:nth-of-type(1) nav h3').click(function(){
+
+
+
+
+function accActive(accOpen){
+    $(accOpen).click(function(){
         $(this).toggleClass('active');
     });
 }
 
 
 
-// function modalShow(){
-//     $('#showPopup').click(function(){
-//         $('#modalWrap').addClass('active');
-//         $('body').css('overflow','hidden');
+
+
+
+
+// function descriptionControl(){
+//     var currentPanelName = null;
+//     $("input[data-panel='lessPanel']").click(function(){
+//         currentPanelName = "#" + $(this).attr("data-panel");
+//         $(currentPanelName).css('display','block');
+//         $(this).val('Read Less');
 //     });
+
+
 // }
 
 
