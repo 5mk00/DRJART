@@ -773,8 +773,8 @@
     .mypage > div > div > div:last-of-type > ul li .mlChoose{
         width: 100%; position: absolute; bottom: 0;
     }
-    .listContainer > div > div ul li .colorChoose [type='button'],
-    .mypage > div > div > div:last-of-type > ul li .colorChoose [type='button']{
+    .colorChoose [type='button'],
+    .colorChoose [type='button']{
         width: 25px; height: 25px; text-indent: -9999px;
         border-radius: 50%; border: none;
     }
@@ -3431,8 +3431,8 @@
     .mypage > div > div > div:last-of-type > ul li .mlChoose{
         width: 100%; position: absolute; bottom: 0;
     }
-    .listContainer > div > div ul li .colorChoose [type='button'],
-    .mypage > div > div > div:last-of-type > ul li .colorChoose [type='button']{
+    .colorChoose [type='button'],
+    .colorChoose [type='button']{
         width: /*20px*/18px; height: /*20px*/18px; text-indent: -9999px;
         border-radius: 50%; border: none;
     }
@@ -6073,8 +6073,8 @@
     .mypage > div > div > div:last-of-type > ul li .mlChoose{
         width: 100%; position: absolute; bottom: 0;
     }
-    .listContainer > div > div ul li .colorChoose [type='button'],
-    .mypage > div > div > div:last-of-type > ul li .colorChoose [type='button']{
+    .colorChoose [type='button'],
+    .colorChoose [type='button']{
         width: 20px; height: 20px; text-indent: -9999px;
         border-radius: 50%; border: none;
     }

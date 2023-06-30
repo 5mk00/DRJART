@@ -26,7 +26,10 @@ $(document).ready(function(){
     accActive(".accComponent > li > strong");
     accActive(".accComponent > h3");
     accActive("footer > div:nth-of-type(2) div:nth-of-type(1) nav h3");
-    descriptionControl();
+    inquiryTab();
+    itemColor(".barrier > input");
+    itemColor(".reju > input");
+    itemSize(".mlChoose > input");
 });
 function scrollEffect(){
     var currentPos = 0;
@@ -143,6 +146,41 @@ function accActive(accOpen){
 
 // }
 
+
+
+function inquiryTab(){
+    $(".inputTab > input").click(function(){
+        $(".inputTab > input").removeClass('active');
+        $(".inputTabPage > li").removeClass('active');
+        $(this).addClass('active');
+        $(".inputTabPage > li").eq($(this).index()).addClass('active');
+    });
+}
+
+function itemColor(item){
+    $(item).click(function(){
+        $(item).removeClass('active');
+        $(this).addClass('active');
+
+
+
+    });
+}
+
+
+function itemSize(item){
+    var sizePrice = null;
+    $(item).click(function(){
+        $(item).removeClass('active');
+        $(this).addClass('active');
+
+
+
+        sizePrice = $(this).attr("data-price");
+        // alert(sizePrice);
+        $(".priceValue").text(sizePrice);
+    });
+}
 
 
 
