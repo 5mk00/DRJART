@@ -5,6 +5,7 @@
 .whiteBtn,
 .blackBtn,
 /* .mlSelectBtn, */
+.colorChoose,
 .mlBtn,
 #gnbPanel,
 #cartPanel > div:nth-of-type(1) h2,
@@ -64,7 +65,7 @@ select, input,
 .ordercompleteContainer > div > div:last-of-type > div:nth-of-type(3) strong small,
 .officialContainer, .brandContainer,
 .infoContainer, textarea,
-.accComponent,
+.accComponent, #showPopup,
 .starReview,
 .best,.new,.bestNew,.gift,
 header,
@@ -186,38 +187,27 @@ address{
 } */
 .mlBtn{
     border: 1px solid #e5e5e5; border-radius: 50px;
-    background-color: #ffffff; color: #131313;
+    background-color: #ffffff; color: #131313; padding: 0;
 }
 .mlBtn.active{
     background-color: #131313; color: #ffffff; border-radius: 50px;
+    border: #131313;
 }
 
-.barrier .light{
-    background-color: #eedac6;
-}
-.barrier .medium{
-    background-color: #eedabb;
-}
-.colorChoose .light.active{
+.colorChoose .light{
     background: radial-gradient(closest-side, #eedac6 80%, #ffffff 20%);
 }
-.colorChoose .medium.active{
+.colorChoose .medium{
     background: radial-gradient(closest-side, #eedabb 80%, #ffffff 20%);
 }
 .reju .light{
-    background-color: #e0cab8;
-}
-.reju .medium{
-    background-color: #d1b89f;
-}
-.reju .light.active{
     background: radial-gradient(closest-side, #e0cab8 80%, #ffffff 20%);
 }
-.reju .medium.active{
+.reju .medium{
     background: radial-gradient(closest-side, #d1b89f 80%, #ffffff 20%);
 }
-.colorChoose .light.active,
-.colorChoose .medium.active{
+.colorChoose [type='button'].active,
+.detailContainer > div:nth-of-type(1) .colorChoose [type='button'].active{
     border: 1px solid #131313;
 }
 
@@ -328,6 +318,7 @@ address{
 
     .loginContainer > form > fieldset [type='email'],
     .loginContainer > form > fieldset [type='password'],
+    .loginContainer > form > fieldset [type='text'],
     .forgotContainer > form > fieldset [type='email'],
     .signupContainer > form > fieldset [type='text'],
     .signupContainer > form > fieldset [type='email'],
@@ -340,7 +331,7 @@ address{
     .paymentContainer > div > div:first-of-type form > div:first-of-type input{
         width: 100%; color: #131313;
         font-size: /*18px*/16px; font-weight: 400; padding: /*20px*/18px 3.95%; border-radius: 15px;
-        border: 1px solid #e5e5e5; line-height: /*22px*/20px;
+        border: 1px solid #e5e5e5; line-height: /*22px*/22px;
         box-sizing: border-box;
     }
 
@@ -411,6 +402,7 @@ address{
         background-color: white;
         position: fixed;
         z-index: 100000;
+        width: 100%;
     }
     #cartPanel.active{
         display: block;
@@ -440,6 +432,7 @@ address{
 
     .emptyCart{
         text-align: center; padding-top: 50px; background-color: white;
+        box-sizing: border-box;
     }
     .emptyCart h3{
         margin-bottom: 25px; font-size: /*28px*/24px; color: #131313; font-weight: 600;
@@ -561,22 +554,23 @@ address{
     .minusBtn,
     .plusBtn{
         font-size: /*20px*/18px; font-weight: 500; background: none; border: none;
-        text-align: center; width: 20%; padding: 0; line-height: /*30px*/28px;
+        text-align: center; width: 25%; padding: 0; line-height: 30px;
         margin: 0 auto; float: left;
     }
     .minusBtn{
         color: #e5e5e5;
     }
     .plusBtn{
-        color: #131313; text-align: right;
+        color: #131313;
     }
     .quantComponent [type='text']{
-        width: 40%; border: none; background-color: #f6f6f6; text-align: center; font-size: 12px;
-        line-height: /*30px*/28px; text-align: center; float: left; margin: 0; border-radius: 0;
-        margin: 0 auto;
+        width: 50%; border: none; background-color: #f6f6f6; text-align: center; font-size: 12px;
+        line-height: 30px; text-align: center; float: left; margin: 0; border-radius: 0;
+        margin: 0 auto; padding: 0;
     }
     .haveCart > ul li > div > div span:last-child{
         font-size: /*16px*/14px; font-weight: 400; float: right;
+        line-height: 30px;
     }
 
 
@@ -955,6 +949,7 @@ address{
 
     .loginContainer > form > fieldset [type='email'],
     .loginContainer > form > fieldset [type='password'],
+    .loginContainer > form > fieldset [type='text'],
     .forgotContainer > form > fieldset [type='email'],
     .signupContainer > form > fieldset [type='text'],
     .signupContainer > form > fieldset [type='email'],
@@ -967,7 +962,7 @@ address{
     .paymentContainer > div > div:first-of-type form > div:first-of-type input{
         width: 100%; color: #131313;
         font-size: 18px; font-weight: 400; padding: 20px; border-radius: 15px;
-        border: 1px solid #e5e5e5; line-height: 22px;
+        border: 1px solid #e5e5e5; line-height: 24px;
         box-sizing: border-box;
     }
 
@@ -1174,7 +1169,8 @@ address{
     .minusBtn,
     .plusBtn{
         font-size: 20px; font-weight: 500; background: none; border: none;
-        text-align: center; width: 23.01%; 
+        text-align: center; width: 25%; padding: 0; line-height: 32px;
+        margin: 0 auto; float: left;
     }
     .minusBtn{
         color: #e5e5e5;
@@ -1183,11 +1179,13 @@ address{
         color: #131313;
     }
     .quantComponent [type='text']{
-        width: 40%; border: none; background-color: #f6f6f6; text-align: center;
-        line-height: 30px; text-align: center;
+        width: 50%; border: none; background-color: #f6f6f6; text-align: center; font-size: 14px;
+        line-height: 32px; text-align: center; float: left; margin: 0; border-radius: 0;
+        margin: 0 auto; padding: 0;
     }
     .haveCart > ul li > div > div span:last-child{
         font-size: 16px; font-weight: 400; float: right;
+        line-height: 32px;
     }
 
 
@@ -1543,6 +1541,7 @@ address{
 
     .loginContainer > form > fieldset [type='email'],
     .loginContainer > form > fieldset [type='password'],
+    .loginContainer > form > fieldset [type='text'],
     .forgotContainer > form > fieldset [type='email'],
     .signupContainer > form > fieldset [type='text'],
     .signupContainer > form > fieldset [type='email'],
@@ -1555,7 +1554,7 @@ address{
     .paymentContainer > div > div:first-of-type form > div:first-of-type input{
         width: 100%; color: #131313;
         font-size: 18px; font-weight: 400; padding: 20px; border-radius: 15px;
-        border: 1px solid #e5e5e5; line-height: 22px;
+        border: 1px solid #e5e5e5; line-height: 24px;
         box-sizing: border-box;
     }
 
@@ -1732,7 +1731,7 @@ address{
     }
     .haveCart > ul li > div > [type='button']{
         background: url('../images/delete.png') center / contain no-repeat; border: none;
-        text-indent: -9999px; min-width: 18px; width: 3.37%; opacity: 0.5;
+        text-indent: -9999px; min-width: 20px; width: 3.37%; opacity: 0.5;
         position: absolute; right: 3.75%;
     }
     .haveCart > ul li > div > em{
@@ -1762,7 +1761,8 @@ address{
     .minusBtn,
     .plusBtn{
         font-size: 20px; font-weight: 500; background: none; border: none;
-        text-align: center; width: 23.01%; 
+        text-align: center; width: 25%; padding: 0; line-height: 34px;
+        margin: 0 auto; float: left;
     }
     .minusBtn{
         color: #e5e5e5;
@@ -1771,11 +1771,13 @@ address{
         color: #131313;
     }
     .quantComponent [type='text']{
-        width: 40%; border: none; background-color: #f6f6f6; text-align: center;
-        line-height: 30px; text-align: center;
+        width: 50%; border: none; background-color: #f6f6f6; text-align: center; font-size: 14px;
+        text-align: center; float: left; margin: 0; border-radius: 0;
+        margin: 0 auto; padding: 0; line-height: 34px;
     }
     .haveCart > ul li > div > div span:last-child{
-        font-size: 16px; font-weight: 400; float: right;
+        font-size: 16px; font-weight: 400; float: right; line-height: 34px;
+        
     }
 
 

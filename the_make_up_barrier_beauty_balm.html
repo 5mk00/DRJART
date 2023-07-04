@@ -188,16 +188,14 @@
 
     <section class="detailContainer">
         <!-- left -->
-        <div>
+        <div class="detailBox">
             <div>
                 <ul class="vertitailSlider">
-                    <li><img src="images/make_barrier_1_light.png" alt="The Make Up™ Barrier Beauty Balm_image_1 light">
-                    </li>
-                    <li><img src="images/make_barrier_2.png" alt="The Make Up™ Barrier Beauty Balm_image_2"></li>
+                    <li><img src="images/make_barrier_1_light.png" alt="The Make Up™ Barrier Beauty Balm_1 light"></li>
+                    <li><img src="images/make_barrier_2.png" alt="The Make Up™ Barrier Beauty Balm_2"></li>
                 </ul>
                 <ol class="thumbPager">
-                    <li><a href="#" data-slide-index="0"><img src="images/make_barrier_1_light.png" alt="thumb1"></a>
-                    </li>
+                    <li><a href="#" data-slide-index="0"><img src="images/make_barrier_1_light.png" alt="thumb1"></a></li>
                     <li><a href="#" data-slide-index="1"><img src="images/make_barrier_2.png" alt="thumb2"></a></li>
                 </ol>
             </div>
@@ -213,10 +211,24 @@
                     <span>Write your first review</span>
                 </div>
 
-                <div class="colorChoose barrier">
-                    <input type="button" value="Light" class="light">
-                    <input type="button" value="Medium" class="medium">
-                </div>
+                <!-- <div class="colorChoose barrier">
+                    <input type="button" value="light" class="light active">
+                    <input type="button" value="medium" class="medium">
+                    <div>
+                        <span class="lightText active">Light</span>
+                        <span class="mediumText">Medium</span>
+                    </div>
+                </div> -->
+                <ul class="colorChoose barrier">
+                    <li>
+                        <input type="button" value="light" class="light active">
+                        <span>Light</span>
+                    </li>
+                    <li>
+                        <input type="button" value="medium" class="medium">
+                        <span>Medium</span>
+                    </li>
+                </ul>
 
                 <p class="size">30ml</p>
                 <ul class="accComponent">

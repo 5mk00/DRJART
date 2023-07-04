@@ -3,16 +3,23 @@
 // mainPage > 마지막 부분 밑줄 스크롤 시 생김
 
 // * accordion 만들기
+
 // 색상, ml 선택 시 이미지, 설명, 버튼 변경
+// showPW, submit
+
 // detailPage Read More 누르면 문장 이어붙이기
-// showPW, forgotPW error, submit
+//장바구니 수량 +-
 //.accComponent active
 // toggle on/off
 //custormerInquiry inputTab 선택 => 해당되는 inputTabPage 보이기
 
+
+
 var reloadTarget = null;
 
 $(document).ready(function(){
+    navBar();
+    itemQuant();
     textSlider();
     cartSlider()
     imgSlider();
@@ -22,45 +29,57 @@ $(document).ready(function(){
     accActive();
     panelControl(".shopBtn input[type='button']");
     panelControl(".btnSubmit");
-    // scrollEffect();
     accActive(".accComponent > li > strong");
     accActive(".accComponent > h3");
     accActive("footer > div:nth-of-type(2) div:nth-of-type(1) nav h3");
+    descriptionControl("#morePanel > input");
     inquiryTab();
-    itemColor(".barrier > input");
-    itemColor(".reju > input");
+    itemColor(".barrier input");
+    itemColor(".reju input");
     itemSize(".mlChoose > input");
+    showPW();
+    asideScroll('div > aside ul');
+    periodSearch('.shippingOrder > div > div > div > div:first-of-type > label');
 });
-function scrollEffect(){
-    var currentPos = 0;
-    var target = $(".scrollTarget");
-    var currentTarget = null;
-    var posData = [];
-    var arrCount = 0;
-    
-    for(var i = 0; i < target.length; i++){
-        currentTarget = target.eq(i).offset().top-150;
-        posData.push({
-            index:(i), topPos: currentTarget
-        });
-    }
-    
-    $(window).scroll(function(){
-        currentPos = $(this).scrollTop();
-        if(currentPos >= posData[arrCount].topPos){
-            $(".scrollTarget").eq(arrCount).addClass("active");
-            arrCount++;
-        }else if(currentPos <= 100){
-            $(".scrollTarget").removeClass("active");
-            arrCount = 0;
-        }
 
-        if(arrCount >= posData.length){
-            arrCount = posData.length -1;
+
+function navBar(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > $("header").height()){
+            $("header").css({
+                backgroundColor: "#ffffff",
+                boxShadow: "0 2px 4px -4px black"
+            });
+        }
+        else{
+            $("header").css({
+                backgroundColor: "transparent",
+                boxShadow: "none"
+            });
         }
     });
 }
-// mainPage에만 따로 file링크걸기.
+
+function itemQuant(){
+    $(".minusBtn").click(function(){        
+        var count = $(this).parent(".quantComponent").find("input[type='text']").val();
+        var num = Number(count);
+        
+        num--;
+        if(num<=0){num=1;}
+        $(this).parent(".quantComponent").find("input[type='text']").val(num);
+    });
+
+    $(".plusBtn").click(function(){
+        var count = $(this).parent(".quantComponent").find("input[type='text']").val();
+        var num = Number(count);
+
+        num++;
+        if(num>=30){num=30;}
+        $(this).parent(".quantComponent").find("input[type='text']").val(num);
+    });
+}
+
 function panelControl(openBtn){
     var currentPanelName = null;
     $(openBtn).click(function(){
@@ -136,16 +155,31 @@ function accActive(accOpen){
 
 
 
-// function descriptionControl(){
-//     var currentPanelName = null;
-//     $("input[data-panel='lessPanel']").click(function(){
-//         currentPanelName = "#" + $(this).attr("data-panel");
-//         $(currentPanelName).css('display','block');
-//         $(this).val('Read Less');
-//     });
+function descriptionControl(btn){
+    var previewText = $(btn).parents().children().first().text();
 
+    var textBox = previewText;
 
-// }
+    $(btn).click(function(){
+        if($(this).attr("value")=="Read More"){
+            textBox += $(this).parents().find("#lessPanel").text();
+            $(btn).parents().children().first().text(textBox);
+            $(this).val('Read Less');
+        }
+        else{
+            textBox = previewText;
+            $(btn).parents().children().first().text(textBox);
+            $(this).val('Read More');
+        }
+    });
+
+}
+
+// 0. 기존문장을 저장할 a변수.
+// 1. 기존문장 -> b 변수에 저장해
+// 2. b변수를 불러와 변경문장을 + 해주기.
+// 3. 그 문장을 b변수에 재 저장.
+// 4. b변수를부르면 최종 변경된 문장.
 
 
 
@@ -158,50 +192,93 @@ function inquiryTab(){
     });
 }
 
+
+
+
+function showPW(){
+    $(".PW_wrap > input[type='button']").click(function(){
+        $(this).siblings().type="text";
+        
+        var x = document.getElementById("userPW");
+        if (x.type == "password") {
+          x.type = "text";
+          $(this).css({
+            background: "url(../images/visibility.png) center / cover no-repeat"
+          });
+        } else {
+          x.type = "password";
+          $(this).css({
+            background: "url(../images/visibility_off.png) center / cover no-repeat"
+          });
+        }
+    });
+}
+
+
+// 좌우스크롤에서 선택된 메뉴 쪽으로 스크롤 되도록 하기
+function asideScroll(menuSelect){
+	var left = $(menuSelect).find(".active").offset().left - $(menuSelect).children().offset().left;
+    var curLeft = $(menuSelect).scrollLeft();          
+    $(menuSelect).scrollLeft(curLeft + left);
+}
+
+
+
+function periodSearch(searchOpen){
+    $(searchOpen).click(function(){
+        $(searchOpen).siblings().toggleClass('open');
+        $(searchOpen).parents().siblings("input").toggleClass('open');
+    });
+    $(searchOpen).parents().siblings("input").click(function(){
+        $(this).siblings("input").removeClass('active');
+        $(this).toggleClass('active');
+    });
+}
+
+
+
+
+
+
+
+
 function itemColor(item){
+    
     $(item).click(function(){
         $(item).removeClass('active');
         $(this).addClass('active');
-
 
 
     });
 }
 
 
-function itemSize(item){
+function itemSize(size){
     var sizePrice = null;
-    $(item).click(function(){
-        $(item).removeClass('active');
+    var sizeID = null;
+
+    // var getSrc = null;
+    // var getSrcSplit = null;
+    // var imgSrc = null;
+
+    $(size).click(function(){
+        $(this).siblings().removeClass('active');
         $(this).addClass('active');
-
-
-
         sizePrice = $(this).attr("data-price");
-        // alert(sizePrice);
-        $(".priceValue").text(sizePrice);
+        $(this).parents("li").find(".priceValue").text(sizePrice);
+        
+        sizeID = "#" + $(this).attr("value");
+        $(this).parents().find(sizeID).siblings().removeClass("active");
+        $(this).parents().find(sizeID).addClass("active");
+        $(this).parents(".detailBox").siblings(".productBottomBar").find(".priceValue").text(sizePrice);
+
+        // getSrc = $(this).parents(".detailBox").find('img').attr("src");
+        // console.log(getSrc);
+        // getSrcSplit = getSrc.split("_")[3];
+        
+
+        // imgSrc = getSrc.split(getSrcSplit)[0] + $(this).attr("value");
+        // console.log(imgSrc);
+        // $(this).parents(".detailBox").find('img').attr("src", imgSrc+".png");
     });
 }
-
-
-
-/* 모바일 메뉴 좌우스크롤에서 선택된 메뉴 쪽으로 스크롤 되도록 하기*/ 
-// function asideScroll(){
-// 	var left = $('div > aside ul li a.active').offset().left - $('div > aside ul li').offset().left;
-//     var curLeft = $('div > aside ul').scrollLeft();          
-//     $('div > aside ul').scrollLeft(curLeft + left);
-// }
-
-
-
-/* 모바일 shopping&order에서 구매 기간 조회 펼치기 
-+ 버튼 active*/
-// function periodSearch(){
-//     $('.shippingOrder > div > div > div > div:first-of-type > label').click(function(){
-//         $('.shippingOrder > div > div > div > div:first-of-type > *:not(:first-child), .shippingOrder > div > div > div > input').toggleClass('open');
-//     });
-//     $('.shippingOrder > div > div > div > input').click(function(){
-//         $('.shippingOrder > div > div > div > input').removeClass('active');
-//         $(this).toggleClass('active');
-//     });
-// }

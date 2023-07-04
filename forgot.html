@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
+    <div id="showPopup">
+        <p>You have requested a password reset.<br>
+            Please check the e-mail received at that e-mail address.</p>
+        <small>- Please reset your password through the e-mail sent to the e-mail you registered at the time of registration.<br>
+            - For inquiries, please contact the Customer Satisfaction Center (1544-5453).</small>
+        <a href="login.html" class="bnwBtn2">Sign in</a>
+    </div>
+
     <aside id="gnbPanel">
         <input type="button" value="closePanel" class="btnClose">
         <ul>
@@ -195,9 +203,9 @@
             <fieldset>
                 <label for="userEmail">Email</label>
                 <input type="email" id="userEmail" placeholder="Enter your Email">
-                <p id="warning">We can't find correct address. Resend the email that 
-                    you have registered</p>
-                <input type="button" value="Reset Password" class="bnwBtn2" data-popup="warning">
+                <!-- <p id="warning">We can't find correct address. Resend the email that 
+                    you have registered</p> -->
+                <input type="button" value="Reset Password" class="bnwBtn2 btnSubmit" data-panel="showPopup">
                 
                 <span>Back to<a href="login.html">Sign in</a></span>
             </fieldset>

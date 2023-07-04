@@ -348,7 +348,7 @@
 
     .mainContainer > div:nth-of-type(5) > div ul li dl,
     .mainContainer > div:nth-of-type(6) > div ul li dl{
-        width: 100%; position: relative;
+        width: 100%; position: relative; height: 75px;
     }
     .mainContainer > div:nth-of-type(5) > div ul li dl dt,
     .mainContainer > div:nth-of-type(6) > div ul li dl dt{
@@ -360,7 +360,7 @@
         -webkit-box-orient: vertical;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 1;
+        -webkit-line-clamp: 2;
         word-break: keep-all;
     }
     .mainContainer > div:nth-of-type(5) > div ul li dl dd:first-of-type,
@@ -733,7 +733,7 @@
     }
     .listContainer > div > div ul li dl dd:first-of-type,
     .mypage > div > div > div:last-of-type > ul li dl dd:first-of-type{
-        position: absolute; top: 0; right: 0;
+        position: absolute; top: 0; right: 0; line-height: 22px;
         font-size: 16px; font-weight: 400; color: #131313;
     }
     .listContainer > div > div ul li dl::after,
@@ -744,7 +744,7 @@
     .mypage > div > div > div:last-of-type > ul li dl dd:last-of-type{
         font-size: 14px; font-weight: 300; color: #131313;
         float: right; text-align: right; width: 100%;
-        height: 20px;
+        height: 35px;
         
         /* padding-left: 27.96%; box-sizing: border-box;
         overflow: hidden;
@@ -758,7 +758,7 @@
     }
     .listContainer > div > div ul li dl dd:last-of-type span,
     .mypage > div > div > div:last-of-type > ul li dl dd:last-of-type span{
-        vertical-align: bottom; line-height: 20px;
+        vertical-align: bottom; line-height: 35px;
     }
 
 
@@ -773,10 +773,13 @@
     .mypage > div > div > div:last-of-type > ul li .mlChoose{
         width: 100%; position: absolute; bottom: 0;
     }
-    .colorChoose [type='button'],
     .colorChoose [type='button']{
-        width: 25px; height: 25px; text-indent: -9999px;
+        width: 35px; height: 35px; text-indent: -9999px;
         border-radius: 50%; border: none;
+    }
+    .listContainer > div > div ul li .mlChoose,
+    .mypage > div > div > div:last-of-type > ul li .mlChoose{
+        line-height: 35px;
     }
     .listContainer > div > div ul li .mlChoose [type='button'],
     .mypage > div > div > div:last-of-type > ul li .mlChoose [type='button']{
@@ -900,9 +903,25 @@
         width: 100%;
     }
     .detailContainer > div:nth-of-type(1) .colorChoose [type='button']{
-        width: 25px; height: 25px; text-indent: -9999px;
+        width: 38px; height: 38px; text-indent: -9999px;
         border-radius: 50%; border: none;
     }
+
+    ul.colorChoose li{
+        display: inline-block; width: fit-content;
+    }
+    ul.colorChoose li input{
+        display: block; margin: 0 auto 10px;
+    }
+    ul.colorChoose li span{
+        display: block; font-size: 14px; color: #131313; opacity: 0;
+        line-height: 18px; text-align: center;
+    }
+    ul.colorChoose li > input.active + span{
+        opacity: 1;
+    }
+
+
     .detailContainer > div:nth-of-type(1) .mlChoose [type='button']{
         width: 80px; margin: 0 auto; text-align: center;
         font-size: 18px; font-weight: 500; line-height: 30px;
@@ -949,8 +968,12 @@
         font-size: /*20px*/18px; z-index: 500; line-height: 24px;
         position: fixed; bottom: 10px; left: 50%; transform: translate(-50%, 0);
     }
-    .detailContainer > div:nth-of-type(1) > div:last-of-type .bnwBtn:nth-of-type(2){
+    
+    .detailContainer > div:nth-of-type(1) > div:last-of-type .priceValue{
         display: none;
+    }
+    .detailContainer > div:nth-of-type(1) > div:last-of-type .priceValue.active{
+        display: block;
     }
     
 
@@ -1001,25 +1024,52 @@
 
 
 
-    .detailContainer .recommend{
-        max-width: 1280px; margin: 0 auto; width: 100%; margin-bottom: 150px;
+    /* .detailContainer .recommend{
+        max-width: 1280px; margin: 0 auto 80px; width: 100%;
         padding: 0 2.25%; box-sizing: border-box;
 
     }
     .detailContainer .recommend h3{
-        font-size: /*28px*/26px; color: #131313; font-weight: 600;
+        font-size: 24px; color: #131313; font-weight: 600;
         margin-bottom: 25px;
     }
     .detailContainer .recommend ul{
         width: 100%; padding-left: 0.39%; box-sizing: border-box;
     }
     .detailContainer .recommend ul li{
-        display: inline-block; width: 23.28%;
+        display: inline-block; width: 48.19%;
         vertical-align: top; position: relative;
+        margin-bottom: 70px;
     }
-    .detailContainer .recommend ul li:not(:nth-of-type(1)){
+    .detailContainer .recommend ul li:nth-of-type(2n){
         margin-left: 1.51%;
+    } */
+    .detailContainer .recommend{
+        max-width: 1280px; margin: 0 auto 80px; width: 100%;
+        padding: 0 2.25%; box-sizing: border-box;
+
     }
+    .detailContainer .recommend h3{
+        font-size: 24px; color: #131313; font-weight: 600;
+        margin-bottom: 25px;
+    }
+    .detailContainer .recommend ul::-webkit-scrollbar{
+        display: none;
+    }
+    .detailContainer .recommend ul{
+        width: 100%; padding-left: 0.39%; box-sizing: border-box;
+        white-space: nowrap; overflow-x: auto;
+    }
+    .detailContainer .recommend ul li{
+        display: inline-block; width: 60%; max-width: 300px;
+        /* width: 48.19%; */
+        vertical-align: top; position: relative;
+        margin-bottom: 70px;
+    }
+    .detailContainer .recommend ul li:not(:first-of-type){
+        margin-left: 15px;
+    }
+    
     .detailContainer .recommend ul li > div:first-of-type{
         position: relative; width: 100%; margin-bottom: 20px;
     }
@@ -1048,22 +1098,22 @@
 
 
     .detailContainer .recommend ul li dl{
-        width: 100%; position: relative;
+        width: 100%; position: relative; height: 90px;
     }
     .detailContainer .recommend ul li dl dt{
         font-size: /*18px*/16px; font-weight: 600; color: #131313; 
         width: 100%; /*padding-right: 90px;*/ box-sizing: border-box;
-        margin-bottom: 15px;
+        margin-bottom: 15px; white-space: normal;
         line-height: 20px;
         overflow: hidden;  
         -webkit-box-orient: vertical;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 1;
+        -webkit-line-clamp: 2;
         word-break: keep-all;
     }
     .detailContainer .recommend ul li dl dd:first-of-type{
-        text-align: right; line-height: 20px;
+        text-align: right; line-height: 35px;
         font-size: /*16px*/14px; font-weight: 400; color: #131313;
     }
 
@@ -1072,14 +1122,12 @@
     .detailContainer .recommend ul li .mlChoose{
         width: 100%; position: absolute; bottom: 0;
     }
-    .detailContainer .recommend ul li .colorChoose [type='button']{
-        width: /*20px*/18px; height: /*20px*/18px; text-indent: -9999px;
-        border-radius: 50%; border: none;
+    .detailContainer .recommend ul li .mlChoose{
+        line-height: 35px;
     }
-    
     .detailContainer .recommend ul li .mlChoose [type='button']{
-        width: /*50px*/40px; margin: 0 auto; text-align: center;
-        font-size: /*10px*/9px; font-weight: 300; line-height: /*20px*/18px;
+        width: /*50px*/42px; margin: 0 auto; text-align: center;
+        font-size: /*10px*/10px; font-weight: 300; line-height: /*20px*/20px;
     }
 
 
@@ -1210,7 +1258,7 @@
     
     .loginContainer > form > fieldset [type='email'],
     .loginContainer > form > fieldset .PW_wrap,
-    .signupContainer > form > fieldset [type='text'],
+    .signupContainer > form > fieldset #userName,
     .signupContainer > form > fieldset [type='email'],
     .signupContainer > form > fieldset > p,
     .signupContainer > form > fieldset > [type='password'],
@@ -1228,7 +1276,7 @@
         position: absolute;
         top: 50%; right: /*20px*/3.95%; transform: translateY(-50%);
         cursor: pointer; text-indent: -9999px; border: none;
-        width: 30px; background: url('../images/visibility_off.png') center / contain no-repeat;
+        width: 25px; background: url('../images/visibility_off.png') center / cover no-repeat;
     }
     .PW_wrap + p{
         font-size: /*10px*/12px; color: #131313; line-height: /*12px*/14px; margin-top: 10px;
@@ -1239,7 +1287,7 @@
         width: 100%;
     }
 
-    .forgotContainer > form > fieldset > #warning{
+    /* .forgotContainer > form > fieldset > #warning{
         display: none;
     }
     .forgotContainer > form > fieldset > #warning.active{
@@ -1247,7 +1295,7 @@
         border-radius: 15px; line-height: 18px; color: #131313; font-size: 14px;
         background: url('../images/error.png') 20px center / 20px no-repeat #e5e5e5;
         margin-top: 25px; display: block;
-    }
+    } */
     
 
     /* .loginContainer > form > fieldset > div input[id=remember_chk]{
@@ -2674,7 +2722,7 @@
     }
     
     .customerInquiry > div > div > div:last-of-type > div:last-of-type{
-        width: 100%; height: 280px; margin-bottom: 30px; overflow-y: scroll;
+        width: 100%; height: 280px; margin-bottom: 30px; overflow-y: auto;
         border: 2px solid #e5e5e5; border-radius: 15px; box-sizing: border-box;
         padding: 20px 2.79%; box-sizing: border-box;
     }
@@ -3065,7 +3113,7 @@
 
     .mainContainer > div:nth-of-type(5) > div ul li dl,
     .mainContainer > div:nth-of-type(6) > div ul li dl{
-        width: 100%; position: relative;
+        width: 100%; position: relative; height: 75px;
     }
     .mainContainer > div:nth-of-type(5) > div ul li dl dt,
     .mainContainer > div:nth-of-type(6) > div ul li dl dt{
@@ -3077,7 +3125,7 @@
         -webkit-box-orient: vertical;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 1;
+        -webkit-line-clamp: 2;
         word-break: keep-all;
     }
     .mainContainer > div:nth-of-type(5) > div ul li dl dd:first-of-type,
@@ -3392,7 +3440,7 @@
     
     .listContainer > div > div ul li dl,
     .mypage > div > div > div:last-of-type > ul li dl{
-        width: 100%; position: relative;
+        width: 100%; position: relative; height: 85px;
     }
     .listContainer > div > div ul li dl dt,
     .mypage > div > div > div:last-of-type > ul li dl dt{
@@ -3404,12 +3452,12 @@
         -webkit-box-orient: vertical;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 1;
+        -webkit-line-clamp: 2;
         word-break: keep-all;
     }
     .listContainer > div > div ul li dl dd:first-of-type,
     .mypage > div > div > div:last-of-type > ul li dl dd:first-of-type{
-        text-align: right; line-height: 20px;
+        text-align: right; line-height: 30px;
         font-size: /*16px*/14px; font-weight: 400; color: #131313;
     }
     .listContainer > div > div ul li dl dd:last-of-type,
@@ -3431,19 +3479,19 @@
     .mypage > div > div > div:last-of-type > ul li .mlChoose{
         width: 100%; position: absolute; bottom: 0;
     }
-    .colorChoose [type='button'],
     .colorChoose [type='button']{
-        width: /*20px*/18px; height: /*20px*/18px; text-indent: -9999px;
+        width: 30px; height: 30px; text-indent: -9999px;
         border-radius: 50%; border: none;
     }
-    
+    .listContainer > div > div ul li .mlChoose,
+    .mypage > div > div > div:last-of-type > ul li .mlChoose{
+        line-height: 30px;
+    }
     .listContainer > div > div ul li .mlChoose [type='button'],
     .mypage > div > div > div:last-of-type > ul li .mlChoose [type='button']{
-        width: /*50px*/40px; margin: 0 auto; text-align: center;
-        font-size: /*10px*/9px; font-weight: 300; line-height: /*20px*/18px;
+        width: /*50px*/48px; margin: 0 auto; text-align: center;
+        font-size: /*10px*/12px; font-weight: 300; line-height: /*20px*/24px;
     }
-
-    
 
 
     .detailContainer > div:nth-of-type(1){
@@ -3537,9 +3585,24 @@
         width: 100%;
     }
     .detailContainer > div:nth-of-type(1) .colorChoose [type='button']{
-        width: 25px; height: 25px; text-indent: -9999px;
+        width: 40px; height: 40px; text-indent: -9999px;
         border-radius: 50%; border: none;
     }
+
+    ul.colorChoose li{
+        display: inline-block; width: fit-content;
+    }
+    ul.colorChoose li input{
+        display: block; margin: 0 auto 10px;
+    }
+    ul.colorChoose li span{
+        display: block; font-size: 14px; color: #131313; opacity: 0;
+        line-height: 18px; text-align: center;
+    }
+    ul.colorChoose li > input.active + span{
+        opacity: 1;
+    }
+
     .detailContainer > div:nth-of-type(1) .mlChoose [type='button']{
         width: 80px; margin: 0 auto; text-align: center;
         font-size: 18px; font-weight: 500; line-height: 30px;
@@ -3585,8 +3648,12 @@
         padding: 25px 0; box-sizing: border-box; width: 100%;
         font-size: 20px;
     }
-    .detailContainer > div:nth-of-type(1) > div:last-of-type .bnwBtn:nth-of-type(2){
+    
+    .detailContainer > div:nth-of-type(1) > div:last-of-type .priceValue{
         display: none;
+    }
+    .detailContainer > div:nth-of-type(1) > div:last-of-type .priceValue.active{
+        display: block;
     }
     
 
@@ -3684,7 +3751,7 @@
 
 
     .detailContainer .recommend ul li dl{
-        width: 100%; position: relative;
+        width: 100%; position: relative; height: 85px;
     }
     .detailContainer .recommend ul li dl dt{
         font-size: /*18px*/16px; font-weight: 600; color: #131313; 
@@ -3695,11 +3762,11 @@
         -webkit-box-orient: vertical;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 1;
+        -webkit-line-clamp: 2;
         word-break: keep-all;
     }
     .detailContainer .recommend ul li dl dd:first-of-type{
-        text-align: right; line-height: 20px;
+        text-align: right; line-height: 30px;
         font-size: /*16px*/14px; font-weight: 400; color: #131313;
     }
 
@@ -3708,14 +3775,12 @@
     .detailContainer .recommend ul li .mlChoose{
         width: 100%; position: absolute; bottom: 0;
     }
-    .detailContainer .recommend ul li .colorChoose [type='button']{
-        width: /*20px*/18px; height: /*20px*/18px; text-indent: -9999px;
-        border-radius: 50%; border: none;
+    .detailContainer .recommend ul li .mlChoose{
+        line-height: 30px;
     }
-    
     .detailContainer .recommend ul li .mlChoose [type='button']{
-        width: /*50px*/40px; margin: 0 auto; text-align: center;
-        font-size: /*10px*/9px; font-weight: 300; line-height: /*20px*/18px;
+        width: /*50px*/48px; margin: 0 auto; text-align: center;
+        font-size: /*10px*/12px; font-weight: 300; line-height: /*20px*/24px;
     }
 
 
@@ -3867,7 +3932,7 @@
     
     .loginContainer > form > fieldset [type='email'],
     .loginContainer > form > fieldset .PW_wrap,
-    .signupContainer > form > fieldset [type='text'],
+    .signupContainer > form > fieldset #userName,
     .signupContainer > form > fieldset [type='email'],
     .signupContainer > form > fieldset > p,
     .signupContainer > form > fieldset > [type='password'],
@@ -3885,10 +3950,10 @@
         position: absolute;
         top: 50%; right: 20px; transform: translateY(-50%);
         cursor: pointer; text-indent: -9999px; border: none;
-        width: 30px; background: url('../images/visibility_off.png') center / contain no-repeat;
+        width: 30px; background: url('../images/visibility_off.png') center / cover no-repeat;
     }
     .PW_wrap + p{
-        font-size: /*10px*/12px; color: #131313; line-height: /*12px*/14px; margin: 10px 0 0 20px;
+        font-size: /*10px*/12px; color: #131313; line-height: /*12px*/14px; margin-left: 20px;
         font-weight: 300;
     }
     .loginContainer > form > fieldset > div:last-of-type{
@@ -3896,7 +3961,7 @@
         width: 100%;
     }
 
-    .forgotContainer > form > fieldset > #warning{
+    /* .forgotContainer > form > fieldset > #warning{
         display: none;
     }
     .forgotContainer > form > fieldset > #warning.active{
@@ -3904,7 +3969,7 @@
         border-radius: 15px; line-height: 18px; color: #131313; font-size: 14px;
         background: url('../images/error.png') 20px center / 20px no-repeat #e5e5e5;
         margin-top: 25px; display: block;
-    }
+    } */
     
 
     /* .loginContainer > form > fieldset > div input[id=remember_chk]{
@@ -5252,7 +5317,7 @@
     }
     
     .customerInquiry > div > div > div:last-of-type > div:last-of-type{
-        width: 100%; height: 280px; margin-bottom: 30px; overflow-y: scroll;
+        width: 100%; height: 280px; margin-bottom: 30px; overflow-y: auto;
         border: 2px solid #e5e5e5; border-radius: 15px; box-sizing: border-box;
         padding: 20px 2.79%; box-sizing: border-box;
     }
@@ -6043,7 +6108,7 @@
     .mypage > div > div > div:last-of-type > ul li dl dd:last-of-type{
         font-size: 14px; font-weight: 300; color: #131313;
         float: right; text-align: right; width: 100%;
-        height: 20px;
+        height: 32px;
         
         /* padding-left: 27.96%; box-sizing: border-box;
         overflow: hidden;
@@ -6056,7 +6121,7 @@
     }
     .listContainer > div > div ul li dl dd:last-of-type span,
     .mypage > div > div > div:last-of-type > ul li dl dd:last-of-type span{
-        vertical-align: bottom; line-height: 20px;
+        vertical-align: bottom; line-height: 32px;
     }
 
 
@@ -6073,16 +6138,18 @@
     .mypage > div > div > div:last-of-type > ul li .mlChoose{
         width: 100%; position: absolute; bottom: 0;
     }
-    .colorChoose [type='button'],
     .colorChoose [type='button']{
-        width: 20px; height: 20px; text-indent: -9999px;
+        width: 32px; height: 32px; text-indent: -9999px;
         border-radius: 50%; border: none;
     }
-    
+    .listContainer > div > div ul li .mlChoose,
+    .mypage > div > div > div:last-of-type > ul li .mlChoose{
+        line-height: 32px;
+    }
     .listContainer > div > div ul li .mlChoose [type='button'],
     .mypage > div > div > div:last-of-type > ul li .mlChoose [type='button']{
         width: 50px; margin: 0 auto; text-align: center;
-        font-size: 10px; font-weight: 300; line-height: 20px;
+        font-size: 12px; font-weight: 300; line-height: 24px;
     }
 
     
@@ -6179,9 +6246,24 @@
         width: 100%;
     }
     .detailContainer > div:nth-of-type(1) .colorChoose [type='button']{
-        width: 25px; height: 25px; text-indent: -9999px;
+        width: 38px; height: 38px; text-indent: -9999px;
         border-radius: 50%; border: none;
     }
+
+    ul.colorChoose li{
+        display: inline-block; width: fit-content;
+    }
+    ul.colorChoose li input{
+        display: block; margin: 0 auto 10px;
+    }
+    ul.colorChoose li span{
+        display: block; font-size: 14px; color: #131313; opacity: 0;
+        line-height: 18px; text-align: center;
+    }
+    ul.colorChoose li > input.active + span{
+        opacity: 1;
+    }
+
     .detailContainer > div:nth-of-type(1) .mlChoose [type='button']{
         width: 80px; margin: 0 auto; text-align: center;
         font-size: 18px; font-weight: 500; line-height: 30px;
@@ -6227,10 +6309,12 @@
         padding: 25px 26.88%; box-sizing: border-box; width: 100%;
         font-size: 20px;
     }
-    .detailContainer > div:nth-of-type(1) > div:last-of-type .bnwBtn:nth-of-type(2){
+    .detailContainer > div:nth-of-type(1) > div:last-of-type .priceValue{
         display: none;
     }
-    
+    .detailContainer > div:nth-of-type(1) > div:last-of-type .priceValue.active{
+        display: block;
+    }
 
 
     .detailContainer .colorBox{
@@ -6364,32 +6448,26 @@
     .detailContainer .recommend ul li dl dd:last-of-type{
         font-size: 14px; font-weight: 300; color: #131313;
         float: right; text-align: right; width: 100%;
-        height: 20px;
+        height: 32px;
     }
     .detailContainer .recommend ul li dl dd:last-of-type [class^='starRating']{
         width: 30%;
     }
     .detailContainer .recommend ul li dl dd:last-of-type span{
-        vertical-align: bottom; line-height: 20px;
+        vertical-align: bottom; line-height: 32px;
     }
 
     .detailContainer .recommend ul li .colorChoose,
     .detailContainer .recommend ul li .mlChoose{
         width: 100%; position: absolute; bottom: 0;
     }
-    .detailContainer .recommend ul li .colorChoose [type='button']{
-        width: 20px; height: 20px; text-indent: -9999px;
-        border-radius: 50%; border: none;
+    .detailContainer .recommend ul li .mlChoose{
+        line-height: 32px;
     }
-    
     .detailContainer .recommend ul li .mlChoose [type='button']{
         width: 50px; margin: 0 auto; text-align: center;
-        font-size: 10px; font-weight: 300; line-height: 20px;
+        font-size: 12px; font-weight: 300; line-height: 24px;
     }
-
-
-
-
 
 
     .detailContainer .linebyline{
@@ -6532,7 +6610,7 @@
     
     .loginContainer > form > fieldset [type='email'],
     .loginContainer > form > fieldset .PW_wrap,
-    .signupContainer > form > fieldset [type='text'],
+    .signupContainer > form > fieldset #userName,
     .signupContainer > form > fieldset [type='email'],
     .signupContainer > form > fieldset > p,
     .signupContainer > form > fieldset > [type='password'],
@@ -6550,10 +6628,10 @@
         position: absolute;
         top: 50%; right: 20px; transform: translateY(-50%);
         cursor: pointer; text-indent: -9999px; border: none;
-        width: 30px; background: url('../images/visibility_off.png') center / contain no-repeat;
+        width: 30px; background: url('../images/visibility_off.png') center / cover no-repeat;
     }
     .PW_wrap + p{
-        font-size: /*10px*/12px; color: #131313; line-height: /*12px*/14px; margin: 10px 0 0 20px;
+        font-size: /*10px*/12px; color: #131313; line-height: /*12px*/14px; margin-left: 20px;
         font-weight: 300;
     }
     .loginContainer > form > fieldset > div:last-of-type{
@@ -6561,7 +6639,7 @@
         width: 100%;
     }
 
-    .forgotContainer > form > fieldset > #warning{
+    /* .forgotContainer > form > fieldset > #warning{
         display: none;
     }
     .forgotContainer > form > fieldset > #warning.active{
@@ -6569,7 +6647,7 @@
         border-radius: 15px; line-height: 18px; color: #131313; font-size: 14px;
         background: url('../images/error.png') 20px center / 20px no-repeat #e5e5e5;
         margin-top: 25px; display: block;
-    }
+    } */
     
 
     /* .loginContainer > form > fieldset > div input[id=remember_chk]{
@@ -7882,7 +7960,7 @@
     }
     
     .customerInquiry > div > div > div:last-of-type > div:last-of-type{
-        width: 100%; height: 280px; margin-bottom: 30px; overflow-y: scroll;
+        width: 100%; height: 280px; margin-bottom: 30px; overflow-y: auto;
         border: 2px solid #e5e5e5; border-radius: 15px; box-sizing: border-box;
         padding: 20px 2.79%; box-sizing: border-box;
     }
