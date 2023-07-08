@@ -34,11 +34,10 @@ $(document).ready(function(){
     accActive("footer > div:nth-of-type(2) div:nth-of-type(1) nav h3");
     descriptionControl("#morePanel > input");
     inquiryTab();
-    itemColor(".barrier input");
-    itemColor(".reju input");
-    itemSize(".mlChoose > input");
+    // itemColor(".barrier input");
+    // itemColor(".reju input");
+    // itemSize(".mlChoose > input");
     showPW();
-    asideScroll('div > aside ul');
     periodSearch('.shippingOrder > div > div > div > div:first-of-type > label');
 });
 
@@ -215,12 +214,7 @@ function showPW(){
 }
 
 
-// 좌우스크롤에서 선택된 메뉴 쪽으로 스크롤 되도록 하기
-function asideScroll(menuSelect){
-	var left = $(menuSelect).find(".active").offset().left - $(menuSelect).children().offset().left;
-    var curLeft = $(menuSelect).scrollLeft();          
-    $(menuSelect).scrollLeft(curLeft + left);
-}
+
 
 
 
@@ -232,53 +226,5 @@ function periodSearch(searchOpen){
     $(searchOpen).parents().siblings("input").click(function(){
         $(this).siblings("input").removeClass('active');
         $(this).toggleClass('active');
-    });
-}
-
-
-
-
-
-
-
-
-function itemColor(item){
-    
-    $(item).click(function(){
-        $(item).removeClass('active');
-        $(this).addClass('active');
-
-
-    });
-}
-
-
-function itemSize(size){
-    var sizePrice = null;
-    var sizeID = null;
-
-    // var getSrc = null;
-    // var getSrcSplit = null;
-    // var imgSrc = null;
-
-    $(size).click(function(){
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        sizePrice = $(this).attr("data-price");
-        $(this).parents("li").find(".priceValue").text(sizePrice);
-        
-        sizeID = "#" + $(this).attr("value");
-        $(this).parents().find(sizeID).siblings().removeClass("active");
-        $(this).parents().find(sizeID).addClass("active");
-        $(this).parents(".detailBox").siblings(".productBottomBar").find(".priceValue").text(sizePrice);
-
-        // getSrc = $(this).parents(".detailBox").find('img').attr("src");
-        // console.log(getSrc);
-        // getSrcSplit = getSrc.split("_")[3];
-        
-
-        // imgSrc = getSrc.split(getSrcSplit)[0] + $(this).attr("value");
-        // console.log(imgSrc);
-        // $(this).parents(".detailBox").find('img').attr("src", imgSrc+".png");
     });
 }

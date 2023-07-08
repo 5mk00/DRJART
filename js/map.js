@@ -1,32 +1,18 @@
-/**
- * @license
- * Copyright 2019 Google LLC. All Rights Reserved.
- * SPDX-License-Identifier: Apache-2.0
- */
 // Initialize and add the map
-let map;
-
-async function initMap() {
+function initMap() {
   // The location of Uluru
-  const position = { lat: -25.344, lng: 131.031 };
-  // Request needed libraries.
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-
-  // The map, centered at Uluru
-  map = new Map(document.getElementById("map"), {
-    zoom: 4,
-    center: position,
-    mapId: "DEMO_MAP_ID",
+  const drjartOfficial = { lat: 37.495725690244, lng: 127.04053125588 };
+  // The map, centered at drjartOfficial
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 14,
+    center: drjartOfficial,
+    mapId: '56b9e3ae479c9403'
   });
-
-  // The marker, positioned at Uluru
-  const marker = new AdvancedMarkerElement({
+  // The marker, positioned at drjartOfficial
+  const marker = new google.maps.Marker({
+    position: drjartOfficial,
     map: map,
-    position: position,
-    title: "Uluru",
   });
 }
 
-initMap();
+window.initMap = initMap;
