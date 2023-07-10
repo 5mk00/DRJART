@@ -608,6 +608,7 @@
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
         box-sizing: border-box;
         background-color: #131313; color: #ffffff;
+        border: 1px solid #131313;
     }
 
 
@@ -673,11 +674,19 @@
     .mypage > div > div > div:last-of-type > ul li:not(:nth-of-type(3n+1)){
         margin-left: 1.51%;
     } */
+    .listContainer > div > div ul li > div[class *= "choose"]{
+        display: none;
+    }
+    .listContainer > div > div ul li > div.active{
+        display: block;
+    }
     .listContainer > div > div ul li > div:first-of-type,
+    .listContainer > div > div ul li > div[class *= "choose"],
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type{
         position: relative; width: 100%; margin-bottom: 20px;
     }
     .listContainer > div > div ul li > div:first-of-type div,
+    .listContainer > div > div ul li > div[class *= "choose"] div,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type div{
         position: absolute; top: 0; left: 0; width: 100%;
         border-radius: 5px;
@@ -686,6 +695,7 @@
     }
 
     .listContainer > div > div ul li > div:first-of-type div p,
+    .listContainer > div > div ul li > div[class *= "choose"] div p,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type div p{
         display: none;
     }
@@ -698,17 +708,20 @@
     }
 
     .listContainer > div > div ul li > div:first-of-type div .blackBtn,
+    .listContainer > div > div ul li > div[class *= "choose"] div .blackBtn,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type div .blackBtn{
         display: none;
     }
     
     .listContainer > div > div ul li > div:first-of-type img,
+    .listContainer > div > div ul li > div[class *= "choose"] img,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type img{
         position: relative; width: 100%; border-radius: 5px; 
         margin-bottom: 20px; display: block;
         z-index: 4;
     }
     .listContainer > div > div ul li > div:first-of-type mark,
+    .listContainer > div > div ul li > div[class *= "choose"] mark,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type mark{
         position: absolute; bottom: 3.23%; left: -1.61%;
     }
@@ -773,9 +786,10 @@
     .mypage > div > div > div:last-of-type > ul li .mlChoose{
         width: 100%; position: absolute; bottom: 0;
     }
-    .colorChoose [type='button']{
+    .colorChoose [type='button'],
+    .colorChoose a{
         width: 35px; height: 35px; text-indent: -9999px;
-        border-radius: 50%; border: none;
+        border-radius: 50%; border: none; display: inline-block;
     }
     .listContainer > div > div ul li .mlChoose,
     .mypage > div > div > div:last-of-type > ul li .mlChoose{
@@ -902,7 +916,7 @@
     .detailContainer > div:nth-of-type(1) .mlChoose{
         width: 100%;
     }
-    .detailContainer > div:nth-of-type(1) .colorChoose [type='button']{
+    .detailContainer > div:nth-of-type(1) .colorChoose a{
         width: 38px; height: 38px; text-indent: -9999px;
         border-radius: 50%; border: none;
     }
@@ -910,21 +924,22 @@
     ul.colorChoose li{
         display: inline-block; width: fit-content;
     }
-    ul.colorChoose li input{
+    ul.colorChoose li a{
         display: block; margin: 0 auto 10px;
     }
     ul.colorChoose li span{
         display: block; font-size: 14px; color: #131313; opacity: 0;
         line-height: 18px; text-align: center;
     }
-    ul.colorChoose li > input.active + span{
+    ul.colorChoose li > a.active + span{
         opacity: 1;
     }
 
 
-    .detailContainer > div:nth-of-type(1) .mlChoose [type='button']{
+    .detailContainer > div:nth-of-type(1) .mlChoose .mlBtn{
         width: 80px; margin: 0 auto; text-align: center;
-        font-size: 18px; font-weight: 500; line-height: 30px;
+        font-size: 18px; font-weight: 500; line-height: 32px;
+        display: inline-block;
     }
 
     .detailContainer > div:nth-of-type(1) .mlChoose,
@@ -1069,11 +1084,19 @@
     .detailContainer .recommend ul li:not(:first-of-type){
         margin-left: 15px;
     }
+    .detailContainer .recommend ul li > div[class *= "choose"]{
+        display: none;
+    }
+    .detailContainer .recommend ul li > div.active{
+        display: block;
+    }
     
-    .detailContainer .recommend ul li > div:first-of-type{
+    .detailContainer .recommend ul li > div:first-of-type,
+    .detailContainer .recommend ul li > div[class *= "choose"]{
         position: relative; width: 100%; margin-bottom: 20px;
     }
-    .detailContainer .recommend ul li > div:first-of-type div{
+    .detailContainer .recommend ul li > div:first-of-type div,
+    .detailContainer .recommend ul li > div[class *= "choose"] div{
         position: absolute; top: 0; left: 0; width: 100%;
         border-radius: 5px;
         height: 100%;
@@ -1081,18 +1104,22 @@
     }
 
     .detailContainer .recommend ul li > div:first-of-type div p,
+    .detailContainer .recommend ul li > div[class *= "choose"] div p,
     .detailContainer .recommend ul li > div:first-of-type div .blackBtn,
+    .detailContainer .recommend ul li > div[class *= "choose"] div .blackBtn,
     .detailContainer .recommend ul li dl dd:last-of-type{
         display: none;
     }
     
     
-    .detailContainer .recommend ul li > div:first-of-type img{
+    .detailContainer .recommend ul li > div:first-of-type img,
+    .detailContainer .recommend ul li > div[class *= "choose"] img{
         position: relative; width: 100%; border-radius: 5px; 
         margin-bottom: 20px; display: block;
         z-index: 4;
     }
-    .detailContainer .recommend ul li > div:first-of-type mark{
+    .detailContainer .recommend ul li > div:first-of-type mark,
+    .detailContainer .recommend ul li > div[class *= "choose"] mark{
         position: absolute; bottom: 3.23%; left: -1.61%;
     }
 
@@ -3397,11 +3424,19 @@
     .mypage > div > div > div:last-of-type > ul li:not(:nth-of-type(3n+1)){
         margin-left: 1.51%;
     }
+    .listContainer > div > div ul li > div[class *= "choose"]{
+        display: none;
+    }
+    .listContainer > div > div ul li > div.active{
+        display: block;
+    }
     .listContainer > div > div ul li > div:first-of-type,
+    .listContainer > div > div ul li > div[class *= "choose"],
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type{
         position: relative; width: 100%; margin-bottom: 20px;
     }
     .listContainer > div > div ul li > div:first-of-type div,
+    .listContainer > div > div ul li > div[class *= "choose"] div,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type div{
         position: absolute; top: 0; left: 0; width: 100%;
         border-radius: 5px;
@@ -3410,6 +3445,7 @@
     }
 
     .listContainer > div > div ul li > div:first-of-type div p,
+    .listContainer > div > div ul li > div[class *= "choose"] div p,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type div p{
         display: none;
     }
@@ -3422,17 +3458,20 @@
     }
 
     .listContainer > div > div ul li > div:first-of-type div .blackBtn,
+    .listContainer > div > div ul li > div[class *= "choose"] div .blackBtn,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type div .blackBtn{
         display: none;
     }
     
     .listContainer > div > div ul li > div:first-of-type img,
+    .listContainer > div > div ul li > div[class *= "choose"] img,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type img{
         position: relative; width: 100%; border-radius: 5px; 
         margin-bottom: 20px; display: block;
         z-index: 4;
     }
     .listContainer > div > div ul li > div:first-of-type mark,
+    .listContainer > div > div ul li > div[class *= "choose"] mark,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type mark{
         position: absolute; bottom: 3.23%; left: -1.61%;
     }
@@ -3479,9 +3518,10 @@
     .mypage > div > div > div:last-of-type > ul li .mlChoose{
         width: 100%; position: absolute; bottom: 0;
     }
-    .colorChoose [type='button']{
+    .colorChoose [type='button'],
+    .colorChoose a{
         width: 30px; height: 30px; text-indent: -9999px;
-        border-radius: 50%; border: none;
+        border-radius: 50%; border: none; display: inline-block;
     }
     .listContainer > div > div ul li .mlChoose,
     .mypage > div > div > div:last-of-type > ul li .mlChoose{
@@ -3584,7 +3624,7 @@
     .detailContainer > div:nth-of-type(1) .mlChoose{
         width: 100%;
     }
-    .detailContainer > div:nth-of-type(1) .colorChoose [type='button']{
+    .detailContainer > div:nth-of-type(1) .colorChoose a{
         width: 40px; height: 40px; text-indent: -9999px;
         border-radius: 50%; border: none;
     }
@@ -3592,20 +3632,21 @@
     ul.colorChoose li{
         display: inline-block; width: fit-content;
     }
-    ul.colorChoose li input{
+    ul.colorChoose li a{
         display: block; margin: 0 auto 10px;
     }
     ul.colorChoose li span{
         display: block; font-size: 14px; color: #131313; opacity: 0;
         line-height: 18px; text-align: center;
     }
-    ul.colorChoose li > input.active + span{
+    ul.colorChoose li > a.active + span{
         opacity: 1;
     }
 
-    .detailContainer > div:nth-of-type(1) .mlChoose [type='button']{
+    .detailContainer > div:nth-of-type(1) .mlChoose .mlBtn{
         width: 80px; margin: 0 auto; text-align: center;
-        font-size: 18px; font-weight: 500; line-height: 30px;
+        font-size: 18px; font-weight: 500; line-height: 32px;
+        display: inline-block;
     }
 
     .detailContainer > div:nth-of-type(1) .mlChoose,
@@ -3723,10 +3764,18 @@
     .detailContainer .recommend ul li:not(:nth-of-type(1)){
         margin-left: 1.51%;
     }
-    .detailContainer .recommend ul li > div:first-of-type{
+    .detailContainer .recommend ul li > div[class *= "choose"]{
+        display: none;
+    }
+    .detailContainer .recommend ul li > div.active{
+        display: block;
+    }
+    .detailContainer .recommend ul li > div:first-of-type,
+    .detailContainer .recommend ul li > div[class *= "choose"]{
         position: relative; width: 100%; margin-bottom: 20px;
     }
-    .detailContainer .recommend ul li > div:first-of-type div{
+    .detailContainer .recommend ul li > div:first-of-type div,
+    .detailContainer .recommend ul li > div[class *= "choose"] div{
         position: absolute; top: 0; left: 0; width: 100%;
         border-radius: 5px;
         height: 100%;
@@ -3734,18 +3783,22 @@
     }
 
     .detailContainer .recommend ul li > div:first-of-type div p,
+    .detailContainer .recommend ul li > div[class *= "choose"] div p,
     .detailContainer .recommend ul li > div:first-of-type div .blackBtn,
+    .detailContainer .recommend ul li > div[class *= "choose"] div .blackBtn,
     .detailContainer .recommend ul li dl dd:last-of-type{
         display: none;
     }
     
     
-    .detailContainer .recommend ul li > div:first-of-type img{
+    .detailContainer .recommend ul li > div:first-of-type img,
+    .detailContainer .recommend ul li > div[class *= "choose"] img{
         position: relative; width: 100%; border-radius: 5px; 
         margin-bottom: 20px; display: block;
         z-index: 4;
     }
-    .detailContainer .recommend ul li > div:first-of-type mark{
+    .detailContainer .recommend ul li > div:first-of-type mark,
+    .detailContainer .recommend ul li > div[class *= "choose"] mark{
         position: absolute; bottom: 3.23%; left: -1.61%;
     }
 
@@ -6021,11 +6074,19 @@
     .mypage > div > div > div:last-of-type > ul li:not(:nth-of-type(4n+1)){
         margin-left: 1.51%;
     }
+    .listContainer > div > div ul li > div[class *= "choose"]{
+        display: none;
+    }
+    .listContainer > div > div ul li > div.active{
+        display: block;
+    }
     .listContainer > div > div ul li > div:first-of-type,
+    .listContainer > div > div ul li > div[class *= "choose"],
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type{
         position: relative; width: 100%; margin-bottom: 20px;
     }
     .listContainer > div > div ul li > div:first-of-type div,
+    .listContainer > div > div ul li > div[class *= "choose"] div,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type div{
         position: absolute; top: 0; left: 0; width: 100%;
         background-color: rgba(0, 0, 0, 0.5); border-radius: 5px;
@@ -6035,11 +6096,13 @@
         z-index: 6;
     }
     .listContainer > div > div ul li > div:first-of-type div:hover,
+    .listContainer > div > div ul li > div[class *= "choose"] div:hover,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type div:hover{
         opacity: 1;
     }
 
     .listContainer > div > div ul li > div:first-of-type div p,
+    .listContainer > div > div ul li > div[class *= "choose"] div p,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type div p{
         font-size: 14px; font-weight: 400; line-height: 17px;
         color: #ffffff;
@@ -6059,6 +6122,7 @@
     }
 
      .listContainer > div > div ul li > div:first-of-type div .blackBtn,
+     .listContainer > div > div ul li > div[class *= "choose"] div .blackBtn,
      .mypage > div > div > div:last-of-type > ul li > div:first-of-type div .blackBtn{
         font-size: 16px; 
         padding: 4.84% 0; display: block;
@@ -6067,12 +6131,23 @@
     }
     
     .listContainer > div > div ul li > div:first-of-type img,
+    .listContainer > div > div ul li > div[class *= "choose"] img,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type img{
         position: relative; width: 100%; border-radius: 5px; 
         margin-bottom: 20px; display: block;
         z-index: 4;
     }
+    /* .listContainer > div > div ul li > div:first-of-type .size_100ml,
+    .listContainer > div > div ul li > div:first-of-type .size_50ml{
+        display: none;
+    }
+    .listContainer > div > div ul li > div:first-of-type img{
+        display: block;
+    } */
+
+
     .listContainer > div > div ul li > div:first-of-type mark,
+    .listContainer > div > div ul li > div[class *= "choose"] mark,
     .mypage > div > div > div:last-of-type > ul li > div:first-of-type mark{
         position: absolute; bottom: 3.23%; left: -1.61%;
     }
@@ -6138,9 +6213,10 @@
     .mypage > div > div > div:last-of-type > ul li .mlChoose{
         width: 100%; position: absolute; bottom: 0;
     }
-    .colorChoose [type='button']{
+    .colorChoose [type='button'],
+    .colorChoose a{
         width: 32px; height: 32px; text-indent: -9999px;
-        border-radius: 50%; border: none;
+        border-radius: 50%; border: none; display: inline-block;
     }
     .listContainer > div > div ul li .mlChoose,
     .mypage > div > div > div:last-of-type > ul li .mlChoose{
@@ -6245,7 +6321,8 @@
     .detailContainer > div:nth-of-type(1) .mlChoose{
         width: 100%;
     }
-    .detailContainer > div:nth-of-type(1) .colorChoose [type='button']{
+    /* .detailContainer > div:nth-of-type(1) .colorChoose [type='button']{ */
+    .detailContainer > div:nth-of-type(1) .colorChoose a{
         width: 38px; height: 38px; text-indent: -9999px;
         border-radius: 50%; border: none;
     }
@@ -6253,20 +6330,21 @@
     ul.colorChoose li{
         display: inline-block; width: fit-content;
     }
-    ul.colorChoose li input{
+    ul.colorChoose li a{
         display: block; margin: 0 auto 10px;
     }
     ul.colorChoose li span{
         display: block; font-size: 14px; color: #131313; opacity: 0;
         line-height: 18px; text-align: center;
     }
-    ul.colorChoose li > input.active + span{
+    ul.colorChoose li > a.active + span{
         opacity: 1;
     }
 
-    .detailContainer > div:nth-of-type(1) .mlChoose [type='button']{
+    .detailContainer > div:nth-of-type(1) .mlChoose .mlBtn{
         width: 80px; margin: 0 auto; text-align: center;
-        font-size: 18px; font-weight: 500; line-height: 30px;
+        font-size: 18px; font-weight: 500; line-height: 32px;
+        display: inline-block;
     }
 
     .detailContainer > div:nth-of-type(1) .mlChoose,
@@ -6308,12 +6386,6 @@
     .detailContainer > div:nth-of-type(1) > div:last-of-type .bnwBtn{
         padding: 25px 26.88%; box-sizing: border-box; width: 100%;
         font-size: 20px;
-    }
-    .detailContainer > div:nth-of-type(1) > div:last-of-type .priceValue{
-        display: none;
-    }
-    .detailContainer > div:nth-of-type(1) > div:last-of-type .priceValue.active{
-        display: block;
     }
 
 
@@ -6382,10 +6454,18 @@
     .detailContainer .recommend ul li:not(:nth-of-type(1)){
         margin-left: 1.51%;
     }
-    .detailContainer .recommend ul li > div:first-of-type{
+    .detailContainer .recommend ul li > div[class *= "choose"]{
+        display: none;
+    }
+    .detailContainer .recommend ul li > div.active{
+        display: block;
+    }
+    .detailContainer .recommend ul li > div:first-of-type,
+    .detailContainer .recommend ul li > div[class *= "choose"]{
         position: relative; width: 100%; margin-bottom: 20px;
     }
-    .detailContainer .recommend ul li > div:first-of-type div{
+    .detailContainer .recommend ul li > div:first-of-type div,
+    .detailContainer .recommend ul li > div[class *= "choose"] div{
         position: absolute; top: 0; left: 0; width: 100%;
         background-color: rgba(0, 0, 0, 0.5); border-radius: 5px;
         padding: 35px 6.45% 30px; box-sizing: border-box; 
@@ -6393,11 +6473,13 @@
         opacity: 0; transition: opacity 0.35s ease-out;
         z-index: 6;
     }
-    .detailContainer .recommend ul li > div:first-of-type div:hover{
+    .detailContainer .recommend ul li > div:first-of-type div:hover,
+    .detailContainer .recommend ul li > div[class *= "choose"] div:hover{
         opacity: 1;
     }
 
-    .detailContainer .recommend ul li > div:first-of-type div p{
+    .detailContainer .recommend ul li > div:first-of-type div p,
+    .detailContainer .recommend ul li > div[class *= "choose"] div p{
         font-size: 14px; font-weight: 400; line-height: 17px;
         color: #ffffff;
         overflow: hidden;  
@@ -6409,19 +6491,22 @@
     }
     
 
-    .detailContainer .recommend ul li > div:first-of-type div .blackBtn{
+    .detailContainer .recommend ul li > div:first-of-type div .blackBtn,
+    .detailContainer .recommend ul li > div[class *= "choose"] div .blackBtn{
         font-size: 16px; 
         padding: 4.84% 0; display: block;
         width: 87.1%; line-height: 20px;
         position: absolute; bottom: 9.68%; left: 50%; transform: translate(-50%, 0);
     }
     
-    .detailContainer .recommend ul li > div:first-of-type img{
+    .detailContainer .recommend ul li > div:first-of-type img,
+    .detailContainer .recommend ul li > div[class *= "choose"] img{
         position: relative; width: 100%; border-radius: 5px; 
         margin-bottom: 20px; display: block;
         z-index: 4;
     }
-    .detailContainer .recommend ul li > div:first-of-type mark{
+    .detailContainer .recommend ul li > div:first-of-type mark,
+    .detailContainer .recommend ul li > div[class *= "choose"] mark{
         position: absolute; bottom: 3.23%; left: -1.61%;
     }
 

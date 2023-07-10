@@ -34,9 +34,9 @@ $(document).ready(function(){
     accActive("footer > div:nth-of-type(2) div:nth-of-type(1) nav h3");
     descriptionControl("#morePanel > input");
     inquiryTab();
-    // itemColor(".barrier input");
-    // itemColor(".reju input");
-    // itemSize(".mlChoose > input");
+    itemColorSize(".barrier input");
+    itemColorSize(".reju input");
+    itemColorSize(".mlChoose > input");
     showPW();
     periodSearch('.shippingOrder > div > div > div > div:first-of-type > label');
 });
@@ -227,4 +227,39 @@ function periodSearch(searchOpen){
         $(this).siblings("input").removeClass('active');
         $(this).toggleClass('active');
     });
+}
+
+
+function itemColorSize(item){
+
+    var sizePrice = null;
+    var selectImg = null;
+    // var sizeID = null;
+
+    // var getSrc = null;
+    // var getSrcSplit = null;
+    // var imgSrc = null;
+    // $(this).parents("li").find("img").css("display","none");
+    // $(item).click(function(){
+    //     $(this).siblings().removeClass('active');
+    //     $(this).addClass('active');
+    //     sizePrice = $(this).attr("data-price");
+    //     selectImg = ".size_" + $(this).attr("value");
+    //     $(this).parents("li").find(".priceValue").text(sizePrice);
+    //     $(this).parents("li").find("img").removeClass("active");
+    //     $(this).parents("li").find(selectImg).addClass("active");
+
+    // });
+
+    $(item).click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        sizePrice = $(this).attr("data-price");
+        selectImg = ".choose_" + $(this).attr("value");
+        $(this).parents("li").find(".priceValue").text(sizePrice);
+        $(this).parents("li").find("div.active").removeClass("active");
+        $(this).parents("li").find(selectImg).addClass("active");
+
+    });
+
 }

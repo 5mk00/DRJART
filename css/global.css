@@ -186,18 +186,21 @@ address{
     background-color: #ffffff; color: #131313;
 } */
 .mlBtn{
-    border: 1px solid #e5e5e5; border-radius: 50px;
+    border: 1px solid #e5e5e5; border-radius: 50px; box-sizing: border-box;
     background-color: #ffffff; color: #131313; padding: 0;
 }
 .mlBtn.active{
     background-color: #131313; color: #ffffff; border-radius: 50px;
     border: #131313;
 }
+.mlBtn:hover{
+    box-shadow: 0 0 3px #e5e5e5;
+}
 
-.colorChoose .light{
+.barrier .light{
     background: radial-gradient(closest-side, #eedac6 80%, #ffffff 20%);
 }
-.colorChoose .medium{
+.barrier .medium{
     background: radial-gradient(closest-side, #eedabb 80%, #ffffff 20%);
 }
 .reju .light{
@@ -207,7 +210,9 @@ address{
     background: radial-gradient(closest-side, #d1b89f 80%, #ffffff 20%);
 }
 .colorChoose [type='button'].active,
-.detailContainer > div:nth-of-type(1) .colorChoose [type='button'].active{
+/* .detailContainer > div:nth-of-type(1) .colorChoose [type='button'].active{ */
+.colorChoose a.active,
+.detailContainer > div:nth-of-type(1) .colorChoose a.active{
     border: 1px solid #131313;
 }
 
