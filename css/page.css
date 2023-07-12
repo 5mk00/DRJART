@@ -5678,7 +5678,6 @@
         display: flex;
         flex-basis: 100%;
         align-items: center;
-        /* transition: all 0.8s ease-out; */
     }
     .mainContainer > div:nth-of-type(5) h2:after,
     .mainContainer > div:nth-of-type(6) h2:after{
@@ -5694,7 +5693,6 @@
     .mainContainer > div:nth-of-type(5) > div,
     .mainContainer > div:nth-of-type(6) > div{
         padding: 0 1.12%; width: 100%; box-sizing: border-box;
-        /* transition: all 1.2s ease-out; */
     }
     .mainContainer > div:nth-of-type(5) > div video,
     .mainContainer > div:nth-of-type(6) > div video{
@@ -5972,7 +5970,6 @@
     .listContainer > div,
     .mypageContainer > div,
     .infoContainer > div{
-        /* padding: 0 2.52%; box-sizing: border-box; */
         padding: 0 1.26%; box-sizing: border-box;
     }
     .listContainer > div:after,
@@ -5984,12 +5981,11 @@
     .mypageContainer > div aside,
     .infoContainer > div aside{
         width: 20.77%; float: left;
-        /* display: inline-block; */
     }
     .listContainer > div aside h3{
-        font-size: /*30px*/28px; font-weight: 600; color: #131313;
+        font-size: 28px; font-weight: 600; color: #131313;
         margin-bottom: 30px; width: 100%; text-align: left;
-        line-height: /*36px*/34px;
+        line-height: 34px;
     }
     .listContainer > div aside ul,
     .mypageContainer > div > aside > div > ul,
@@ -6017,7 +6013,6 @@
     .infoContainer > div > aside > ul li a.active{
         border: 1px solid #e5e5e5; width: 100%;
         border-radius: 50px; padding: 20px 6.15%; box-sizing: border-box;
-        /* margin-bottom: 20px; */
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         white-space: nowrap;
         overflow: hidden;
@@ -6030,7 +6025,6 @@
     .mypageContainer > div > div,
     .infoContainer > div > div{
         width: 74.46%; float: right;
-        /* margin-left: 4.77%;  */
     }
     .listContainer > div > div h3,
     .mypageContainer > div > div > h3{
@@ -6040,7 +6034,7 @@
         align-items: center;
         margin: 0 auto 50px;
 
-        font-size: /*34px*/32px; color: #131313; font-weight: 600;
+        font-size: 32px; color: #131313; font-weight: 600;
         line-height: 38px;
     }
     .listContainer > div > div h3:after,
@@ -6137,13 +6131,6 @@
         margin-bottom: 20px; display: block;
         z-index: 4;
     }
-    /* .listContainer > div > div ul li > div:first-of-type .size_100ml,
-    .listContainer > div > div ul li > div:first-of-type .size_50ml{
-        display: none;
-    }
-    .listContainer > div > div ul li > div:first-of-type img{
-        display: block;
-    } */
 
 
     .listContainer > div > div ul li > div:first-of-type mark,
@@ -6184,11 +6171,6 @@
         font-size: 14px; font-weight: 300; color: #131313;
         float: right; text-align: right; width: 100%;
         height: 32px;
-        
-        /* padding-left: 27.96%; box-sizing: border-box;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap; */
     }
     .listContainer > div > div ul li dl dd:last-of-type [class^='starRating'],
     .mypage > div > div > div:last-of-type > ul li dl dd:last-of-type [class^='starRating']{
@@ -6294,7 +6276,7 @@
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .description,
     .detailContainer > div:nth-of-type(1) > div:last-of-type #morePanel p{
-       font-size: 25px; font-weight: 500; font-style: italic; line-height: 30px; color: #131313;
+       font-size: 25px; font-weight: 500; font-style: italic; line-height: 32px; color: #131313;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type > #morePanel{
         position: relative;
@@ -6305,7 +6287,6 @@
     .detailContainer > div:nth-of-type(1) > div:last-of-type > #morePanel [type='button']{
         font-size: 15px; font-weight: 300; color: #131313;
         background: none; border: none; text-decoration: underline;
-        /* position: absolute; right: 0; bottom: 0; */
         display: block; padding: 0; margin-top: 5px;
     }
 
@@ -6321,7 +6302,6 @@
     .detailContainer > div:nth-of-type(1) .mlChoose{
         width: 100%;
     }
-    /* .detailContainer > div:nth-of-type(1) .colorChoose [type='button']{ */
     .detailContainer > div:nth-of-type(1) .colorChoose a{
         width: 38px; height: 38px; text-indent: -9999px;
         border-radius: 50%; border: none;
@@ -6376,12 +6356,12 @@
         display: block;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li p{
-        margin-top: 25px; font-size: 14px; font-weight: 400; color: #131313; line-height: 17px;
+        margin-top: 25px; font-size: 14px; font-weight: 400; color: #131313; line-height: 19px;
         display: none;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .ingredient{
         border-bottom: 1px solid #e5e5e5; padding-bottom: 30px; margin-bottom: 50px;
-        font-size: 14px; font-weight: 400; color: #131313; line-height: 17px;
+        font-size: 14px; font-weight: 400; color: #131313; line-height: 19px;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .bnwBtn{
         padding: 25px 26.88%; box-sizing: border-box; width: 100%;
@@ -6390,10 +6370,7 @@
 
 
     .detailContainer .colorBox{
-        text-align: center; display: none;
-    }
-    .detailContainer .colorBox.mint{
-        background-color: #2bd5c7;
+        display: none;
     }
 
 
@@ -6406,9 +6383,9 @@
         box-sizing: border-box;
     }
     .detailContainer > .accComponent h3{
-        font-size: /*28px*/22px; font-weight: 600; color: #131313;
+        font-size: 22px; font-weight: 600; color: #131313;
         background: url('../images/expand_close.png') right center / 30px no-repeat;
-        line-height: /*34px*/30px; cursor: pointer;
+        line-height: 30px; cursor: pointer;
     }
     .detailContainer > .accComponent h3.active{
         background: url('../images/expand_open.png') right center / 30px no-repeat;
@@ -6417,19 +6394,19 @@
         display: block;
     }
     .detailContainer > .accComponent ul{
-        padding: /*50px*/35px 1.56%; width: 100%; box-sizing: border-box;
+        padding: 35px 1.56%; width: 100%; box-sizing: border-box;
         display: none;
     }
     .detailContainer > .accComponent ul li{
         display: block; width: 100%;
     }
     .detailContainer > .accComponent ul li strong{
-        margin-bottom: /*30px*/15px; font-size: /*25px*/18px; font-weight: 600;
-        color: #5f5f5f; line-height: /*32px*/25px; display: block;
+        margin-bottom: 15px; font-size: 18px; font-weight: 600;
+        color: #5f5f5f; line-height: 25px; display: block;
     }
     .detailContainer > .accComponent ul li p{
-        margin-bottom: /*35px*/25px; font-size: /*22px*/16px; font-weight: 500;
-        color: #999999; padding: 0 1.56%; line-height: /*30px*/22px; box-sizing: border-box;
+        margin-bottom: 25px; font-size: 16px; font-weight: 500;
+        color: #999999; padding: 0 1.56%; line-height: 22px; box-sizing: border-box;
     }
 
 
@@ -6447,8 +6424,7 @@
         width: 100%; padding-left: 0.39%; box-sizing: border-box;
     }
     .detailContainer .recommend ul li{
-        display: inline-block; width: 23.395%; 
-        /* margin-bottom: 70px; */
+        display: inline-block; width: 23.395%;
         vertical-align: top; position: relative;
     }
     .detailContainer .recommend ul li:not(:nth-of-type(1)){
@@ -6596,9 +6572,7 @@
     
 
     .detailContainer .productBottomBar{
-        width: 100%;
-        padding: 5px; box-sizing: border-box;
-        /* position: fixed; bottom: -150px;  */
+        width: 100%; padding: 5px; box-sizing: border-box;
         background-color: #ffffff; z-index: 80; color: #131313;
         border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;
         margin-bottom: 150px;
@@ -6716,7 +6690,7 @@
         width: 30px; background: url('../images/visibility_off.png') center / cover no-repeat;
     }
     .PW_wrap + p{
-        font-size: /*10px*/12px; color: #131313; line-height: /*12px*/14px; margin-left: 20px;
+        font-size: 12px; color: #131313; line-height: 14px; margin-left: 20px;
         font-weight: 300;
     }
     .loginContainer > form > fieldset > div:last-of-type{
@@ -6724,26 +6698,6 @@
         width: 100%;
     }
 
-    /* .forgotContainer > form > fieldset > #warning{
-        display: none;
-    }
-    .forgotContainer > form > fieldset > #warning.active{
-        padding: 17px 20px 17px 50px; box-sizing: border-box; width: 100%;
-        border-radius: 15px; line-height: 18px; color: #131313; font-size: 14px;
-        background: url('../images/error.png') 20px center / 20px no-repeat #e5e5e5;
-        margin-top: 25px; display: block;
-    } */
-    
-
-    /* .loginContainer > form > fieldset > div input[id=remember_chk]{
-        width: 25px; height: 25px;
-        border: 2px solid #999999; cursor: pointer;
-        display: inline-block; margin: 0; box-sizing: border-box;
-    }
-    .loginContainer > form > fieldset > div label[for=remember_chk]{
-        margin-left: 15px; font-size: 18px; color: #999999; width: 150px;
-        text-align: left; font-weight: 400;
-    } */
     .signupContainer > form > fieldset div:last-of-type{
         margin: 0 0 65px 20px; 
     }
@@ -6752,7 +6706,7 @@
     }
     .signupContainer > form > fieldset div:last-of-type small{
         margin-left: 55px; display: block;
-        font-size: /*10px*/12px; font-weight: 300; color: #999999;
+        font-size: 12px; font-weight: 300; color: #999999;
     }
 
 
@@ -6763,7 +6717,7 @@
     }
     .signupAgreeContainer input[type='checkbox']:not(#agree_chk) + label,
     .myprofile input[type='checkbox'] + label{
-        font-size: /*12px*/14px; background-size: 10px; padding-left: /*15px*/20px;
+        font-size: 14px; background-size: 10px; padding-left: 20px;
         margin-right: 20px;
     }
     .loginContainer input[type='checkbox'] + label{
@@ -6822,16 +6776,16 @@
         border: 1px solid #e5e5e5; overflow-y: scroll; margin-bottom: 10px;
     }
     .signupAgreeContainer > div > form > fieldset > ul > li .textBox p{
-        font-size: /*10px*/12px; font-weight: 300; line-height: /*12px*/14px; margin-bottom: 15px;
+        font-size: 12px; font-weight: 300; line-height: 14px; margin-bottom: 15px;
     }
     .signupAgreeContainer > div > form > fieldset > ul > li .textBox ul{
         margin-bottom: 15px;
     }
     .signupAgreeContainer > div > form > fieldset > ul > li .textBox ul li{
-        font-size: /*10px*/12px; font-weight: 300; line-height: /*12px*/14px; display: block;
+        font-size: 12px; font-weight: 300; line-height: 14px; display: block;
     }
     .signupAgreeContainer > div > form > fieldset > ul > li .textBox strong{
-        font-size: /*12px*/14px; font-weight: 400; line-height: /*14px*/16px; margin-bottom: 15px; display: block;
+        font-size: 14px; font-weight: 400; line-height: 16px; margin-bottom: 15px; display: block;
     }
     .textBox::-webkit-scrollbar{
         width: 5px; background-color: #e5e5e5;
@@ -6839,26 +6793,6 @@
     .textBox::-webkit-scrollbar-thumb{
         background-color: #131313;
     }
-    /* .signupAgreeContainer > div > form > fieldset > ul > li > div:last-of-type,
-    label[for*='Disagree']{
-        margin-left: 20px;
-    }
-    
-    input[type="radio"] + label{
-        font-size: 12px; color: #131313; font-weight: 400; cursor: pointer;
-    }
-    input[type="radio"] + label:before{
-        content:""; margin-right: 5px;
-        display: inline-block;
-        width: 12px; height: 12px;
-        border: 2px solid #131313; border-radius: 50%;
-        box-sizing: border-box; vertical-align: middle;
-    }
-    input[type="radio"]:checked + label:before{
-        content: '';
-        width: 12px; height: 12px; border: 2px solid #131313;
-        background: radial-gradient(closest-side, #131313 60%, #ffffff 20%);
-    } */
 
     .signupAgreeContainer > div > form > fieldset > div h3{
         width: 162px; 
@@ -6883,28 +6817,18 @@
     }
     .signupAgreeContainer > div > form > fieldset > div:first-of-type h3:hover + p,
     .myprofile fieldset > ul li:last-of-type > div:first-of-type > label:hover + p{
-        display: block; width: 255px; padding: /*10px*/15px; box-sizing: border-box;
+        display: block; width: 255px; padding: 15px; box-sizing: border-box;
         border: 1px solid #e5e5e5; border-radius: 5px;
-        font-size: /*10px*/12px; font-weight: 300; color: #131313; line-height: /*12px*/14px;
+        font-size: 12px; font-weight: 300; color: #131313; line-height: 14px;
         position: absolute; background-color: #ffffff;
     }
     .signupAgreeContainer > div > form > fieldset > div:last-of-type{
         margin: 0 0 65px 20px;
     }
-    /* .signupAgreeContainer > div > form > fieldset > div:last-of-type label,
-    .myprofile fieldset > ul li:last-of-type > div:last-of-type label{
-        font-size: 12px; margin-right: 20px; color: #131313; margin-right: 5px; font-weight: 400;
-    }
-    .signupAgreeContainer > div > form > fieldset > div:last-of-type input[type='checkbox'] + label:before,
-    .signupAgreeContainer > div > form > fieldset > div:last-of-type input[type='checkbox']:checked + label:before,
-    .myprofile fieldset > ul li:last-of-type > div:last-of-type input[type='checkbox'] + label:before,
-    .myprofile fieldset > ul li:last-of-type > div:last-of-type input[type='checkbox']:checked + label:before{
-        width: 10px; height: 10px; margin-right: 5px; font-weight: 400;
-    } */
     .signupAgreeContainer > div > form > fieldset > div:last-of-type p,
     .myprofile fieldset > ul li:nth-of-type(6) > p,
     .myprofile fieldset > ul li:last-of-type > p{
-        font-size: /*10px*/12px; color: #131313; font-weight: 300; line-height: /*12px*/14px;
+        font-size: 12px; color: #131313; font-weight: 300; line-height: 14px;
         margin-top: 10px;
     }
 
@@ -6971,12 +6895,6 @@
     .shippingOrder > div > div > ul{
         margin-bottom: 85px;
     }
-    .mypage > div > div > div:nth-of-type(2) ul,
-    .shippingOrder > div > div > ul{
-        /* width: 100%;  */
-        /* height: 150px; */
-        /* display: flex; height: 150px; */
-    }
     .mypage > div > div > div:nth-of-type(2) ul:after,
     .shippingOrder > div > div > ul:after{
         content: ''; display: block; clear: both;
@@ -7039,7 +6957,6 @@
         position: absolute; bottom: 0; right: 0; width: 100px; opacity: 0;
     }
     .myprofile fieldset{
-        /* margin-left: 3.87%;  */
         width: 79.92%; float: right; margin-bottom: 85px;
     }
     .myprofile fieldset > ul{
@@ -7104,8 +7021,7 @@
 
     .myprofile .bnwBtn2,
     .orderDetail .bnwBtn2{
-        display: block; clear: both; float: right; 
-        /* width: 47.53%; */
+        display: block; clear: both; float: right;
         padding: 0 15.09%; line-height: 75px;
 
     }
@@ -7178,7 +7094,6 @@
     .orderDetail table:last-of-type tbody tr,
     .ordercompleteContainer > div > div:first-of-type table tbody tr{
         width: 100%;
-        /* padding: 15px 0; box-sizing: border-box; */
     }
     .shippingOrder th,
     .orderDetail table:first-of-type th{
@@ -7243,7 +7158,6 @@
     }
     .shippingOrder > div > div > div table tbody tr td:nth-of-type(2) img,
     .orderDetail table:first-of-type tbody tr td:nth-of-type(1) img{
-        /* margin: 0 3.83%;  */
         width: 100px;
         position: absolute; left: 3.83%; top: 50%; transform: translate(0, -50%); 
     }
@@ -7364,7 +7278,7 @@
         line-height: 40px;
     }
     .paymentContainer > div > div:first-of-type form > div:nth-of-type(2) #couponNum{
-        /* width: 31%;  */ max-width: 185px; width: 100%;
+        max-width: 185px; width: 100%;
         color: #131313; font-size: 14px; font-weight: 400;
         padding: 0 20px; height: 40px; box-sizing: border-box;
         border: 1px solid #e5e5e5; border-radius: 10px;
@@ -7435,7 +7349,6 @@
     .ordercompleteContainer > div > div:last-of-type > div:first-of-type img{
         min-width: 100px; 
         width: 15.15%; display: inline-block;
-        /* float: left; */
     }
     .paymentContainer > div > div:last-of-type > div:first-of-type p,
     .ordercompleteContainer > div > div:last-of-type > div:first-of-type p{
@@ -7555,40 +7468,25 @@
     .officialContainer .bx-wrapper,
     .brandContainer .bx-wrapper{
         width: 100%; max-width: 1310px; margin: 0 auto; padding: 0 2.25%; box-sizing: border-box;
-        /* height: 100vh; overflow: hidden; */ box-shadow: none;
+        box-shadow: none;
     }
     .officialContainer .bx-viewport,
     .brandContainer .bx-viewport{
         width: 100%; max-width: 1310px; margin: 0 auto;
     }
-    .officialContainer .bx-pager{
-        /* display: none; */
-    }
 
 
 
 
 
 
-    .officialContainer .verticalSlider{
-        /* width: 100%; max-width: 1310px; margin: 0 auto; */
-        /*padding: 0 2.25%; box-sizing: border-box; */
-        /* height: 100vh; overflow: hidden; */
-    }
-
-    /* .officialContainer .verticalSlider,
-    .officialContainer .verticalSlider ul{
-        width: 100%;
-    } */
+    
     .officialContainer .verticalSlider li,
     .brandContainer .verticalSlider li{
         width: 100%; display: block;
         display: flex; align-items: center; 
     }
-    .officialContainer .verticalSlider li:not(:last-of-type){
-        /* margin-bottom: 100px; */
-        /* padding-bottom: 100px; box-sizing: border-box; */
-    }
+    
     .officialContainer .verticalSlider li > div,
     .brandContainer .verticalSlider li > div{
         float: left; 
@@ -7603,7 +7501,6 @@
     .officialContainer .verticalSlider li > div:first-of-type .bnwBtn,
     .brandContainer .verticalSlider li div .bnwBtn{
         font-size: 18px; line-height: 60px; width: 33.33%; display: block;
-        /* padding: 20px 6.67%; */ 
     }
 
     .officialContainer .verticalSlider li > div:last-of-type,
@@ -7788,7 +7685,7 @@
         flex-basis: 100%;
         align-items: center;
         margin: 0 auto 15px;
-        font-size: /*34px*/32px; color: #131313; font-weight: 600;
+        font-size: 32px; color: #131313; font-weight: 600;
         line-height: 38px;
     }
     .faq > div > div > div > ul,
@@ -7809,7 +7706,6 @@
     }
     .faq > div > div > div > ul li strong{
         font-size: 28px; font-weight: 600; line-height: 34px; color: #5f5f5f;
-        /* margin-bottom: 35px; */
         padding: 35px 0; box-sizing: border-box;
         display: block;
         background: url('../images/expand_close.png') right center / 30px no-repeat;
@@ -7849,18 +7745,11 @@
     .customerInquiry > div > div > div:last-of-type > p:nth-of-type(2),
     .customerInquiry > div > div > div:last-of-type > p:nth-of-type(3),
     .customerInquiry .inputTab{
-        margin-bottom: /*50px*/40px;
+        margin-bottom: 40px;
     }
     .infoContainer .textIndent{
         margin-left: 2.79%;
     }
-    /* .faq > div > div > div > ul li p{
-        display: none;
-    }
-    .faq > div > div > div > ul li p.active,
-    .customerInquiry > div > div > div:first-of-type div div strong{
-        display: block;
-    } */
 
     .infoContainer > div > div > div:not(:last-of-type),
     .customerInquiry > div > div > div:first-of-type > p{
@@ -7873,8 +7762,8 @@
     .privacy > div > div h3,
     .termsofuse > div > div h3,
     .customerInquiry > div div h3{
-        font-size: /*34px*/28px; font-weight: 600; color: #5f5f5f; line-height: /*42px*/34px;
-        margin-bottom: /*50px*/30px;
+        font-size: 28px; font-weight: 600; color: #5f5f5f; line-height: 34px;
+        margin-bottom: 30px;
     }
 
     .privacy > div > div > div > ul li{
@@ -7883,7 +7772,7 @@
     .privacy > div > div > div > ul li > mark{
         font-size: 25px; font-weight: 400; color: #ffffff;
         background-color: #131313; padding: 12px 2.33%; box-sizing: border-box;
-        font-style: normal; margin-bottom: /*30px*/20px; display: block; width: fit-content;
+        font-style: normal; margin-bottom: 20px; display: block; width: fit-content;
     }
     .privacy > div > div > div > ul li > p{
         margin-left: 2.33%;
@@ -7994,8 +7883,7 @@
     }
     .customerInquiry .inputTab input{
         display: inline-block; width: 19.02%; padding: 0 1.54%; box-sizing: border-box;
-        text-align: center; height: 100px;
-        /* font-size: 25px; */ font-size: 1.2vw;
+        text-align: center; height: 100px; font-size: 1.2vw;
         font-weight: 500; color: #131313;
         border: 3px solid #e5e5e5; background-color: #ffffff;
     }
