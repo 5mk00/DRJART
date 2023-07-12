@@ -4,7 +4,6 @@
 .checkoutBtn,
 .whiteBtn,
 .blackBtn,
-/* .mlSelectBtn, */
 .colorChoose,
 .mlBtn,
 #gnbPanel,
@@ -122,11 +121,7 @@ address{
 [type='tel']::placeholder{
     color: #e5e5e5;
 }
-/* a[class$='Btn']{
-    display: block;
-} 
-    page.css 에서 부분적으로
-*/
+
 .bnwBtn{
     color: white; background-color: #131313; border: none;
     font-weight: 600; text-align: center; border-radius: 50px;
@@ -159,7 +154,6 @@ address{
 }
 
 
-/* hoverBtn */
 .whiteBtn{
     display: block; color: #131313; 
     font-weight: 600; background-color: rgba(256, 256, 256, 0.8);
@@ -174,17 +168,9 @@ address{
     background-color: rgba(19, 19, 19, 0.7);
 }
 .blackBtn:hover{
-    /* box-shadow: 0 0 5px 2px rgba(229, 229, 229, 0.3); */
     background-color: rgba(19, 19, 19, 1);
 }
 
-/* .mlSelectBtn{
-    background-color: #131313; color: #ffffff; border-radius: 50px; border: none;
-}
-.mlSelectBtn.active{
-    border: 1px solid #e5e5e5; border-radius: 50px;
-    background-color: #ffffff; color: #131313;
-} */
 .mlBtn{
     border: 1px solid #e5e5e5; border-radius: 50px; box-sizing: border-box;
     background-color: #ffffff; color: #131313; padding: 0;
@@ -210,7 +196,6 @@ address{
     background: radial-gradient(closest-side, #d1b89f 80%, #ffffff 20%);
 }
 .colorChoose [type='button'].active,
-/* .detailContainer > div:nth-of-type(1) .colorChoose [type='button'].active{ */
 .colorChoose a.active,
 .detailContainer > div:nth-of-type(1) .colorChoose a.active{
     border: 1px solid #131313;
@@ -232,9 +217,7 @@ address{
 }
 [class^='starRating']{
     background-repeat: no-repeat; background-size: 100%; background-position: center;
-    /* text-indent: -9999px;  */ color: transparent;
-    display: inline-block; max-width: 74px;
-    /* ☆★ <- js hoverEvent.  */
+    color: transparent; display: inline-block; max-width: 74px;
 }
 .starRating5{background-image: url('../images/star5.png');}
 .starRating5h{background-image: url('../images/star5h.png');}
@@ -260,7 +243,6 @@ address{
 .scrollTarget.active{
     opacity: 1; transform: translateY(0);
 }
-/* scrollEffect */
 
 @media screen and (max-width: 767px){
 
@@ -306,9 +288,9 @@ address{
         background-image: url('../images/checkbox_checked.png');
     }
     input[type="radio"] + label{
-        font-size: /*12px*/14px; color: #131313; font-weight: 400; cursor: pointer; box-sizing: border-box;
-        display: inline-block; background: url('../images/radio_button_unchecked.png') left center / /*12px*/14px no-repeat;
-        padding-left: /*18px*/20px; 
+        font-size: 14px; color: #131313; font-weight: 400; cursor: pointer; box-sizing: border-box;
+        display: inline-block; background: url('../images/radio_button_unchecked.png') left center / 14px no-repeat;
+        padding-left: 20px; 
     }
     input[type='radio']:checked + label{
         background-image: url('../images/radio_button_checked.png');
@@ -335,8 +317,8 @@ address{
     .myprofile fieldset > ul li [type='tel'],
     .paymentContainer > div > div:first-of-type form > div:first-of-type input{
         width: 100%; color: #131313;
-        font-size: /*18px*/16px; font-weight: 400; padding: /*20px*/18px 3.95%; border-radius: 15px;
-        border: 1px solid #e5e5e5; line-height: /*22px*/22px;
+        font-size: 16px; font-weight: 400; padding: 18px 3.95%; border-radius: 15px;
+        border: 1px solid #e5e5e5; line-height: 22px;
         box-sizing: border-box;
     }
 
@@ -348,7 +330,6 @@ address{
         display: none;
         top: 0;
         left: 0;
-        /* width: 32%; */
         height: 100%;
         background-color: white;
         position: fixed;
@@ -377,7 +358,7 @@ address{
         margin-bottom: 30px;
     }
     #gnbPanel ul li a{
-        display: block; font-size: /*32px*/26px; font-weight: 600; color: #131313; line-height: /*34px*/32px;
+        display: block; font-size: 26px; font-weight: 600; color: #131313; line-height: 32px;
     }
     #gnbPanel ul li a:hover,
     #gnbPanel ul li a.active{
@@ -402,7 +383,6 @@ address{
         display: none;
         top: 0;
         right: 0;
-        /* width: 30%; */
         height: 100%;
         background-color: white;
         position: fixed;
@@ -419,7 +399,6 @@ address{
     }
     #cartPanel > div:nth-of-type(1) [type='button']{
         all: unset; width: 30px; line-height: 40px;
-        /* background: url('../images/closePanel.png') center / contain no-repeat; */
         background: url('../images/closePanel.png') center / contain no-repeat;
         text-indent: -9999px; position: absolute; right: 20px; top: 50%; transform: translate(0, -50%);
     }
@@ -440,10 +419,10 @@ address{
         box-sizing: border-box;
     }
     .emptyCart h3{
-        margin-bottom: 25px; font-size: /*28px*/24px; color: #131313; font-weight: 600;
+        margin-bottom: 25px; font-size: 24px; color: #131313; font-weight: 600;
     }
     .emptyCart p{
-        margin-bottom: 30px; font-size: /*18px*/14px; color: #131313; font-weight: 400;
+        margin-bottom: 30px; font-size: 14px; color: #131313; font-weight: 400;
     }
 
     .emptyCart ul{
@@ -451,25 +430,21 @@ address{
     }
     .emptyCart ul li{
         position: relative; text-align: left; display: block; margin-bottom: 30px; border: 1px solid #e5e5e5; border-radius: 4px;
-        /* height: 90px; */
         display: flex; align-items: center;
     }
     .emptyCart ul li:after{
         content: ''; display: block; clear: both;
     }
     .emptyCart ul li img{
-        width: /*90px*/20.93%; background-position: center; background-size: contain; float: left;
+        width: 20.93%; background-position: center; background-size: contain; float: left;
     }
     .emptyCart ul li div{
         margin-left: 3.75%; width: 43.07%; float: right; 
     }
 
-    .emptyCart ul li div em,
-    .emptyCart ul li div small{
-        /* margin-bottom: 10px; display: block; text-align: left;  */
-    }
+    
     .emptyCart ul li div em{
-        font-size: /*18px*/16px; font-style: italic; color: #131313; font-weight: 400;
+        font-size: 16px; font-style: italic; color: #131313; font-weight: 400;
         white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
         line-height: 22px; display: block; text-align: left;
     }
@@ -514,7 +489,6 @@ address{
     .haveCart > ul li img{
         width: 18.73%; background-position: center; background-size: contain;
         border-radius: 5%; min-width: 70px;
-        /* margin-bottom: 80px; */
     }
     .haveCart > ul li > div{
         margin-left: 3.75%; width: 65.16%;
@@ -528,8 +502,8 @@ address{
         position: absolute; right: 3.75%;
     }
     .haveCart > ul li > div > em{
-        display: block; width: 80%; font-size: /*18px*/16px; font-weight: 600;
-        margin-bottom: /*15px*/10px; line-height: /*22px*/20px; font-style: normal;
+        display: block; width: 80%; font-size: 16px; font-weight: 600;
+        margin-bottom: 10px; line-height: 20px; font-style: normal;
         overflow: hidden;  
         -webkit-box-orient: vertical;
         text-overflow: ellipsis;
@@ -538,8 +512,8 @@ address{
         word-break: keep-all;
     }
     .haveCart > ul li > div > small{
-        display: block; font-size: /*14px*/12px; font-weight: 400; color: #131313;
-        line-height: /*20px*/18px;
+        display: block; font-size: 12px; font-weight: 400; color: #131313;
+        line-height: 18px;
     }
     .haveCart > ul li > div > div{
         position: absolute; bottom: 30px; width: 62.52%;
@@ -550,7 +524,6 @@ address{
         float: left; border: 1px solid #e5e5e5; border-radius: 20px;
         width: 45.4%; max-width: 100px;  
         box-sizing: border-box;
-        /* max-width: 110px; */
         text-align: center; vertical-align: middle;
     }
     .quantComponent:after{
@@ -558,7 +531,7 @@ address{
     }
     .minusBtn,
     .plusBtn{
-        font-size: /*20px*/18px; font-weight: 500; background: none; border: none;
+        font-size: 18px; font-weight: 500; background: none; border: none;
         text-align: center; width: 25%; padding: 0; line-height: 30px;
         margin: 0 auto; float: left;
     }
@@ -574,7 +547,7 @@ address{
         margin: 0 auto; padding: 0;
     }
     .haveCart > ul li > div > div span:last-child{
-        font-size: /*16px*/14px; font-weight: 400; float: right;
+        font-size: 14px; font-weight: 400; float: right;
         line-height: 30px;
     }
 
@@ -619,37 +592,35 @@ address{
         display: block; text-align: left;
     }
     .haveCart .recSlider li div em{
-        font-size: /*18px*/14px; font-style: italic; color: #131313; font-weight: 400;
+        font-size: 14px; font-style: italic; color: #131313; font-weight: 400;
         white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-        line-height: /*22px*/20px; margin-bottom: /*10px*/;
-        width: /*71.88%*/65%;
+        line-height: 20px; width: 65%;
     }
     .haveCart .recSlider li div small{
-        font-size: /*12px*/11px; font-weight: 400; color: #131313;
+        font-size: 11px; font-weight: 400; color: #131313;
         display: none;
     }
     .haveCart .recSlider li div .bnwBtn{
-        font-size: /*12px*/10px; padding: 8px 2.25%; min-width: 45px;
+        font-size: 10px; padding: 8px 2.25%; min-width: 45px;
         position: absolute; right: 4.65%; top: 50%; transform: translate(0, -50%);
     }
     .haveCart .bx-prev{
         position: absolute; left: -9%; top: 50%; transform: translate(0, -50%); 
         opacity: 0.5; color: transparent;
-        background: url('../images/slide_prev.png') center / /*30px*/25px no-repeat;
+        background: url('../images/slide_prev.png') center / 25px no-repeat;
     }
     .haveCart .bx-next,
     .haveCart .bx-next:hover,
     .haveCart .bx-next:focus{
         position: absolute; right: -9%; top: 50%; transform: translate(0, -50%); 
         opacity: 0.5; color: transparent;
-        background: url('../images/slide_next.png') center / /*30px*/25px no-repeat;
+        background: url('../images/slide_next.png') center / 25px no-repeat;
     }
     
 
     .haveCart > div:last-of-type{
         position: absolute; bottom: 0; background-color: white;
-        border-top: 1px solid #e5e5e5; 
-        /* padding: 25px 6.97%;  */
+        border-top: 1px solid #e5e5e5;
         box-sizing: border-box;
         text-align: center; z-index: 10000;
         padding: 15px 3.57%;
@@ -658,33 +629,31 @@ address{
         content: ''; display: block; clear: both;
     }
     .haveCart > div:last-of-type span{
-        /* width: 28.75%; */ font-size: 12px; float: left; width: 55%; text-align: left;
+        font-size: 12px; float: left; width: 55%; text-align: left;
         line-height: 50px;
     }
     .haveCart div:last-of-type span label{
-        font-size: /*10px*/8px; font-weight: 300; color: #999999; 
-        line-height: /*24px*/22px; 
-        /* display: none; */
+        font-size: 8px; font-weight: 300; color: #999999; 
+        line-height: 22px;
     }
     .haveCart > div:last-of-type span #totalPrice{
-        font-size: /*20px*/14px; font-weight: 700; color: #131313; border: none; 
+        font-size: 14px; font-weight: 700; color: #131313; border: none; 
         width: 30%; min-width: 45px;
-        text-align: right; line-height: /*24px*/22px; vertical-align: baseline;
+        text-align: right; line-height: 22px; vertical-align: baseline;
     }
 
 
 
     .checkoutBtn{
-        width: /*52%*/45%;
-        padding: 20px 0.56% /*20px 8%*/;
-        font-size: /*16px*/10px; font-weight: 700;
+        width: 45%;
+        padding: 20px 0.56%;
+        font-size: 10px; font-weight: 700;
         color: white; border-radius: 50px; box-sizing: border-box;
         text-align: center; 
         border: none; background-color: #131313;
         float: right;
     }
     .checkoutBtn:hover{
-        /* background: url('../images/cartIcon_hover.png') 5% center / 15px no-repeat #ffffff;  */
         box-shadow: 0 0 0 3px #131313 inset; color: #131313;
         background-color: #ffffff;
     }
@@ -834,7 +803,7 @@ address{
     }
     footer > div:nth-of-type(2) div:nth-of-type(1) nav h3{
         font-size: 16px; font-weight: 600; line-height: 22px; color: #131313;
-        /* margin-bottom: 40px; */ padding: 30px 0; box-sizing: border-box;
+        padding: 30px 0; box-sizing: border-box;
         background: url('../images/expand_close.png') right center / 25px no-repeat;
     }
     footer > div:nth-of-type(2) div:nth-of-type(1) nav h3.active{
@@ -873,11 +842,11 @@ address{
 
 
     footer > div:nth-of-type(3){
-        clear: both; padding: 0 /*2.25%*/3.57%; box-sizing: border-box;
+        clear: both; padding: 0 3.57%; box-sizing: border-box;
     }
     footer > div:nth-of-type(3),
     footer > div:nth-of-type(3) a{
-        font-size: /*15px*/14px; font-weight: 300; color: #131313; line-height: 22px;
+        font-size: 14px; font-weight: 300; color: #131313; line-height: 22px;
     }
     footer > div:nth-of-type(3) a:hover,
     footer > div:nth-of-type(3) a.acitve{
@@ -937,9 +906,9 @@ address{
         background-image: url('../images/checkbox_checked.png');
     }
     input[type="radio"] + label{
-        font-size: /*12px*/14px; color: #131313; font-weight: 400; cursor: pointer; box-sizing: border-box;
-        display: inline-block; background: url('../images/radio_button_unchecked.png') left center / /*12px*/14px no-repeat;
-        padding-left: /*18px*/20px; 
+        font-size: 14px; color: #131313; font-weight: 400; cursor: pointer; box-sizing: border-box;
+        display: inline-block; background: url('../images/radio_button_unchecked.png') left center / 14px no-repeat;
+        padding-left: 20px; 
     }
     input[type='radio']:checked + label{
         background-image: url('../images/radio_button_checked.png');
@@ -1001,7 +970,7 @@ address{
         text-indent: -9999px; position: absolute; top: 25px; right: 25px;
     }
     #gnbPanel ul{
-        /* padding-left: 7%; */ padding: 0 7%;
+        padding: 0 7%;
         height: 100%;
         list-style: none;
         display: flex;
@@ -1048,7 +1017,6 @@ address{
     }
     #cartPanel > div:nth-of-type(1) [type='button']{
         all: unset; width: 30px; line-height: 40px;
-        /* background: url('../images/closePanel.png') center / contain no-repeat; */
         background: url('../images/closePanel.png') center / contain no-repeat;
         text-indent: -9999px; position: absolute; right: 20px; top: 50%; transform: translate(0, -50%);
     }
@@ -1137,7 +1105,6 @@ address{
     .haveCart > ul li img{
         width: 18.73%; background-position: center; background-size: contain;
         border-radius: 5%; min-width: 100px;
-        /* margin-bottom: 80px; */
     }
     .haveCart > ul li > div{
         margin-left: 3.75%; width: 65.16%;
@@ -1167,8 +1134,7 @@ address{
     
     
     .quantComponent{
-        float: left; border: 1px solid #e5e5e5; border-radius: 16px;
-        /* width: 45.4%; */ width: 110px; /* min-width: 110px;*/
+        float: left; border: 1px solid #e5e5e5; border-radius: 16px; width: 110px;
         text-align: center; vertical-align: middle;
     }
     .minusBtn,
@@ -1282,14 +1248,10 @@ address{
 
     .checkoutBtn{
         margin-left: 4.36%; display: inline-block; width: 52%;
-        /* padding: 20px 4.36% 20px 10.9%;  */ padding: 20px 3% 20px 8%;
-        /* padding: 20px 3.75% 20px 8%;  */
-        font-size: 16px; font-weight: 700;
-        /* background-color: #131313; */
+        padding: 20px 3% 20px 8%; font-size: 16px; font-weight: 700;
         color: white; border-radius: 50px; box-sizing: border-box;
         background: url('../images/cartIcon.png') 5% center / 15px no-repeat #131313; 
-        text-align: center;
-        border: none;
+        text-align: center; border: none;
     }
     .checkoutBtn:hover{
         background: url('../images/cartIcon_hover.png') 5% center / 15px no-repeat #ffffff; 
@@ -1338,29 +1300,27 @@ address{
     
     header > div nav ul li:nth-of-type(2)::before{
         display: block; content: "Benefits";
-        font-size: /*20px*/18px; color: #131313; font-weight: 600;
+        font-size: 18px; color: #131313; font-weight: 600;
     }
     header > div nav ul li:nth-of-type(2):hover{
         text-decoration: underline;
     }
     header > div nav ul li:nth-of-type(2) a{
-        /* display: none; */
-        /* text-indent: -9999px; */
         position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
         width: 72px; height: 75px; overflow: hidden; color: transparent;
     }
 
     header > div nav ul li:not(:first-child),
     header > div > ul li:not(:first-child){
-        margin-left: /*2.24%*/5.2%;
+        margin-left: 5.2%;
     }
     header > div nav ul li a,
     header > div > ul li a{
-        display: block; font-size: /*20px*/18px; color: #131313; font-weight: 600;
+        display: block; font-size: 18px; color: #131313; font-weight: 600;
     }
     header > div nav ul li div input[type='button'],
     header > div > ul li [type='button']{
-        all: unset; font-size: /*20px*/18px; color: #131313; font-weight: 600;
+        all: unset; font-size: 18px; color: #131313; font-weight: 600;
         cursor: pointer;
     }
     header > div nav ul li a:hover,
@@ -1475,7 +1435,7 @@ address{
     }
     footer > div:nth-of-type(3),
     footer > div:nth-of-type(3) a{
-        font-size: /*15px*/14px; font-weight: 300; color: #131313; line-height: 22px;
+        font-size: 14px; font-weight: 300; color: #131313; line-height: 22px;
     }
     footer > div:nth-of-type(3) a:hover,
     footer > div:nth-of-type(3) a.acitve{
@@ -1529,9 +1489,9 @@ address{
         background-image: url('../images/checkbox_checked.png');
     }
     input[type="radio"] + label{
-        font-size: /*12px*/14px; color: #131313; font-weight: 400; cursor: pointer; box-sizing: border-box;
-        display: inline-block; background: url('../images/radio_button_unchecked.png') left center / /*12px*/14px no-repeat;
-        padding-left: /*18px*/20px; 
+        font-size: 14px; color: #131313; font-weight: 400; cursor: pointer; box-sizing: border-box;
+        display: inline-block; background: url('../images/radio_button_unchecked.png') left center / 14px no-repeat;
+        padding-left: 20px; 
     }
     input[type='radio']:checked + label{
         background-image: url('../images/radio_button_checked.png');
@@ -1593,7 +1553,7 @@ address{
         text-indent: -9999px; position: absolute; top: 25px; right: 25px;
     }
     #gnbPanel ul{
-        /* padding-left: 7%; */ padding: 0 7%;
+        padding: 0 7%;
         height: 100%;
         list-style: none;
         display: flex;
@@ -1640,7 +1600,6 @@ address{
     }
     #cartPanel > div:nth-of-type(1) [type='button']{
         all: unset; width: 30px; line-height: 40px;
-        /* background: url('../images/closePanel.png') center / contain no-repeat; */
         background: url('../images/closePanel.png') center / contain no-repeat;
         text-indent: -9999px; position: absolute; right: 20px; top: 50%; transform: translate(0, -50%);
     }
@@ -1729,7 +1688,6 @@ address{
     .haveCart > ul li img{
         width: 18.73%; background-position: center; background-size: contain;
         border-radius: 5%; min-width: 100px;
-        /* margin-bottom: 80px; */
     }
     .haveCart > ul li > div{
         margin-left: 3.75%; width: 65.16%;
@@ -1760,7 +1718,7 @@ address{
     
     .quantComponent{
         float: left; border: 1px solid #e5e5e5; border-radius: 16px;
-        /* width: 45.4%; */ width: 110px; /* min-width: 110px;*/
+        width: 110px;
         text-align: center; vertical-align: middle;
     }
     .minusBtn,
@@ -1885,10 +1843,7 @@ address{
 
     .checkoutBtn{
         margin-left: 4.36%; display: inline-block; width: 52%;
-        /* padding: 20px 4.36% 20px 10.9%;  */ padding: 20px 3% 20px 8%;
-        /* padding: 20px 3.75% 20px 8%;  */
-        font-size: 16px; font-weight: 700;
-        /* background-color: #131313; */
+        padding: 20px 3% 20px 8%; font-size: 16px; font-weight: 700;
         color: white; border-radius: 50px; box-sizing: border-box;
         background: url('../images/cartIcon.png') 5% center / 15px no-repeat #131313; 
         text-align: center;
