@@ -2810,7 +2810,7 @@
     
     .mainContainer > div:first-of-type{
         background: url('../images/main_banner.png') center top / cover no-repeat;
-        padding: 267px 0 190px; margin-bottom: 100px;
+        padding: 267px 0 190px; margin-bottom: 100px; 
     }
     .mainContainer > div:first-of-type div{
         padding-left: 12.08%; box-sizing: border-box;
