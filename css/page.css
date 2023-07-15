@@ -836,11 +836,11 @@
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong{
         font-size: 16px; font-weight: 600; color: #131313; display: block;
-        background: url('../images/expand_close.png') right center / 25px no-repeat;
+        background: url('../images/expand_open.png') right center / 25px no-repeat;
         cursor: pointer;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong.active{
-        background: url('../images/expand_open.png') right center / 25px no-repeat;
+        background: url('../images/expand_close.png') right center / 25px no-repeat;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong.active ~ p{
         display: block;
@@ -883,11 +883,11 @@
     }
     .detailContainer > .accComponent h3{
         font-size: 20px; font-weight: 600; color: #131313;
-        background: url('../images/expand_close.png') right center / 28px no-repeat;
+        background: url('../images/expand_open.png') right center / 28px no-repeat;
         line-height: 28px; cursor: pointer;
     }
     .detailContainer > .accComponent h3.active{
-        background: url('../images/expand_open.png') right center / 28px no-repeat;
+        background: url('../images/expand_close.png') right center / 28px no-repeat;
     }
     .detailContainer > .accComponent h3.active + ul{
         display: block;
@@ -2197,11 +2197,11 @@
         font-size: 18px; font-weight: 600; line-height: 25px; color: #5f5f5f;
         padding: 30px 40px 30px 0; box-sizing: border-box;
         display: block;
-        background: url('../images/expand_close.png') right center / 25px no-repeat;
+        background: url('../images/expand_open.png') right center / 25px no-repeat;
         cursor: pointer;
     }
     .faq > div > div > div > ul li strong.active{
-        background: url('../images/expand_open.png') right center / 25px no-repeat;
+        background: url('../images/expand_close.png') right center / 25px no-repeat;
     }
     .faq > div > div > div > ul li strong ~ p{
         display: none;
@@ -2306,7 +2306,7 @@
         width: 100%; margin-bottom: 15px; position: relative;
     }
     .customerInquiry > div > div > div:first-of-type > div > div > div:first-of-type [type="search"]{
-        font-size: 16px; font-weight: 400; color: #131313; width: 100%;
+        font-size: 16px; font-weight: 400; color: #131313; width: 100%; appearance: none;
         padding: 15px 11.84%; box-sizing: border-box; border: 2px solid #e5e5e5;
         border-radius: 15px; background: url('../images/searchIcon.png') 5.26% center / 15px no-repeat;
     }
@@ -3327,11 +3327,11 @@
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong{
         font-size: 16px; font-weight: 600; color: #131313; display: block;
-        background: url('../images/expand_close.png') right center / 25px no-repeat;
+        background: url('../images/expand_open.png') right center / 25px no-repeat;
         cursor: pointer;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong.active{
-        background: url('../images/expand_open.png') right center / 25px no-repeat;
+        background: url('../images/expand_close.png') right center / 25px no-repeat;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong.active ~ p{
         display: block;
@@ -3373,11 +3373,11 @@
     }
     .detailContainer > .accComponent h3{
         font-size: 22px; font-weight: 600; color: #131313;
-        background: url('../images/expand_close.png') right center / 30px no-repeat;
+        background: url('../images/expand_open.png') right center / 30px no-repeat;
         line-height: 30px; cursor: pointer;
     }
     .detailContainer > .accComponent h3.active{
-        background: url('../images/expand_open.png') right center / 30px no-repeat;
+        background: url('../images/expand_close.png') right center / 30px no-repeat;
     }
     .detailContainer > .accComponent h3.active + ul{
         display: block;
@@ -4698,11 +4698,11 @@
         font-size: 22px; font-weight: 600; line-height: 30px; color: #5f5f5f;
         padding: 35px 40px 35px 0; box-sizing: border-box;
         display: block;
-        background: url('../images/expand_close.png') right center / 28px no-repeat;
+        background: url('../images/expand_open.png') right center / 28px no-repeat;
         cursor: pointer;
     }
     .faq > div > div > div > ul li strong.active{
-        background: url('../images/expand_open.png') right center / 28px no-repeat;
+        background: url('../images/expand_close.png') right center / 28px no-repeat;
     }
     .faq > div > div > div > ul li strong ~ p{
         display: none;
@@ -4807,7 +4807,7 @@
         width: 100%; margin-bottom: 15px; position: relative;
     }
     .customerInquiry > div > div > div:first-of-type > div > div > div:first-of-type [type="search"]{
-        font-size: 18px; font-weight: 400; color: #131313; width: 100%;
+        font-size: 18px; font-weight: 400; color: #131313; width: 100%; appearance: none;
         padding: 15px 11.84%; box-sizing: border-box; border: 2px solid #e5e5e5;
         border-radius: 15px; background: url('../images/searchIcon.png') 5.26% center / 15px no-repeat;
     }
@@ -5900,11 +5900,11 @@
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong{
         font-size: 16px; font-weight: 600; color: #131313; display: block;
-        background: url('../images/expand_close.png') right center / 25px no-repeat;
+        background: url('../images/expand_open.png') right center / 25px no-repeat;
         cursor: pointer;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong.active{
-        background: url('../images/expand_open.png') right center / 25px no-repeat;
+        background: url('../images/expand_close.png') right center / 25px no-repeat;
     }
     .detailContainer > div:nth-of-type(1) > div:last-of-type .accComponent li strong.active ~ p{
         display: block;
@@ -5938,11 +5938,11 @@
     }
     .detailContainer > .accComponent h3{
         font-size: 22px; font-weight: 600; color: #131313;
-        background: url('../images/expand_close.png') right center / 30px no-repeat;
+        background: url('../images/expand_open.png') right center / 30px no-repeat;
         line-height: 30px; cursor: pointer;
     }
     .detailContainer > .accComponent h3.active{
-        background: url('../images/expand_open.png') right center / 30px no-repeat;
+        background: url('../images/expand_close.png') right center / 30px no-repeat;
     }
     .detailContainer > .accComponent h3.active + ul{
         display: block;
@@ -7262,11 +7262,11 @@
         font-size: 28px; font-weight: 600; line-height: 34px; color: #5f5f5f;
         padding: 35px 0; box-sizing: border-box;
         display: block;
-        background: url('../images/expand_close.png') right center / 30px no-repeat;
+        background: url('../images/expand_open.png') right center / 30px no-repeat;
         cursor: pointer;
     }
     .faq > div > div > div > ul li strong.active{
-        background: url('../images/expand_open.png') right center / 30px no-repeat;
+        background: url('../images/expand_close.png') right center / 30px no-repeat;
     }
     .faq > div > div > div > ul li strong ~ p{
         display: none;
@@ -7369,7 +7369,7 @@
         width: 100%; margin-bottom: 15px; position: relative;
     }
     .customerInquiry > div > div > div:first-of-type > div > div > div:first-of-type [type="search"]{
-        font-size: 18px; font-weight: 400; color: #131313; width: 100%;
+        font-size: 18px; font-weight: 400; color: #131313; width: 100%; appearance: none;
         padding: 15px 11.84%; box-sizing: border-box; border: 2px solid #e5e5e5;
         border-radius: 15px; background: url('../images/searchIcon.png') 5.26% center / 15px no-repeat;
     }

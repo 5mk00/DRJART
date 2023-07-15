@@ -32,6 +32,7 @@ $(document).ready(function(){
     accActive(".accComponent > li > strong");
     accActive(".accComponent > h3");
     accActive("footer > div:nth-of-type(2) div:nth-of-type(1) nav h3");
+    accActive(".customerInquiry > div > div > div:first-of-type > div > div > div:nth-of-type(2) span");
     descriptionControl("#morePanel > input");
     inquiryTab();
     itemColorSize(".barrier input");
@@ -202,7 +203,7 @@ function showPW(){
         if (x.type == "password") {
           x.type = "text";
           $(this).css({
-            background: "url(../images/visibility.png) center / cover no-repeat"
+            background: "url(images/visibility.png) center / cover no-repeat"
           });
         } else {
           x.type = "password";
@@ -263,3 +264,4 @@ function itemColorSize(item){
     });
 
 }
+
