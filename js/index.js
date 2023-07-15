@@ -196,20 +196,17 @@ function inquiryTab(){
 
 
 function showPW(){
-    $(".PW_wrap > input[type='button']").click(function(){
-        $(this).siblings().type="text";
-        
-        var x = document.getElementById("userPW");
-        if (x.type == "password") {
-          x.type = "text";
-          $(this).css({
-            background: "url(images/visibility.png) center / cover no-repeat"
-          });
-        } else {
-          x.type = "password";
-          $(this).css({
-            background: "url(../images/visibility_off.png) center / cover no-repeat"
-          });
+    var $toggleTarget = $(".PW_wrap > input[type='button']");
+    var toggleStatus = false;
+    var $pwInput = $("#userPW");
+    $toggleTarget.click(function(){
+        toggleStatus = !toggleStatus;
+        if(toggleStatus == true){
+            $(this).addClass("active");
+            $pwInput.attr("type","text");
+        }else{
+            $(this).removeClass("active");
+            $pwInput.attr("type","password");
         }
     });
 }

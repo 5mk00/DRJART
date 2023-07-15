@@ -1132,11 +1132,14 @@
     .myprofile .PW_wrap{
         margin-bottom: 5px;
     }
-    [value=showPW]{
+    input[value=showPW]{
         position: absolute;
         top: 50%; right: 3.95%; transform: translateY(-50%);
         cursor: pointer; text-indent: -9999px; border: none;
         width: 25px; background: url('../images/visibility_off.png') center / cover no-repeat;
+    }
+    input[value=showPW].active{
+        background: url('../images/visibility.png') center / cover no-repeat;
     }
     .PW_wrap + p{
         font-size: 12px; color: #131313; line-height: 14px; margin-top: 10px;
@@ -3654,11 +3657,14 @@
     .myprofile .PW_wrap{
         margin-bottom: 5px;
     }
-    [value=showPW]{
+    input[value=showPW]{
         position: absolute;
         top: 50%; right: 20px; transform: translateY(-50%);
         cursor: pointer; text-indent: -9999px; border: none;
         width: 30px; background: url('../images/visibility_off.png') center / cover no-repeat;
+    }
+    input[value=showPW].active{
+        background: url('../images/visibility.png') center / cover no-repeat;
     }
     .PW_wrap + p{
         font-size: 12px; color: #131313; line-height: 14px; margin-left: 20px;
@@ -6237,11 +6243,14 @@
     .myprofile .PW_wrap{
         margin-bottom: 5px;
     }
-    [value=showPW]{
+    input[value=showPW]{
         position: absolute;
         top: 50%; right: 20px; transform: translateY(-50%);
         cursor: pointer; text-indent: -9999px; border: none;
         width: 30px; background: url('../images/visibility_off.png') center / cover no-repeat;
+    }
+    input[value=showPW].active{
+        background: url('../images/visibility.png') center / cover no-repeat;
     }
     .PW_wrap + p{
         font-size: 12px; color: #131313; line-height: 14px; margin-left: 20px;
