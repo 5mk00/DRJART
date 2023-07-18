@@ -1,29 +1,14 @@
-// navBar 스크롤 될 때 흰생 배경 넣기
-// mainPage > Daily moisture care 부분 스크롤시 이미지 위로 움직임
-// mainPage > 마지막 부분 밑줄 스크롤 시 생김
-
-// * accordion 만들기
-
-// 색상, ml 선택 시 이미지, 설명, 버튼 변경
-// showPW, submit
-
-// detailPage Read More 누르면 문장 이어붙이기
-//장바구니 수량 +-
-//.accComponent active
-// toggle on/off
-//custormerInquiry inputTab 선택 => 해당되는 inputTabPage 보이기
-
-
-
 var reloadTarget = null;
 
 $(document).ready(function(){
     navBar();
     itemQuant();
-    textSlider();
-    cartSlider()
-    imgSlider();
-    itemSlider();
+
+    customSlider(".collectionSlider",'horizontal',null,false,true,true,true,0,'bx-wrapper');
+    customSlider(".recSlider",'horizontal',null,false,false,true,true,0,'rec-wrapper');
+    customSlider(".vertitailSlider",'horizontal','.thumbPager',false,true,false,true,0,'bx-wrapper');
+    customSlider(".verticalSlider",'vertical',null,true,false,false,false,0,'bx-wrapper');
+
     shopGnb();
     cartPanel();
     accActive();
@@ -90,34 +75,30 @@ function panelControl(openBtn){
         $(currentPanelName).removeClass("active");
     });
 }
-function textSlider(){
-    $(".collectionSlider").bxSlider();
+
+
+
+function customSlider(slideName,slideMode,slidePagerCustom,slideAuto,slidePager,slideControls,slideTouchEnabled,slideStartSlide,slideWrapperClass){
+    if(slideName==".recSlider"){
+        reloadTarget = $(slideName).bxSlider({
+            pager: slidePager,
+            wrapperClass: slideWrapperClass
+        });
+    }else{
+        $(slideName).bxSlider({
+            mode: slideMode,
+            pagerCustom: slidePagerCustom,
+            auto: slideAuto,
+            pager: slidePager,
+            controls: slideControls,
+            touchEnabled : slideTouchEnabled,
+            startSlide: slideStartSlide,
+            wrapperClass: slideWrapperClass
+        });
+    }
 }
-function cartSlider(){
-    reloadTarget = $(".recSlider").bxSlider({
-        pager: false,
-        wrapperClass: 'rec-wrapper'
-    });
-}
-function imgSlider(){
-    $(".vertitailSlider").bxSlider({
-        // mode: 'vertical',
-        pagerCustom: '.thumbPager'
-    });
-}
-function itemSlider(){
-    $(".verticalSlider").bxSlider({
-        mode: 'vertical',
-        auto: true,
-		speed: 500,
-		pause: 4000,
-        pager: false,
-        // autoHover: true,
-        controls: false,
-        touchEnabled : false,
-        startSlide: 0
-    });
-}
+
+
 function shopGnb(){
     $('.shopBtn').click(function(){
         $('#gnbPanel').addClass('active');
@@ -175,13 +156,6 @@ function descriptionControl(btn){
 
 }
 
-// 0. 기존문장을 저장할 a변수.
-// 1. 기존문장 -> b 변수에 저장해
-// 2. b변수를 불러와 변경문장을 + 해주기.
-// 3. 그 문장을 b변수에 재 저장.
-// 4. b변수를부르면 최종 변경된 문장.
-
-
 
 function inquiryTab(){
     $(".inputTab > input").click(function(){
@@ -232,22 +206,6 @@ function itemColorSize(item){
 
     var sizePrice = null;
     var selectImg = null;
-    // var sizeID = null;
-
-    // var getSrc = null;
-    // var getSrcSplit = null;
-    // var imgSrc = null;
-    // $(this).parents("li").find("img").css("display","none");
-    // $(item).click(function(){
-    //     $(this).siblings().removeClass('active');
-    //     $(this).addClass('active');
-    //     sizePrice = $(this).attr("data-price");
-    //     selectImg = ".size_" + $(this).attr("value");
-    //     $(this).parents("li").find(".priceValue").text(sizePrice);
-    //     $(this).parents("li").find("img").removeClass("active");
-    //     $(this).parents("li").find(selectImg).addClass("active");
-
-    // });
 
     $(item).click(function(){
         $(this).siblings().removeClass('active');

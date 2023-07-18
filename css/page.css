@@ -720,9 +720,6 @@
     .detailContainer > div:nth-of-type(1) > div:first-of-type > ul li img{
         width: 100%;
     }
-    .detailContainer .bx-controls{
-        display: none;
-    }
     .detailContainer .thumbPager{
         position: absolute; bottom: 10px;
         left: 50%; transform: translate(-50%, 0);
@@ -3221,9 +3218,6 @@
     .detailContainer .vertitailSlider li img,
     .detailContainer > div:nth-of-type(1) > div:first-of-type > ul li img{
         width: 100%;
-    }
-    .detailContainer .bx-controls{
-        display: none;
     }
     .detailContainer .thumbPager{
         position: absolute; bottom: 30px; left: 1.56%; width: 45px;
@@ -5795,9 +5789,6 @@
     .detailContainer .vertitailSlider li img,
     .detailContainer > div:nth-of-type(1) > div:first-of-type > ul li img{
         width: 100%;
-    }
-    .detailContainer .bx-controls{
-        display: none;
     }
     .detailContainer .thumbPager{
         position: absolute; bottom: 65px; left: 1.56%;
