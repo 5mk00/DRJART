@@ -9,25 +9,35 @@ function scrollEffect(){
     var posData = [];
     var arrCount = 0;
     
-    for(var i = 0; i < target.length; i++){
-        currentTarget = target.eq(i).offset().top-150;
-        posData.push({
-            index:(i), topPos: currentTarget
-        });
-    }
+    if (window.matchMedia("(min-width: 1280px)").matches) {
+        /* 뷰포트 너비가 400 픽셀 이상 */
+        for(var i = 0; i < target.length; i++){
+            currentTarget = target.eq(i).offset().top-150;
+            posData.push({
+                index:(i), topPos: currentTarget
+            });
+        }
+        
+        $(window).scroll(function(){
+            currentPos = $(this).scrollTop();
+            if(currentPos >= posData[arrCount].topPos){
+                $(".scrollTarget").eq(arrCount).addClass("active");
+                arrCount++;
+            }else if(currentPos <= 100){
+                $(".scrollTarget").removeClass("active");
+                arrCount = 0;
+            }
     
-    $(window).scroll(function(){
-        currentPos = $(this).scrollTop();
-        if(currentPos >= posData[arrCount].topPos){
-            $(".scrollTarget").eq(arrCount).addClass("active");
-            arrCount++;
-        }else if(currentPos <= 100){
-            $(".scrollTarget").removeClass("active");
-            arrCount = 0;
-        }
+            if(arrCount >= posData.length){
+                arrCount = posData.length -1;
+            }
+        });
+      }
+      else{
+        $(".scrollTarget").addClass("active");
+      }
 
-        if(arrCount >= posData.length){
-            arrCount = posData.length -1;
-        }
-    });
+
+
+    
 }
