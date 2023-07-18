@@ -10,7 +10,6 @@ function scrollEffect(){
     var arrCount = 0;
     
     if (window.matchMedia("(min-width: 1280px)").matches) {
-        /* 뷰포트 너비가 400 픽셀 이상 */
         for(var i = 0; i < target.length; i++){
             currentTarget = target.eq(i).offset().top-150;
             posData.push({
