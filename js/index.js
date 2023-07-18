@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     customSlider(".collectionSlider",'horizontal',null,false,true,true,true,0,'bx-wrapper');
     customSlider(".recSlider",'horizontal',null,false,false,true,true,0,'rec-wrapper');
-    customSlider(".vertitailSlider",'horizontal','.thumbPager',false,true,false,true,0,'bx-wrapper');
+    customSlider(".detailSlider",'horizontal','.thumbPager',false,true,false,true,0,'bx-wrapper');
     customSlider(".verticalSlider",'vertical',null,true,false,false,false,0,'bx-wrapper');
 
     shopGnb();

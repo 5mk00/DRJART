@@ -716,7 +716,7 @@
     }
     .detailContainer .bx-wrapper,
     .detailContainer .bx-viewport,
-    .detailContainer .vertitailSlider li img,
+    .detailContainer .detailSlider li img,
     .detailContainer > div:nth-of-type(1) > div:first-of-type > ul li img{
         width: 100%;
     }
@@ -3215,7 +3215,7 @@
     }
     .detailContainer .bx-wrapper,
     .detailContainer .bx-viewport,
-    .detailContainer .vertitailSlider li img,
+    .detailContainer .detailSlider li img,
     .detailContainer > div:nth-of-type(1) > div:first-of-type > ul li img{
         width: 100%;
     }
@@ -5786,7 +5786,7 @@
     }
     .detailContainer .bx-wrapper,
     .detailContainer .bx-viewport,
-    .detailContainer .vertitailSlider li img,
+    .detailContainer .detailSlider li img,
     .detailContainer > div:nth-of-type(1) > div:first-of-type > ul li img{
         width: 100%;
     }
