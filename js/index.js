@@ -30,17 +30,10 @@ $(document).ready(function(){
 
 function navBar(){
     $(window).scroll(function(){
-        if($(window).scrollTop() > $("header").height()){
-            $("header").css({
-                backgroundColor: "#ffffff",
-                boxShadow: "0 2px 4px -4px black"
-            });
-        }
-        else{
-            $("header").css({
-                backgroundColor: "transparent",
-                boxShadow: "none"
-            });
+        if($(window).scrollTop() == 0){
+            $("header").removeClass("active");
+        } else{
+            $("header").addClass("active");
         }
     });
 }
