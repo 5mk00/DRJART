@@ -236,13 +236,6 @@ address{
     background: url('../images/arrow.png') 90% center / 20px no-repeat;
     appearance: none;
 }
-.scrollTarget{
-    transition: all 0.5s ease-out;
-    opacity: 0; transform: translateY(100px);
-}
-.scrollTarget.active{
-    opacity: 1; transform: translateY(0);
-}
 
 @media screen and (max-width: 767px){
 
