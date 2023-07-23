@@ -912,7 +912,7 @@
 
     }
     .detailContainer .recommend h3{
-        font-size: 24px; color: #131313; font-weight: 600;
+        font-size: 20px; color: #131313; font-weight: 600;
         margin-bottom: 25px;
     }
     .detailContainer .recommend ul::-webkit-scrollbar{
@@ -3408,7 +3408,7 @@
 
     }
     .detailContainer .recommend h3{
-        font-size: 26px; color: #131313; font-weight: 600;
+        font-size: 22px; color: #131313; font-weight: 600;
         margin-bottom: 25px;
     }
     .detailContainer .recommend ul{
@@ -5967,7 +5967,7 @@
         padding: 0 2.25%; box-sizing: border-box
     }
     .detailContainer .recommend h3{
-        font-size: 28px; color: #131313; font-weight: 600;
+        font-size: 22px; color: #131313; font-weight: 600;
         margin-bottom: 25px;
     }
     .detailContainer .recommend ul{
