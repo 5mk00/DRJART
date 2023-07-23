@@ -1145,6 +1145,7 @@
     .loginContainer > form > fieldset > div:last-of-type{
         margin-bottom: 65px; padding: 0 3.95%; box-sizing: border-box;
         width: 100%;
+        font-size: calc(11px + 0.65vw);
     }
 
     
@@ -1162,10 +1163,13 @@
 
     
     .signupAgreeContainer #agree_chk + label,
-    .signupContainer input[type='checkbox'] + label,
-    .loginContainer input[type='checkbox'] + label{
+    .signupContainer input[type='checkbox'] + label{
         font-size: 16px; line-height: 24px; padding-left: 35px;
     }
+    .loginContainer input[type='checkbox'] + label{
+        line-height: 24px; padding-left: calc(28px + 0.91vw);
+    }
+
     .signupAgreeContainer input[type='checkbox']:not(#agree_chk) + label,
     .myprofile input[type='checkbox'] + label{
         font-size: 14px; background-size: 10px; padding-left: 15px;
@@ -1187,8 +1191,8 @@
     }
     .loginContainer > form > fieldset > div > a{
         text-align: right; float: right; 
-        line-height: 25px;
-        font-size: 16px; font-weight: 600; color: #131313; 
+        line-height: 25px; font-weight: 600; color: #131313; 
+        /* font-size: 16px;  */
     }
     .forgotContainer > form > fieldset > .bnwBtn2{
         margin-top: 65px;
