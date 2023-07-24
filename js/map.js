@@ -6,7 +6,8 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 14,
     center: drjartOfficial,
-    mapId: '56b9e3ae479c9403'
+    mapId: '56b9e3ae479c9403',
+    disableDefaultUI: true,
   });
   // The marker, positioned at drjartOfficial
   const marker = new google.maps.Marker({
