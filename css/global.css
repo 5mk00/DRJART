@@ -257,7 +257,6 @@ address{
     .mainContainer > div:nth-of-type(7),
     .listContainer > div,
     .mypageContainer > div,
-    .detailContainer .colorBox,
     .infoContainer > div{
         max-width: 767px; width: 100%; margin: 0 auto;
     } 
@@ -878,7 +877,6 @@ address{
     .mainContainer > div:nth-of-type(7),
     .listContainer > div,
     .mypageContainer > div,
-    .detailContainer .colorBox,
     .infoContainer > div{
         max-width: 1250px; width: 100%; margin: 0 auto;
     } 
@@ -1464,7 +1462,6 @@ address{
     .mainContainer > div:nth-of-type(7),
     .listContainer > div,
     .mypageContainer > div,
-    .detailContainer .colorBox,
     .infoContainer > div{
         max-width: 1780px; width: 100%; margin: 0 auto;
     } 

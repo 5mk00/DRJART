@@ -858,16 +858,6 @@
     .detailContainer > div:nth-of-type(1) > div:last-of-type .priceValue.active{
         display: block;
     }
-    
-
-
-    .detailContainer .colorBox{
-        display: none;
-    }
-
-
-
-
 
 
     .detailContainer > .accComponent{
@@ -3349,15 +3339,6 @@
         display: block;
     }
     
-
-
-    .detailContainer .colorBox{
-        display: none;
-    }
-
-
-
-
 
 
     .detailContainer > .accComponent{
@@ -5909,14 +5890,6 @@
         padding: 25px 26.88%; box-sizing: border-box; width: 100%;
         font-size: 20px;
     }
-
-
-    .detailContainer .colorBox{
-        display: none;
-    }
-
-
-
 
 
 
