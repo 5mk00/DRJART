@@ -669,6 +669,7 @@ address{
     header{
         line-height: 75px; position: fixed; width: 100%; left: 0; top: 0;
         z-index: 99999; padding: 0 3.57%; box-sizing: border-box;
+        transition: all 0.3s ease-in-out;
     }
     header.active{
         background-color: #ffffff; box-shadow: 0 2px 4px -4px #131313;
@@ -1271,6 +1272,7 @@ address{
     header{
         line-height: 75px; position: fixed; width: 100%; left: 0; top: 0;
         z-index: 99999; padding: 0 2.25%; box-sizing: border-box;
+        transition: all 0.3s ease-in-out;
     }
     header.active{
         background-color: #ffffff; box-shadow: 0 2px 4px -4px #131313;
@@ -1869,6 +1871,7 @@ address{
     header{
         line-height: 75px; position: fixed; width: 100%; left: 0; top: 0;
         z-index: 99999; padding: 0 2.25%; box-sizing: border-box;
+        transition: all 0.3s ease-in-out;
     }
     header.active{
         background-color: #ffffff; box-shadow: 0 2px 4px -4px #131313;
