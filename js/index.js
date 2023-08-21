@@ -72,13 +72,13 @@ function panelControl(openBtn){
 
 
 function customSlider(slideName,slideMode,slidePagerCustom,slideAuto,slidePager,slideControls,slideTouchEnabled,slideStartSlide,slideWrapperClass){
-    // if(slideName==".recSlider"){
-    //     reloadTarget = $(slideName).bxSlider({
-    //         pager: slidePager,
-    //         wrapperClass: slideWrapperClass
-    //     });
-    // }else{
+    if(slideName==".recSlider"){
         reloadTarget = $(slideName).bxSlider({
+            pager: slidePager,
+            wrapperClass: slideWrapperClass
+        });
+    }else{
+        $(slideName).bxSlider({
             mode: slideMode,
             pagerCustom: slidePagerCustom,
             auto: slideAuto,
@@ -88,7 +88,7 @@ function customSlider(slideName,slideMode,slidePagerCustom,slideAuto,slidePager,
             startSlide: slideStartSlide,
             wrapperClass: slideWrapperClass
         });
-    // }
+    }
 }
 
 
