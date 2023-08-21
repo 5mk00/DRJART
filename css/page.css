@@ -1381,7 +1381,7 @@
     .mypage > div > div > div:nth-of-type(2) ul li a{
         display: block; width: 100%; color: #131313; height: 100%;
         font-size: 18px; font-weight: 500; line-height: 48px; padding-bottom: 40px;
-        background: url('../images/expand_close.png') center bottom / 35px no-repeat;
+        background: url('../images/slide_next.png') center bottom / 35px no-repeat;
     }
 
     
@@ -3879,7 +3879,7 @@
     .mypage > div > div > div:nth-of-type(2) ul li a{
         display: block; width: 100%; color: #131313; height: 100%;
         font-size: 23px; font-weight: 500; line-height: 60px; padding-bottom: 40px;
-        background: url('../images/expand_close.png') center bottom / 35px no-repeat;
+        background: url('../images/slide_next.png') center bottom / 35px no-repeat;
     }
 
     
@@ -4008,7 +4008,7 @@
     .shippingOrder > div > div > div > div:first-of-type span{
         width: 5%; text-align: center; 
         display: block; float: left; 
-        line-height: 65px;
+        line-height: 50px;
         font-size: 16px; color: #131313; font-weight: 600;
     }
     .shippingOrder > div > div > div [value*='Month']{
@@ -6447,7 +6447,7 @@
     .mypage > div > div > div:nth-of-type(2) ul li a{
         display: block; width: 100%; color: #131313; height: 100%;
         font-size: 25px; font-weight: 500; line-height: 60px; padding-bottom: 40px;
-        background: url('../images/expand_close.png') center bottom / 40px no-repeat;
+        background: url('../images/slide_next.png') center bottom / 40px no-repeat;
     }
 
     
