@@ -317,16 +317,16 @@ address{
     }
 
     #gnbPanel{
-        display: none;
         top: 0;
-        left: 0;
+        left:-1000px;
         height: 100%;
         background-color: white;
         position: fixed;
         z-index: 100000;
+        transition: 0.3s ease-in-out;
     }
     #gnbPanel.active{
-        display: block;
+        left: 0;
     }
 
 
@@ -349,6 +349,7 @@ address{
     }
     #gnbPanel ul li a{
         display: block; font-size: 26px; font-weight: 600; color: #131313; line-height: 32px;
+        transition: 0.18s ease-in;
     }
     #gnbPanel ul li a:hover,
     #gnbPanel ul li a.active{
@@ -370,17 +371,17 @@ address{
 
 
     #cartPanel{
-        display: none;
         top: 0;
-        right: 0;
+        right: -1000px;
         height: 100%;
         background-color: white;
         position: fixed;
         z-index: 100000;
         width: 100%;
+        transition: 0.3s ease-in-out;
     }
     #cartPanel.active{
-        display: block;
+        right: 0;
     }
 
 
@@ -942,17 +943,17 @@ address{
     }
 
     #gnbPanel{
-        display: none;
         top: 0;
-        left: 0;
+        left:-1000px;
         width: 32%;
         height: 100%;
         background-color: white;
         position: fixed;
         z-index: 100000;
+        transition: 0.3s ease-in-out;
     }
     #gnbPanel.active{
-        display: block;
+        left: 0;
     }
 
 
@@ -975,6 +976,7 @@ address{
     }
     #gnbPanel ul li a{
         display: block; font-size: 32px; font-weight: 600; color: #131313;
+        transition: 0.18s ease-in;
     }
     #gnbPanel ul li a:hover,
     #gnbPanel ul li a.active{
@@ -991,17 +993,17 @@ address{
     }
 
     #cartPanel{
-        display: none;
         top: 0;
-        right: 0;
+        right: -1000px;
         width: 30%;
         height: 100%;
         background-color: white;
         position: fixed;
         z-index: 100000;
+        transition: 0.3s ease-in-out;
     }
     #cartPanel.active{
-        display: block;
+        right: 0;
     }
 
 
@@ -1528,17 +1530,17 @@ address{
     }
 
     #gnbPanel{
-        display: none;
         top: 0;
-        left: 0;
+        left:-1000px;
         width: 32%;
         height: 100%;
         background-color: white;
         position: fixed;
         z-index: 100000;
+        transition: 0.3s ease-in-out;
     }
     #gnbPanel.active{
-        display: block;
+        left: 0;
     }
 
 
@@ -1561,6 +1563,7 @@ address{
     }
     #gnbPanel ul li a{
         display: block; font-size: 32px; font-weight: 600; color: #131313;
+        transition: 0.18s ease-in;
     }
     #gnbPanel ul li a:hover,
     #gnbPanel ul li a.active{
@@ -1577,17 +1580,17 @@ address{
     }
 
     #cartPanel{
-        display: none;
         top: 0;
-        right: 0;
+        right: -1000px;
         width: 30%;
         height: 100%;
         background-color: white;
         position: fixed;
         z-index: 100000;
+        transition: 0.3s ease-in-out;
     }
     #cartPanel.active{
-        display: block;
+        right: 0;
     }
 
 

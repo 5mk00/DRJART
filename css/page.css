@@ -290,11 +290,7 @@
         margin-bottom: 45px; width: 100%;
     }
     .mainContainer > div:nth-of-type(6) h2 strong{
-        font-style: italic; position: relative;
-    }
-    .mainContainer > div:nth-of-type(6) h2 strong:after{
-        content: ''; width: 100%; left: 0; height: 5px; background-color: red;
-        position: absolute; bottom: 0;
+        font-style: italic;
     }
     .mainContainer > div:nth-of-type(6) p{
         font-size: 18px; font-weight: 300; line-height: 26px; color: #131313;
@@ -2753,11 +2749,7 @@
         margin-bottom: 45px; width: 100%;
     }
     .mainContainer > div:nth-of-type(6) h2 strong{
-        font-style: italic; position: relative;
-    }
-    .mainContainer > div:nth-of-type(6) h2 strong:after{
-        content: ''; width: 100%; left: 0; height: 5px; background-color: red;
-        position: absolute; bottom: 0;
+        font-style: italic;
     }
     .mainContainer > div:nth-of-type(6) p{
         font-size: 26px; font-weight: 300; line-height: 38px; color: #131313;
