@@ -231,7 +231,7 @@
     }
     .mainContainer > div:nth-of-type(4) > div ul li > div div .whiteBtn,
     .mainContainer > div:nth-of-type(5) > div ul li > div div .whiteBtn{
-        width: 100%; height: 90%; opacity: 0; border-radius: 5px;
+        width: 100%; height: 100%; opacity: 0; border-radius: 5px;
         position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0);
         
     }
@@ -1130,7 +1130,6 @@
     .loginContainer > form > fieldset > div > a{
         text-align: right; float: right; 
         line-height: 25px; font-weight: 600; color: #131313; 
-        /* font-size: 16px;  */
     }
     .forgotContainer > form > fieldset > .bnwBtn2{
         margin-top: 65px;
@@ -2690,7 +2689,7 @@
     }
     .mainContainer > div:nth-of-type(4) > div ul li > div div .whiteBtn,
     .mainContainer > div:nth-of-type(5) > div ul li > div div .whiteBtn{
-        width: 100%; height: 90%; opacity: 0; border-radius: 5px;
+        width: 100%; height: 100%; opacity: 0; border-radius: 5px;
         position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0);
         
     }
